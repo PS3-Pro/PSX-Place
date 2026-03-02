@@ -30,12 +30,16 @@ jobs:
         run: |
           git config --global user.name "PS3-Pro Bot"
           git config --global user.email "bot@ps3pro.com"
-          git add PSX_Place/PS3/news_page_code.html
           
-          if ! git diff --cached --exit-code --quiet; then
-            echo "Changes detected! Committing now..."
-            git commit -m "Auto-update: PSX-Place News"
-            git push
+          # Only add and commit if the file was actually generated/modified
+          if [ -f "PSX_Place/PS3/news_page_code.html" ]; then
+            git add PSX_Place/PS3/news_page_code.html
+            if ! git diff --cached --exit-code --quiet; then
+              git commit -m "Auto-update: PSX-Place News"
+              git push
+            else
+              echo "No changes in news. Skipping push."
+            fi
           else
-            echo "No changes found. Skipping commit and push."
+            echo "File not found. Scraper might have failed."
           fi
