@@ -18,7 +18,7 @@ def update_psx_news():
     news_list = []
     seen_links = set()
     
-    fallback_date = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z')
+    execution_time = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z')
 
     try:
         for current_page in range(1, MAX_PAGES + 1):
@@ -35,16 +35,20 @@ def update_psx_news():
                     headline_tag = article.select_one('div.subHeading > a')
                     link_tag = article.select_one('div.continue > a.button')
                     img_tag = article.select_one('img')
-                    
                     author_tag = article.select_one('a.username')
                     summary_tag = article.select_one('div.baseHtml > div') or article.select_one('div.baseHtml')
-                    date_tag = article.select_one('span.dateData > a:last-child')
                     
-                    item_date = fallback_date
-                    if date_tag:
-                        time_el = date_tag.find(attrs={"data-time": True})
-                        if time_el and time_el.has_attr('data-time'):
-                            item_date = datetime.fromtimestamp(int(time_el['data-time']), timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z')
+                    item_date = execution_time
+                    date_link = article.select_one('span.dateData > a:last-child')
+                    
+                    if date_link:
+                        timestamp_el = date_link.find(attrs={"data-time": True}) or (date_link if date_link.has_attr('data-time') else None)
+                        if timestamp_el:
+                            try:
+                                ts = int(timestamp_el['data-time'])
+                                item_date = datetime.fromtimestamp(ts, timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z')
+                            except:
+                                pass
                     
                     if headline_tag and link_tag:
                         href = link_tag.get('href', '')
@@ -110,13 +114,10 @@ def update_psx_news():
                 xml_out.append(f'\t\t\t<desc>{n["title"]}</desc>')
                 xml_out.append(f'\t\t\t<url type="2">{GITHUB_RAW_PREFIX}{n["image"]}</url>')
                 xml_out.append(f'\t\t\t<target type="u">{n["link"]}</target>')
-                
                 xml_out.append('\t\t\t<cntry agelmt="0">all</cntry>')
                 xml_out.append('\t\t\t<lang>all</lang>')
-                
                 xml_out.append(f'\t\t\t<description>{n["description"]}</description>')
                 xml_out.append(f'\t\t\t<creators>{n["author"]}</creators>')
-                
                 xml_out.append('\t\t</mtrl>')
 
             xml_out.append('\t</spc>')
@@ -125,7 +126,7 @@ def update_psx_news():
             with open("files/whats_new.xml", "w", encoding="utf-8") as f:
                 f.write("\n".join(xml_out))
 
-            print("Done! XML generated.")
+            print("Done! XML generated with correct page dates.")
         else:
             print("No articles were found.")
 
