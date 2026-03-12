@@ -1,68 +1,120 @@
-import requests
-from bs4 import BeautifulSoup
 import os
-from datetime import datetime
+import re
+import time
+from curl_cffi import requests
+from bs4 import BeautifulSoup
+from datetime import datetime, timezone
 
-def get_ps3_news():
-    url = "https://www.psx-place.com/forums/ps3-news.46/"
-    # Identifica o bot como um navegador real para evitar bloqueios
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept-Language': 'en-US,en;q=0.9'
-    }
+def update_psx_news():
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] Starting PSX-Place Multi-Page Scraper...")
     
+    GITHUB_RAW_PREFIX = "https://raw.githubusercontent.com/PS3-Pro/PSX-Place/main/resources/images/"
+    
+    MAX_PAGES = 3
+    
+    os.makedirs('files', exist_ok=True)
+    os.makedirs(os.path.join('resources', 'images'), exist_ok=True)
+
+    news_list = []
+    seen_links = set()
+
     try:
-        print(f"Connecting to {url}...")
-        response = requests.get(url, headers=headers, timeout=20)
-        
-        if response.status_code != 200:
-            print(f"Error: Status code {response.status_code}. Possible block by Cloudflare.")
-            return
-
-        soup = BeautifulSoup(response.text, 'html.parser')
-        
-        # Seletores atualizados para XenForo 2 (PSX-Place)
-        # Tenta o seletor principal, se falhar, tenta alternativas
-        news_items = soup.select('div.structItem-title a[data-tp-primary="on"]')
-        
-        if not news_items:
-            news_items = soup.select('div.structItem-title a') # Fallback 1
+        for current_page in range(1, MAX_PAGES + 1):
+            if current_page == 1:
+                url = "https://www.psx-place.com/"
+            else:
+                url = f"https://www.psx-place.com/page-{current_page}"
             
-        if not news_items:
-            print("No news items found. The site structure might have changed.")
-            return
-
-        html_output = f"\n"
-        count = 0
-        
-        for item in news_items:
-            title = item.get_text(strip=True)
-            link = item.get('href', '')
+            print(f"-> Scraping Page {current_page}: {url}")
             
-            # Filtra links inúteis (como links de páginas ou tags)
-            if not link or "/threads/" not in link or "page-" in link:
-                continue
+            response = requests.get(url, impersonate="chrome110", timeout=30)
+            
+            if response.status_code == 200:
+                soup = BeautifulSoup(response.text, 'html.parser')
+                articles = soup.select('div.articleItem')
                 
-            full_link = f"https://www.psx-place.com/{link.lstrip('/')}"
-            html_output += f'<p>• <a href="{full_link}" target="_blank">{title}</a></p>\n'
-            count += 1
-            if count >= 15: break # Limite de 15 notícias
+                for article in articles:
+                    headline_tag = article.select_one('div.subHeading > a')
+                    link_tag = article.select_one('div.continue > a.button')
+                    img_tag = article.select_one('img')
+                    
+                    if headline_tag and link_tag:
+                        href = link_tag.get('href', '')
+                        full_title = headline_tag.get('title') or headline_tag.get_text(strip=True)
+                        
+                        if href and len(full_title) > 5:
+                            if href not in seen_links:
+                                seen_links.add(href)
+                                
+                                clean_title = full_title.replace("(Forum Thread)", "").replace("...", "").strip()
+                                full_link = href if href.startswith('http') else f"https://www.psx-place.com/{href.lstrip('/')}"
+                                
+                                img_url = img_tag.get('src') if img_tag else ''
+                                local_img_name = "default.png"
+                                
+                                if img_url:
+                                    img_url = img_url if img_url.startswith('http') else f"https://www.psx-place.com/{img_url.lstrip('/')}"
+                                    safe_name = re.sub(r'[^a-zA-Z0-9]', '', clean_title)[:25]
+                                    local_img_name = f"{safe_name}.jpg"
+                                    img_path = os.path.join('resources', 'images', local_img_name)
+                                    
+                                    if not os.path.exists(img_path):
+                                        try:
+                                            img_data = requests.get(img_url, impersonate="chrome110", timeout=15).content
+                                            with open(img_path, 'wb') as img_file:
+                                                img_file.write(img_data)
+                                        except Exception:
+                                            local_img_name = "default.png"
 
-        if count > 0:
-            # Adiciona um rodapé com a data da última atualização (útil para debug)
-            html_output += f'<br><small style="color:gray;">Last updated: {datetime.now().strftime("%H:%M:%S")}</small>'
+                                news_list.append({
+                                    "title": clean_title, 
+                                    "link": full_link,
+                                    "image": local_img_name
+                                })
+                                
+                if current_page < MAX_PAGES:
+                    time.sleep(3)
+                    
+            else:
+                print(f"Failed to fetch page {current_page} (Status: {response.status_code})")
+                break
+
+        if news_list:
+            print(f"\nSuccessfully fetched a total of {len(news_list)} articles. Generating files...")
             
-            output_path = 'PSX_Place/PS3/news_page_code.html'
-            os.makedirs(os.path.dirname(output_path), exist_ok=True)
+            xml_out = ['<?xml version="1.0" encoding="UTF-8" standalone="yes"?>',
+                       '<nsx anno="" lt-id="131" min-sys-ver="1" rev="1093" ver="1.0">',
+                       '\t<spc id="33537" multi="o" rep="t">']
             
-            with open(output_path, 'w', encoding='utf-8') as f:
-                f.write(html_output)
-            print(f"Success! {count} items saved to {output_path}")
+            html_out = f"\n"
+            date_now = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z')
+
+            for n in news_list: 
+                xml_out.append('\t\t<mtrl id="0" lastm="' + date_now + '" until="2100-12-31T23:59:00.000Z">')
+                xml_out.append(f'\t\t\t<desc>{n["title"]}</desc>')
+                xml_out.append(f'\t\t\t<url type="2">{GITHUB_RAW_PREFIX}{n["image"]}</url>')
+                xml_out.append(f'\t\t\t<target type="u">{n["link"]}</target>')
+                xml_out.append('\t\t</mtrl>')
+                
+                html_out += f'<div style="margin-bottom: 15px;">\n'
+                html_out += f'  <img src="../resources/images/{n["image"]}" alt="thumb" style="width: 80px; height: auto; border-radius: 5px;">\n'
+                html_out += f'  <a href="{n["link"]}" target="_blank" style="text-decoration: none; font-weight: bold;">{n["title"]}</a>\n'
+                html_out += f'</div>\n'
+
+            xml_out.append('\t</spc>')
+            xml_out.append('</nsx>')
+
+            with open("files/whats_new.xml", "w", encoding="utf-8") as f:
+                f.write("\n".join(xml_out))
+            with open("files/index.html", "w", encoding="utf-8") as f:
+                f.write(html_out)
+
+            print("Done! XML, HTML, and Images are ready.")
         else:
-            print("Filtered items resulted in empty list. Check selectors.")
+            print("No articles were found across the pages.")
 
     except Exception as e:
-        print(f"Scraper error: {e}")
+        print(f"Fatal Error occurred: {e}")
 
 if __name__ == "__main__":
-    get_ps3_news()
+    update_psx_news()

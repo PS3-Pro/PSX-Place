@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>HAN Toolbox Unofficial - PSX-Place news</title>
+		<link href="https://raw.githubusercontent.com/DADi590/Console-news-on-consoles/master/PSX_Place/PS3/ERROR.png" rel="icon" type="image/x-icon"/>
+		<style>
+			html {
+				height: 100%;
+				width: 100%;
+				max-width: 100%;
+				margin: 0 0;
+				font-family: arial;
+				font-size: xx-large;
+				scroll-behavior: smooth;
+				position: relative;
+
+				/*left: 100%;
+				overflow: hidden;*/
+				overflow-x: hidden;
+			}
+			body {
+				height: 100%;
+				width: 100%;
+				max-width: 100%;
+				margin: 0 0;
+				font-family: arial;
+				font-size: xx-large;
+				position: relative;
+
+				/*left: -100%;*/
+			}
+			.disable_select {
+			  -o-user-select: none;
+			  -webkit-user-select: none;
+			  -moz-user-select: none;
+			  -ms-user-select: none;
+			  user-select: none;
+			  cursor: default;
+			}
+			.inline {
+				float:left;
+			}
+
+			#everything {
+				margin-left:8px;
+				margin-right:8px;
+				padding-top: 100px;
+				width: 100%;
+				height: 85%;
+				position: absolute;
+				/*overflow: auto;*/
+			}
+
+			#title_div {
+				font-family: arial; font-size: 25px; font-weight: bold;
+				background-color: red;
+				margin: 0;
+				padding: 0;
+				left: 0; right: 0;
+				color: white;
+				position: fixed;
+				z-index: 1;
+			}
+			#title {
+				display: inline-block;
+				margin-right: auto;
+				margin-top: 15px;
+				margin-left: 15px;
+				margin-bottom: 15px;
+				text-align: left;
+				z-index: 2;
+			}
+			#date_time {
+				display: inline-block;
+				margin-left: auto;
+				margin-top: 15px;
+				margin-right: 15px;
+				margin-bottom: 15px;
+				float: right;
+				z-index: 2;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="title_div">
+			<div id="title" class="disable_select">Console news on consoles</div>
+			<div id="date_time" class="disable_select">Error obtaining date and time</div>
+		</div>
+		<div id="everything" class="disable_select">
+			<a href="PSX_Place/PS3/news_page_code.html">PSX-Place -- PS3</a>
+		</div>
+	</body>
+	<script>
+		enable_date_time_checker();
+
+		/////////////////////////////////
+		// Enable the date and time asynchronous checker
+		function enable_date_time_checker() {
+			const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+			var update_date_time = setInterval(function () {
+				var now = new Date();
+				var dd = now.getDate();
+				var mm = now.getMonth();//String(now.getMonth() + 1).padStart(2, "0"); //January is 0!
+				var yyyy = now.getFullYear();
+				var HH = now.getHours();
+				var MM = now.getMinutes();
+				var ss = now.getSeconds();
+				if (HH < 10) {
+					HH = "0"+HH;
+				}
+				if (MM < 10) {
+					MM = "0"+MM;
+				}
+				if (ss < 10) {
+					ss = "0"+ss;
+				}
+
+				now = monthNames[mm] + " " + dd + ", " + yyyy + " - " + HH + ":" + MM + ":" + ss;
+
+				document.getElementById("date_time").innerHTML = now;
+			}, 1000);
+		}
+		// Enable the date and time asynchronous checker
+		/////////////////////////////////
+	</script>
+</html>

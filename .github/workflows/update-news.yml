@@ -1,4 +1,4 @@
-name: Update PSX-Place News
+name: Update PSX-Place News Feed
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  scrape-and-update:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -15,15 +15,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Setup Python environment
         uses: actions/setup-python@v4
         with:
-          python-version: '3.9'
+          python-version: '3.10'
 
-      - name: Install dependencies
-        run: pip install requests beautifulsoup4
+      - name: Install required dependencies
+        run: pip install curl_cffi beautifulsoup4
 
-      - name: Run Scraper
+      - name: Run the PSX-Place Scraper
         run: python .github/scripts/scraper.py
 
       - name: Commit and push changes
@@ -31,15 +31,13 @@ jobs:
           git config --global user.name "PS3-Pro Bot"
           git config --global user.email "bot@ps3pro.com"
           
-          # Only add and commit if the file was actually generated/modified
-          if [ -f "PSX_Place/PS3/news_page_code.html" ]; then
-            git add PSX_Place/PS3/news_page_code.html
-            if ! git diff --cached --exit-code --quiet; then
-              git commit -m "Auto-update: PSX-Place News"
-              git push
-            else
-              echo "No changes in news. Skipping push."
-            fi
+          # Stage the specific folders for commit
+          git add files/
+          git add resources/images/
+          
+          if ! git diff --cached --exit-code --quiet; then
+            git commit -m "Auto-update: PSX-Place News feed"
+            git push
           else
-            echo "File not found. Scraper might have failed."
+            echo "No changes to commit"
           fi
