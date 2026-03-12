@@ -1,7 +1,12 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>PSX-Place News PRO</title>
+    <title>PSX-Place News</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/PS3-Pro/PSN-Content/master/resources/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/PS3-Pro/PSN-Content/master/resources/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/PS3-Pro/PSN-Content/master/resources/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://raw.githubusercontent.com/PS3-Pro/PSN-Content/master/resources/favicon/site.webmanifest">
     
     <script>
         var isPS3 = /PS3|PlayStation 3|NetFront/i.test(navigator.userAgent) || window.location.search.indexOf("mode=ps3") > -1;
@@ -10,7 +15,7 @@
 
     <style>
         /* =========================================
-           1. BASE & RESET
+           1. GENERAL SETTINGS & STRUCTURE
            ========================================= */
         * { 
             box-sizing: border-box; 
@@ -28,65 +33,74 @@
             overflow: hidden;
         }
 
-        #everything { 
-            padding: 120px 20px 80px 20px; 
-            text-align: center; 
-            height: 100vh; 
+        #news_grid_container { 
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
             overflow-y: auto; 
+            text-align: center; 
+            z-index: 20; 
         }
 
-        .id-text { color: #ffff00; font-weight: bold; text-transform: uppercase; font-size: 11px; }
-        .meta-card { display: block; margin-top: 6px; padding-top: 6px; border-top: 1px dotted #444; font-size: 11px; }
-        .author-hl { color: #00ccff; font-weight: bold; }
-        .date-hl { color: #ffff00; }
+        .label_preview { color: #ffff00; font-weight: bold; text-transform: uppercase; font-size: 11px; }
+        .news_card_meta { display: block; margin-top: 6px; padding-top: 6px; border-top: 1px dotted #444; font-size: 11px; }
+        .highlight_author { color: #00ccff; font-weight: bold; }
+        .highlight_date { color: #ffff00; }
 
-        .btn-read { background: #007bff; color: #fff; }
-        .btn-thread { background: #6f21c2; color: #fff; }
+        .button_read_more { background: #007bff; color: #fff; }
+        .button_open_forum { background: #6f21c2; color: #fff; }
 
-        #m_title { color:#00aaff; font-size: 19px; margin: 0 0 5px 0; }
-        #m_meta { font-size: 12px; margin-bottom: 8px; font-weight: bold; }
+        #modal_title { color:#00aaff; font-size: 19px; margin: 0 0 5px 0; }
+        #modal_meta_info { font-size: 12px; margin-bottom: 8px; font-weight: bold; }
         
-        #m_content p:empty, 
-        #m_content div:empty, 
-        #m_content span:empty { display: none !important; }
-        #m_content p:first-child { margin-top: 0; }
-        #m_content p:last-child { margin-bottom: 0; }
+        #modal_body_content p:empty, 
+        #modal_body_content div:empty, 
+        #modal_body_content span:empty { display: none !important; }
+        #modal_body_content p:first-child { margin-top: 0; }
+        #modal_body_content p:last-child { margin-bottom: 0; }
 
         /* =========================================
-           2. ESTILOS EXCLUSIVOS PARA PC (MODERNO)
+           2. PC EXCLUSIVE STYLES (MODERN - 80% SCALE)
            ========================================= */
-        .is-pc #everything::-webkit-scrollbar { width: 8px; }
-        .is-pc #everything::-webkit-scrollbar-thumb { background: #00aaff; border-radius: 10px; }
+        .is-pc #news_grid_container {
+            top: 100px; 
+            padding: 20px 20px 80px 20px; 
+        }
+
+        .is-pc #news_grid_container::-webkit-scrollbar { width: 8px; }
+        .is-pc #news_grid_container::-webkit-scrollbar-thumb { background: #00aaff; border-radius: 10px; }
         
-        .is-pc header {
+        .is-pc #main_site_header {
             position: fixed; top: 0; left: 0; right: 0;
-            height: 100px; background: rgba(0, 0, 0, 0.85);
+            height: 100px; background: rgba(0, 0, 0, 0.35);
             border-bottom: 2px solid #888; z-index: 100;
             display: flex; align-items: center; justify-content: center;
             backdrop-filter: blur(10px);
+            text-align: center;
         }
 
         @property --angle { syntax: '<angle>'; initial-value: 0deg; inherits: false; }
         @keyframes rotate { to { --angle: 360deg; } }
         @keyframes tileReveal { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
 
-        .is-pc .tile_wrapper {
+        .is-pc .news_card_wrapper {
             display: inline-block;
             vertical-align: top;
-            margin: 15px;
+            margin: 12px;
             opacity: 0;
             animation: tileReveal 0.4s ease-out forwards;
         }
 
-        .is-pc .article_tile {
-            width: 320px; height: 485px; 
+        .is-pc .news_card {
+            width: 260px; height: 390px; 
             border-radius: 12px;
-            background: rgba(0, 0, 0, 0.8); border: 2px solid #555;
+            background: rgba(0, 0, 0, 0.6); border: 2px solid #555;
             overflow: hidden; text-align: left; position: relative;
             transition: transform 0.3s ease;
         }
 
-        .is-pc .article_tile:hover {
+        .is-pc .news_card:hover {
             transform: translateY(-8px);
             border-color: transparent;
             background-image: 
@@ -97,32 +111,45 @@
             animation: rotate 2s linear infinite;
         }
 
-        .is-pc .tile_img { width: 100%; height: 180px; object-fit: cover; border-bottom: 2px solid #00aaff; }
+        .is-pc .news_card_image { width: 100%; height: 145px; object-fit: cover; border-bottom: 2px solid #00aaff; }
         
-        .is-pc .tile_header { 
-            background: #000; color: #00aaff; padding: 12px;
-            font-weight: bold; font-size: 14px; min-height: 60px;
+        .is-pc .news_card_title { 
+            background: rgba(0, 0, 0, 0.6); color: #fff; padding: 10px;
+            font-weight: bold; font-size: 13px; height: 55px;
             display: flex; align-items: center; justify-content: center; text-align: center; 
-        }
-        
-        .is-pc .tile_content { 
-            padding: 10px 15px; font-size: 13px; color: #ddd; 
-            height: 160px; overflow: hidden; border-top: 1px solid #333; line-height: 1.4;
+            overflow: hidden;
         }
 
-        .is-pc .links { position: absolute; bottom: 0; left: 0; right: 0; padding: 10px 15px 15px 15px; display: flex; gap: 8px; background: rgba(0,0,0,0.6); }
-        .is-pc .btn-pro { flex: 1; padding: 10px; border-radius: 6px; font-size: 11px; font-weight: bold; text-decoration: none; text-align: center; cursor: pointer; border: 1px solid rgba(255,255,255,0.2); transition: 0.2s; }
-        .is-pc .btn-pro:hover { filter: brightness(1.2); }
+        .is-pc .news_card_excerpt { 
+            padding: 10px; font-size: 12px; color: #ddd; 
+            height: 135px; overflow: hidden; border-top: 1px solid #333; line-height: 1.4;
+            position: relative; 
+        }
 
-        .is-pc #news_modal {
+        .is-pc .news_card_meta { 
+            position: absolute; 
+            bottom: 5px; 
+            left: 10px; 
+            right: 10px; 
+            margin-top: 0; 
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        .is-pc .news_card_buttons { position: absolute; bottom: 0; left: 0; right: 0; padding: 10px; display: flex; gap: 6px; background: rgba(0,0,0,0.6); }
+        .is-pc .button_base { flex: 1; padding: 8px; border-radius: 6px; font-size: 10px; font-weight: bold; text-decoration: none; text-align: center; cursor: pointer; border: 1px solid rgba(255,255,255,0.2); transition: 0.2s; }
+        .is-pc .button_base:hover { filter: brightness(1.2); }
+
+        .is-pc #article_modal {
             display: none; position: fixed; top: 0; left: 0;
             width: 100%; height: 100%; background: rgba(0,0,0,0.97);
             z-index: 200; justify-content: center; align-items: center;
             backdrop-filter: blur(8px);
         }
-        .is-pc #news_modal.active { display: flex; }
 
-        .is-pc .modal_box {
+        .is-pc #article_modal.active { display: flex; }
+
+        .is-pc .modal_container {
             background: #050505; border: 2px solid #00aaff;
             width: 95%; max-width: 800px; border-radius: 12px;
             position: relative; display: flex; flex-direction: column;
@@ -130,67 +157,67 @@
             box-shadow: 0 0 30px rgba(0, 170, 255, 0.4);
         }
 
-        .is-pc .modal_static_top { flex-shrink: 0; text-align: center; padding: 15px 50px 0 50px; }
-        .is-pc #m_static_img { width: 100%; max-width: 450px; max-height: 220px; object-fit: contain; border-radius: 6px; margin: 25px auto; display: block; }
-        .is-pc #m_content { padding: 5px 10px 20px 25px; margin-right: 15px; overflow-y: auto; line-height: 1.6; color: #eee; font-size: 14.5px; text-align: center; flex: 1; }
-        .is-pc #m_content::-webkit-scrollbar { width: 4px; }
-        .is-pc #m_content::-webkit-scrollbar-thumb { background: #00aaff; border-radius: 10px; }
-        
-        .is-pc #modal_footer { padding: 15px; background: #000; text-align: center; position: relative; }
-        .is-pc #modal_footer::before { content: ""; position: absolute; top: 0; left: 50px; right: 50px; height: 1px; background: #fff; }
-        .is-pc .close_btn { position: absolute; top: 10px; right: 10px; background: #f00; border: 1px solid #fff; color: white; padding: 4px 10px; border-radius: 5px; font-weight: bold; cursor: pointer; z-index: 210; }
+        .is-pc .modal_header_section { flex-shrink: 0; text-align: center; padding: 15px 50px 0 50px; }
+        .is-pc #modal_feature_image { width: 100%; max-width: 450px; max-height: 220px; object-fit: contain; border-radius: 6px; margin: 25px auto; display: block; }
 
-        .is-pc .waves { position: fixed; bottom: 0; width: 100%; height: 60px; pointer-events: none; z-index: 50; }
+        .is-pc #modal_body_content { padding: 5px 10px 20px 25px; margin-right: 15px; overflow-y: auto; line-height: 1.6; color: #eee; font-size: 14.5px; text-align: center; flex: 1; }
+        .is-pc #modal_body_content::-webkit-scrollbar { width: 4px; }
+        .is-pc #modal_body_content::-webkit-scrollbar-thumb { background: #00aaff; border-radius: 10px; }
+
+        .is-pc #modal_footer_section { padding: 15px; background: #000; text-align: center; position: relative; }
+        .is-pc #modal_footer_section::before { content: ""; position: absolute; top: 0; left: 50px; right: 50px; height: 1px; background: #fff; }
+
+        .is-pc .button_close_modal { position: absolute; top: 10px; right: 10px; background: #f00; border: 1px solid #fff; color: white; padding: 4px 10px; border-radius: 5px; font-weight: bold; cursor: pointer; z-index: 210; }
+
+        .is-pc .background_waves { position: fixed; bottom: 0; width: 100%; height: 60px; pointer-events: none; z-index: 10; }
         .is-pc .parallax use { animation: move-wave 25s cubic-bezier(.55,.5,.45,.5) infinite; }
         @keyframes move-wave { 0% { transform: translate3d(-90px,0,0); } 100% { transform: translate3d(85px,0,0); } }
 
         /* =========================================
-           3. ESTILOS EXCLUSIVOS PARA PS3 (SEGURO/LEVE)
+           3. PS3 EXCLUSIVE STYLES (SAFE/LIGHTWEIGHT)
            ========================================= */
-        .is-ps3 header {
+        .is-ps3 #news_grid_container {
+            top: 110px; 
+            padding: 20px; 
+        }
+
+        .is-ps3 #main_site_header {
             position: absolute; top: 0; left: 0; width: 100%;
-            height: 90px; background: #000;
+            height: 110px; background: rgba(0, 0, 0, 0.35);
             border-bottom: 2px solid #888; z-index: 100;
             text-align: center;
         }
-        
-        .is-ps3 header h1 { margin-top: 25px; display: inline-block; vertical-align: middle; }
-        .is-ps3 header img { margin-top: 15px; display: inline-block; vertical-align: middle; }
 
-        .is-ps3 .waves { display: none; }
+        .is-ps3 .background_waves { display: none; }
 
-        .is-ps3 .tile_wrapper {
+        .is-ps3 .news_card_wrapper {
             display: inline-block;
             vertical-align: top;
             margin: 10px;
         }
 
-        .is-ps3 .article_tile {
+        .is-ps3 .news_card {
             width: 290px; height: 480px; 
-            background: #111; border: 2px solid #555;
+            background: rgba(0, 0, 0, 0.6); border: 2px solid #555;
             text-align: left; position: relative;
         }
 
-        .is-ps3 .article_tile:hover { border-color: #00aaff; }
+        .is-ps3 .news_card:hover { border-color: #00aaff; }
+        .is-ps3 .news_card_image { width: 100%; height: 170px; border-bottom: 2px solid #00aaff; object-fit: cover; }
 
-        /* Altura melhorada, não distorce no PS3 */
-        .is-ps3 .tile_img { width: 100%; height: 170px; border-bottom: 2px solid #00aaff; object-fit: cover; }
-        
-        /* Altura original de volta para não sobrar preto se o título for curto */
-        .is-ps3 .tile_header { 
-            background: #000; color: #00aaff; padding: 10px;
+        .is-ps3 .news_card_title { 
+            background: rgba(0, 0, 0, 0.6); color: #00aaff; padding: 10px;
             font-weight: bold; font-size: 14px; height: 65px; 
             text-align: center; overflow: hidden;
         }
-        
-        .is-ps3 .tile_content { 
+
+        .is-ps3 .news_card_excerpt { 
             padding: 10px 15px; font-size: 12px; color: #ddd; 
             height: 195px; overflow: hidden; border-top: 1px solid #333; 
-            position: relative; /* <-- NECESSÁRIO PARA PRENDER A DATA NO FUNDO */
+            position: relative;
         }
 
-        /* O SEGREDO PRA TIRAR O BURACO DA DATA/HORA: Ela fica grudada embaixo do conteúdo */
-        .is-ps3 .meta-card { 
+        .is-ps3 .news_card_meta { 
             position: absolute; 
             bottom: 10px; 
             left: 15px; 
@@ -198,65 +225,63 @@
             margin-top: 0; 
         }
 
-        .is-ps3 .links { position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; background: #000; text-align: center; }
-        .is-ps3 .btn-pro { display: inline-block; padding: 8px 0; font-size: 12px; font-weight: bold; text-decoration: none; text-align: center; border: 1px solid #555; }
-        
-        .is-ps3 .btn-thread { display: none !important; }
-        .is-ps3 .btn-read { width: 90%; }
+        .is-ps3 .news_card_buttons { position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; background: #000; text-align: center; }
+        .is-ps3 .button_base { display: inline-block; padding: 8px 0; font-size: 12px; font-weight: bold; text-decoration: none; text-align: center; border: 1px solid #555; }
 
-        .is-ps3 #news_modal {
+        .is-ps3 .button_open_forum { display: none !important; }
+        .is-ps3 .button_read_more { width: 90%; }
+
+        .is-ps3 #article_modal {
             display: none; position: absolute; top: 0; left: 0;
             width: 100%; height: 150%; background: rgba(0,0,0,0.85);
             z-index: 200; text-align: center;
         }
-        .is-ps3 #news_modal.active { display: block; }
 
-        /* FIM DO MODAL ESTICADO: O max-width segura ele no meio da tela */
-        .is-ps3 .modal_box {
+        .is-ps3 #article_modal.active { display: block; }
+
+        .is-ps3 .modal_container {
             background: #050505; border: 2px solid #00aaff;
             width: 85%; max-width: 650px; 
             margin: 60px auto; 
             position: relative; text-align: left;
         }
 
-        .is-ps3 .modal_static_top { text-align: center; padding: 15px 40px 0 40px; }
-        
-        /* Imagem do modal travada em tamanho razoável */
-        .is-ps3 #m_static_img { width: 100%; max-width: 380px; max-height: 220px; object-fit: contain; border: 1px solid #333; margin: 15px auto; display: block; }
-        
-        .is-ps3 #m_content { padding: 15px 25px 25px 25px; color: #eee; font-size: 14px; text-align: center; }
-        
-        .is-ps3 #modal_footer { display: none !important; }
+        .is-ps3 .modal_header_section { text-align: center; padding: 15px 40px 0 40px; }
+        .is-ps3 #modal_feature_image { width: 100%; max-width: 380px; max-height: 220px; object-fit: contain; margin: 15px auto; display: block; }
+        .is-ps3 #modal_body_content { padding: 15px 25px 25px 25px; color: #eee; font-size: 14px; text-align: center; }
+        .is-ps3 #modal_footer_section { display: none !important; }
+        .is-ps3 .button_close_modal { position: absolute; top: 10px; right: 10px; background: #f00; border: 1px solid #fff; color: white; padding: 5px 10px; font-weight: bold; z-index: 210; }
 
-        .is-ps3 .close_btn { position: absolute; top: 10px; right: 10px; background: #f00; border: 1px solid #fff; color: white; padding: 5px 10px; font-weight: bold; z-index: 210; }
     </style>
 </head>
 <body>
 
-    <header>
-        <img src="https://raw.githubusercontent.com/PS3-Pro/PSN-Content/master/resources/favicon/apple-touch-icon.png" width="55" style="margin-right:15px; border-radius:10px;">
-        <h1 style="font-size: 22px; letter-spacing: 2px;">PSX-PLACE SCENE NEWS</h1>
+    <header id="main_site_header">
+        <div>
+            <img src="https://www.psx-place.com/styles/nerva/xenforo/logo.png" width="180" style="margin-right:15px; margin-top: 10px; margin-bottom: -10px; border-radius:5px;">
+            <p style="font-size: 13px; margin: 8px 0 5px 0; color: #ccc;">PSX-Place.com is dedicated to bringing you the latest Homebrew, Hacking, Exploits, CFW, Jailbreak & PlayStation Scene News to your fingertips</p>
+        </div>
     </header>
 
-    <div id="everything">
-        <div id="status" style="margin-top:50px; font-size:20px; color:#00aaff;">Syncing Scene Feed...</div>
+    <div id="news_grid_container">
+        <div id="loading_status" style="margin-top:50px; font-size:20px; color:#00aaff;">Syncing Scene Feed...</div>
     </div>
 
-    <div id="news_modal">
-        <div class="modal_box">
-            <button class="close_btn" onclick="closeModal()">X</button>
-            <div class="modal_static_top">
-                <h2 id="m_title"></h2>
-                <div id="m_meta"></div>
+    <div id="article_modal">
+        <div class="modal_container">
+            <button class="button_close_modal" onclick="closeArticleModal()">X</button>
+            <div class="modal_header_section">
+                <h2 id="modal_title"></h2>
+                <div id="modal_meta_info"></div>
                 <div style="height: 1px; background: #444; margin: 0;"></div>
-                <img id="m_static_img" src="">
+                <img id="modal_feature_image" src="">
             </div>
-            <div id="m_content"></div>
-            <div id="modal_footer"><div id="footer_btn_area"></div></div>
+            <div id="modal_body_content"></div>
+            <div id="modal_footer_section"><div id="modal_footer_button_area"></div></div>
         </div>
     </div>
 
-    <div class="waves">
+    <div class="background_waves">
         <svg viewBox="0 24 150 28" preserveAspectRatio="none" style="width:100%; height:100%;">
             <defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" /></defs>
             <g class="parallax">
@@ -270,105 +295,123 @@
 
     <script>
         var xml_URL = "https://raw.githubusercontent.com/PS3-Pro/PSX-Place/refs/heads/master/files/whats_new.xml";
-        var articles = [];
+        var articlesList = [];
 
-        function formatNewsDate(raw) {
-            if (!raw || raw === "Unknown") return "Unknown Date";
+        function formatDateText(rawString) {
+            if (!rawString || rawString === "Unknown") return "Unknown Date";
             try {
-                var parts = raw.split('T');
-                var d = parts[0].split('-');
-                var t = parts[1].split(':');
-                var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-                return months[parseInt(d[1]) - 1] + " " + d[2] + ", " + d[0] + " - " + t[0] + ":" + t[1];
-            } catch(e) { return raw; }
+                var parts = rawString.split('T');
+                var dateParts = parts[0].split('-');
+                var timeParts = parts[1].split(':');
+                var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                return monthNames[parseInt(dateParts[1]) - 1] + " " + dateParts[2] + ", " + dateParts[0] + " - " + timeParts[0] + ":" + timeParts[1];
+            } catch(e) { return rawString; }
         }
 
-        function fetchNews() {
+        function downloadXMLFeed() {
             var xhr = new XMLHttpRequest();
             xhr.onreadystatechange = function() {
-                if (xhr.readyState == 4 && xhr.status == 200) { parseXML(xhr.responseText); }
+                if (xhr.readyState == 4 && xhr.status == 200) { 
+                    processXMLData(xhr.responseText); 
+                }
             };
             xhr.open("GET", xml_URL, true);
             xhr.send();
         }
 
-        function parseXML(data) {
+        function processXMLData(data) {
             var lines = data.split("\n");
-            var current = null;
+            var currentArticle = null;
+            
             for (var i = 0; i < lines.length; i++) {
                 var line = lines[i];
                 if (line.indexOf("<desc>") != -1) {
-                    current = { title: extract(line, "<desc>", "</desc>"), img: "https://raw.githubusercontent.com/PS3-Pro/Pages/main/resources/media/psx-place_news.jpg", author: "Unknown", date: "Unknown" };
-                } else if (line.indexOf('<target type="u">') != -1 && current) {
-                    current.link = extract(line, '>', "</target>");
-                } else if (line.indexOf("<creators>") != -1 && current) {
-                    current.author = extract(line, "<creators>", "</creators>");
-                } else if (line.indexOf(' lastm="') != -1 && current) {
-                    current.date = formatNewsDate(extract(line, 'lastm="', '.000Z" until="'));
-                } else if (line.indexOf("<description>") != -1 && current) {
-                    var rawDesc = extract(line, "<description>", "</description>");
-                    current.desc = rawDesc;
+                    currentArticle = { 
+                        title: extractXMLTagContent(line, "<desc>", "</desc>"), 
+                        img: "https://raw.githubusercontent.com/PS3-Pro/Pages/main/resources/media/psx-place_news.jpg", 
+                        author: "Unknown", 
+                        date: "Unknown" 
+                    };
+                } else if (line.indexOf('<target type="u">') != -1 && currentArticle) {
+                    currentArticle.link = extractXMLTagContent(line, '>', "</target>");
+                } else if (line.indexOf("<creators>") != -1 && currentArticle) {
+                    currentArticle.author = extractXMLTagContent(line, "<creators>", "</creators>");
+                } else if (line.indexOf(' lastm="') != -1 && currentArticle) {
+                    currentArticle.date = formatDateText(extractXMLTagContent(line, 'lastm="', '.000Z" until="'));
+                } else if (line.indexOf("<description>") != -1 && currentArticle) {
+                    var rawDesc = extractXMLTagContent(line, "<description>", "</description>");
+                    currentArticle.desc = rawDesc;
                     var imgMatch = rawDesc.match(/src="([^"]+)"/);
-                    if(imgMatch) current.img = imgMatch[1];
-                    current.snippet = cleanText(rawDesc);
-                    articles.push(current);
+                    if(imgMatch) currentArticle.img = imgMatch[1];
+                    currentArticle.snippet = removeHTMLTags(rawDesc);
+                    articlesList.push(currentArticle);
                 }
             }
-            renderGrid();
+            buildNewsGrid();
         }
 
-        function extract(str, start, end) {
-            var s = str.indexOf(start); if (s === -1) return "";
-            s += start.length; var e = str.indexOf(end, s);
-            return str.substring(s, e);
+        function extractXMLTagContent(str, startTag, endTag) {
+            var startPos = str.indexOf(startTag); 
+            if (startPos === -1) return "";
+            startPos += startTag.length; 
+            var endPos = str.indexOf(endTag, startPos);
+            return str.substring(startPos, endPos);
         }
 
-        function cleanText(html) {
-            var div = document.createElement("div"); div.innerHTML = html;
-            var text = div.textContent || div.innerText || "";
-            return text.length > 200 ? text.substring(0, 200) + "..." : text;
-        }
-
-        function renderGrid() {
-            var container = document.getElementById("everything");
-            var html = "";
-            for (var i = 0; i < articles.length; i++) {
-                var art = articles[i];
-                html += '<div class="tile_wrapper" style="animation-delay: ' + (i * 0.08) + 's;">' +
-                            '<div class="article_tile">' +
-                                '<img src="' + art.img + '" class="tile_img" onclick="openModal(' + i + ')" style="cursor:pointer;">' +
-                                '<div class="tile_header">' + art.title + '</div>' +
-                                '<div class="tile_content">' +
-                                    '<span class="id-text">Preview:</span><br>' + art.snippet + 
-                                    '<span class="meta-card">By <span class="author-hl">' + art.author + '</span> | <span class="date-hl">' + art.date + '</span></span>' +
-                                '</div>' +
-                                '<div class="links">' +
-                                    '<a href="javascript:void(0)" onclick="openModal(' + i + ')" class="btn-pro btn-read">READ MORE</a>' +
-                                    '<a href="' + art.link + '" target="_blank" class="btn-pro btn-thread">FORUM</a>' +
-                                '</div>' +
-                            '</div>' +
-                        '</div>';
-            }
-            container.innerHTML = html;
-        }
-
-        function openModal(idx) {
-            var art = articles[idx];
-            document.getElementById("m_title").innerHTML = art.title;
-            document.getElementById("m_meta").innerHTML = 'BY <span class="author-hl">' + art.author.toUpperCase() + '</span> | <span class="date-hl">' + art.date.toUpperCase() + '</span>';
-            document.getElementById("m_static_img").src = art.img;
-            document.getElementById("m_content").innerHTML = art.desc.replace(/<img[^>]*>/, "").trim();
-            document.getElementById("footer_btn_area").innerHTML = '<a href="' + art.link + '" target="_blank" class="btn-pro btn-thread" style="display:inline-block; width:220px; padding:12px; border-color: #fff;">OPEN FULL THREAD</a>';
+        function removeHTMLTags(htmlString) {
+            var tempDiv = document.createElement("div"); 
+            tempDiv.innerHTML = htmlString;
+            var textOnly = tempDiv.textContent || tempDiv.innerText || "";
             
-            document.getElementById("news_modal").className = "active";
-            document.getElementById("m_content").scrollTop = 0;
+            // CONFIGURAÇÃO DO LIMITE DE TEXTO AQUI:
+            // isPS3 ? [Limite PS3] : [Limite PC]
+            var maxLen = isPS3 ? 180 : 130; 
+            
+            return textOnly.length > maxLen ? textOnly.substring(0, maxLen) + "..." : textOnly;
         }
 
-        function closeModal() { 
-            document.getElementById("news_modal").className = ""; 
+        function buildNewsGrid() {
+            var gridContainer = document.getElementById("news_grid_container");
+            var outputHTML = "";
+            
+            for (var i = 0; i < articlesList.length; i++) {
+                var article = articlesList[i];
+                outputHTML += '<div class="news_card_wrapper" style="animation-delay: ' + (i * 0.08) + 's;">' +
+                                '<div class="news_card">' +
+                                    '<img src="' + article.img + '" class="news_card_image" onclick="openArticleModal(' + i + ')" style="cursor:pointer;">' +
+                                    '<div class="news_card_title">' + article.title + '</div>' +
+                                    '<div class="news_card_excerpt">' +
+                                        '<span class="label_preview">Preview:</span><br>' + article.snippet + 
+                                        '<span class="news_card_meta">By <span class="highlight_author">' + article.author + '</span> | <span class="highlight_date">' + article.date + '</span></span>' +
+                                    '</div>' +
+                                    '<div class="news_card_buttons">' +
+                                        '<a href="javascript:void(0)" onclick="openArticleModal(' + i + ')" class="button_base button_read_more">READ MORE</a>' +
+                                        '<a href="' + article.link + '" target="_blank" class="button_base button_open_forum">FORUM</a>' +
+                                    '</div>' +
+                                '</div>' +
+                            '</div>';
+            }
+            gridContainer.innerHTML = outputHTML;
         }
 
-        fetchNews();
+        function openArticleModal(articleIndex) {
+            var article = articlesList[articleIndex];
+            
+            document.getElementById("modal_title").innerHTML = article.title;
+            document.getElementById("modal_meta_info").innerHTML = 'BY <span class="highlight_author">' + article.author.toUpperCase() + '</span> | <span class="highlight_date">' + article.date.toUpperCase() + '</span>';
+            document.getElementById("modal_feature_image").src = article.img;
+            document.getElementById("modal_body_content").innerHTML = article.desc.replace(/<img[^>]*>/, "").trim();
+            document.getElementById("modal_footer_button_area").innerHTML = '<a href="' + article.link + '" target="_blank" class="button_base button_open_forum" style="display:inline-block; width:220px; padding:12px; border-color: #fff;">OPEN FULL THREAD</a>';
+            
+            document.getElementById("article_modal").className = "active";
+            document.getElementById("modal_body_content").scrollTop = 0;
+        }
+
+        function closeArticleModal() { 
+            document.getElementById("article_modal").className = ""; 
+        }
+
+        downloadXMLFeed();
     </script>
 </body>
 </html>
