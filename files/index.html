@@ -363,9 +363,7 @@
             tempDiv.innerHTML = htmlString;
             var textOnly = tempDiv.textContent || tempDiv.innerText || "";
             
-            // CONFIGURAÇÃO DO LIMITE DE TEXTO AQUI:
-            // isPS3 ? [Limite PS3] : [Limite PC]
-            var maxLen = isPS3 ? 180 : 130; 
+            var maxLen = isPS3 ? 310 : 115; 
             
             return textOnly.length > maxLen ? textOnly.substring(0, maxLen) + "..." : textOnly;
         }
