@@ -18,7 +18,8 @@ def update_psx_news():
     news_list = []
     seen_links = set()
     
-    execution_time = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z')
+    now = datetime.now(timezone.utc)
+    fallback_date = f"{now.year}-{now.month}-{now.day}T{now.hour:02}:{now.minute:02}:{now.second:02}.000Z"
 
     try:
         for current_page in range(1, MAX_PAGES + 1):
@@ -38,17 +39,14 @@ def update_psx_news():
                     author_tag = article.select_one('a.username')
                     summary_tag = article.select_one('div.baseHtml > div') or article.select_one('div.baseHtml')
                     
-                    item_date = execution_time
+                    item_date = fallback_date
                     date_link = article.select_one('span.dateData > a:last-child')
-                    
                     if date_link:
-                        timestamp_el = date_link.find(attrs={"data-time": True}) or (date_link if date_link.has_attr('data-time') else None)
-                        if timestamp_el:
-                            try:
-                                ts = int(timestamp_el['data-time'])
-                                item_date = datetime.fromtimestamp(ts, timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z')
-                            except:
-                                pass
+                        time_el = date_link.find(attrs={"data-time": True}) or (date_link if date_link.has_attr('data-time') else None)
+                        if time_el:
+                            ts = int(time_el['data-time'])
+                            dt = datetime.fromtimestamp(ts, timezone.utc)
+                            item_date = f"{dt.year}-{dt.month}-{dt.day}T{dt.hour:02}:{dt.minute:02}:{dt.second:02}.000Z"
                     
                     if headline_tag and link_tag:
                         href = link_tag.get('href', '')
@@ -126,7 +124,7 @@ def update_psx_news():
             with open("files/whats_new.xml", "w", encoding="utf-8") as f:
                 f.write("\n".join(xml_out))
 
-            print("Done! XML generated with correct page dates.")
+            print("Done! XML generated with DADi590 format.")
         else:
             print("No articles were found.")
 
