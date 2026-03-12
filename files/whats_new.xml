@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <nsx anno="" lt-id="131" min-sys-ver="1" rev="1093" ver="1.0">
 	<spc anno="csxad=1&amp;adspace=9,10,11,12,13" id="33537" multi="o" rep="t">
-		<mtrl id="0" lastm="2026-3-12T04:08:44.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
 			<desc>qCFW - Arrives to Slim (2500-3000) & SuperSlim (4000-NOR) PlayStation 3 Models</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/qCFWArrivestoSlim25003000.jpg</url>
 			<target type="u">https://www.psx-place.com/threads/qcfw-arrives-to-slim-2500-3000-superslim-4000-nor-playstation-3-models.49533/</target>
@@ -10,7 +10,7 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/qCFWArrivestoSlim25003000.jpg"><br><br><div style="text-align: center">UPDATE (Feb. 20) -PS3HEN 3.4.2 Open Beta: Test #1 Released- (Forum Link)UPDATE (Feb. 20) -qCFW updated(forum link)   --qcfw-20260220-release(github link)UPDATE (Feb. 17) -qCFW and Future potential(Forum Thread)by@aomsin2526>here<UPDATE (Feb. 13) -BadWDSD/qCFW + HW Flasher/NoBT(Forum Thread)UPDATE (Feb. 11) -qCFW files have been temporary removed from github by the developer, due to a bug, see@aomsin2526's post >here<  & >also here<UPDATE (Feb. 3)-PS3HEN v3.4.1 (STABLE) has now been releasedby@esc0rtd3w, graduating from the 3.4.1 BETA builds. (Note: v3.4.1+ is required for qCFW)​</div><br/><br/><br/></description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2026-3-12T04:08:44.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
 			<desc>[BD-JB-1250] New Exploit (bluray) for PlayStation 4 supporting upto 12.50 firmware from Gezine</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/BDJB1250NewExploitblurayf.jpg</url>
 			<target type="u">https://www.psx-place.com/threads/bd-jb-1250-new-exploit-bluray-for-playstation-4-supporting-upto-12-50-firmware-from-gezine.48161/</target>
@@ -19,7 +19,7 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/BDJB1250NewExploitblurayf.jpg"><br><br><div style="text-align: center">The PlayStation 4 has new BluRay exploit that supports upto 12.50 Firmware. Thanks to the efforts of developerGezine,who has released the source code and helloworld.iso to complete the proof of work of this recent exploit for the PS4.  Below you can see the readme for the project. Also some community reaction and comments about the new exploit for the PS4 from Abkarino & Modded Warefare dives into the exploit in one of his latest video attached​</div><br/><br/><br/></description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2026-3-12T04:08:44.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
 			<desc>{CFW Release} 4.92.2 Evilnat  Custom Firmware (w/ Cobra v8.5) - Includes: CEX/PEX/D-PEX) + noBD/BT</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/CFWRelease4922EvilnatCust.jpg</url>
 			<target type="u">https://www.psx-place.com/threads/cfw-release-4-92-2-evilnat-custom-firmware-w-cobra-v8-5-includes-cex-pex-d-pex-nobd-bt.47798/</target>
@@ -28,7 +28,7 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/CFWRelease4922EvilnatCust.jpg"><br><br><div style="text-align: center">After a successful Open Beta for 4.92.2, PlayStation 3 CFW developer@Evilnathas nowOFFICIALLYupdated hisEvilnat Custom Firmware'sfor the PS3 to version4.92.2,A number of new changes and options have been added in this release for your PS3 FAT and Early Slim models capable of installing a CFW PUP.Various patches to the CFW have been made as well as various new additions to theCobra Payload, Also theXAI Pluginwas not left out, as there are some new options one being a newNew Overclock menuhas been introduced to the firmware.  Now we no longer need a dedicated PUP to change overclock settings, it can be done directly on the XMB. All the details and changes can be found in Evilnat's release note's found below and also in the link provided at the bottom.​</div><br/><br/><br/></description>
 			<creators>Evilnat</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2026-3-12T04:08:44.000Z" until="2100-12-31T23:59:00.000Z">
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>ProtoPwn (Protokernel Exploit by pcm720) -  Now all PS2s are hackable via MemoryCard  (MILESTONE)</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/ProtoPwnProtokernelExploi.jpg</url>
 			<target type="u">https://www.psx-place.com/threads/protopwn-protokernel-exploit-by-pcm720-now-all-ps2s-are-hackable-via-memorycard-milestone.47708/</target>
@@ -37,7 +37,7 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/ProtoPwnProtokernelExploi.jpg"><br><br><div style="text-align: center">Breaking Newsin the PS2 Scene,as a NEW MemoryCard Exploit for Protokernel PS2s (SCPH-10000, SCPH-15000, and DTL-H10000(S)) just got released!!!It took 25 years to reach this point, butNOW ALL PS2s including ALL special models(Arcade, Prototype, Debug, Consumer-model, "special/custom builds")can load Homebrew WITHOUT DISCS!​</div><br/><br/><br/></description>
 			<creators>TnA</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2026-3-12T04:08:44.000Z" until="2100-12-31T23:59:00.000Z">
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>BadWDSD HW Exploit - With new powerful qCFW for PS3 Slim & SuperSlim NOR models on the horizon</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/BadWDSDHWExploitWithnewpo.jpg</url>
 			<target type="u">https://www.psx-place.com/threads/badwdsd-hw-exploit-with-new-powerful-qcfw-for-ps3-slim-superslim-nor-models-on-the-horizon.47475/</target>
@@ -46,7 +46,7 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/BadWDSDHWExploitWithnewpo.jpg"><br><br><div style="text-align: center">Update (Jan. 30) -@esc0rtd3whas releaseda new beta, while not the FINAL (yet) it is the first beta HEN with the qCFW installer.Update (Jan. 29) -@aomsin2526has released thefirst public version of qCFWfor the BadWDSD exploit, now we still needPS3HEN 3.4.1 (FINAL)for the qCFW installer to utilize the qCFW release.Update (Jan. 15)-@aomsin2526has provided a new progress report,qCFWis nearing a public release.>>>LinkUpdate (Dec. 8) -@aomsin2526(aka chattrapat_s / kafuu)has provided an update for the project, in the form of a "To-Do" list for the project, with some reported progress like"qCFW is done"see full post>>> LinkUpdate (Sept. 11) -New video demonstration and details "qCFW will be based on Evilnat PEX from now on. This means both CEX and...​</div><br/><br/><br/></description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2026-3-12T04:08:44.000Z" until="2100-12-31T23:59:00.000Z">
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>PS3HEN w/ Linux & Overclocking Support? BadHTAB A hardware-software based hypervisor (lv1) exploit</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PS3HENwLinuxOverclockingS.jpg</url>
 			<target type="u">https://www.psx-place.com/threads/ps3hen-w-linux-overclocking-support-badhtab-a-hardware-software-based-hypervisor-lv1-exploit.47282/</target>
@@ -55,7 +55,7 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PS3HENwLinuxOverclockingS.jpg"><br><br><div style="text-align: center">UPDATE 4 - (May 2 / June 9):@esc0rtd3whas created a fork of the BadHTAB Exploit with some changes such as an "Automatic reboot if glitch crashes ps3" feature among other changes to make it easier for testing the new exploit.(June 9)- ReadMe Updated in link belowUPDATE 2 & 3:Now, not only Linux but also Overclocking on PS3HEN is now possible w/BadHTAB exploit&PS3HEN (beta builds)that are currently supporting the exploit. This is still considered an experimental exploit & features soUse at your Risk.  (See update tabs/links) for additional details and information on these advancements for the PlayStation 3.Original Article: Could Linux Support onPS3HENbe a reality with new exploit? Yes, and also other features but itsnot going to be for everyone. There is a newProof of Conceptreleased for the PS3 that has been implemented byKafuu(@aomsin2526)usingGeohot'soldhtab glitchon PS3HEN.  Developer@zecoxaofirst started posting about this idea and the concept in Jan. of 2023 here inthe forum'sand has shared various thoughts and progress, with the latest progress being Kafuu's implementation.BadHTABis ahardware-softwarebased hypervisor (lv1) exploit,The exploit has a very low success rate of (5-10%)as GameOS has a much smaller "glitch window". As the readme states this not meant "for daily driver, it is for user's withskill and patienceonly.".​</div><br/><br/><br/></description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2026-3-12T04:08:44.000Z" until="2100-12-31T23:59:00.000Z">
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>PlayStation Home Revived and Enhanced by Home Laboratory!</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PlayStationHomeRevivedand.jpg</url>
 			<target type="u">https://www.psx-place.com/threads/playstation-home-revived-and-enhanced-by-home-laboratory.47120/</target>
@@ -64,7 +64,7 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PlayStationHomeRevivedand.jpg"><br><br><div style="text-align: center">Home is back on the XMB in 2025! Download and Play just like it was originally!I am pleased to present our extensive work on reviving and enhancingPlayStation Home. Led by AgentDark447, our team has developed an advanced, open-source iteration of this server platform, significantly expanding its capabilities beyond the original. Below, I outline the project’s scope, technical advancements, and access instructions for those interested in exploring or contributing.​</div><br/><br/><br/></description>
 			<creators>DeViL303</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2026-3-12T04:08:44.000Z" until="2100-12-31T23:59:00.000Z">
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>PS3 Toolset (by bguerville) with 4.92 support has been released.</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PS3Toolsetbybguervillewit.jpg</url>
 			<target type="u">https://www.psx-place.com/threads/ps3-toolset-by-bguerville-with-4-92-support-has-been-released.47135/</target>
@@ -73,7 +73,7 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PS3Toolsetbybguervillewit.jpg"><br><br><div style="text-align: center">If you have a Custom Firmware compatible PlayStation 3 Model and are running 4.92 Official Firmware and need to Jailbreak for the first time or if you updated your previous CFW installation by mistake to 4.92 OFW. Then the PS3 Toolset will exploit your PS3 via the console's web browser and visitingps3toolset.com website(see tutorial tab), then once the process has completed you will be able to install a Custom Firmware (such as 4.92 Evilnat)  once again or for the first time.Your PlayStation 3 model must be able to install a CFW, these would be all the FAT models PS3 and Early production Slim Models. The easiest and most effective ways to determine if your PS3 can install a cfw​</div><br/><br/><br/></description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2026-3-12T04:08:44.000Z" until="2100-12-31T23:59:00.000Z">
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>4.92 Littlebalup's DUALBOOT firmware Released</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/492LittlebalupsDUALBOOTfi.jpg</url>
 			<target type="u">https://www.psx-place.com/threads/4-92-littlebalups-dualboot-firmware-released.46963/</target>
@@ -82,13 +82,157 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/492LittlebalupsDUALBOOTfi.jpg"><br><br><div style="text-align: center">Since the4.92 firmware updatethings have been flowing out from the community in response. We have seenPS3HEN (& hfw) releasedfor 4.92 and we have seenEvilnat updateand release his cfw collection on 4.92. Now developer@littlebalupdrops by the forumand release the latestDualBoot (DB) firmwareto support 4.92 firmware.This release for Custom Firmware user's is a very useful firmware, if you use PSN still and do not want to go online with a modded system and risk a potential ban. As it allows you to use an Official firmware that can re-install a CFW without having re-exploiting the console with the toolset or flash writer. See full details in @littlebalups release notes about the Dualboot firmware concept.​</div><br/><br/><br/></description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2026-3-12T04:08:44.000Z" until="2100-12-31T23:59:00.000Z">
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>4.92 Evilnat Custom Firmware (w/ Cobra v8.5) Released - CEX,PEX,D-PEX,DEX builds</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/492EvilnatCustomFirmwarew.jpg</url>
 			<target type="u">https://www.psx-place.com/threads/4-92-evilnat-custom-firmware-w-cobra-v8-5-released-cex-pex-d-pex-dex-builds.46961/</target>
 			<cntry agelmt="0">all</cntry>
 			<lang>all</lang>
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/492EvilnatCustomFirmwarew.jpg"><br><br><div style="text-align: center">UPDATExai_plugin:New Overclocking Tools (change on the fly) / New ps2netemu improvements added.Following the4.92 firmware updatedeveloper's from around the community have been updating various projects. This time around PS3 CFW developer@Evilnatdrops by the forumand leave's us with a suite of ps3 custom firmware's that support 4.92 firmware.  4 Flavor's (CEX, PEX, D-PEX & DEX) are available for 4.92 Evilnat CFW, depending on your console/taste, all builds are equipped with theCobra v8.5 payloadto provide expanded feature set over Standard CFW's.If you are already on PS3 CFW, updating is a breeze, you just need to install the new CFW PUP file via the official USB Method and you will be on Evilnat's latest release. If you have updated to 4.92 OFW you will have to wait, as you will have re-exploit your ps3 console to allow for a Custom Firmware installation once again. The good news is that developer@bguervilleshould be rolling out a new update soon for the PS3 Toolset that support 4.92 firmware.  The offline tool CFW Flash Writer may take longer for the community to update it, but we hope to see an update for that tool soon as well.​</div><br/><br/><br/></description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS3HEN 3.4.0 + HFW 4.92 - Officially released by esc0rtd3w of Team PS3Xploit</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PS3HEN340HFW492Officially.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps3hen-3-4-0-hfw-4-92-officially-released-by-esc0rtd3w-of-team-ps3xploit.46959/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PS3HEN340HFW492Officially.jpg"><br><br><div style="text-align: center">PS3 Developer@esc0rtd3whas released the latest update toPS3HENwith support to recent firmware updateof 4.92.  Along with the PS3HEN update is the release ofHybrid Firmware (HFW), which is just an official firmware (4.92) with the "silk_webkit.sprx" file replace from 4.82 OFW (that has a vulnerability patched in 4.83 OFW, the last attempt Sony made to curb homebrew). HFW was created by@Joonieand has been apart of this 4.92 release of well.There have been a number of new changes in this update marked v3.4.0 as it does not just provide 4.92 support but various changes as seen in the changelog provided​</div><br/><br/><br/></description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS3 4.92 Official FIrmware has been released - PS3 CFW & PS3HEN DO NOT UPDATE to 4.92</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PS3492OfficialFIrmwarehas.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps3-4-92-official-firmware-has-been-released-ps3-cfw-ps3hen-do-not-update-to-4-92.46837/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PS3492OfficialFIrmwarehas.jpg"><br><br><div style="text-align: center">As expectedthe PlayStation 3 has receivedfirmware update 4.92, if you are currently usingPS3HENorCFWyouSHOULD NOT updateyour PS3 Firmware to 4.92 at this time. Otherwise you will be temporary losing your jailbreak's and ability to run homebrew on the console, until developer's release new exploits/jailbreaks that support the new 4.92 firmware update. There isa processin which need to take place for things to catch up, as developer's@bguerville@esc0rtd3w@Evilnatand other's havebeen readyfor the update to launch to get to work quickly.We learned last week that@bguervillehas an update for the PS3 Toolset with new features being deployed as the developer explains in these two post >1<​</div><br/><br/><br/></description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Update 4.91.3  > > > [PS3 CFW] Evilnat's 4.91.2 Custom Firmware's Collection Released</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/Update4913PS3CFWEvilnats4.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/update-4-91-3-ps3-cfw-evilnats-4-91-2-custom-firmwares-collection-released.45604/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/Update4913PS3CFWEvilnats4.jpg"><br><br><div style="text-align: center">UPDATEJanuary 2025:CFW Evilnat 4.91.3[BETA 1] released>>Click Here<<December '24:Merry Christmas and Happy Holiday's to everyone, PS3 Custom firmware developer@Evilnathas dropped by the psx-place forum's on this Christmas day to present the final build(4.91.2)of the developer's ps3 Custom Firmware suite, after a series of Open Beta releases, v4.91.2  now officially drops the "BETA" tag and in its final form for 4.91.2.  For discussion and full details about this PS3 firmware release and the various cfw types offered in this suite of releases, checkout the developer's release thread here in the forum's detailing all the various features and functions in Evilnat's latest releases notes and details for4.91 Evilnat's CFW (w/ Cobra v8.5).​</div><br/><br/><br/></description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>New PS1/PS2 Emulation Features for PS3 CFW user's + Evilnat's 4.91.2-BETA 12</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/NewPS1PS2EmulationFeature.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/new-ps1-ps2-emulation-features-for-ps3-cfw-users-evilnats-4-91-2-beta-12.45233/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/NewPS1PS2EmulationFeature.jpg"><br><br><div style="text-align: center">UPDATE: January 2025:ps2gxemu (for CECH-C/E ps3 models) has been updated by@kozarovv+ netemu to gxemu config conversion tool by@Zarhas been released, see details at bottomNov. 2024:  Recently we have had some great news with developments surroundingPS1 & PS2 Emulation on the PS3 for Custom Firmware user'sas the emulator's that reside in the PlayStation 3 Firmware have receivedsome modded tweaksthanks to@kozarovv&@mrjaredbeta, The files can be added manually to many firmware's or you can update to the latest release ofEvilnat's 4.91.2 CFW (BETA 12)that have these newly modded emulator's already installed and ready to go thanks to@Evilnat.The changes and feature's depend on the PS2/PS1 emulator being used and also on which model of the PS3 (with PS2). Below you will find a brief explanation of the emulator, mixed in with the readme details and some added screenshot. Some of the feature's need more testing to see how affective they may be such as the partial antiblur and EE Overclocking/Underclocking patches.  View all the details and related links found below.​</div><br/><br/><br/></description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>CFW Flash Writer - Unofficial 4.91 update</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/CFWFlashWriterUnofficial4.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/cfw-flash-writer-unofficial-4-91-update.44229/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/CFWFlashWriterUnofficial4.jpg"><br><br><div style="text-align: center">Developer@aldostoolshas released an unofficial update for theCFW Flash Writerto supportHFW 4.91on the PS3. This can be a secondary candidate for allowing Custom Firmware installations whenbguerville's PS3Toolset (https://www.ps3toolset.com/bgtoolset/)isn't accessible or a self hosting offline option. However, ThePs3toolset is still the preferred  and safest method when available for hacking your capable ps3 model so its ready for PS3 Custom Firmware installations.​</div><br/><br/><br/></description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PPPwn - PlayStation 4 PPPoE RCE - (The First PS4 Kernel RCE - Supporting upto FW 11.00) by TheFlow</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PPPwnPlayStation4PPPoERCE.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/pppwn-playstation-4-pppoe-rce-the-first-ps4-kernel-rce-supporting-upto-fw-11-00-by-theflow.43655/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PPPwnPlayStation4PPPoERCE.jpg"><br><br><div style="text-align: center">Scene Developer & HackerTheFlowwho has been a legend in various PlayStation Scene's, has done it yet again!! This time the developer has released "The first PlayStation 4 Kernel RCE, Supporting FWs upto 11.00".With the newly released (PoC) jailbreak the community will be able to update popular Homebrew Enabler's (Mira & GoldHEN) to support firmware 11.00 with this new jailbreak that TheFlow has disclosed (CVE-2006-4304) through the bounty program and has been patched in the latest PS4 firmware available​</div><br/><br/><br/></description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Official PS3 Toolset Update (v1.2.007) Release (4.91 Support)</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/OfficialPS3ToolsetUpdatev.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/official-ps3-toolset-update-v1-2-007-release-4-91-support.43211/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/OfficialPS3ToolsetUpdatev.jpg"><br><br><div style="text-align: center">FollowingSony firmware update of 4.91for the PS3, developer's across the scene have been updating various exploits and tools. We have seen developer@Evilnatrelease his4.91 PS3 Custom Firmware'searlier in the week. Then we recently just had@esc0rtd3w&@JoonieprovidePS3HEN (& HFW) updated with 4.91 Support. Now we have developer@bguervillewith an update to hisPS3 Toolsetto support the exploiting of 4.91 OFW for custom firmware installation for capable models.​</div><br/><br/><br/></description>
+			<creators>bguerville</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Official PS3HEN v3.3.0  + HFW Released for 4.91 Firmware from Team PS3Xploit</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/OfficialPS3HENv330HFWRele.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/official-ps3hen-v3-3-0-hfw-released-for-4-91-firmware-from-team-ps3xploit.43199/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/OfficialPS3HENv330HFWRele.jpg"><br><br><div style="text-align: center">TheOfficial PS3HENexploit has beenupdated to v3.3.0with some new changes from@esc0rtd3wand@JoonieofTeam PS3Xploitto support 4.91.  Also, developer Joonie has brought back the webkit exploit from 4.82 to 4.91 with the official HFW release(HFW = OFW with old webkit injected). Its best to use the official HFW when using the official PS3HEN release.​</div><br/><br/><br/></description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>[Update Re-Release] PS3 Custom Firmware - 4.91 Evilnat Cobra (8.4) CFW Released</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/UpdateReReleasePS3CustomF.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/update-re-release-ps3-custom-firmware-4-91-evilnat-cobra-8-4-cfw-released.43110/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/UpdateReReleasePS3CustomF.jpg"><br><br><div style="text-align: center">UPDATE -See 1st post for details, Re-Release a few bugs correctedPlayStation 3 CFW developer@Evilnathas just released his much anticipated4.91 Evilnat Custom Firmwarefollowingthe recent routine updatefrom Sony when they dropped firmware 4.91 last week.  If you are on any Custom Firmware currently all you have to do is install this CFW PuP by the USB method. You will not need to wait for an update to bguerville's PS3 Toolset to exploit your system (as its already exploited if you are running CFW).If you had updated to 4.91 OFW or by mistake installed a HFW you will have to wait for the PS3 Toolset to be updated. Developerbguervillewas waiting for the first 4.91 CFW to drop before making his update and that has just occurred with this release, so it should not be to long before we see bguerville provide a 4.91 update to the toolset as the developerdescribed herein the psx-place forums..​</div><br/><br/><br/></description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS3 4.91 Firmware Released - Do Not Update!!!</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PS3491FirmwareReleasedDoN.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps3-4-91-firmware-released-do-not-update.42992/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PS3491FirmwareReleasedDoN.jpg"><br><br><div style="text-align: center">UPDATE:its now safe to update to 4.91. PS3HEN (& HFW), CFW & PS3 Toolset have been updated to support 4.91.PS3 Firmware 4.91 is now LiveThe expected once a year firmware update has been executed by Sony, PS3 4.91 Firmware is now Live. While an expected update, could this bring other changes to the firmware? Likely not but its still early to conclude as this update is fresh as of writing .Do not update, various exploits / tools / essential homebrew will need to be updated to support the latest firmware update of 4.91. See below for a short FAQ on 4.91, as there is always some confusions around the update process. .​</div><br/><br/><br/></description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Resident Evil 1.5 - Magic Zombie Door Patch by Dark Biohazard</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/ResidentEvil15MagicZombie.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/resident-evil-1-5-magic-zombie-door-patch-by-dark-biohazard.1683/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/ResidentEvil15MagicZombie.jpg"><br><br><div style="text-align: center">Game Mod developerDark Biohazardwho is known for his work onResident Evil 1.5(Capcom's unfinished scrapped version of Resident Evil 2), has released his latest patch of modifications for the unfinished game, this patch that the dev has titled the " Magic Zombie Door Patch". This patch released back on the 19th of this month various new rooms such as the Alligator Entrance, Factory Office [break]sss[/break], SeiyaKou's Cell Cultivation and various other additions included in this patch (see full log below). For those of you who are new toDark Biohazard (aka Martin Biohazard)work the developer has been piecing and modding the leaked pieces of the.Resident Evil 1.5 Game since it surfaced on the net, in an attempt to make it a fully playable game one day. The project has come along way but in no way a finished game, but its work checking out. You must have the Leaked Resident Evil 1.5 game but you will not find that game supplied here. but for those of you who may have this title you can find the patch below along with all the latest details from the developer:​</div><br/><br/><br/></description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS1 Homebrew -  Fly Little Bat v0.6 (w/ PS3 pkg)</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/default.png</url>
+			<target type="u">https://www.psx-place.com/threads/ps1-homebrew-fly-little-bat-v0-6-w-ps3-pkg.1246/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/default.png"><br><br><div style="text-align: center">​</div><br/><br/><br/></description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>[PSP / PS1]  Latest News and Updates about Resident Evil 1.5</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PSPPS1LatestNewsandUpdate.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/psp-ps1-latest-news-and-updates-about-resident-evil-1-5.1138/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PSPPS1LatestNewsandUpdate.jpg"><br><br><div style="text-align: center">Resident Evil 1.5has two separate releases that I thought was interesting and should share, the first being a PSP port of the game that was done by PSP developerCoraje187.This port appears to be an early version of Resident Evil 1.5, and is not as progressed as theMartinBiohazzardBuilds. Which brings me to the second release asMartinBiohazzardin late 2014 updated his patch to include all his previous additions and fixes and also 9 new playable rooms.​</div><br/><br/><br/></description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>{PS1} ROLL BOSS RUSH by isufje has been updated to v1.09a</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PS1ROLLBOSSRUSHbyisufjeha.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps1-roll-boss-rush-by-isufje-has-been-updated-to-v1-09a.1051/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PS1ROLLBOSSRUSHbyisufjeha.jpg"><br><br><div style="text-align: center">​</div><br/><br/><br/></description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>A new PlayStation 1 Homebrew Game in development</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/AnewPlayStation1HomebrewG.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/a-new-playstation-1-homebrew-game-in-development.820/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/AnewPlayStation1HomebrewG.jpg"><br><br><div style="text-align: center">​</div><br/><br/><br/></description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2026-3-12T04:15:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>ZBlast v1.3 (PS1 Homebrew Game Packaged for the PS3)</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/ZBlastv13PS1HomebrewGameP.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/zblast-v1-3-ps1-homebrew-game-packaged-for-the-ps3.250/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/ZBlastv13PS1HomebrewGameP.jpg"><br><br><div style="text-align: center">​</div><br/><br/><br/></description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
 	</spc>
