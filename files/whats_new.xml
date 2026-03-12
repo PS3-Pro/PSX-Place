@@ -181,95 +181,95 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PS3491FirmwareReleasedDoN.jpg"><br><br><div style="text-align: center">UPDATE:its now safe to update to 4.91. PS3HEN (& HFW), CFW & PS3 Toolset have been updated to support 4.91.PS3 Firmware 4.91 is now LiveThe expected once a year firmware update has been executed by Sony, PS3 4.91 Firmware is now Live. While an expected update, could this bring other changes to the firmware? Likely not but its still early to conclude as this update is fresh as of writing .Do not update, various exploits / tools / essential homebrew will need to be updated to support the latest firmware update of 4.91. See below for a short FAQ on 4.91, as there is always some confusions around the update process. .​</div><br/><br/><br/></description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2018-8-28T23:27:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>[Opinion] How to Control Scams & Frauds in the Scene(s)</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/OpinionHowtoControlScamsF.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/opinion-how-to-control-scams-frauds-in-the-scene-s.20585/</target>
+		<mtrl id="0" lastm="2023-12-30T10:41:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Movian M7 (by deank)  - "libav" swapped for "ffmpeg"  & slight name change</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/MovianM7bydeanklibavswapp.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/movian-m7-by-deank-libav-swapped-for-ffmpeg-slight-name-change.42453/</target>
 			<cntry agelmt="0">all</cntry>
 			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/OpinionHowtoControlScamsF.jpg"><br><br><div style="text-align: center">There has been various fakes and imposter's hitting the scene(s), something we have seen over the years but it seems gaining a bit more attention and fooling more people then usual.  To get a grasp on the situation we must realize what has changed from past generations compared to now. Social Media comes to mind and maybe is the biggest difference as many dev's are choosing platforms like twitter and facebook to release projects. In my view this is bad for various reasons, such as documentation of the community , but the biggest issue it opens the door for scammers to exploit unsuspecting user's and they have....  Its going to take a bit of habit changing/reverting trends but i think the scene(s) can limit these scams,  here are some of my personal views about these issues ..​</div><br/><br/><br/></description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/MovianM7bydeanklibavswapp.jpg"><br><br><div style="text-align: center">Developer@deankwho has been continuing development of the (modded version) of the original media center that started on the PS3(now runs on Android, Amazon Fire Stick, MacOS ,Windown ,Linux  & Raspberry pi). The media center originally was named "Showtime" on the PS3 but later renamed to "Movian" by the original developerAndreas Omanyears ago.Since that time, we have not seen the official project do much in recent years (currentlyhome siteis down as of writing), but developer deank has been keeping the project alive and evolving (see changelogsover at brewologyfor all archived changes). One of the biggest changes you will see within Movian-M7 compared to older version, is the change from the older (abandoned) "libav" video decoders/parsers to the current "ffmpeg" that was just replaced in the recent M7 update . This should improve compatibility and make for a more up-to date and versatile media player for all supported platforms including the PS3.Also, deank  has made a quick stop in the forum's, then to see a reported issue and provided a fix (seen here) that is now present in v7.0.2​</div><br/><br/><br/></description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2018-8-19T15:56:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Why there is no Homebrew for the PS4 (and why they won't be any in the future)?</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/WhythereisnoHomebrewforth.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/why-there-is-no-homebrew-for-the-ps4-and-why-they-wont-be-any-in-the-future.20484/</target>
+		<mtrl id="0" lastm="2023-12-27T22:41:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>[Update v1.06] Itemzflow (PS5) -  Homebrew & Game Manager with PS5 game Support</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/Updatev106ItemzflowPS5Hom.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/update-v1-06-itemzflow-ps5-homebrew-game-manager-with-ps5-game-support.42429/</target>
 			<cntry agelmt="0">all</cntry>
 			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/WhythereisnoHomebrewforth.jpg"><br><br><div style="text-align: center">Okay, the Title says it all. But before you leave, let's face the truth. Since the developers were able to achieve several Kernel Exploits on different System Firmwares, their goal was to give you a "platform" where you can develop and/or enjoy your Homebrew Applications running on your own PS4. But instead of making your PS4 a "useful Gaming Machine" - to get out more of your PS4 with several new Features even Sony can't deliver - the side effect is that many people doesn't care about Homebrew and that Piracy is the only thing which counts on all "hacked" PS4's, which is very sad. I know for myself that this Thread here can't give you a solution for this problem and I know as well that this discussion isn't new and that there was already some Threads about that on both this Forum and on Twitter. But I would like to analyze and discuss this with you and maybe someone has some ideas what could be done better in the future.​</div><br/><br/><br/></description>
-			<creators>Roxanne</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2018-8-12T16:40:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PlayStation Developer Wiki is growing - Introducing PS1 & PS2 DevWiki !!!</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PlayStationDeveloperWikii.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/playstation-developer-wiki-is-growing-introducing-ps1-ps2-devwiki.20390/</target>
-			<cntry agelmt="0">all</cntry>
-			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PlayStationDeveloperWikii.jpg"><br><br><div style="text-align: center">Well, well! You (probably) already heard about the severalPlayStation Developer Wikislike for thePS3and thePS4, but also for the handheld consoles likePSPandPSVITA, with it'sstrong communities and useful informationfor each wiki. But while the actual Console Generations were already satisfied with their own wikis, there was something missing. If you wanted to get some informations about older Sony Consoles, then we had to be honest - your informations kept very short. But since we speak about the "past tense form" from "has", the lack of useful information could change with your help. Thanks to the well-known user@GregoryRasputin, you can nowcontribute to a PS1 and PS2 DevWiki!Yeah, that's right. Sony's both first released home consoles are getting it's own dedicated wikis and everyone is welcome to contribute.​</div><br/><br/><br/></description>
-			<creators>Roxanne</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2018-5-27T10:32:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PPSSPP 1.6 - The PSP Emulator with new Speed / Performance Improvements in the v1.6 update</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PPSSPP16ThePSPEmulatorwit.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ppsspp-1-6-the-psp-emulator-with-new-speed-performance-improvements-in-the-v1-6-update.18186/</target>
-			<cntry agelmt="0">all</cntry>
-			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PPSSPP16ThePSPEmulatorwit.jpg"><br><br><div style="text-align: center">As@Roxannedetailed the progress of theRPCS3 Project (PS3 Emulator)just the other day. ThePPSSPP Teamhas also rolled out the latest update to the popular multi-platform PSP (PlayStation Portable) emulator. In this release speed was the focus as the Vulken backend has improved dramatically as well as devices (w/ dual-core) that use OpenGL also will see improvements with speed. Also RetroArch see official support with this v1.6 update. The website offersa great F.A.Q.to get your started and answering some important aspect of the PSP emulator. Then if you need to peak at theHardware requirementsbe sure to visit this page from the official website.​</div><br/><br/><br/></description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/Updatev106ItemzflowPS5Hom.jpg"><br><br><div style="text-align: center">Following the release ofetaHEN(AIO Homebrew Enabler for the PS5)last month from@lightingModz.Now, the release ofItemzFlowhas arrived for the PlayStation 5 from developer @ligthingmodz. Originally thisHomebrew & Game Managerwas released on the PS4, but the developer has made a special Christmas Release now bringing the homebrew app for the PS5 that is handy for managing and preserving your personal backups.(JUN 27, 2024) Update: v1.06has been released with new improvements and features.​</div><br/><br/><br/></description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2018-5-23T08:04:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Making Video Games more accessible for "The Disabled"</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/MakingVideoGamesmoreacces.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/making-video-games-more-accessible-for-the-disabled.17986/</target>
+		<mtrl id="0" lastm="2023-12-19T21:10:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Alien Resurrection - (A cheat code to unlock boot disc feature for backups)</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/AlienResurrectionAcheatco.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/alien-resurrection-a-cheat-code-to-unlock-boot-disc-feature-for-backups.42354/</target>
 			<cntry agelmt="0">all</cntry>
 			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/MakingVideoGamesmoreacces.jpg"><br><br><div style="text-align: center">Okay, maybe you will think now why such a site likePSX-Place.comtakes care about such a topic, as described in the headline and why this topic will include only 10% of Information about the PS4 and 90% about the Xbox One - on a site like this all about hacking and exploiting PlayStation Consoles only. But I would like tointroduce you three interesting waysfrom the three major companies (namelySony,Nintendo&Microsoft) how they try to achieve"Making Video Games playable for everyone"- and with"everyone"I mean not only you as a reader, but also forpeople with disabilites- where thosepeople have always to fight with several difficultiesnot only in their everyday life. but also when they like to play Video Games like you do. And maybe this topic won't have such an impact with your interest, but I think theydeserve it to be mentioned, since those are the"True Heroes"- not those who have the best skills or who are the fastest in a Video Game.​</div><br/><br/><br/></description>
-			<creators>Roxanne</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2018-4-30T14:12:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Will Future PlayStation Game Titles require a key to get fully playable?</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/WillFuturePlayStationGame.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/will-future-playstation-game-titles-require-a-key-to-get-fully-playable.17703/</target>
-			<cntry agelmt="0">all</cntry>
-			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/WillFuturePlayStationGame.jpg"><br><br><div style="text-align: center">When you play your beloved Video Games on your PC, you already know about all the procedures during the Installation by entering a Key, which allows you to install and/or to play the Games, you recently bought. And when this is a"everyday's business"by a PC Gamer and nothing new, Game Titles released on a home console never applied such a system, which meant that if you bought a Game, you was able to do whatever you wanted to do. But this could change in future, according to a new Patent filled by Sony, which would not based - as they call it:"BLOCKCHAIN-BASED DIGITAL RIGHTS MANAGEMENT"- on a traditional system, as above mentioned. There are many speculations how this system could work and it's still unknown if this would mean a better protection against Piracy or having full control about your purchases.​</div><br/><br/><br/></description>
-			<creators>Roxanne</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2018-3-9T20:09:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Sony researching a new Type of Backwards Compatibility?</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/SonyresearchinganewTypeof.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/sony-researching-a-new-type-of-backwards-compatibility.16623/</target>
-			<cntry agelmt="0">all</cntry>
-			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/SonyresearchinganewTypeof.jpg"><br><br><div style="text-align: center">While the Research for"PS2 Emulaton on PS4"is still in progress showing that there are already a lot of old"PS2 Classics compatible through Emulation", it seems that the officials from Sony (Interactive Entertainment America LLC) have their own research on how to present Backwards Compatibility for the future, according to their latest patent application.​</div><br/><br/><br/></description>
-			<creators>Roxanne</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2017-12-2T23:22:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>ScummVM v2.0 (Open Test Build) - PS3 / PS Vita / PS2 / PSP & Other Platforms need feedback !!!</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/ScummVMv20OpenTestBuildPS.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/scummvm-v2-0-open-test-build-ps3-ps-vita-ps2-psp-other-platforms-need-feedback.15676/</target>
-			<cntry agelmt="0">all</cntry>
-			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/ScummVMv20OpenTestBuildPS.jpg"><br><br><div style="text-align: center">Recently the developer's behind the officialScummVMproject(many "Point  & Click" type games engines emulated)have begun an Open Test for the Emulator, the downloads are open to all users that ScummVM supports, which is many. For our PlayStation Homebrew Fans there is builds for the PSP / PS2 / PS VITA-PSTV & PS3.  in this test version of v2.0 adds support for additional 23 Games with this update, some of those titles includeLeisure Suit Larry 7,Kings's Quest VII,Police Quest 4,Riven; Sequel to Myst&Starship Titanicalong with 19 additional titles you can view listed below, to see additional titles this emulator can handle, no better place to look then the>> official compatibility listover at the projects official websitewww.ScummVM.org, that is also filled with tons of great details about this emulator for those want to enjoy this genre of Retro Gaming.  .​</div><br/><br/><br/></description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/AlienResurrectionAcheatco.jpg"><br><br><div style="text-align: center">This is a very interesting discovery or rather disclosure from one of the developer's of the PlayStation 1 (PS1) gameAlien Resurrection(Martin Piper) who had reached out to YouTuberMVGwho has been given permission to disclose something that has always been there all this time in the game, but needed a cheat code to unlock the ability to run backups on a stock retail PS1, acting as a boot disc for the swap method.  MVG details the process here in this video:​</div><br/><br/><br/></description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2017-5-5T20:46:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Nintendo PlayStation (SNES - CD) Prototype : Ben Heck finally has it Working !</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/NintendoPlayStationSNESCD.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/nintendo-playstation-snes-cd-prototype-ben-heck-finally-has-it-working.13682/</target>
+		<mtrl id="0" lastm="2023-11-5T08:21:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>[Update v1.8B] etaHEN - AIO Homebrew enabler for the PS5</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/Updatev18BetaHENAIOHomebr.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/update-v1-8b-etahen-aio-homebrew-enabler-for-the-ps5.42050/</target>
 			<cntry agelmt="0">all</cntry>
 			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/NintendoPlayStationSNESCD.jpg"><br><br><div style="text-align: center">In July 2016, we seen Ben Heck (Hardware Legend) first got his hands on elusiveNintendo PlayStation (SNES-CD) Prototype Consolefor a teardown demonstration of the textremely rare "urban legend" that came to surface just several years ago, after being located in an attic of the current owners home. It was not in working condition, but we were able to learn alot about the device as Ben Heck compares various parts and modules to the Super Nintendo (See Video Here), Then at various time throughout the year Ben Heck was trying to restore the Prototype Console to a working state and in lateJuly of 2016 we seen Ben Heckmake some significant progress and was able to get some portions working but the SNES CD drive was not working and while no official games were available we do have the Homebrew GameSuper Boss Gaiden .Then inlate November 2016 Ben Heck once again gets a crack at the prototypethat change history  and while progress was made with the CD drive we still were not able to use the SNES CD add-on but today Ben Heck releases a video titled:  "Nintendo PlayStation Prototype: Finally Working!" So, was Ben able to boot Super Boss Gaiden or Another homebrew Game? check it out.... :​</div><br/><br/><br/></description>
-			<creators>xetafin</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/Updatev18BetaHENAIOHomebr.jpg"><br><br><div style="text-align: center">The PlayStation 5 has an early Christmas gift this year as developerLighting Modshas releasedetaHEN - AIO Homebrew Enabler for the PlayStation 5 (PS5), Currently there is not much homebrew to launch for the PS5, but the developer hasported his PS4 HB Store to the PlayStation 5and thanks to theability to run PS4 fpkgs on the PS5, there is various PS4 homebrew that can run such as some of Lapy's homebrew games.Update (Aug. 12):New update has been released by @ligthingmods, now bringing etaHEN to v1.8B, See changelog tab below or guthub links for latest changes and features incorporated in this update and other updates since its release that has jump started the PS5 community. .​</div><br/><br/><br/></description>
+			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2016-9-17T11:27:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PPSSPP v1.3 released</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PPSSPPv13released.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ppsspp-v1-3-released.10645/</target>
+		<mtrl id="0" lastm="2023-10-14T10:58:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Celebrating Nine Year's of PSX-Place.com</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/CelebratingNineYearsofPSX.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/celebrating-nine-years-of-psx-place-com.41855/</target>
 			<cntry agelmt="0">all</cntry>
 			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PPSSPPv13released.jpg"><br><br><div style="text-align: center">Well known free and open source Playstation Portable emulatorPPSSPPis finally updated to version 1.3. Many bugs are squashed, but this is not only bugfix release. This version introducing initialVulcan APIsupport.Texture replacementsupport to allow use custom textures and upscaled ones. This should give PPSSPP users many modding possibilities. And should allow to make own "remasters" with better quality textures. Update 1.3 is for now available for Windows, Android, OSX, iOS, and Linux users.​</div><br/><br/><br/></description>
-			<creators>kozarovv</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/CelebratingNineYearsofPSX.jpg"><br><br><div style="text-align: center">The psx-place.com website celebrates its 9th birthday on this day, originally opening in2014onOctober 14to the public. The site remains a pillar in the PlayStation Homebrew / Hacking community, thanks to the tremendous developer & user support that has blessed our forums. The past 9 years we have witnessed some amazing things in these forums, we have seen idea's and theories mature into full blown exploits and projects, we have seen developer's share and bounce idea to each other and even teamed up, which have spawned and improved many projects/aspects in the community. We have seen many developer's choose the psx-place forum to host their Release/Support threads for their projects. It has been a destination for developer's and user's to learn more about the community and even take part in it. Truly a place where people can come together for a common goal and that goal has been getting the most out of our beloved PlayStation devices.​</div><br/><br/><br/></description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2023-8-12T07:19:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Athena - A performant JavaScript Runtime Environment for the PS2</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/AthenaAperformantJavaScri.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/athena-a-performant-javascript-runtime-environment-for-the-ps2.41393/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/AthenaAperformantJavaScri.jpg"><br><br><div style="text-align: center">AthenaEnv (JavaScript-Runtime) and the bright future of development on the PS2!​</div><br/><br/><br/></description>
+			<creators>TnA</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2023-8-1T20:30:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>FuHEN Contest Submissions - The Four of Us Are Dying / Beat2x / Zik-Zak Vita / Sonic SMS 3 Timelines</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/FuHENContestSubmissionsTh.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/fuhen-contest-submissions-the-four-of-us-are-dying-beat2x-zik-zak-vita-sonic-sms-3-timelines.41305/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/FuHENContestSubmissionsTh.jpg"><br><br><div style="text-align: center">The FuHEN - PS Vita Contest is underway and we have already 4 submissions that have been approved for entry: We have seen 3 Game Ports submitted and also a new Original Game for the PS Vita.  If you have not heard yet, there is a a PS Vita Contest that is currently on going and the submission period for projects is fromJuly 22nd, 2023  September 22nd, 2023You can learn more about the contest prizes, rules and the submissions process at the official website.We have an ambitious Original Game that has been in the making for awhile and aims to provide AAA graphics and effects. The gameplay is still early but the developer has big plans for the game called "The Four of us are Dying".byJosh Allen / noradninja.this game is a Silent Hill 2/Alan Wake style survival horror game.In the Game Port category we have seen 3 entries approved we have seen PS Vita legendary developer@Rinnegatamanteprovide three projects the first being"Beat2k" (A Dance Dance Revolution Clone)and also the developer has entered"Zik-Zak Vita"which is a great game that testes your reaction time getting through each level , Then@Rinnegatamantealso submitted "Eldritch" is a first person shooter inspired by games like roguelikes, immersive sims, and H. P. Lovecraft.  Then tou round out the first wave of entries we have seen developer@MDashKenter"Sonic SMS 3 Timelines"which is port of a fan made Sonic game that takes Sonic on a new adventure.​</div><br/><br/><br/></description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2023-6-21T17:22:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>The Future of the PlayStation 2 Internal Hard Drive by Berion</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/TheFutureofthePlayStation.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/the-future-of-the-playstation-2-internal-hard-drive-by-berion.40924/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/TheFutureofthePlayStation.jpg"><br><br><div style="text-align: center">The Future of the PlayStation 2 Internal Hard DriveWe have recently started 2023, and the so-called PlayStation 2 console scene is surprisingly still doing well, yes, even better than ever before and better than on not one newer platform! And one of the leading projects that anyone interested can mention without a long moment's hesitation isOpen PS2 Loader- the successor to HDLoader and USB Advance, a program used to run games from USB, i.Link (FireWire), MX4SIO (a reader for e.g. SDXC in the Memory Card slot), the local network and the internal hard drive, whose operation is still stuck in the darkness of the Middle Ages.Before I get into specifics, it's worth recalling what the current, extremely exotic logical disk structure that Sony designed looks like, and which is supported by every software written to date that supports theinternalhard drive. Without understanding the APA, you won't understand the idea of a hybrid drive. It is only later that I will discuss the concept of building a Frankenstein with something modern, familiar, while providing a full or residual layer of compatibility.​</div><br/><br/><br/></description>
+			<creators>Berion</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2023-5-4T20:47:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>(Update) Baryon Sweeper: Unbrick PSP 1000, 2000, 3000 /PSP Slim 04g, 07g, 09g/ PSP Street 11g  model</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/UpdateBaryonSweeperUnbric.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/update-baryon-sweeper-unbrick-psp-1000-2000-3000-psp-slim-04g-07g-09g-psp-street-11g-model.32503/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/UpdateBaryonSweeperUnbric.jpg"><br><br><div style="text-align: center">Update (May - 2023):Now PSP models Slim 04g, 07g, 09g models, & the PSP Street 11g model are now supported >> See Details from@zecoxaoin the post via>>this link<<Original Article (Jan 2021): For more than ten years PSP-3000 owner's have been used to the fact that their device couldn't be restored (unbricked) at home. Many fear the brick as if it's the worst nightmare that could ever happen when experimenting with your device.  Even worse in 2021, now because warranty for all PSPs are over, so bricked later (psp) models go either for parts or are doomed to dust in boxes and drawers they'd never return from... that is, if this thread didn't appear with the release ofBaryon Sweeper R1:^)​</div><br/><br/><br/></description>
+			<creators>zecoxao</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2023-4-1T01:06:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS3HEN v3.2.2 - New Additions/ Fixes & Backported Firmware's  Support from Team PS3Xploit.</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PS3HENv322NewAdditionsFix.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps3hen-v3-2-2-new-additions-fixes-backported-firmwares-support-from-team-ps3xploit.40129/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PS3HENv322NewAdditionsFix.jpg"><br><br><div style="text-align: center">Update 4/25/2023: PS3HEN 3.2.2 has been released. Check the changelog for details.We have seen a lot of developer's back in the fold after the4.90 official firmware updatethat hit the PlayStation 3 several weeks ago. We seen a couple weeks ago developer's@Joonieand@esc0rtd3wof thePs3Xploit Teamupdate Ps3HEN to v3.2.0, now we have a new update with the release of v3.2.1..Ps3HENis a Homebrew Enabler that is an alternative exploit to custom firmware (cfw) for models that can not install a CFW. unlikecustom firmwareon the ps3, Ps3HEN has the ability to run on all ps3 model's, while many feature that are in CFW can be found in PS3HEN it does not completely replicate the CFW experience so if your PS3 has the ability to run a CFW that is the better route, but Ps3HEN is a very powerful and capable exploit. See a CFW vs Ps3HEN comparison>here<for a rundown of feature's.In the update v3.2.1, there has been a number of changes and added support to Ps3HEN.@Jooniehas released a backport ofHFW (hybrid firmware) for 4.83, this was done as Ps3HEN has provided support for 4.83 FW, plus 4.84 DEX firmware is also now supported.  There has been a number of other supported firmware and various other changes in the payload and plugin to PS3HEN, Plus this fixes the wMM bug that was creating freezing issue in v3.2.0.  See latest changelogs provided below.​</div><br/><br/><br/></description>
+			<creators>STLcardsWS</creators>
 		</mtrl>
 	</spc>
 </nsx>
