@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timezone
 
 def update_psx_news():
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] Starting PSX-Place Scraper (Strict PS3 XML Format)...")
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] Starting PSX-Place Scraper...")
     
     GITHUB_RAW_PREFIX = "https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/"
     
@@ -69,7 +69,7 @@ def update_psx_news():
                                         except Exception:
                                             local_img_name = "default.png"
 
-                                dadi_desc = f'<img src="{GITHUB_RAW_PREFIX}{local_img_name}"><br><br><div style="text-align: center">{summary_text}</div>'
+                                dadi_desc = f'<img src="{GITHUB_RAW_PREFIX}{local_img_name}"><br><br><div style="text-align: center">{summary_text}</div><br/><br/><br/>'
 
                                 news_list.append({
                                     "title": clean_title, 
@@ -87,7 +87,7 @@ def update_psx_news():
                 break
 
         if news_list:
-            print(f"\nSuccessfully fetched {len(news_list)} articles. Generating Strict PS3 XML...")
+            print(f"\nSuccessfully fetched {len(news_list)} articles.")
             
             xml_out = ['<?xml version="1.0" encoding="UTF-8" standalone="yes"?>',
                        '<nsx anno="" lt-id="131" min-sys-ver="1" rev="1093" ver="1.0">',
@@ -106,7 +106,7 @@ def update_psx_news():
                 xml_out.append('\t\t\t<cntry agelmt="0">all</cntry>')
                 xml_out.append('\t\t\t<lang>all</lang>')
                 
-                xml_out.append(f'\t\t\t<dadi590_description><![CDATA[{n["description"]}]]></dadi590_description>')
+                xml_out.append(f'\t\t\t<dadi590_description>{n["description"]}</dadi590_description>')
                 xml_out.append(f'\t\t\t<dadi590_creators>{n["author"]}</dadi590_creators>')
                 
                 xml_out.append('\t\t</mtrl>')
@@ -117,9 +117,9 @@ def update_psx_news():
             with open("files/whats_new.xml", "w", encoding="utf-8") as f:
                 f.write("\n".join(xml_out))
 
-            print("Done! XML is perfectly formatted for the PS3 XMB.")
+            print("Done! XML generated.")
         else:
-            print("No articles were found across the pages.")
+            print("No articles were found.")
 
     except Exception as e:
         print(f"Fatal Error occurred: {e}")
