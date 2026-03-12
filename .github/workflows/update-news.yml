@@ -31,13 +31,13 @@ jobs:
           git config --global user.name "PS3-Pro Bot"
           git config --global user.email "bot@ps3pro.com"
           
-          # Stage the specific folders for commit
           git add files/
           git add resources/images/
           
           if ! git diff --cached --exit-code --quiet; then
             git commit -m "Auto-update: PSX-Place News feed"
-            git push
+            git pull origin master --rebase
+            git push origin master
           else
             echo "No changes to commit"
           fi
