@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<nsx anno="" lt-id="131" min-sys-ver="1" rev="1093" ver="1.0">
+	<spc id="33537" multi="o" rep="t">
+		<mtrl id="0" lastm="2026-03-12T03:22:19.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>qCFW - Arrives to Slim (2500-3000) & SuperSlim (4000-NOR) PlayStation 3 Models</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/main/resources/images/qCFWArrivestoSlim25003000.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/qcfw-arrives-to-slim-2500-3000-superslim-4000-nor-playstation-3-models.49533/</target>
+		</mtrl>
+		<mtrl id="0" lastm="2026-03-12T03:22:19.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>[BD-JB-1250] New Exploit (bluray) for PlayStation 4 supporting upto 12.50 firmware from Gezine</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/main/resources/images/BDJB1250NewExploitblurayf.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/bd-jb-1250-new-exploit-bluray-for-playstation-4-supporting-upto-12-50-firmware-from-gezine.48161/</target>
+		</mtrl>
+		<mtrl id="0" lastm="2026-03-12T03:22:19.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>{CFW Release} 4.92.2 Evilnat  Custom Firmware (w/ Cobra v8.5) - Includes: CEX/PEX/D-PEX) + noBD/BT</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/main/resources/images/CFWRelease4922EvilnatCust.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/cfw-release-4-92-2-evilnat-custom-firmware-w-cobra-v8-5-includes-cex-pex-d-pex-nobd-bt.47798/</target>
+		</mtrl>
+		<mtrl id="0" lastm="2026-03-12T03:22:19.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>ProtoPwn (Protokernel Exploit by pcm720) -  Now all PS2s are hackable via MemoryCard  (MILESTONE)</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/main/resources/images/ProtoPwnProtokernelExploi.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/protopwn-protokernel-exploit-by-pcm720-now-all-ps2s-are-hackable-via-memorycard-milestone.47708/</target>
+		</mtrl>
+		<mtrl id="0" lastm="2026-03-12T03:22:19.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>BadWDSD HW Exploit - With new powerful qCFW for PS3 Slim & SuperSlim NOR models on the horizon</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/main/resources/images/BadWDSDHWExploitWithnewpo.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/badwdsd-hw-exploit-with-new-powerful-qcfw-for-ps3-slim-superslim-nor-models-on-the-horizon.47475/</target>
+		</mtrl>
+		<mtrl id="0" lastm="2026-03-12T03:22:19.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS3HEN w/ Linux & Overclocking Support? BadHTAB A hardware-software based hypervisor (lv1) exploit</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/main/resources/images/PS3HENwLinuxOverclockingS.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps3hen-w-linux-overclocking-support-badhtab-a-hardware-software-based-hypervisor-lv1-exploit.47282/</target>
+		</mtrl>
+		<mtrl id="0" lastm="2026-03-12T03:22:19.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PlayStation Home Revived and Enhanced by Home Laboratory!</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/main/resources/images/PlayStationHomeRevivedand.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/playstation-home-revived-and-enhanced-by-home-laboratory.47120/</target>
+		</mtrl>
+		<mtrl id="0" lastm="2026-03-12T03:22:19.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS3 Toolset (by bguerville) with 4.92 support has been released.</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/main/resources/images/PS3Toolsetbybguervillewit.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps3-toolset-by-bguerville-with-4-92-support-has-been-released.47135/</target>
+		</mtrl>
+		<mtrl id="0" lastm="2026-03-12T03:22:19.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>4.92 Littlebalup's DUALBOOT firmware Released</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/main/resources/images/492LittlebalupsDUALBOOTfi.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/4-92-littlebalups-dualboot-firmware-released.46963/</target>
+		</mtrl>
+		<mtrl id="0" lastm="2026-03-12T03:22:19.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>4.92 Evilnat Custom Firmware (w/ Cobra v8.5) Released - CEX,PEX,D-PEX,DEX builds</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/main/resources/images/492EvilnatCustomFirmwarew.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/4-92-evilnat-custom-firmware-w-cobra-v8-5-released-cex-pex-d-pex-dex-builds.46961/</target>
+		</mtrl>
+	</spc>
+</nsx>
