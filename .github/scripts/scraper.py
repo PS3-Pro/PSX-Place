@@ -129,8 +129,8 @@ def update_psx_news():
                 xml_out.append(f'\t\t\t<target type="u">{n["link"]}</target>')
                 xml_out.append('\t\t\t<cntry agelmt="0">all</cntry>')
                 xml_out.append('\t\t\t<lang>all</lang>')
-                xml_out.append(f'\t\t\t<dadi590_description>{n["description"]}</dadi590_description>')
-                xml_out.append(f'\t\t\t<dadi590_creators>{n["author"]}</dadi590_creators>')
+                xml_out.append(f'\t\t\t<description>{n["description"]}</description>')
+                xml_out.append(f'\t\t\t<creators>{n["author"]}</creators>')
                 xml_out.append('\t\t</mtrl>')
 
             xml_out.append('\t</spc>')
