@@ -15,11 +15,13 @@ def update_psx_news():
     os.makedirs('files', exist_ok=True)
     os.makedirs(os.path.join('resources', 'images'), exist_ok=True)
 
+    month_map = {
+        "Jan": "1", "Feb": "2", "Mar": "3", "Apr": "4", "May": "5", "Jun": "6",
+        "Jul": "7", "Aug": "8", "Sep": "9", "Oct": "10", "Nov": "11", "Dec": "12"
+    }
+
     news_list = []
     seen_links = set()
-    
-    now = datetime.now(timezone.utc)
-    fallback_date = f"{now.year}-{now.month}-{now.day}T{now.hour:02}:{now.minute:02}:{now.second:02}.000Z"
 
     try:
         for current_page in range(1, MAX_PAGES + 1):
@@ -39,14 +41,33 @@ def update_psx_news():
                     author_tag = article.select_one('a.username')
                     summary_tag = article.select_one('div.baseHtml > div') or article.select_one('div.baseHtml')
                     
-                    item_date = fallback_date
-                    date_link = article.select_one('span.dateData > a:last-child')
-                    if date_link:
-                        time_el = date_link.find(attrs={"data-time": True}) or (date_link if date_link.has_attr('data-time') else None)
-                        if time_el:
-                            ts = int(time_el['data-time'])
-                            dt = datetime.fromtimestamp(ts, timezone.utc)
-                            item_date = f"{dt.year}-{dt.month}-{dt.day}T{dt.hour:02}:{dt.minute:02}:{dt.second:02}.000Z"
+                    date_raw = article.select_one('span.dateData > a:nth-child(2)')
+                    time_raw = article.select_one('span.dateData > a:last-child')
+                    
+                    ps3_date = ""
+                    if date_raw and time_raw:
+                        d_text = date_raw.get_text(strip=True).replace(",", "")
+                        t_text = time_raw.get_text(strip=True).lower().replace("at ", "")
+                        
+                        parts = d_text.split()
+                        if len(parts) >= 3:
+                            m_name = parts[0][:3]
+                            m_num = month_map.get(m_name, "1")
+                            day = str(int(parts[1]))
+                            year = parts[2]
+                            
+                            time_parts = re.findall(r'(\d+):(\d+)', t_text)
+                            if time_parts:
+                                hour = int(time_parts[0][0])
+                                minute = time_parts[0][1]
+                                if "pm" in t_text and hour < 12: hour += 12
+                                if "am" in t_text and hour == 12: hour = 0
+                                
+                                ps3_date = f"{year}-{m_num}-{day}T{hour:02}:{minute}:00.000Z"
+
+                    if not ps3_date:
+                        n = datetime.now(timezone.utc)
+                        ps3_date = f"{n.year}-{n.month}-{n.day}T{n.hour:02}:{n.minute:02}:00.000Z"
                     
                     if headline_tag and link_tag:
                         href = link_tag.get('href', '')
@@ -73,7 +94,6 @@ def update_psx_news():
                                     
                                     if not os.path.exists(img_path):
                                         try:
-                                            print(f"  Downloading image: {local_img_name}")
                                             img_data = requests.get(img_url, impersonate="safari15_5", timeout=15).content
                                             with open(img_path, 'wb') as img_file:
                                                 img_file.write(img_data)
@@ -88,7 +108,7 @@ def update_psx_news():
                                     "image": local_img_name,
                                     "author": author_text,
                                     "description": dadi_desc,
-                                    "date": item_date
+                                    "date": ps3_date
                                 })
                                 
                 if current_page < MAX_PAGES:
@@ -99,15 +119,12 @@ def update_psx_news():
                 break
 
         if news_list:
-            print(f"\nSuccessfully fetched {len(news_list)} articles.")
-            
             xml_out = ['<?xml version="1.0" encoding="UTF-8" standalone="yes"?>',
                        '<nsx anno="" lt-id="131" min-sys-ver="1" rev="1093" ver="1.0">',
                        '\t<spc anno="csxad=1&amp;adspace=9,10,11,12,13" id="33537" multi="o" rep="t">']
 
             for i, n in enumerate(news_list): 
                 picks_anno = ' anno="picks=1"' if i < 3 else ''
-                
                 xml_out.append(f'\t\t<mtrl id="0" lastm="{n["date"]}" until="2100-12-31T23:59:00.000Z"{picks_anno}>')
                 xml_out.append(f'\t\t\t<desc>{n["title"]}</desc>')
                 xml_out.append(f'\t\t\t<url type="2">{GITHUB_RAW_PREFIX}{n["image"]}</url>')
@@ -123,13 +140,10 @@ def update_psx_news():
 
             with open("files/whats_new.xml", "w", encoding="utf-8") as f:
                 f.write("\n".join(xml_out))
-
-            print("Done! XML generated with DADi590 format.")
-        else:
-            print("No articles were found.")
+            print("Done! XML generated with parsed dates.")
 
     except Exception as e:
-        print(f"Fatal Error occurred: {e}")
+        print(f"Fatal Error: {e}")
 
 if __name__ == "__main__":
     update_psx_news()
