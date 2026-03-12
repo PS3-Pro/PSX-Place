@@ -6,10 +6,9 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timezone
 
 def update_psx_news():
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] Starting PSX-Place Multi-Page Scraper...")
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] Starting PSX-Place Multi-Page Scraper (XML Only)...")
     
-    GITHUB_RAW_PREFIX = "https://raw.githubusercontent.com/PS3-Pro/PSX-Place/main/resources/images/"
-    
+    GITHUB_RAW_PREFIX = "https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/files/resources/images/"
     MAX_PAGES = 3
     
     os.makedirs('files', exist_ok=True)
@@ -60,7 +59,8 @@ def update_psx_news():
                                     
                                     if not os.path.exists(img_path):
                                         try:
-                                            img_data = requests.get(img_url, impersonate="chrome110", timeout=15).content
+                                            print(f"  Downloading image: {local_img_name}")
+                                            img_data = requests.get(img_url, impersonate="safari15_5", timeout=15).content
                                             with open(img_path, 'wb') as img_file:
                                                 img_file.write(img_data)
                                         except Exception:
@@ -80,13 +80,12 @@ def update_psx_news():
                 break
 
         if news_list:
-            print(f"\nSuccessfully fetched a total of {len(news_list)} articles. Generating files...")
+            print(f"\nSuccessfully fetched {len(news_list)} articles. Generating XML...")
             
             xml_out = ['<?xml version="1.0" encoding="UTF-8" standalone="yes"?>',
                        '<nsx anno="" lt-id="131" min-sys-ver="1" rev="1093" ver="1.0">',
                        '\t<spc id="33537" multi="o" rep="t">']
             
-            html_out = f"\n"
             date_now = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z')
 
             for n in news_list: 
@@ -95,21 +94,14 @@ def update_psx_news():
                 xml_out.append(f'\t\t\t<url type="2">{GITHUB_RAW_PREFIX}{n["image"]}</url>')
                 xml_out.append(f'\t\t\t<target type="u">{n["link"]}</target>')
                 xml_out.append('\t\t</mtrl>')
-                
-                html_out += f'<div style="margin-bottom: 15px;">\n'
-                html_out += f'  <img src="../resources/images/{n["image"]}" alt="thumb" style="width: 80px; height: auto; border-radius: 5px;">\n'
-                html_out += f'  <a href="{n["link"]}" target="_blank" style="text-decoration: none; font-weight: bold;">{n["title"]}</a>\n'
-                html_out += f'</div>\n'
 
             xml_out.append('\t</spc>')
             xml_out.append('</nsx>')
 
             with open("files/whats_new.xml", "w", encoding="utf-8") as f:
                 f.write("\n".join(xml_out))
-            with open("files/index.html", "w", encoding="utf-8") as f:
-                f.write(html_out)
 
-            print("Done! XML, HTML, and Images are ready.")
+            print("Done! XML and Images are ready.")
         else:
             print("No articles were found across the pages.")
 
