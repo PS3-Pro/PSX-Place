@@ -64,8 +64,7 @@ def update_psx_news():
                             pass
 
                     if not ps3_date:
-                        n = datetime.now(timezone.utc)
-                        ps3_date = f"{n.year}-{n.month}-{n.day}T{n.hour:02}:{n.minute:02}:00.000Z"
+                        ps3_date = "1970-01-01T00:00:00.000Z"
                     
                     if headline_tag and link_tag:
                         href = link_tag.get('href', '')

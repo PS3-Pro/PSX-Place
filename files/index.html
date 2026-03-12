@@ -2,21 +2,63 @@
 <head>
     <meta charset="UTF-8">
     <title>PSX-Place News PRO</title>
+    
+    <script>
+        var isPS3 = /PS3|PlayStation 3|NetFront/i.test(navigator.userAgent) || window.location.search.indexOf("mode=ps3") > -1;
+        document.documentElement.className = isPS3 ? "is-ps3" : "is-pc";
+    </script>
+
     <style>
         /* =========================================
-           1. ESTILO BASE
+           1. BASE & RESET
            ========================================= */
-        * { box-sizing: border-box; } 
+        * { 
+            box-sizing: border-box; 
+        } 
 
         html, body {
-            margin: 0; padding: 0; height: 100%;
+            margin: 0; 
+            padding: 0; 
+            height: 100%;
             background: rgb(2, 29, 134) url("https://raw.githubusercontent.com/PS3-Pro/PSN-Content/master/resources/background/official.jpg") no-repeat center center;
-            background-size: cover; background-attachment: fixed;
-            color: #fff; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            background-size: cover; 
+            background-attachment: fixed;
+            color: #fff; 
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
             overflow: hidden;
         }
 
-        header {
+        #everything { 
+            padding: 120px 20px 80px 20px; 
+            text-align: center; 
+            height: 100vh; 
+            overflow-y: auto; 
+        }
+
+        .id-text { color: #ffff00; font-weight: bold; text-transform: uppercase; font-size: 11px; }
+        .meta-card { display: block; margin-top: 6px; padding-top: 6px; border-top: 1px dotted #444; font-size: 11px; }
+        .author-hl { color: #00ccff; font-weight: bold; }
+        .date-hl { color: #ffff00; }
+
+        .btn-read { background: #007bff; color: #fff; }
+        .btn-thread { background: #6f21c2; color: #fff; }
+
+        #m_title { color:#00aaff; font-size: 19px; margin: 0 0 5px 0; }
+        #m_meta { font-size: 12px; margin-bottom: 8px; font-weight: bold; }
+        
+        #m_content p:empty, 
+        #m_content div:empty, 
+        #m_content span:empty { display: none !important; }
+        #m_content p:first-child { margin-top: 0; }
+        #m_content p:last-child { margin-bottom: 0; }
+
+        /* =========================================
+           2. ESTILOS EXCLUSIVOS PARA PC (MODERNO)
+           ========================================= */
+        .is-pc #everything::-webkit-scrollbar { width: 8px; }
+        .is-pc #everything::-webkit-scrollbar-thumb { background: #00aaff; border-radius: 10px; }
+        
+        .is-pc header {
             position: fixed; top: 0; left: 0; right: 0;
             height: 100px; background: rgba(0, 0, 0, 0.85);
             border-bottom: 2px solid #888; z-index: 100;
@@ -24,21 +66,11 @@
             backdrop-filter: blur(10px);
         }
 
-        #everything { padding: 120px 20px 80px 20px; text-align: center; height: 100vh; overflow-y: auto; }
-
-        /* Scrollbar PRO */
-        #everything::-webkit-scrollbar { width: 8px; }
-        #everything::-webkit-scrollbar-thumb { background: #00aaff; border-radius: 10px; }
-
-        /* =========================================
-           2. NEWS TILES & HOVER FIX (SOLUÇÃO DEFINITIVA)
-           ========================================= */
         @property --angle { syntax: '<angle>'; initial-value: 0deg; inherits: false; }
         @keyframes rotate { to { --angle: 360deg; } }
         @keyframes tileReveal { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
 
-        /* WRAPPER: Cuida apenas da animação de entrada, nunca perde a opacidade */
-        .tile_wrapper {
+        .is-pc .tile_wrapper {
             display: inline-block;
             vertical-align: top;
             margin: 15px;
@@ -46,8 +78,7 @@
             animation: tileReveal 0.4s ease-out forwards;
         }
 
-        /* TILE: Fica dentro do wrapper, cuida apenas do visual e do hover */
-        .article_tile {
+        .is-pc .article_tile {
             width: 320px; height: 485px; 
             border-radius: 12px;
             background: rgba(0, 0, 0, 0.8); border: 2px solid #555;
@@ -55,8 +86,7 @@
             transition: transform 0.3s ease;
         }
 
-        /* Efeito de Borda Giratória - Sem vazamento e sem bugar a opacidade do wrapper */
-        .article_tile:hover {
+        .is-pc .article_tile:hover {
             transform: translateY(-8px);
             border-color: transparent;
             background-image: 
@@ -67,62 +97,138 @@
             animation: rotate 2s linear infinite;
         }
 
-        .tile_img { width: 100%; height: 180px; object-fit: cover; border-bottom: 2px solid #00aaff; }
-        .tile_header { 
+        .is-pc .tile_img { width: 100%; height: 180px; object-fit: cover; border-bottom: 2px solid #00aaff; }
+        
+        .is-pc .tile_header { 
             background: #000; color: #00aaff; padding: 12px;
             font-weight: bold; font-size: 14px; min-height: 60px;
             display: flex; align-items: center; justify-content: center; text-align: center; 
         }
-        .tile_content { 
+        
+        .is-pc .tile_content { 
             padding: 10px 15px; font-size: 13px; color: #ddd; 
-            height: 160px; overflow: hidden; border-top: 1px solid #333; 
-            line-height: 1.4;
+            height: 160px; overflow: hidden; border-top: 1px solid #333; line-height: 1.4;
         }
 
-        .id-text { color: #ffff00; font-weight: bold; text-transform: uppercase; font-size: 11px; }
-        .meta-card { display: block; margin-top: 6px; padding-top: 6px; border-top: 1px dotted #444; font-size: 11px; }
-        .author-hl { color: #00ccff; font-weight: bold; }
-        .date-hl { color: #ffff00; }
+        .is-pc .links { position: absolute; bottom: 0; left: 0; right: 0; padding: 10px 15px 15px 15px; display: flex; gap: 8px; background: rgba(0,0,0,0.6); }
+        .is-pc .btn-pro { flex: 1; padding: 10px; border-radius: 6px; font-size: 11px; font-weight: bold; text-decoration: none; text-align: center; cursor: pointer; border: 1px solid rgba(255,255,255,0.2); transition: 0.2s; }
+        .is-pc .btn-pro:hover { filter: brightness(1.2); }
 
-        .links { position: absolute; bottom: 0; left: 0; right: 0; padding: 10px 15px 15px 15px; display: flex; gap: 8px; background: rgba(0,0,0,0.6); }
-        .btn-pro { flex: 1; padding: 10px; border-radius: 6px; font-size: 11px; font-weight: bold; text-decoration: none; text-align: center; cursor: pointer; border: 1px solid rgba(255,255,255,0.2); transition: 0.2s; }
-        .btn-read { background: #007bff; color: #fff; }
-        .btn-thread { background: #6f21c2; color: #fff; }
-        .btn-pro:hover { filter: brightness(1.2); }
-        
-
-        /* =========================================
-           3. MODAL
-           ========================================= */
-        #news_modal {
+        .is-pc #news_modal {
             display: none; position: fixed; top: 0; left: 0;
             width: 100%; height: 100%; background: rgba(0,0,0,0.97);
             z-index: 200; justify-content: center; align-items: center;
             backdrop-filter: blur(8px);
         }
-        .modal_box {
+        .is-pc #news_modal.active { display: flex; }
+
+        .is-pc .modal_box {
             background: #050505; border: 2px solid #00aaff;
             width: 95%; max-width: 800px; border-radius: 12px;
             position: relative; display: flex; flex-direction: column;
             max-height: 90vh; overflow: hidden;
+            box-shadow: 0 0 30px rgba(0, 170, 255, 0.4);
         }
-        .modal_static_top { flex-shrink: 0; text-align: center; padding: 15px 50px 0 50px; }
-        #m_title { color:#00aaff; font-size: 19px; margin: 0 0 5px 0; }
-        #m_meta { font-size: 12px; margin-bottom: 8px; font-weight: bold; }
-        #m_static_img { width: 100%; max-width: 450px; max-height: 220px; object-fit: contain; border-radius: 6px; margin: 25px auto; display: block; }
-        #m_content { padding: 5px 10px 20px 25px; margin-right: 15px; overflow-y: auto; line-height: 1.6; color: #eee; font-size: 14.5px; text-align: center; flex: 1; }
-        #modal_footer { padding: 15px; background: #000; text-align: center; position: relative; }
-		#modal_footer::before { content: ""; position: absolute; top: 0; left: 50px; right: 50px; height: 1px; background: #444; }
-        .close_btn { position: absolute; top: 10px; right: 10px; background: #f00; border: 1px solid #fff; color: white; padding: 4px 10px; border-radius: 5px; font-weight: bold; cursor: pointer; z-index: 210; }
-        #m_content::-webkit-scrollbar { width: 4px; }
-        #m_content::-webkit-scrollbar-thumb { background: #00aaff; border-radius: 10px; }
+
+        .is-pc .modal_static_top { flex-shrink: 0; text-align: center; padding: 15px 50px 0 50px; }
+        .is-pc #m_static_img { width: 100%; max-width: 450px; max-height: 220px; object-fit: contain; border-radius: 6px; margin: 25px auto; display: block; }
+        .is-pc #m_content { padding: 5px 10px 20px 25px; margin-right: 15px; overflow-y: auto; line-height: 1.6; color: #eee; font-size: 14.5px; text-align: center; flex: 1; }
+        .is-pc #m_content::-webkit-scrollbar { width: 4px; }
+        .is-pc #m_content::-webkit-scrollbar-thumb { background: #00aaff; border-radius: 10px; }
+        
+        .is-pc #modal_footer { padding: 15px; background: #000; text-align: center; position: relative; }
+        .is-pc #modal_footer::before { content: ""; position: absolute; top: 0; left: 50px; right: 50px; height: 1px; background: #fff; }
+        .is-pc .close_btn { position: absolute; top: 10px; right: 10px; background: #f00; border: 1px solid #fff; color: white; padding: 4px 10px; border-radius: 5px; font-weight: bold; cursor: pointer; z-index: 210; }
+
+        .is-pc .waves { position: fixed; bottom: 0; width: 100%; height: 60px; pointer-events: none; z-index: 50; }
+        .is-pc .parallax use { animation: move-wave 25s cubic-bezier(.55,.5,.45,.5) infinite; }
+        @keyframes move-wave { 0% { transform: translate3d(-90px,0,0); } 100% { transform: translate3d(85px,0,0); } }
 
         /* =========================================
-           4. ONDAS
+           3. ESTILOS EXCLUSIVOS PARA PS3 (SEGURO/LEVE)
            ========================================= */
-        .waves { position: fixed; bottom: 0; width: 100%; height: 60px; pointer-events: none; z-index: 50; }
-        .parallax use { animation: move-wave 25s cubic-bezier(.55,.5,.45,.5) infinite; }
-        @keyframes move-wave { 0% { transform: translate3d(-90px,0,0); } 100% { transform: translate3d(85px,0,0); } }
+        .is-ps3 header {
+            position: absolute; top: 0; left: 0; width: 100%;
+            height: 90px; background: #000;
+            border-bottom: 2px solid #888; z-index: 100;
+            text-align: center;
+        }
+        
+        .is-ps3 header h1 { margin-top: 25px; display: inline-block; vertical-align: middle; }
+        .is-ps3 header img { margin-top: 15px; display: inline-block; vertical-align: middle; }
+
+        .is-ps3 .waves { display: none; }
+
+        .is-ps3 .tile_wrapper {
+            display: inline-block;
+            vertical-align: top;
+            margin: 10px;
+        }
+
+        .is-ps3 .article_tile {
+            width: 290px; height: 480px; 
+            background: #111; border: 2px solid #555;
+            text-align: left; position: relative;
+        }
+
+        .is-ps3 .article_tile:hover { border-color: #00aaff; }
+
+        /* Altura melhorada, não distorce no PS3 */
+        .is-ps3 .tile_img { width: 100%; height: 170px; border-bottom: 2px solid #00aaff; object-fit: cover; }
+        
+        /* Altura original de volta para não sobrar preto se o título for curto */
+        .is-ps3 .tile_header { 
+            background: #000; color: #00aaff; padding: 10px;
+            font-weight: bold; font-size: 14px; height: 65px; 
+            text-align: center; overflow: hidden;
+        }
+        
+        .is-ps3 .tile_content { 
+            padding: 10px 15px; font-size: 12px; color: #ddd; 
+            height: 195px; overflow: hidden; border-top: 1px solid #333; 
+            position: relative; /* <-- NECESSÁRIO PARA PRENDER A DATA NO FUNDO */
+        }
+
+        /* O SEGREDO PRA TIRAR O BURACO DA DATA/HORA: Ela fica grudada embaixo do conteúdo */
+        .is-ps3 .meta-card { 
+            position: absolute; 
+            bottom: 10px; 
+            left: 15px; 
+            right: 15px; 
+            margin-top: 0; 
+        }
+
+        .is-ps3 .links { position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; background: #000; text-align: center; }
+        .is-ps3 .btn-pro { display: inline-block; padding: 8px 0; font-size: 12px; font-weight: bold; text-decoration: none; text-align: center; border: 1px solid #555; }
+        
+        .is-ps3 .btn-thread { display: none !important; }
+        .is-ps3 .btn-read { width: 90%; }
+
+        .is-ps3 #news_modal {
+            display: none; position: absolute; top: 0; left: 0;
+            width: 100%; height: 150%; background: rgba(0,0,0,0.85);
+            z-index: 200; text-align: center;
+        }
+        .is-ps3 #news_modal.active { display: block; }
+
+        /* FIM DO MODAL ESTICADO: O max-width segura ele no meio da tela */
+        .is-ps3 .modal_box {
+            background: #050505; border: 2px solid #00aaff;
+            width: 85%; max-width: 650px; 
+            margin: 60px auto; 
+            position: relative; text-align: left;
+        }
+
+        .is-ps3 .modal_static_top { text-align: center; padding: 15px 40px 0 40px; }
+        
+        /* Imagem do modal travada em tamanho razoável */
+        .is-ps3 #m_static_img { width: 100%; max-width: 380px; max-height: 220px; object-fit: contain; border: 1px solid #333; margin: 15px auto; display: block; }
+        
+        .is-ps3 #m_content { padding: 15px 25px 25px 25px; color: #eee; font-size: 14px; text-align: center; }
+        
+        .is-ps3 #modal_footer { display: none !important; }
+
+        .is-ps3 .close_btn { position: absolute; top: 10px; right: 10px; background: #f00; border: 1px solid #fff; color: white; padding: 5px 10px; font-weight: bold; z-index: 210; }
     </style>
 </head>
 <body>
@@ -228,7 +334,6 @@
             var html = "";
             for (var i = 0; i < articles.length; i++) {
                 var art = articles[i];
-                // Aqui está a mágica: O wrapper fica por fora controlando a opacidade, e o article_tile fica livre para o hover
                 html += '<div class="tile_wrapper" style="animation-delay: ' + (i * 0.08) + 's;">' +
                             '<div class="article_tile">' +
                                 '<img src="' + art.img + '" class="tile_img" onclick="openModal(' + i + ')" style="cursor:pointer;">' +
@@ -254,11 +359,14 @@
             document.getElementById("m_static_img").src = art.img;
             document.getElementById("m_content").innerHTML = art.desc.replace(/<img[^>]*>/, "").trim();
             document.getElementById("footer_btn_area").innerHTML = '<a href="' + art.link + '" target="_blank" class="btn-pro btn-thread" style="display:inline-block; width:220px; padding:12px; border-color: #fff;">OPEN FULL THREAD</a>';
-            document.getElementById("news_modal").style.display = "flex";
+            
+            document.getElementById("news_modal").className = "active";
             document.getElementById("m_content").scrollTop = 0;
         }
 
-        function closeModal() { document.getElementById("news_modal").style.display = "none"; }
+        function closeModal() { 
+            document.getElementById("news_modal").className = ""; 
+        }
 
         fetchNews();
     </script>
