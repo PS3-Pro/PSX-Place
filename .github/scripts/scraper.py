@@ -17,6 +17,8 @@ def update_psx_news():
 
     news_list = []
     seen_links = set()
+    
+    fallback_date = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z')
 
     try:
         for current_page in range(1, MAX_PAGES + 1):
@@ -36,6 +38,13 @@ def update_psx_news():
                     
                     author_tag = article.select_one('a.username')
                     summary_tag = article.select_one('div.baseHtml > div') or article.select_one('div.baseHtml')
+                    date_tag = article.select_one('span.dateData > a:last-child')
+                    
+                    item_date = fallback_date
+                    if date_tag:
+                        time_el = date_tag.find(attrs={"data-time": True})
+                        if time_el and time_el.has_attr('data-time'):
+                            item_date = datetime.fromtimestamp(int(time_el['data-time']), timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z')
                     
                     if headline_tag and link_tag:
                         href = link_tag.get('href', '')
@@ -76,7 +85,8 @@ def update_psx_news():
                                     "link": full_link,
                                     "image": local_img_name,
                                     "author": author_text,
-                                    "description": dadi_desc
+                                    "description": dadi_desc,
+                                    "date": item_date
                                 })
                                 
                 if current_page < MAX_PAGES:
@@ -92,13 +102,11 @@ def update_psx_news():
             xml_out = ['<?xml version="1.0" encoding="UTF-8" standalone="yes"?>',
                        '<nsx anno="" lt-id="131" min-sys-ver="1" rev="1093" ver="1.0">',
                        '\t<spc anno="csxad=1&amp;adspace=9,10,11,12,13" id="33537" multi="o" rep="t">']
-            
-            date_now = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z')
 
             for i, n in enumerate(news_list): 
                 picks_anno = ' anno="picks=1"' if i < 3 else ''
                 
-                xml_out.append(f'\t\t<mtrl id="0" lastm="{date_now}" until="2100-12-31T23:59:00.000Z"{picks_anno}>')
+                xml_out.append(f'\t\t<mtrl id="0" lastm="{n["date"]}" until="2100-12-31T23:59:00.000Z"{picks_anno}>')
                 xml_out.append(f'\t\t\t<desc>{n["title"]}</desc>')
                 xml_out.append(f'\t\t\t<url type="2">{GITHUB_RAW_PREFIX}{n["image"]}</url>')
                 xml_out.append(f'\t\t\t<target type="u">{n["link"]}</target>')
@@ -106,8 +114,8 @@ def update_psx_news():
                 xml_out.append('\t\t\t<cntry agelmt="0">all</cntry>')
                 xml_out.append('\t\t\t<lang>all</lang>')
                 
-                xml_out.append(f'\t\t\t<dadi590_description>{n["description"]}</dadi590_description>')
-                xml_out.append(f'\t\t\t<dadi590_creators>{n["author"]}</dadi590_creators>')
+                xml_out.append(f'\t\t\t<description>{n["description"]}</description>')
+                xml_out.append(f'\t\t\t<creators>{n["author"]}</creators>')
                 
                 xml_out.append('\t\t</mtrl>')
 

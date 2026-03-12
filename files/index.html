@@ -311,10 +311,10 @@
       				article_titles.push(whats_new_xml[i].substring(whats_new_xml[i].indexOf(">")+1,whats_new_xml[i].indexOf("</desc>")));
       			} else if (whats_new_xml[i].indexOf('<target type="u">') != -1) {
       				links.push(whats_new_xml[i].substring(whats_new_xml[i].indexOf(">")+1,whats_new_xml[i].indexOf("</target>")));
-      			} else if (whats_new_xml[i].indexOf("<dadi590_description>") != -1) {
-      				descriptions.push(whats_new_xml[i].substring(whats_new_xml[i].indexOf(">")+1,whats_new_xml[i].indexOf("</dadi590_description>")));
-      			} else if (whats_new_xml[i].indexOf("<dadi590_creators>") != -1) {
-      				authors.push(whats_new_xml[i].substring(whats_new_xml[i].indexOf(">")+1,whats_new_xml[i].indexOf("</dadi590_creators>")));
+      			} else if (whats_new_xml[i].indexOf("<description>") != -1) {
+      				descriptions.push(whats_new_xml[i].substring(whats_new_xml[i].indexOf(">")+1,whats_new_xml[i].indexOf("</description>")));
+      			} else if (whats_new_xml[i].indexOf("<creators>") != -1) {
+      				authors.push(whats_new_xml[i].substring(whats_new_xml[i].indexOf(">")+1,whats_new_xml[i].indexOf("</creators>")));
       			} else if (whats_new_xml[i].indexOf(' lastm="') != -1 && whats_new_xml[i].indexOf('" until="') != -1) {
       				dates.push(whats_new_xml[i].substring(whats_new_xml[i].indexOf('lastm="')+7,whats_new_xml[i].indexOf('.000Z" until="')));
       			}
