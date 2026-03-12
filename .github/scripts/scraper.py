@@ -80,23 +80,18 @@ def update_psx_news():
                                 author_text = author_tag.get_text(strip=True) if author_tag else "PSX-Place"
                                 summary_text = summary_tag.get_text(strip=True) if summary_tag else clean_title
                                 
-                                # --- NOVA LÓGICA DE NOME DE ARQUIVO ---
                                 img_url = img_tag.get('src') if img_tag else ''
                                 local_img_name = "default.png"
                                 
                                 if img_url:
                                     img_url = img_url if img_url.startswith('http') else f"https://www.psx-place.com/{img_url.lstrip('/')}"
                                     
-                                    # 1. Remove caracteres inválidos para nomes de arquivos (\ / : * ? " < > |)
                                     safe_name = re.sub(r'[\\/*?:"<>|]', '', clean_title)
-                                    # 2. Substitui espaços por underscores
                                     safe_name = safe_name.replace(' ', '_')
-                                    # 3. Limita o tamanho para não dar erro no Windows/Linux (150 caracteres é seguro)
                                     safe_name = safe_name[:150].strip('_')
-                                    
-                                    local_img_name = f"{safe_name}.jpg"
-                                # --------------------------------------
 
+                                    local_img_name = f"{safe_name}.jpg"
+                                
                                 desc = f'<img src="{GITHUB_RAW_PREFIX}{local_img_name}">{summary_text}'
 
                                 news_list.append({
