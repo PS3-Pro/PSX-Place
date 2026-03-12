@@ -9,7 +9,6 @@ def update_psx_news():
     print(f"[{datetime.now().strftime('%H:%M:%S')}] Starting PSX-Place Scraper...")
     
     GITHUB_RAW_PREFIX = "https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/"
-    
     MAX_PAGES = 3
     
     os.makedirs('files', exist_ok=True)
@@ -41,29 +40,28 @@ def update_psx_news():
                     author_tag = article.select_one('a.username')
                     summary_tag = article.select_one('div.baseHtml > div') or article.select_one('div.baseHtml')
                     
-                    date_raw = article.select_one('span.dateData > a:nth-child(2)')
-                    time_raw = article.select_one('span.dateData > a:last-child')
-                    
                     ps3_date = ""
-                    if date_raw and time_raw:
-                        d_text = date_raw.get_text(strip=True).replace(",", "")
-                        t_text = time_raw.get_text(strip=True).lower().replace("at ", "")
+                    date_links = article.select('span.dateData a')
+                    
+                    if len(date_links) >= 3:
+                        raw_date = date_links[1].get_text(strip=True).replace(",", "")
+                        raw_time = date_links[2].get_text(strip=True).lower()
                         
-                        parts = d_text.split()
-                        if len(parts) >= 3:
-                            m_name = parts[0][:3]
-                            m_num = month_map.get(m_name, "1")
-                            day = str(int(parts[1]))
-                            year = parts[2]
+                        try:
+                            d_parts = raw_date.split()
+                            m_num = month_map.get(d_parts[0][:3], "1")
+                            day = str(int(d_parts[1]))
+                            year = d_parts[2]
                             
-                            time_parts = re.findall(r'(\d+):(\d+)', t_text)
-                            if time_parts:
-                                hour = int(time_parts[0][0])
-                                minute = time_parts[0][1]
-                                if "pm" in t_text and hour < 12: hour += 12
-                                if "am" in t_text and hour == 12: hour = 0
-                                
-                                ps3_date = f"{year}-{m_num}-{day}T{hour:02}:{minute}:00.000Z"
+                            t_match = re.search(r'(\d+):(\d+)', raw_time)
+                            if t_match:
+                                hh = int(t_match.group(1))
+                                mm = t_match.group(2)
+                                if "pm" in raw_time and hh < 12: hh += 12
+                                if "am" in raw_time and hh == 12: hh = 0
+                                ps3_date = f"{year}-{m_num}-{day}T{hh:02}:{mm}:00.000Z"
+                        except:
+                            pass
 
                     if not ps3_date:
                         n = datetime.now(timezone.utc)
@@ -131,8 +129,8 @@ def update_psx_news():
                 xml_out.append(f'\t\t\t<target type="u">{n["link"]}</target>')
                 xml_out.append('\t\t\t<cntry agelmt="0">all</cntry>')
                 xml_out.append('\t\t\t<lang>all</lang>')
-                xml_out.append(f'\t\t\t<description>{n["description"]}</description>')
-                xml_out.append(f'\t\t\t<creators>{n["author"]}</creators>')
+                xml_out.append(f'\t\t\t<dadi590_description>{n["description"]}</dadi590_description>')
+                xml_out.append(f'\t\t\t<dadi590_creators>{n["author"]}</dadi590_creators>')
                 xml_out.append('\t\t</mtrl>')
 
             xml_out.append('\t</spc>')
@@ -140,7 +138,7 @@ def update_psx_news():
 
             with open("files/whats_new.xml", "w", encoding="utf-8") as f:
                 f.write("\n".join(xml_out))
-            print("Done! XML generated with parsed dates.")
+            print("Done! XML generated with exact date and time.")
 
     except Exception as e:
         print(f"Fatal Error: {e}")
