@@ -6,9 +6,10 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timezone
 
 def update_psx_news():
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] Starting PSX-Place Multi-Page Scraper (XML Only)...")
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] Starting PSX-Place Scraper (Strict PS3 XML Format)...")
     
-    GITHUB_RAW_PREFIX = "https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/files/resources/images/"
+    GITHUB_RAW_PREFIX = "https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/"
+    
     MAX_PAGES = 3
     
     os.makedirs('files', exist_ok=True)
@@ -19,11 +20,7 @@ def update_psx_news():
 
     try:
         for current_page in range(1, MAX_PAGES + 1):
-            if current_page == 1:
-                url = "https://www.psx-place.com/"
-            else:
-                url = f"https://www.psx-place.com/page-{current_page}"
-            
+            url = "https://www.psx-place.com/" if current_page == 1 else f"https://www.psx-place.com/page-{current_page}"
             print(f"-> Scraping Page {current_page}: {url}")
             
             response = requests.get(url, impersonate="safari15_5", timeout=30)
@@ -37,6 +34,9 @@ def update_psx_news():
                     link_tag = article.select_one('div.continue > a.button')
                     img_tag = article.select_one('img')
                     
+                    author_tag = article.select_one('a.username')
+                    summary_tag = article.select_one('div.baseHtml > div') or article.select_one('div.baseHtml')
+                    
                     if headline_tag and link_tag:
                         href = link_tag.get('href', '')
                         full_title = headline_tag.get('title') or headline_tag.get_text(strip=True)
@@ -47,6 +47,9 @@ def update_psx_news():
                                 
                                 clean_title = full_title.replace("(Forum Thread)", "").replace("...", "").strip()
                                 full_link = href if href.startswith('http') else f"https://www.psx-place.com/{href.lstrip('/')}"
+                                
+                                author_text = author_tag.get_text(strip=True) if author_tag else "PSX-Place"
+                                summary_text = summary_tag.get_text(strip=True) if summary_tag else clean_title
                                 
                                 img_url = img_tag.get('src') if img_tag else ''
                                 local_img_name = "default.png"
@@ -66,10 +69,14 @@ def update_psx_news():
                                         except Exception:
                                             local_img_name = "default.png"
 
+                                dadi_desc = f'<img src="{GITHUB_RAW_PREFIX}{local_img_name}"><br><br><div style="text-align: center">{summary_text}</div>'
+
                                 news_list.append({
                                     "title": clean_title, 
                                     "link": full_link,
-                                    "image": local_img_name
+                                    "image": local_img_name,
+                                    "author": author_text,
+                                    "description": dadi_desc
                                 })
                                 
                 if current_page < MAX_PAGES:
@@ -80,19 +87,28 @@ def update_psx_news():
                 break
 
         if news_list:
-            print(f"\nSuccessfully fetched {len(news_list)} articles. Generating XML...")
+            print(f"\nSuccessfully fetched {len(news_list)} articles. Generating Strict PS3 XML...")
             
             xml_out = ['<?xml version="1.0" encoding="UTF-8" standalone="yes"?>',
                        '<nsx anno="" lt-id="131" min-sys-ver="1" rev="1093" ver="1.0">',
-                       '\t<spc id="33537" multi="o" rep="t">']
+                       '\t<spc anno="csxad=1&amp;adspace=9,10,11,12,13" id="33537" multi="o" rep="t">']
             
             date_now = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z')
 
-            for n in news_list: 
-                xml_out.append('\t\t<mtrl id="0" lastm="' + date_now + '" until="2100-12-31T23:59:00.000Z">')
+            for i, n in enumerate(news_list): 
+                picks_anno = ' anno="picks=1"' if i < 3 else ''
+                
+                xml_out.append(f'\t\t<mtrl id="0" lastm="{date_now}" until="2100-12-31T23:59:00.000Z"{picks_anno}>')
                 xml_out.append(f'\t\t\t<desc>{n["title"]}</desc>')
                 xml_out.append(f'\t\t\t<url type="2">{GITHUB_RAW_PREFIX}{n["image"]}</url>')
                 xml_out.append(f'\t\t\t<target type="u">{n["link"]}</target>')
+                
+                xml_out.append('\t\t\t<cntry agelmt="0">all</cntry>')
+                xml_out.append('\t\t\t<lang>all</lang>')
+                
+                xml_out.append(f'\t\t\t<dadi590_description><![CDATA[{n["description"]}]]></dadi590_description>')
+                xml_out.append(f'\t\t\t<dadi590_creators>{n["author"]}</dadi590_creators>')
+                
                 xml_out.append('\t\t</mtrl>')
 
             xml_out.append('\t</spc>')
@@ -101,7 +117,7 @@ def update_psx_news():
             with open("files/whats_new.xml", "w", encoding="utf-8") as f:
                 f.write("\n".join(xml_out))
 
-            print("Done! XML and Images are ready.")
+            print("Done! XML is perfectly formatted for the PS3 XMB.")
         else:
             print("No articles were found across the pages.")
 
