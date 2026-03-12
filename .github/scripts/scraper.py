@@ -98,14 +98,14 @@ def update_psx_news():
                                         except Exception:
                                             local_img_name = "default.png"
 
-                                dadi_desc = f'<img src="{GITHUB_RAW_PREFIX}{local_img_name}"><br><br><div style="text-align: center">{summary_text}</div><br/><br/><br/>'
+                                desc = f'<img src="{GITHUB_RAW_PREFIX}{local_img_name}">{summary_text}'
 
                                 news_list.append({
                                     "title": clean_title, 
                                     "link": full_link,
                                     "image": local_img_name,
                                     "author": author_text,
-                                    "description": dadi_desc,
+                                    "description": desc,
                                     "date": ps3_date
                                 })
                                 
