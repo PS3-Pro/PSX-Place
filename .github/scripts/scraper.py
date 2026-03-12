@@ -25,7 +25,7 @@ def update_psx_news():
 
     try:
         for current_page in range(1, MAX_PAGES + 1):
-            url = "https://www.psx-place.com/" if current_page == 1 else f"https://www.psx-place.com/page-{current_page}"
+            url = "https://www.psx-place.com/" if current_page == 1 else f"https://www.psx-place.com/?page={current_page}"
             print(f"-> Scraping Page {current_page}: {url}")
             
             response = requests.get(url, impersonate="safari15_5", timeout=30)
