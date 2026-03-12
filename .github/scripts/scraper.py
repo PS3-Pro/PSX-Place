@@ -80,29 +80,30 @@ def update_psx_news():
                                 author_text = author_tag.get_text(strip=True) if author_tag else "PSX-Place"
                                 summary_text = summary_tag.get_text(strip=True) if summary_tag else clean_title
                                 
+                                # --- NOVA LÓGICA DE NOME DE ARQUIVO ---
                                 img_url = img_tag.get('src') if img_tag else ''
                                 local_img_name = "default.png"
                                 
                                 if img_url:
                                     img_url = img_url if img_url.startswith('http') else f"https://www.psx-place.com/{img_url.lstrip('/')}"
-                                    safe_name = re.sub(r'[^a-zA-Z0-9]', '', clean_title)[:25]
-                                    local_img_name = f"{safe_name}.jpg"
-                                    img_path = os.path.join('resources', 'images', local_img_name)
                                     
-                                    if not os.path.exists(img_path):
-                                        try:
-                                            img_data = requests.get(img_url, impersonate="safari15_5", timeout=15).content
-                                            with open(img_path, 'wb') as img_file:
-                                                img_file.write(img_data)
-                                        except Exception:
-                                            local_img_name = "default.png"
+                                    # 1. Remove caracteres inválidos para nomes de arquivos (\ / : * ? " < > |)
+                                    safe_name = re.sub(r'[\\/*?:"<>|]', '', clean_title)
+                                    # 2. Substitui espaços por underscores
+                                    safe_name = safe_name.replace(' ', '_')
+                                    # 3. Limita o tamanho para não dar erro no Windows/Linux (150 caracteres é seguro)
+                                    safe_name = safe_name[:150].strip('_')
+                                    
+                                    local_img_name = f"{safe_name}.jpg"
+                                # --------------------------------------
 
                                 desc = f'<img src="{GITHUB_RAW_PREFIX}{local_img_name}">{summary_text}'
 
                                 news_list.append({
                                     "title": clean_title, 
                                     "link": full_link,
-                                    "image": local_img_name,
+                                    "image_url": img_url,
+                                    "image_name": local_img_name,
                                     "author": author_text,
                                     "description": desc,
                                     "date": ps3_date
@@ -116,6 +117,19 @@ def update_psx_news():
                 break
 
         if news_list:
+            print(f"-> Foram validados {len(news_list)} artigos. Baixando imagens...")
+            for n in news_list:
+                if n["image_url"] and n["image_name"] != "default.png":
+                    img_path = os.path.join('resources', 'images', n["image_name"])
+                    
+                    if not os.path.exists(img_path):
+                        try:
+                            img_data = requests.get(n["image_url"], impersonate="safari15_5", timeout=15).content
+                            with open(img_path, 'wb') as img_file:
+                                img_file.write(img_data)
+                        except Exception:
+                            n["image_name"] = "default.png"
+
             xml_out = ['<?xml version="1.0" encoding="UTF-8" standalone="yes"?>',
                        '<nsx anno="" lt-id="131" min-sys-ver="1" rev="1093" ver="1.0">',
                        '\t<spc anno="csxad=1&amp;adspace=9,10,11,12,13" id="33537" multi="o" rep="t">']
@@ -124,7 +138,7 @@ def update_psx_news():
                 picks_anno = ' anno="picks=1"' if i < 3 else ''
                 xml_out.append(f'\t\t<mtrl id="0" lastm="{n["date"]}" until="2100-12-31T23:59:00.000Z"{picks_anno}>')
                 xml_out.append(f'\t\t\t<desc>{n["title"]}</desc>')
-                xml_out.append(f'\t\t\t<url type="2">{GITHUB_RAW_PREFIX}{n["image"]}</url>')
+                xml_out.append(f'\t\t\t<url type="2">{GITHUB_RAW_PREFIX}{n["image_name"]}</url>')
                 xml_out.append(f'\t\t\t<target type="u">{n["link"]}</target>')
                 xml_out.append('\t\t\t<cntry agelmt="0">all</cntry>')
                 xml_out.append('\t\t\t<lang>all</lang>')
@@ -137,7 +151,7 @@ def update_psx_news():
 
             with open("files/whats_new.xml", "w", encoding="utf-8") as f:
                 f.write("\n".join(xml_out))
-            print("Done! XML generated with exact date and time.")
+            print(f"Sucesso! XML e {len(news_list)} imagens processadas.")
 
     except Exception as e:
         print(f"Fatal Error: {e}")
