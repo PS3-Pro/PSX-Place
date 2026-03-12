@@ -27,7 +27,7 @@ def update_psx_news():
             
             print(f"-> Scraping Page {current_page}: {url}")
             
-            response = requests.get(url, impersonate="chrome110", timeout=30)
+            response = requests.get(url, impersonate="safari15_5", timeout=30)
             
             if response.status_code == 200:
                 soup = BeautifulSoup(response.text, 'html.parser')
