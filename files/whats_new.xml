@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <nsx anno="" lt-id="131" min-sys-ver="1" rev="1093" ver="1.0">
 	<spc anno="csxad=1&amp;adspace=9,10,11,12,13" id="33537" multi="o" rep="t">
-		<mtrl id="0" lastm="2026-1-31T12:15:00.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
-			<desc>qCFW - Arrives to Slim (2500-3000) & SuperSlim (4000-NOR) PlayStation 3 Models</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/qCFWArrivestoSlim25003000.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/qcfw-arrives-to-slim-2500-3000-superslim-4000-nor-playstation-3-models.49533/</target>
-			<cntry agelmt="0">all</cntry>
-			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/qCFWArrivestoSlim25003000.jpg">UPDATE (Feb. 20) -PS3HEN 3.4.2 Open Beta: Test #1 Released- (Forum Link)UPDATE (Feb. 20) -qCFW updated(forum link)   --qcfw-20260220-release(github link)UPDATE (Feb. 17) -qCFW and Future potential(Forum Thread)by@aomsin2526>here<UPDATE (Feb. 13) -BadWDSD/qCFW + HW Flasher/NoBT(Forum Thread)UPDATE (Feb. 11) -qCFW files have been temporary removed from github by the developer, due to a bug, see@aomsin2526's post >here<  & >also here<UPDATE (Feb. 3)-PS3HEN v3.4.1 (STABLE) has now been releasedby@esc0rtd3w, graduating from the 3.4.1 BETA builds. (Note: v3.4.1+ is required for qCFW)​</description>
-			<creators>STLcardsWS</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2025-8-3T22:44:00.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
-			<desc>[BD-JB-1250] New Exploit (bluray) for PlayStation 4 supporting upto 12.50 firmware from Gezine</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/BDJB1250NewExploitblurayf.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/bd-jb-1250-new-exploit-bluray-for-playstation-4-supporting-upto-12-50-firmware-from-gezine.48161/</target>
-			<cntry agelmt="0">all</cntry>
-			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/BDJB1250NewExploitblurayf.jpg">The PlayStation 4 has new BluRay exploit that supports upto 12.50 Firmware. Thanks to the efforts of developerGezine,who has released the source code and helloworld.iso to complete the proof of work of this recent exploit for the PS4.  Below you can see the readme for the project. Also some community reaction and comments about the new exploit for the PS4 from Abkarino & Modded Warefare dives into the exploit in one of his latest video attached​</description>
-			<creators>STLcardsWS</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2025-6-24T01:48:00.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
-			<desc>{CFW Release} 4.92.2 Evilnat  Custom Firmware (w/ Cobra v8.5) - Includes: CEX/PEX/D-PEX) + noBD/BT</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/CFWRelease4922EvilnatCust.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/cfw-release-4-92-2-evilnat-custom-firmware-w-cobra-v8-5-includes-cex-pex-d-pex-nobd-bt.47798/</target>
-			<cntry agelmt="0">all</cntry>
-			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/CFWRelease4922EvilnatCust.jpg">After a successful Open Beta for 4.92.2, PlayStation 3 CFW developer@Evilnathas nowOFFICIALLYupdated hisEvilnat Custom Firmware'sfor the PS3 to version4.92.2,A number of new changes and options have been added in this release for your PS3 FAT and Early Slim models capable of installing a CFW PUP.Various patches to the CFW have been made as well as various new additions to theCobra Payload, Also theXAI Pluginwas not left out, as there are some new options one being a newNew Overclock menuhas been introduced to the firmware.  Now we no longer need a dedicated PUP to change overclock settings, it can be done directly on the XMB. All the details and changes can be found in Evilnat's release note's found below and also in the link provided at the bottom.​</description>
-			<creators>Evilnat</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2025-6-14T04:10:00.000Z" until="2100-12-31T23:59:00.000Z">
+		<mtrl id="0" lastm="2025-6-14T04:10:00.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
 			<desc>ProtoPwn (Protokernel Exploit by pcm720) -  Now all PS2s are hackable via MemoryCard  (MILESTONE)</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/ProtoPwnProtokernelExploi.jpg</url>
 			<target type="u">https://www.psx-place.com/threads/protopwn-protokernel-exploit-by-pcm720-now-all-ps2s-are-hackable-via-memorycard-milestone.47708/</target>
@@ -37,59 +10,86 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/ProtoPwnProtokernelExploi.jpg">Breaking Newsin the PS2 Scene,as a NEW MemoryCard Exploit for Protokernel PS2s (SCPH-10000, SCPH-15000, and DTL-H10000(S)) just got released!!!It took 25 years to reach this point, butNOW ALL PS2s including ALL special models(Arcade, Prototype, Debug, Consumer-model, "special/custom builds")can load Homebrew WITHOUT DISCS!​</description>
 			<creators>TnA</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2025-5-10T13:47:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>BadWDSD HW Exploit - With new powerful qCFW for PS3 Slim & SuperSlim NOR models on the horizon</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/BadWDSDHWExploitWithnewpo.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/badwdsd-hw-exploit-with-new-powerful-qcfw-for-ps3-slim-superslim-nor-models-on-the-horizon.47475/</target>
+		<mtrl id="0" lastm="2023-8-12T07:19:00.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
+			<desc>Athena - A performant JavaScript Runtime Environment for the PS2</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/AthenaAperformantJavaScri.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/athena-a-performant-javascript-runtime-environment-for-the-ps2.41393/</target>
 			<cntry agelmt="0">all</cntry>
 			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/BadWDSDHWExploitWithnewpo.jpg">Update (Jan. 30) -@esc0rtd3whas releaseda new beta, while not the FINAL (yet) it is the first beta HEN with the qCFW installer.Update (Jan. 29) -@aomsin2526has released thefirst public version of qCFWfor the BadWDSD exploit, now we still needPS3HEN 3.4.1 (FINAL)for the qCFW installer to utilize the qCFW release.Update (Jan. 15)-@aomsin2526has provided a new progress report,qCFWis nearing a public release.>>>LinkUpdate (Dec. 8) -@aomsin2526(aka chattrapat_s / kafuu)has provided an update for the project, in the form of a "To-Do" list for the project, with some reported progress like"qCFW is done"see full post>>> LinkUpdate (Sept. 11) -New video demonstration and details "qCFW will be based on Evilnat PEX from now on. This means both CEX and...​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/AthenaAperformantJavaScri.jpg">AthenaEnv (JavaScript-Runtime) and the bright future of development on the PS2!​</description>
+			<creators>TnA</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2023-6-21T17:22:00.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
+			<desc>The Future of the PlayStation 2 Internal Hard Drive by Berion</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/TheFutureofthePlayStation.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/the-future-of-the-playstation-2-internal-hard-drive-by-berion.40924/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/TheFutureofthePlayStation.jpg">The Future of the PlayStation 2 Internal Hard DriveWe have recently started 2023, and the so-called PlayStation 2 console scene is surprisingly still doing well, yes, even better than ever before and better than on not one newer platform! And one of the leading projects that anyone interested can mention without a long moment's hesitation isOpen PS2 Loader- the successor to HDLoader and USB Advance, a program used to run games from USB, i.Link (FireWire), MX4SIO (a reader for e.g. SDXC in the Memory Card slot), the local network and the internal hard drive, whose operation is still stuck in the darkness of the Middle Ages.Before I get into specifics, it's worth recalling what the current, extremely exotic logical disk structure that Sony designed looks like, and which is supported by every software written to date that supports theinternalhard drive. Without understanding the APA, you won't understand the idea of a hybrid drive. It is only later that I will discuss the concept of building a Frankenstein with something modern, familiar, while providing a full or residual layer of compatibility.​</description>
+			<creators>Berion</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2022-12-25T04:23:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>XtremeEliteBoot + (PLUS) - First (limited-preview) Release!</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/XtremeEliteBootPLUSFirstl.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/xtremeeliteboot-plus-first-limited-preview-release.38965/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/XtremeEliteBootPLUSFirstl.jpg">PlayStation 2 DeveloperHowling Wolf & Chelseaknown here in the psx-place forums as(@HWNJ)released afirst OPEN Test-buildof their long-term project"XtremeEliteBoot + (PLUS)",although for the time being it is intentionally limited in some aspects (until the release of the first stable/full release)! Consider this release as a Preview/Showcase and Playground (especially for developers interested in LUA) of the full project that is come later on,​</description>
+			<creators>TnA</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2022-12-15T23:59:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>RetroArch (PS2) - v1.14.0 - Adds exFAT (USB) Support + Support for new PS2 Driver's</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/RetroArchPS2v1140AddsexFA.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/retroarch-ps2-v1-14-0-adds-exfat-usb-support-support-for-new-ps2-drivers.38888/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/RetroArchPS2v1140AddsexFA.jpg">The officialRetroArchproject has been updated to v1.14.0 and with this update a few changes have been adopted for the PS2 port,  Thanks to scene developer and RetroArch contributor@fjtrujy(Francisco J. Trujillo)improvements now have been made, recently the developer has been tinkering with the PS2 and not too long ago was trying toadd compatibility for OpenGL , as well as trying toadding SDL support(2)(3)for the PS2 , since the dev has taken his attention to PS2 port of RetroArch to provideexFAT (USB) support+ support for thenewly created PS2 driver'sthat makes it now much easier for dev's to use the PS2's IO drivers​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2025-3-31T22:32:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS3HEN w/ Linux & Overclocking Support? BadHTAB A hardware-software based hypervisor (lv1) exploit</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PS3HENwLinuxOverclockingS.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ps3hen-w-linux-overclocking-support-badhtab-a-hardware-software-based-hypervisor-lv1-exploit.47282/</target>
+		<mtrl id="0" lastm="2022-10-19T18:10:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>"The next big thing[?]" for PS1&PS2-Hacking? A small dive into a bright future via the MC-port!</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/ThenextbigthingforPS1PS2H.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/the-next-big-thing-for-ps1-ps2-hacking-a-small-dive-into-a-bright-future-via-the-mc-port.38484/</target>
 			<cntry agelmt="0">all</cntry>
 			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PS3HENwLinuxOverclockingS.jpg">UPDATE 4 - (May 2 / June 9):@esc0rtd3whas created a fork of the BadHTAB Exploit with some changes such as an "Automatic reboot if glitch crashes ps3" feature among other changes to make it easier for testing the new exploit.(June 9)- ReadMe Updated in link belowUPDATE 2 & 3:Now, not only Linux but also Overclocking on PS3HEN is now possible w/BadHTAB exploit&PS3HEN (beta builds)that are currently supporting the exploit. This is still considered an experimental exploit & features soUse at your Risk.  (See update tabs/links) for additional details and information on these advancements for the PlayStation 3.Original Article: Could Linux Support onPS3HENbe a reality with new exploit? Yes, and also other features but itsnot going to be for everyone. There is a newProof of Conceptreleased for the PS3 that has been implemented byKafuu(@aomsin2526)usingGeohot'soldhtab glitchon PS3HEN.  Developer@zecoxaofirst started posting about this idea and the concept in Jan. of 2023 here inthe forum'sand has shared various thoughts and progress, with the latest progress being Kafuu's implementation.BadHTABis ahardware-softwarebased hypervisor (lv1) exploit,The exploit has a very low success rate of (5-10%)as GameOS has a much smaller "glitch window". As the readme states this not meant "for daily driver, it is for user's withskill and patienceonly.".​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/ThenextbigthingforPS1PS2H.jpg">The future of PS1&PS2-Hacking has JUST begun!​</description>
+			<creators>TnA</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2021-7-22T22:52:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>RetroArch (PS2) Progress : New Cores incoming,  gpSP  (GameBoy Advance @ Full-Speed)</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/RetroArchPS2ProgressNewCo.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/retroarch-ps2-progress-new-cores-incoming-gpsp-gameboy-advance-full-speed.34680/</target>
+			<cntry agelmt="0">all</cntry>
+			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/RetroArchPS2ProgressNewCo.jpg">Emulation on a Homebrew Enabled PS2 Console has some great progress in the past year plus,  thanks to still very much active PS2 development scene.  Developer's like@fjtrujyhasported RetroArchto the PS2 about and since then has been adding more and more support for additional emulation with additional libretro core's., Recently the developer previewed some big things that  have been in the pipeline for the  PlayStation 2 port of RetroArch (a multi-system emulator).The PS2 now has a new full speedGBA (GameBoy Advance) emulatorcoming soon with thegpsplibretro corenow running very well @ full speed with the work of@fjtrujyand@davidgfnetcollaborating to bring dynarec to provide a full speed gba emu on the PS2 Console.  Also, the Lutro Core (Lua) improvements are right around the corner as well with some progress being made (seen here) to the core . See some of the progress that has been made on the PS2 port of RetroArch so far in 2021 below.​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2025-3-15T20:55:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PlayStation Home Revived and Enhanced by Home Laboratory!</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PlayStationHomeRevivedand.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/playstation-home-revived-and-enhanced-by-home-laboratory.47120/</target>
+		<mtrl id="0" lastm="2021-2-19T21:08:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Another new/old Exploit for the PS2! OpenTuna!</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/AnothernewoldExploitforth.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/another-new-old-exploit-for-the-ps2-opentuna.32893/</target>
 			<cntry agelmt="0">all</cntry>
 			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PlayStationHomeRevivedand.jpg">Home is back on the XMB in 2025! Download and Play just like it was originally!I am pleased to present our extensive work on reviving and enhancingPlayStation Home. Led by AgentDark447, our team has developed an advanced, open-source iteration of this server platform, significantly expanding its capabilities beyond the original. Below, I outline the project’s scope, technical advancements, and access instructions for those interested in exploring or contributing.​</description>
-			<creators>DeViL303</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/AnothernewoldExploitforth.jpg">The year is 2021 and the PlayStation 2 Hacking Scene is still alive and kicking very well and we have a new/old Exploit for our PS2 to share!Even with later generations of PlayStation Console like the PS3 / PS4 / PS5 / PS Vita around, the PS2 is still thriving in the development / homebrew community, while serving a great audience for the console. We have seen the progression of several major projects and exploits in the past year for the PlayStation 2 (PS2) like the updates toOpen PS2 Loader  (OPL)to version 1.0.0 andFreeDVDBootexploit.We now have"OpenTuna", brought to you by@alexparrado!OpenTunaIt is an open source version of another recent exploit found and developed back in late 2019 for the PS2 called theFortuna exploit. Additional details about this newly open-source variant of the Fortuna project and what it could mean for the PS2 community can be found in the information provided below:​</description>
+			<creators>TnA</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2025-3-15T10:34:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS3 Toolset (by bguerville) with 4.92 support has been released.</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PS3Toolsetbybguervillewit.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ps3-toolset-by-bguerville-with-4-92-support-has-been-released.47135/</target>
+		<mtrl id="0" lastm="2021-1-6T19:46:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>OPL (Open PS2 Loader) version 1.0 Released !!!</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/OPLOpenPS2Loaderversion10.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/opl-open-ps2-loader-version-1-0-released.32442/</target>
 			<cntry agelmt="0">all</cntry>
 			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/PS3Toolsetbybguervillewit.jpg">If you have a Custom Firmware compatible PlayStation 3 Model and are running 4.92 Official Firmware and need to Jailbreak for the first time or if you updated your previous CFW installation by mistake to 4.92 OFW. Then the PS3 Toolset will exploit your PS3 via the console's web browser and visitingps3toolset.com website(see tutorial tab), then once the process has completed you will be able to install a Custom Firmware (such as 4.92 Evilnat)  once again or for the first time.Your PlayStation 3 model must be able to install a CFW, these would be all the FAT models PS3 and Early production Slim Models. The easiest and most effective ways to determine if your PS3 can install a cfw​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/OPLOpenPS2Loaderversion10.jpg">It is here! Open PS2 Loader ("OPL") 1.0.0!After more than a decade (November 2008) of continuous development and a bit more than5 years since the last official stable release-build(0.9.3 in December 2015),OPL 1.0.0 has been officially released!​</description>
+			<creators>TnA</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2025-3-9T11:56:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>4.92 Littlebalup's DUALBOOT firmware Released</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/492LittlebalupsDUALBOOTfi.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/4-92-littlebalups-dualboot-firmware-released.46963/</target>
+		<mtrl id="0" lastm="2020-10-7T15:00:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>[UPDATE 2] Super Mario 64 Ported to Vita, PSP, PS2, PS3 and PS4!</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/UPDATE2SuperMario64Ported.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/update-2-super-mario-64-ported-to-vita-psp-ps2-ps3-and-ps4.30923/</target>
 			<cntry agelmt="0">all</cntry>
 			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/492LittlebalupsDUALBOOTfi.jpg">Since the4.92 firmware updatethings have been flowing out from the community in response. We have seenPS3HEN (& hfw) releasedfor 4.92 and we have seenEvilnat updateand release his cfw collection on 4.92. Now developer@littlebalupdrops by the forumand release the latestDualBoot (DB) firmwareto support 4.92 firmware.This release for Custom Firmware user's is a very useful firmware, if you use PSN still and do not want to go online with a modded system and risk a potential ban. As it allows you to use an Official firmware that can re-install a CFW without having re-exploiting the console with the toolset or flash writer. See full details in @littlebalups release notes about the Dualboot firmware concept.​</description>
-			<creators>STLcardsWS</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2025-3-9T11:24:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>4.92 Evilnat Custom Firmware (w/ Cobra v8.5) Released - CEX,PEX,D-PEX,DEX builds</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/492EvilnatCustomFirmwarew.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/4-92-evilnat-custom-firmware-w-cobra-v8-5-released-cex-pex-d-pex-dex-builds.46961/</target>
-			<cntry agelmt="0">all</cntry>
-			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/492EvilnatCustomFirmwarew.jpg">UPDATExai_plugin:New Overclocking Tools (change on the fly) / New ps2netemu improvements added.Following the4.92 firmware updatedeveloper's from around the community have been updating various projects. This time around PS3 CFW developer@Evilnatdrops by the forumand leave's us with a suite of ps3 custom firmware's that support 4.92 firmware.  4 Flavor's (CEX, PEX, D-PEX & DEX) are available for 4.92 Evilnat CFW, depending on your console/taste, all builds are equipped with theCobra v8.5 payloadto provide expanded feature set over Standard CFW's.If you are already on PS3 CFW, updating is a breeze, you just need to install the new CFW PUP file via the official USB Method and you will be on Evilnat's latest release. If you have updated to 4.92 OFW you will have to wait, as you will have re-exploit your ps3 console to allow for a Custom Firmware installation once again. The good news is that developer@bguervilleshould be rolling out a new update soon for the PS3 Toolset that support 4.92 firmware.  The offline tool CFW Flash Writer may take longer for the community to update it, but we hope to see an update for that tool soon as well.​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/UPDATE2SuperMario64Ported.jpg">Yes, you read right...Super Mario 64 has been ported to the Vita, PSP, PS2, PS3 and PS4(not to be confused with emulated)! You will need to build your own copy of the game using your own legitimately obtained N64 Rom.DoNOTask for links or pre-complied copies on this site, or you will be banned. And definitely doNOTlink to any pre-complied copies!Super Mario 64is arguably one of the greatest video games of all time, and certainly one of the most significant releases of it's time. Personally, I remember having my parents drop me off atToys 'R' Usfor hours at a time, just so that I could sample a little of this incredible 3D platformer on the demo-kiosk before it was officially released to the public. I will never forget whenBabbage'scalled me three days prior to the release of the Nintendo 64, and said I could come pick up my console and copy of Super Mario 64 that day. I spent countless hours mastering the controls, obtaining all 120 stars, and just enjoying the beautifully created worlds.​</description>
+			<creators>tthousand</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2025-3-9T11:09:00.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>PS3HEN 3.4.0 + HFW 4.92 - Officially released by esc0rtd3w of Team PS3Xploit</desc>
@@ -226,15 +226,6 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/CelebratingNineYearsofPSX.jpg">The psx-place.com website celebrates its 9th birthday on this day, originally opening in2014onOctober 14to the public. The site remains a pillar in the PlayStation Homebrew / Hacking community, thanks to the tremendous developer & user support that has blessed our forums. The past 9 years we have witnessed some amazing things in these forums, we have seen idea's and theories mature into full blown exploits and projects, we have seen developer's share and bounce idea to each other and even teamed up, which have spawned and improved many projects/aspects in the community. We have seen many developer's choose the psx-place forum to host their Release/Support threads for their projects. It has been a destination for developer's and user's to learn more about the community and even take part in it. Truly a place where people can come together for a common goal and that goal has been getting the most out of our beloved PlayStation devices.​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2023-8-12T07:19:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Athena - A performant JavaScript Runtime Environment for the PS2</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/AthenaAperformantJavaScri.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/athena-a-performant-javascript-runtime-environment-for-the-ps2.41393/</target>
-			<cntry agelmt="0">all</cntry>
-			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/AthenaAperformantJavaScri.jpg">AthenaEnv (JavaScript-Runtime) and the bright future of development on the PS2!​</description>
-			<creators>TnA</creators>
-		</mtrl>
 		<mtrl id="0" lastm="2023-8-1T20:30:00.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>FuHEN Contest Submissions - The Four of Us Are Dying / Beat2x / Zik-Zak Vita / Sonic SMS 3 Timelines</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/FuHENContestSubmissionsTh.jpg</url>
@@ -243,15 +234,6 @@
 			<lang>all</lang>
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/FuHENContestSubmissionsTh.jpg">The FuHEN - PS Vita Contest is underway and we have already 4 submissions that have been approved for entry: We have seen 3 Game Ports submitted and also a new Original Game for the PS Vita.  If you have not heard yet, there is a a PS Vita Contest that is currently on going and the submission period for projects is fromJuly 22nd, 2023  September 22nd, 2023You can learn more about the contest prizes, rules and the submissions process at the official website.We have an ambitious Original Game that has been in the making for awhile and aims to provide AAA graphics and effects. The gameplay is still early but the developer has big plans for the game called "The Four of us are Dying".byJosh Allen / noradninja.this game is a Silent Hill 2/Alan Wake style survival horror game.In the Game Port category we have seen 3 entries approved we have seen PS Vita legendary developer@Rinnegatamanteprovide three projects the first being"Beat2k" (A Dance Dance Revolution Clone)and also the developer has entered"Zik-Zak Vita"which is a great game that testes your reaction time getting through each level , Then@Rinnegatamantealso submitted "Eldritch" is a first person shooter inspired by games like roguelikes, immersive sims, and H. P. Lovecraft.  Then tou round out the first wave of entries we have seen developer@MDashKenter"Sonic SMS 3 Timelines"which is port of a fan made Sonic game that takes Sonic on a new adventure.​</description>
 			<creators>STLcardsWS</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2023-6-21T17:22:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>The Future of the PlayStation 2 Internal Hard Drive by Berion</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/TheFutureofthePlayStation.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/the-future-of-the-playstation-2-internal-hard-drive-by-berion.40924/</target>
-			<cntry agelmt="0">all</cntry>
-			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/TheFutureofthePlayStation.jpg">The Future of the PlayStation 2 Internal Hard DriveWe have recently started 2023, and the so-called PlayStation 2 console scene is surprisingly still doing well, yes, even better than ever before and better than on not one newer platform! And one of the leading projects that anyone interested can mention without a long moment's hesitation isOpen PS2 Loader- the successor to HDLoader and USB Advance, a program used to run games from USB, i.Link (FireWire), MX4SIO (a reader for e.g. SDXC in the Memory Card slot), the local network and the internal hard drive, whose operation is still stuck in the darkness of the Middle Ages.Before I get into specifics, it's worth recalling what the current, extremely exotic logical disk structure that Sony designed looks like, and which is supported by every software written to date that supports theinternalhard drive. Without understanding the APA, you won't understand the idea of a hybrid drive. It is only later that I will discuss the concept of building a Frankenstein with something modern, familiar, while providing a full or residual layer of compatibility.​</description>
-			<creators>Berion</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2023-5-4T20:47:00.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>(Update) Baryon Sweeper: Unbrick PSP 1000, 2000, 3000 /PSP Slim 04g, 07g, 09g/ PSP Street 11g  model</desc>
