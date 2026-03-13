@@ -11,7 +11,7 @@ def update_psx_news():
     print(f"[{datetime.now().strftime('%H:%M:%S')}] Starting PSX-Place Scraper (High Performance Mode)...")
     
     GITHUB_RAW_PREFIX = "https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/"
-    MAX_PAGES = 3
+    MAX_PAGES = 10
     
     os.makedirs('files', exist_ok=True)
     DIR_UNCOMPRESSED = os.path.join('resources', 'images', 'uncompressed')
