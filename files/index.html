@@ -440,29 +440,30 @@
         }
 
         function processImageQueue() {
-            if (g_imageQueue.length === 0) {
-                g_isProcessingQueue = false;
-                return;
-            }
-            
-            g_isProcessingQueue = true;
-            var item = g_imageQueue.shift(); 
-            
-            var rect = item.el.getBoundingClientRect();
-            var v_h = window.innerHeight;
-            var buffer = 200; 
+			if (g_imageQueue.length === 0) {
+				g_isProcessingQueue = false;
+				return;
+			}
 
-            if (rect.bottom > -buffer && rect.top < v_h + buffer) {
-                item.el.onload = item.el.onerror = function() {
-                    this.removeAttribute('data-loading');
-                    setTimeout(processImageQueue, 30);
-                };
-                item.el.src = item.src;
-            } else {
-                item.el.removeAttribute('data-loading');
-                processImageQueue();
-            }
-        }
+			g_isProcessingQueue = true;
+			var item = g_imageQueue.shift(); 
+
+			var rect = item.el.getBoundingClientRect();
+			var v_h = window.innerHeight;
+			var buffer = 200; 
+
+			if (rect.bottom > -buffer && rect.top < v_h + buffer) {
+				item.el.onload = item.el.onerror = function() {
+					this.removeAttribute('data-loading');
+				};
+				item.el.src = item.src;
+
+				setTimeout(processImageQueue, 30);
+			} else {
+				item.el.removeAttribute('data-loading');
+				processImageQueue();
+			}
+		}
 
         function openArticleModal(articleIndex) {
             var article = articlesList[articleIndex];
