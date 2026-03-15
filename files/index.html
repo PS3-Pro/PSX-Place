@@ -1,7 +1,7 @@
 <!-- Coded for PS3™ Pro by Luan Teles -->
 <html>
    <head>
-        <title>PSX-Place News</title>    
+        <title>PSX-Place News</title>   
             <link rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/favicon/apple-touch-icon.png">
             <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/favicon/favicon-32x32.png">
             <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/favicon/favicon-16x16.png">
@@ -267,9 +267,12 @@
         function processXMLData(data) {
             var lines = data.split("\n");
             var currentArticle = null;
+            var maxArticles = isPS3 ? 40 : lines.length; // TRAVA DE SEGURANÇA SÓ NO PS3
+            
             for (var i = 0; i < lines.length; i++) {
                 var line = lines[i];
                 if (line.indexOf("<desc>") != -1) {
+                    if (articlesList.length >= maxArticles) break; // Aciona o freio
                     currentArticle = { 
                         title: extractXMLTagContent(line, "<desc>", "</desc>"), 
                         img: "https://raw.githubusercontent.com/PS3-Pro/Pages/main/resources/media/psx-place_news.jpg", 
@@ -302,11 +305,21 @@
         }
 
         function removeHTMLTags(htmlString) {
-            var tempDiv = document.createElement("div"); 
-            tempDiv.innerHTML = htmlString;
-            var textOnly = tempDiv.textContent || tempDiv.innerText || "";
-            var maxLen = isPS3 ? 310 : 115; 
-            return textOnly.length > maxLen ? textOnly.substring(0, maxLen) + "..." : textOnly;
+            if (!isPS3) {
+                // MÉTODO ORIGINAL PC: 100% blindado contra falhas no Grid
+                var tempDiv = document.createElement("div"); 
+                tempDiv.innerHTML = htmlString;
+                var textOnly = tempDiv.textContent || tempDiv.innerText || "";
+                return textOnly.length > 115 ? textOnly.substring(0, 115) + "..." : textOnly;
+            } else {
+                // MÉTODO OTIMIZADO PS3: Limpa na brutalidade para não gargalar a CPU e quebrar as DIVs
+                var textOnly = htmlString.replace(/<[^>]*>?/gm, ' ')
+                                         .replace(/&nbsp;/g, ' ')
+                                         .replace(/[<>"]/g, '') // A Marreta! Mata aspas e tags zumbis.
+                                         .replace(/\s+/g, ' ')
+                                         .trim();
+                return textOnly.length > 310 ? textOnly.substring(0, 310) + "..." : textOnly;
+            }
         }
 
         function buildNewsGrid() {
@@ -440,30 +453,30 @@
         }
 
         function processImageQueue() {
-			if (g_imageQueue.length === 0) {
-				g_isProcessingQueue = false;
-				return;
-			}
+            if (g_imageQueue.length === 0) {
+                g_isProcessingQueue = false;
+                return;
+            }
 
-			g_isProcessingQueue = true;
-			var item = g_imageQueue.shift(); 
+            g_isProcessingQueue = true;
+            var item = g_imageQueue.shift(); 
 
-			var rect = item.el.getBoundingClientRect();
-			var v_h = window.innerHeight;
-			var buffer = 200; 
+            var rect = item.el.getBoundingClientRect();
+            var v_h = window.innerHeight;
+            var buffer = 200; 
 
-			if (rect.bottom > -buffer && rect.top < v_h + buffer) {
-				item.el.onload = item.el.onerror = function() {
-					this.removeAttribute('data-loading');
-				};
-				item.el.src = item.src;
+            if (rect.bottom > -buffer && rect.top < v_h + buffer) {
+                item.el.onload = item.el.onerror = function() {
+                    this.removeAttribute('data-loading');
+                };
+                item.el.src = item.src;
 
-				setTimeout(processImageQueue, 30);
-			} else {
-				item.el.removeAttribute('data-loading');
-				processImageQueue();
-			}
-		}
+                setTimeout(processImageQueue, 30);
+            } else {
+                item.el.removeAttribute('data-loading');
+                processImageQueue();
+            }
+        }
 
         function openArticleModal(articleIndex) {
             var article = articlesList[articleIndex];
