@@ -39,7 +39,7 @@ jobs:
           git add resources/images/compressed/
           
           if ! git diff --cached --exit-code --quiet; then
-            git commit -m "Auto-update: PSX-Place News feed (Images Optimized)"
+            git commit -m "Auto-update: PSX-Place News Feed"
             git pull origin master --rebase
             git push origin master
           else
