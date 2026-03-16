@@ -1,4 +1,3 @@
-<!-- Coded for PS3™ Pro by Luan Teles -->
 <html>
    <head>
         <title>PSX-Place News</title>   
@@ -267,12 +266,12 @@
         function processXMLData(data) {
             var lines = data.split("\n");
             var currentArticle = null;
-            var maxArticles = isPS3 ? 40 : lines.length; // TRAVA DE SEGURANÇA SÓ NO PS3
+            var maxArticles = isPS3 ? 40 : lines.length; 
             
             for (var i = 0; i < lines.length; i++) {
                 var line = lines[i];
                 if (line.indexOf("<desc>") != -1) {
-                    if (articlesList.length >= maxArticles) break; // Aciona o freio
+                    if (articlesList.length >= maxArticles) break; 
                     currentArticle = { 
                         title: extractXMLTagContent(line, "<desc>", "</desc>"), 
                         img: "https://raw.githubusercontent.com/PS3-Pro/Pages/main/resources/media/psx-place_news.jpg", 
@@ -306,18 +305,16 @@
 
         function removeHTMLTags(htmlString) {
             if (!isPS3) {
-                // MÉTODO ORIGINAL PC: 100% blindado contra falhas no Grid
                 var tempDiv = document.createElement("div"); 
                 tempDiv.innerHTML = htmlString;
                 var textOnly = tempDiv.textContent || tempDiv.innerText || "";
                 return textOnly.length > 115 ? textOnly.substring(0, 115) + "..." : textOnly;
             } else {
-                // MÉTODO OTIMIZADO PS3: Limpa na brutalidade para não gargalar a CPU e quebrar as DIVs
                 var textOnly = htmlString.replace(/<[^>]*>?/gm, ' ')
                                          .replace(/&nbsp;/g, ' ')
-                                         .replace(/[<>"]/g, '') // A Marreta! Mata aspas e tags zumbis.
+                                         .replace(/[<>"]/g, '') 
                                          .replace(/\s+/g, ' ')
-                                         .trim();
+                                         .replace(/^\s+|\s+$/g, ''); // CORREÇÃO: Substituído o .trim() para funcionar no NetFront!
                 return textOnly.length > 310 ? textOnly.substring(0, 310) + "..." : textOnly;
             }
         }
@@ -419,30 +416,33 @@
         function manageImagesRAM() {
             var v_h = window.innerHeight;
             var cards = document.querySelectorAll('.news_card_wrapper');
-            
             var buffer = isPS3 ? 200 : 1500; 
 
             for (var i = 0; i < cards.length; i++) {
                 var img = cards[i].querySelector('.news_card_image');
                 var rect = cards[i].getBoundingClientRect();
-                var target = img.getAttribute('data-src');
+                var targetUrl = img.getAttribute('data-src');
+                var isVisible = (rect.bottom > -buffer && rect.top < v_h + buffer);
 
-                if (rect.bottom > -buffer && rect.top < v_h + buffer) {
+                if (isVisible) {
                     if (!isPS3) {
-                        if (img.src !== target) {
-                            img.src = target;
+                        if (img.getAttribute('src') !== targetUrl) {
+                            img.setAttribute('src', targetUrl);
                         }
                     } else {
-                        var isLoading = img.getAttribute('data-loading');
-                        if (img.src !== target && isLoading !== 'true') {
-                            img.setAttribute('data-loading', 'true');
-                            g_imageQueue.push({ el: img, src: target });
+                        var state = img.getAttribute('data-state');
+                        if (state !== 'loaded' && state !== 'queued') {
+                            img.setAttribute('data-state', 'queued');
+                            g_imageQueue.push(img);
                         }
                     }
                 } else {
-                    if (isPS3 && img.src !== G_EMPTY_GIF) {
-                        img.src = G_EMPTY_GIF;
-                        img.removeAttribute('data-loading');
+                    if (isPS3) {
+                        var state = img.getAttribute('data-state');
+                        if (state !== 'empty') {
+                            img.setAttribute('src', G_EMPTY_GIF);
+                            img.setAttribute('data-state', 'empty');
+                        }
                     }
                 }
             }
@@ -459,21 +459,23 @@
             }
 
             g_isProcessingQueue = true;
-            var item = g_imageQueue.shift(); 
-
-            var rect = item.el.getBoundingClientRect();
+            var img = g_imageQueue.shift(); 
+            var rect = img.getBoundingClientRect();
             var v_h = window.innerHeight;
             var buffer = 200; 
 
-            if (rect.bottom > -buffer && rect.top < v_h + buffer) {
-                item.el.onload = item.el.onerror = function() {
-                    this.removeAttribute('data-loading');
-                };
-                item.el.src = item.src;
+            if (img.getAttribute('data-state') === 'empty') {
+                processImageQueue();
+                return;
+            }
 
-                setTimeout(processImageQueue, 30);
+            if (rect.bottom > -buffer && rect.top < v_h + buffer) {
+                img.setAttribute('data-state', 'loaded');
+                img.setAttribute('src', img.getAttribute('data-src'));
+                setTimeout(processImageQueue, 50); 
             } else {
-                item.el.removeAttribute('data-loading');
+                img.setAttribute('data-state', 'empty');
+                img.setAttribute('src', G_EMPTY_GIF);
                 processImageQueue();
             }
         }
