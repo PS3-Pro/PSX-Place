@@ -243,6 +243,8 @@
         var g_isProcessingQueue = false;
         var g_isAutoScrolling = false; 
 
+        var G_IMG_BUFFER = isPS3 ? 850 : 1500;
+
         function formatDateText(rawString) {
             if (!rawString || rawString === "Unknown") return "Unknown Date";
             try {
@@ -264,14 +266,18 @@
         }
 
         function processXMLData(data) {
-            var lines = data.split("\n");
+            var maxArticles = isPS3 ? 100 : 999; 
             var currentArticle = null;
-            var maxArticles = isPS3 ? 100 : lines.length; 
             
-            for (var i = 0; i < lines.length; i++) {
-                var line = lines[i];
+            var currentPos = 0;
+            var nextPos = 0;
+
+            while ((nextPos = data.indexOf("\n", currentPos)) !== -1) {
+                var line = data.substring(currentPos, nextPos);
+                currentPos = nextPos + 1; 
+
                 if (line.indexOf("<desc>") != -1) {
-                    if (articlesList.length >= maxArticles) break; 
+                    if (articlesList.length >= maxArticles) break;  
                     currentArticle = { 
                         title: extractXMLTagContent(line, "<desc>", "</desc>"), 
                         img: "https://raw.githubusercontent.com/PS3-Pro/Pages/main/resources/media/psx-place_news.jpg", 
@@ -314,20 +320,23 @@
                                          .replace(/&nbsp;/g, ' ')
                                          .replace(/[<>"]/g, '') 
                                          .replace(/\s+/g, ' ')
-                                         .replace(/^\s+|\s+$/g, ''); // CORREÇÃO: Substituído o .trim() para funcionar no NetFront!
+                                         .replace(/^\s+|\s+$/g, ''); 
                 return textOnly.length > 310 ? textOnly.substring(0, 310) + "..." : textOnly;
             }
         }
 
         function buildNewsGrid() {
             var gridContainer = document.getElementById("news_grid_container");
-            var outputHTML = "";
+            gridContainer.style.display = "none";
+            
+            var htmlArray = []; 
+            
             for (var i = 0; i < articlesList.length; i++) {
                 var article = articlesList[i];
                 var finalImgUrl = isPS3 ? article.img.replace('/uncompressed/', '/compressed/') : article.img.replace('/compressed/', '/uncompressed/');
                 var dateParts = article.date.split(" - ");
                 
-                outputHTML += '<div class="news_card_wrapper" style="animation-delay: ' + (i * 0.08) + 's;">' +
+                htmlArray.push('<div class="news_card_wrapper" style="animation-delay: ' + (i * 0.08) + 's;">' +
                                 '<div class="news_card">' +
                                     '<img src="' + G_EMPTY_GIF + '" data-src="' + finalImgUrl + '" class="news_card_image" onclick="openArticleModal(' + i + ')">' +
                                     '<div class="news_card_title">' + article.title + '</div>' +
@@ -340,9 +349,11 @@
                                         '<a href="' + article.link + '" target="_blank" class="button_base button_open_forum">FORUM</a>' +
                                     '</div>' +
                                 '</div>' +
-                            '</div>';
+                            '</div>');
             }
-            gridContainer.innerHTML = outputHTML;
+            
+            gridContainer.innerHTML = htmlArray.join('');
+            gridContainer.style.display = "block";
 
             var v_h = window.innerHeight;
             var cards = document.querySelectorAll('.news_card_wrapper');
@@ -416,7 +427,7 @@
         function manageImagesRAM() {
             var v_h = window.innerHeight;
             var cards = document.querySelectorAll('.news_card_wrapper');
-            var buffer = isPS3 ? 200 : 1500; 
+            var buffer = G_IMG_BUFFER; 
 
             for (var i = 0; i < cards.length; i++) {
                 var img = cards[i].querySelector('.news_card_image');
@@ -462,7 +473,8 @@
             var img = g_imageQueue.shift(); 
             var rect = img.getBoundingClientRect();
             var v_h = window.innerHeight;
-            var buffer = 200; 
+
+            var buffer = G_IMG_BUFFER;
 
             if (img.getAttribute('data-state') === 'empty') {
                 processImageQueue();
@@ -472,7 +484,7 @@
             if (rect.bottom > -buffer && rect.top < v_h + buffer) {
                 img.setAttribute('data-state', 'loaded');
                 img.setAttribute('src', img.getAttribute('data-src'));
-                setTimeout(processImageQueue, 50); 
+                setTimeout(processImageQueue, 10); 
             } else {
                 img.setAttribute('data-state', 'empty');
                 img.setAttribute('src', G_EMPTY_GIF);
