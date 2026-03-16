@@ -81,85 +81,85 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/4.92_Evilnat_Custom_Firmware_(w_Cobra_v8.5)_Released_-_CEX,PEX,D-PEX,DEX_builds.jpg">UPDATExai_plugin:New Overclocking Tools (change on the fly) / New ps2netemu improvements added.Following the4.92 firmware updatedeveloper's from around the community have been updating various projects. This time around PS3 CFW developer@Evilnatdrops by the forumand leave's us with a suite of ps3 custom firmware's that support 4.92 firmware.  4 Flavor's (CEX, PEX, D-PEX & DEX) are available for 4.92 Evilnat CFW, depending on your console/taste, all builds are equipped with theCobra v8.5 payloadto provide expanded feature set over Standard CFW's.If you are already on PS3 CFW, updating is a breeze, you just need to install the new CFW PUP file via the official USB Method and you will be on Evilnat's latest release. If you have updated to 4.92 OFW you will have to wait, as you will have re-exploit your ps3 console to allow for a Custom Firmware installation once again. The good news is that developer@bguervilleshould be rolling out a new update soon for the PS3 Toolset that support 4.92 firmware.  The offline tool CFW Flash Writer may take longer for the community to update it, but we hope to see an update for that tool soon as well.​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2025-3-9T11:09:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS3HEN 3.4.0 + HFW 4.92 - Officially released by esc0rtd3w of Team PS3Xploit</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3HEN_3.4.0_+_HFW_4.92_-_Officially_released_by_esc0rtd3w_of_Team_PS3Xploit.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ps3hen-3-4-0-hfw-4-92-officially-released-by-esc0rtd3w-of-team-ps3xploit.46959/</target>
+		<mtrl id="0" lastm="2017-2-26T15:29:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>[UPDATED] CMA Has Been Hacked & Backups Decrypted for all Firmwares even 3.65</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[UPDATED]_CMA_Has_Been_Hacked_&_Backups_Decrypted_for_all_Firmwares_even_3.65.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/updated-cma-has-been-hacked-backups-decrypted-for-all-firmwares-even-3-65.12838/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3HEN_3.4.0_+_HFW_4.92_-_Officially_released_by_esc0rtd3w_of_Team_PS3Xploit.jpg">PS3 Developer@esc0rtd3whas released the latest update toPS3HENwith support to recent firmware updateof 4.92.  Along with the PS3HEN update is the release ofHybrid Firmware (HFW), which is just an official firmware (4.92) with the "silk_webkit.sprx" file replace from 4.82 OFW (that has a vulnerability patched in 4.83 OFW, the last attempt Sony made to curb homebrew). HFW was created by@Joonieand has been apart of this 4.92 release of well.There have been a number of new changes in this update marked v3.4.0 as it does not just provide 4.92 support but various changes as seen in the changelog provided​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[UPDATED]_CMA_Has_Been_Hacked_&_Backups_Decrypted_for_all_Firmwares_even_3.65.jpg">UPDATE (FEB 26) Davee of Team Molecule release a CMA Key Generator to ease this Process(UPDATE TAB for additional details)Original Article (FEB. 20)Well the other day I caught wind of this onRedditbutYifan Luquickly made it private as it wasn't ready for public use so I didn't report on this. Well it now seems it is ready and the dev has released this to everyone now. This means we can extract anything fromCMAbackups even 3.61+ or old ones you have with another account etc. And better yet we can repack these adding what we want as well. Please note this doesn't allow for piracy but some tricks can be done as this will allow one to installARK on 3.61+systems without the need of being on 3.60 first or aPS3.​</description>
+			<creators>atreyu187</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2025-3-5T21:26:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS3 4.92 Official FIrmware has been released - PS3 CFW & PS3HEN DO NOT UPDATE to 4.92</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3_4.92_Official_FIrmware_has_been_released_-_PS3_CFW_&_PS3HEN_DO_NOT_UPDATE_to_4.92.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ps3-4-92-official-firmware-has-been-released-ps3-cfw-ps3hen-do-not-update-to-4-92.46837/</target>
+		<mtrl id="0" lastm="2017-2-16T15:38:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Adrenaline EasyInstaller Updated once again to v1.05 by freakler94</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Adrenaline_EasyInstaller_Updated_once_again_to_v1.05_by_freakler94.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/adrenaline-easyinstaller-updated-once-again-to-v1-05-by-freakler94.12778/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3_4.92_Official_FIrmware_has_been_released_-_PS3_CFW_&_PS3HEN_DO_NOT_UPDATE_to_4.92.jpg">As expectedthe PlayStation 3 has receivedfirmware update 4.92, if you are currently usingPS3HENorCFWyouSHOULD NOT updateyour PS3 Firmware to 4.92 at this time. Otherwise you will be temporary losing your jailbreak's and ability to run homebrew on the console, until developer's release new exploits/jailbreaks that support the new 4.92 firmware update. There isa processin which need to take place for things to catch up, as developer's@bguerville@esc0rtd3w@Evilnatand other's havebeen readyfor the update to launch to get to work quickly.We learned last week that@bguervillehas an update for the PS3 Toolset with new features being deployed as the developer explains in these two post >1<​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Adrenaline_EasyInstaller_Updated_once_again_to_v1.05_by_freakler94.jpg">Well just days ago I reported on an update to this useful application. Seems another has been pushed via the devs github bringing it up to v1.05 now with a few fixes and added features mentioned below. While the activation of a system hasn't been added (yet but that is because ePSP Bubble Installer 2.0 source isn't public yet) I am sure it is right around the corner. Till then the app seems to offer some really great additions as well as bug fixes seen below.​</description>
+			<creators>atreyu187</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2024-12-25T12:44:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Update 4.91.3  > > > [PS3 CFW] Evilnat's 4.91.2 Custom Firmware's Collection Released</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Update_4.91.3_____[PS3_CFW]_Evilnat's_4.91.2_Custom_Firmware's_Collection_Released.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/update-4-91-3-ps3-cfw-evilnats-4-91-2-custom-firmwares-collection-released.45604/</target>
+		<mtrl id="0" lastm="2017-2-14T01:35:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PSDK3v3 Updated Again by zecoxao</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PSDK3v3_Updated_Again_by_zecoxao.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/psdk3v3-updated-again-by-zecoxao.12737/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Update_4.91.3_____[PS3_CFW]_Evilnat's_4.91.2_Custom_Firmware's_Collection_Released.jpg">UPDATEJanuary 2025:CFW Evilnat 4.91.3[BETA 1] released>>Click Here<<December '24:Merry Christmas and Happy Holiday's to everyone, PS3 Custom firmware developer@Evilnathas dropped by the psx-place forum's on this Christmas day to present the final build(4.91.2)of the developer's ps3 Custom Firmware suite, after a series of Open Beta releases, v4.91.2  now officially drops the "BETA" tag and in its final form for 4.91.2.  For discussion and full details about this PS3 firmware release and the various cfw types offered in this suite of releases, checkout the developer's release thread here in the forum's detailing all the various features and functions in Evilnat's latest releases notes and details for4.91 Evilnat's CFW (w/ Cobra v8.5).​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PSDK3v3_Updated_Again_by_zecoxao.jpg">So have you ever wanted to compile your own Vita homebrew? As we all know of the "brickers" out there, wellzecoxaohas updated the all to useful SDK again based off Estwald's PSDK3v2. This way you know your system is safe as you made the homebrew yourself. Best of all PSX-Place's ownSuper Mod@kozarovvhas provided a nifty guide to getting setup and using this all to simple SDK. Various tools are included:curl,vtasdk, vita_portlibs,ftpvita,vita2d, psp2link,&debugnetto round out the included tools. See full details on this information and links included. And a big thanks to our Admin@STLcardsWSas well as I am sure he knows why after seeing this as I borrowed some from him on this new post.​</description>
+			<creators>atreyu187</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2024-11-8T00:28:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>New PS1/PS2 Emulation Features for PS3 CFW user's + Evilnat's 4.91.2-BETA 12</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/New_PS1PS2_Emulation_Features_for_PS3_CFW_user's_+_Evilnat's_4.91.2-BETA_12.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/new-ps1-ps2-emulation-features-for-ps3-cfw-users-evilnats-4-91-2-beta-12.45233/</target>
+		<mtrl id="0" lastm="2017-2-13T15:18:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Adrenaline EasyInstaller Updated v1.04 ads PSP Bubble Maker & Fixes ID.DAT Issues</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Adrenaline_EasyInstaller_Updated_v1.04_ads_PSP_Bubble_Maker_&_Fixes_ID.DAT_Issues.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/adrenaline-easyinstaller-updated-v1-04-ads-psp-bubble-maker-fixes-id-dat-issues.12719/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/New_PS1PS2_Emulation_Features_for_PS3_CFW_user's_+_Evilnat's_4.91.2-BETA_12.jpg">UPDATE: January 2025:ps2gxemu (for CECH-C/E ps3 models) has been updated by@kozarovv+ netemu to gxemu config conversion tool by@Zarhas been released, see details at bottomNov. 2024:  Recently we have had some great news with developments surroundingPS1 & PS2 Emulation on the PS3 for Custom Firmware user'sas the emulator's that reside in the PlayStation 3 Firmware have receivedsome modded tweaksthanks to@kozarovv&@mrjaredbeta, The files can be added manually to many firmware's or you can update to the latest release ofEvilnat's 4.91.2 CFW (BETA 12)that have these newly modded emulator's already installed and ready to go thanks to@Evilnat.The changes and feature's depend on the PS2/PS1 emulator being used and also on which model of the PS3 (with PS2). Below you will find a brief explanation of the emulator, mixed in with the readme details and some added screenshot. Some of the feature's need more testing to see how affective they may be such as the partial antiblur and EE Overclocking/Underclocking patches.  View all the details and related links found below.​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Adrenaline_EasyInstaller_Updated_v1.04_ads_PSP_Bubble_Maker_&_Fixes_ID.DAT_Issues.jpg">So it seems the dev behind EasyInstaller has been updating his project that recently went open source. This time around he has fixed the issue some users had with the ID.DAT as well as adding some other features as well. He implemented CelesteBlue's ePSP Base Game Bubble Creator. Just one less app we need to install but needs to be noted as without his work this would not be in this app at least not in this update. So big props to all open source developers.​</description>
+			<creators>atreyu187</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2024-7-16T21:27:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>CFW Flash Writer - Unofficial 4.91 update</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/CFW_Flash_Writer_-_Unofficial_4.91_update.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/cfw-flash-writer-unofficial-4-91-update.44229/</target>
+		<mtrl id="0" lastm="2017-2-10T14:19:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS4 Link now noob friendly with PS4 Relink by theorywrong</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_Link_now_noob_friendly_with_PS4_Relink_by_theorywrong.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps4-link-now-noob-friendly-with-ps4-relink-by-theorywrong.12670/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/CFW_Flash_Writer_-_Unofficial_4.91_update.jpg">Developer@aldostoolshas released an unofficial update for theCFW Flash Writerto supportHFW 4.91on the PS3. This can be a secondary candidate for allowing Custom Firmware installations whenbguerville's PS3Toolset (https://www.ps3toolset.com/bgtoolset/)isn't accessible or a self hosting offline option. However, ThePs3toolset is still the preferred  and safest method when available for hacking your capable ps3 model so its ready for PS3 Custom Firmware installations.​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_Link_now_noob_friendly_with_PS4_Relink_by_theorywrong.jpg">So you own aVitaorPlayStation TVand want to useRemote Play?Well if you are a HENkaku user and didn't so this prior to losing PSN access you have been out of luck till earlier this week whenYifan Lu released a methodof doing this. Iwrote an article about his methodandthen I even posted a tutorial using other toolsto make it a tad bit simpler for everyone involved but now there is a way to do this by simply running an application developed earlier today that has automated the entire process.​</description>
+			<creators>atreyu187</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2024-4-30T22:05:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PPPwn - PlayStation 4 PPPoE RCE - (The First PS4 Kernel RCE - Supporting upto FW 11.00) by TheFlow</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PPPwn_-_PlayStation_4_PPPoE_RCE_-_(The_First_PS4_Kernel_RCE_-_Supporting_upto_FW_11.00)_by_TheFlow.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/pppwn-playstation-4-pppoe-rce-the-first-ps4-kernel-rce-supporting-upto-fw-11-00-by-theflow.43655/</target>
+		<mtrl id="0" lastm="2017-2-10T00:52:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>ePSP Bubble Installer by  CelesteBlue : v2.0 offers No need for PSN to Activate your system(s)</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/ePSP_Bubble_Installer_by__CelesteBlue__v2.0_offers_No_need_for_PSN_to_Activate_your_system(s).jpg</url>
+			<target type="u">https://www.psx-place.com/threads/epsp-bubble-installer-by-celesteblue-v2-0-offers-no-need-for-psn-to-activate-your-system-s.12663/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PPPwn_-_PlayStation_4_PPPoE_RCE_-_(The_First_PS4_Kernel_RCE_-_Supporting_upto_FW_11.00)_by_TheFlow.jpg">Scene Developer & HackerTheFlowwho has been a legend in various PlayStation Scene's, has done it yet again!! This time the developer has released "The first PlayStation 4 Kernel RCE, Supporting FWs upto 11.00".With the newly released (PoC) jailbreak the community will be able to update popular Homebrew Enabler's (Mira & GoldHEN) to support firmware 11.00 with this new jailbreak that TheFlow has disclosed (CVE-2006-4304) through the bounty program and has been patched in the latest PS4 firmware available​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/ePSP_Bubble_Installer_by__CelesteBlue__v2.0_offers_No_need_for_PSN_to_Activate_your_system(s).jpg">So it seems developerCelesteBluehas updated his app (ePSP Bubble Installer) and as promised, now you can not only install Adrenaline or ARK without the need of a PSP bubble but you can now finally activate your system without the need of a PS3!!! This is a tool that quickly install a mini ePSP bubble for use with Adrenaline or ARK .No need to be on IDU or to have a PS3. Moreover, the bubble will only cost you 3.5MB ! Since v2.0, you can even activate your PSVita directly through the app ! Open the app and follow what is written on screen. Enjoy, finally, ARK and Adrenaline.​</description>
+			<creators>atreyu187</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2024-3-16T23:56:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Official PS3 Toolset Update (v1.2.007) Release (4.91 Support)</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Official_PS3_Toolset_Update_(v1.2.007)_Release_(4.91_Support).jpg</url>
-			<target type="u">https://www.psx-place.com/threads/official-ps3-toolset-update-v1-2-007-release-4-91-support.43211/</target>
+		<mtrl id="0" lastm="2017-2-9T19:52:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>(UPDATE) TheFl0w is back at it!! This time USB Mass Storage for PSTV CONFIMED!!</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/(UPDATE)_TheFl0w_is_back_at_it!!_This_time_USB_Mass_Storage_for_PSTV_CONFIMED!!.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/update-thefl0w-is-back-at-it-this-time-usb-mass-storage-for-pstv-confimed.12656/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Official_PS3_Toolset_Update_(v1.2.007)_Release_(4.91_Support).jpg">FollowingSony firmware update of 4.91for the PS3, developer's across the scene have been updating various exploits and tools. We have seen developer@Evilnatrelease his4.91 PS3 Custom Firmware'searlier in the week. Then we recently just had@esc0rtd3w&@JoonieprovidePS3HEN (& HFW) updated with 4.91 Support. Now we have developer@bguervillewith an update to hisPS3 Toolsetto support the exploiting of 4.91 OFW for custom firmware installation for capable models.​</description>
-			<creators>bguerville</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/(UPDATE)_TheFl0w_is_back_at_it!!_This_time_USB_Mass_Storage_for_PSTV_CONFIMED!!.jpg">Well if you are like me and have been eagerly awaiting a way to useexternal storage spaceseems it may be closer than we all think. Vita Developer"TheFlow"has not said if this is specifically for thePlayStation TVor thePS Vita. It could be for both systems for all I know as he is known for being cryptic and sarcastic but the picture does display a television and the new feature he has added intoVitaShell. So for now keep your fingers crossed and hope this is for both. If anything else should arrive at as always I will keep you informed.​</description>
+			<creators>atreyu187</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2024-3-16T07:42:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Official PS3HEN v3.3.0  + HFW Released for 4.91 Firmware from Team PS3Xploit</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Official_PS3HEN_v3.3.0__+_HFW_Released_for_4.91_Firmware_from_Team_PS3Xploit.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/official-ps3hen-v3-3-0-hfw-released-for-4-91-firmware-from-team-ps3xploit.43199/</target>
+		<mtrl id="0" lastm="2017-2-8T15:18:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Yifan Lu Releases PS4 Link Method for taiHENkaku</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Yifan_Lu_Releases_PS4_Link_Method_for_taiHENkaku.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/yifan-lu-releases-ps4-link-method-for-taihenkaku.12642/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Official_PS3HEN_v3.3.0__+_HFW_Released_for_4.91_Firmware_from_Team_PS3Xploit.jpg">TheOfficial PS3HENexploit has beenupdated to v3.3.0with some new changes from@esc0rtd3wand@JoonieofTeam PS3Xploitto support 4.91.  Also, developer Joonie has brought back the webkit exploit from 4.82 to 4.91 with the official HFW release(HFW = OFW with old webkit injected). Its best to use the official HFW when using the official PS3HEN release.​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Yifan_Lu_Releases_PS4_Link_Method_for_taiHENkaku.jpg">Well I reported earlier this week famed Vita hackerYifan LureleasedNetcheck Bypassthat allowed certain apps or games to be used again like Vita Media Server. It did not however allow one to usePS4 Linkon your system. While the theory was it was a "token" used to activate this it seems that simply was not the case.Well now the hacker has written up a nice little guide on how to use this feature again with a little work on the end users side. It should be noted theNetcheck Bypasscan still be used to bypass the annoying nag screen prompting for PSN sign in with this guide​</description>
+			<creators>atreyu187</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2024-3-9T19:06:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>[Update Re-Release] PS3 Custom Firmware - 4.91 Evilnat Cobra (8.4) CFW Released</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Update_Re-Release]_PS3_Custom_Firmware_-_4.91_Evilnat_Cobra_(8.4)_CFW_Released.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/update-re-release-ps3-custom-firmware-4-91-evilnat-cobra-8-4-cfw-released.43110/</target>
+		<mtrl id="0" lastm="2017-2-7T19:30:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>(Tutorial) Bypass PSN Login for Netflix on PS3</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/(Tutorial)_Bypass_PSN_Login_for_Netflix_on_PS3.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/tutorial-bypass-psn-login-for-netflix-on-ps3.12627/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Update_Re-Release]_PS3_Custom_Firmware_-_4.91_Evilnat_Cobra_(8.4)_CFW_Released.jpg">UPDATE -See 1st post for details, Re-Release a few bugs correctedPlayStation 3 CFW developer@Evilnathas just released his much anticipated4.91 Evilnat Custom Firmwarefollowingthe recent routine updatefrom Sony when they dropped firmware 4.91 last week.  If you are on any Custom Firmware currently all you have to do is install this CFW PuP by the USB method. You will not need to wait for an update to bguerville's PS3 Toolset to exploit your system (as its already exploited if you are running CFW).If you had updated to 4.91 OFW or by mistake installed a HFW you will have to wait for the PS3 Toolset to be updated. Developerbguervillewas waiting for the first 4.91 CFW to drop before making his update and that has just occurred with this release, so it should not be to long before we see bguerville provide a 4.91 update to the toolset as the developerdescribed herein the psx-place forums..​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/(Tutorial)_Bypass_PSN_Login_for_Netflix_on_PS3.jpg">So earlier this week my child managed to log into Netflix on my PS3 without logging into PSN. Thanks to@Jooniethe method to do this is now known. Before you go and get to happy so far only users of the latest NA Netflix app in the US have had success doing this as well. Here is a terrible video just to show it is working fine.​</description>
+			<creators>atreyu187</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2024-2-27T05:25:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS3 4.91 Firmware Released - Do Not Update!!!</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3_4.91_Firmware_Released_-_Do_Not_Update!!!.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ps3-4-91-firmware-released-do-not-update.42992/</target>
+		<mtrl id="0" lastm="2017-2-2T10:27:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Yifan Lu Releases Netcheck Bypass for taiHENkaku</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Yifan_Lu_Releases_Netcheck_Bypass_for_taiHENkaku.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/yifan-lu-releases-netcheck-bypass-for-taihenkaku.12561/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3_4.91_Firmware_Released_-_Do_Not_Update!!!.jpg">UPDATE:its now safe to update to 4.91. PS3HEN (& HFW), CFW & PS3 Toolset have been updated to support 4.91.PS3 Firmware 4.91 is now LiveThe expected once a year firmware update has been executed by Sony, PS3 4.91 Firmware is now Live. While an expected update, could this bring other changes to the firmware? Likely not but its still early to conclude as this update is fresh as of writing .Do not update, various exploits / tools / essential homebrew will need to be updated to support the latest firmware update of 4.91. See below for a short FAQ on 4.91, as there is always some confusions around the update process. .​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Yifan_Lu_Releases_Netcheck_Bypass_for_taiHENkaku.jpg">SoYifan luhas released aNetcheck Bypassdespite statinghe would only be working on hackingF00D,the equivalent tolv0on the PS3 which might spell checkmate for our beloved systems for those of us that stayed on 3.60, as for those that went to 3.61+ it might not be the same story due to Sony changing the keys an authentification of the PlayStation Network after the initial release of the hack. Again much like the PS3 but this time we have no way of downgrading at this point and time.​</description>
+			<creators>atreyu187</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2023-12-30T10:41:00.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>Movian M7 (by deank)  - "libav" swapped for "ffmpeg"  & slight name change</desc>
