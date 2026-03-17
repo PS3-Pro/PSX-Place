@@ -82,6 +82,19 @@
         #scroll-to-top { left: 10px; bottom: 25px; }
         #scroll-to-bottom { right: 15px; bottom: 25px; }
 
+        .is-pc .news_card_image {
+            opacity: 0;
+            -webkit-transition: opacity 0.6s ease-in;
+            transition: opacity 0.6s ease-in;
+        }
+        .is-pc .img-loaded {
+            opacity: 1 !important;
+        }
+
+        .is-ps3 .news_card_image {
+            opacity: 1 !important;
+        }
+
         /* =========================================
            2. PC ADJUSTIMENTS
            ========================================= */
@@ -454,6 +467,9 @@
                     if (!isPS3) {
                         if (imgObj.getAttribute('src') !== targetUrl) {
                             imgObj.setAttribute('src', targetUrl);
+                            if (imgObj.className.indexOf("img-loaded") === -1) {
+                                imgObj.className += " img-loaded";
+                            }
                         }
                     } else {
                         var state = imgObj.getAttribute('data-state');
