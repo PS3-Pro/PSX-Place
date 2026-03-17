@@ -195,7 +195,7 @@
         .is-ps3 .button_close_modal { position: absolute; top: 10px; right: 10px; background: #f00; border: 1px solid #fff; color: white; padding: 5px 10px; font-weight: bold; z-index: 210; }
 
         .background_waves { position: fixed; bottom: 0; width: 100%; height: 60px; pointer-events: none; z-index: 10; }
-	</style>
+    </style>
     <body>
         <header id="main_site_header">
             <div>
@@ -436,30 +436,37 @@
         function manageImagesRAM() {
             var v_h = window.innerHeight;
             var buffer = G_IMG_BUFFER; 
-            var statesToChange = [];
+            
+            var filaVisivelTotal = [];
+            var filaVisivelParcial = [];
+            var filaBuffer = [];
 
             for (var i = 0; i < G_DOM_CARDS.length; i++) {
-                var img = G_DOM_CARDS[i];
-                var rect = img.getBoundingClientRect();
-                var isVisible = (rect.bottom > -buffer && rect.top < v_h + buffer);
-                statesToChange.push({ img: img, isVisible: isVisible });
-            }
-
-            for (var j = 0; j < statesToChange.length; j++) {
-                var item = statesToChange[j];
-                var imgObj = item.img;
+                var imgObj = G_DOM_CARDS[i];
+                var rect = imgObj.getBoundingClientRect();
                 var targetUrl = imgObj.getAttribute('data-src');
 
-                if (item.isVisible) {
+                var inBuffer = (rect.bottom > -buffer && rect.top < v_h + buffer);
+                var isVisible = (rect.bottom > 0 && rect.top < v_h);
+                var isFullyVisible = (rect.top >= 0 && rect.bottom <= v_h);
+
+                if (inBuffer) {
                     if (!isPS3) {
                         if (imgObj.getAttribute('src') !== targetUrl) {
                             imgObj.setAttribute('src', targetUrl);
                         }
                     } else {
                         var state = imgObj.getAttribute('data-state');
-                        if (state !== 'loaded' && state !== 'queued') {
+                        if (state !== 'loaded') {
                             imgObj.setAttribute('data-state', 'queued');
-                            g_imageQueue.push(imgObj);
+                            
+                            if (isFullyVisible) {
+                                filaVisivelTotal.push(imgObj);
+                            } else if (isVisible) {
+                                filaVisivelParcial.push(imgObj);
+                            } else {
+                                filaBuffer.push(imgObj);
+                            }
                         }
                     }
                 } else {
@@ -473,8 +480,12 @@
                 }
             }
 
-            if (isPS3 && g_imageQueue.length > 0 && !g_isProcessingQueue) {
-                processImageQueue();
+            if (isPS3) {
+                g_imageQueue = filaVisivelTotal.concat(filaVisivelParcial).concat(filaBuffer);
+
+                if (g_imageQueue.length > 0 && !g_isProcessingQueue) {
+                    processImageQueue();
+                }
             }
         }
 
