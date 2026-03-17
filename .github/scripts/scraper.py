@@ -4,7 +4,7 @@ import time
 from curl_cffi import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
-from PIL import Image
+from PIL import Image, ImageOps
 from io import BytesIO
 
 def update_psx_news():
@@ -118,7 +118,9 @@ def update_psx_news():
                                 if img.mode in ("RGBA", "P"): 
                                     img = img.convert("RGB")
                                 
-                                img.save(path_compressed, "JPEG", quality=40, optimize=True)
+                                img_optimized = ImageOps.fit(img, (290, 170), Image.Resampling.LANCZOS)
+                                
+                                img_optimized.save(path_compressed, "JPEG", quality=80, optimize=True)
                                 
                         except Exception as e:
                             print(f"Erro na imagem {n['image_name']}: {e}")

@@ -1,3 +1,4 @@
+<!-- Coded for PS3™ Pro by Luan Teles -->
 <html>
    <head>
         <title>PSX-Place News</title>   
@@ -29,14 +30,13 @@
         #news_grid_container { 
             position: absolute; left: 0; right: 0; bottom: 0; top: 115px;
             overflow-y: auto; text-align: center; z-index: 20;
-            -webkit-transform: translateZ(0); transform: translateZ(0);
         }
 
         .label_preview { color: #FF0000; font-weight: bold; text-transform: uppercase; font-size: 11px; }
         .highlight_author { color: #00ccff; font-weight: bold; }
         .highlight_date { color: #FFB347; } 
         .highlight_time { color: #50c878; font-weight: bold; }
-        
+
         .button_read_more { background: #007bff; color: #fff; }
         .button_read_more:hover { background: #0056b3; }
         .button_open_forum { background: #6f21c2; color: #fff; }
@@ -53,7 +53,7 @@
 
         #modal_meta_info { font-size: 12px; margin-bottom: 8px; font-weight: bold; }
         #modal_body_content p:empty, #modal_body_content div:empty, #modal_body_content span:empty { display: none !important; }
-        
+
         ::-webkit-scrollbar { width: 6px; height: 10px; }
         ::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.3); border-radius: 2px; }
         ::-webkit-scrollbar-thumb { background: #66ccff; border: 1px solid #00008B; border-radius: 4px; }
@@ -79,8 +79,8 @@
             transition: 0.2s;
         }
 
-        #scroll-to-top { left: 10px; bottom: 25px; } /* Lado Esquerdo */
-        #scroll-to-bottom { right: 15px; bottom: 25px; } /* Lado Direito */
+        #scroll-to-top { left: 10px; bottom: 25px; }
+        #scroll-to-bottom { right: 15px; bottom: 25px; }
 
         /* =========================================
            2. PC ADJUSTIMENTS
@@ -89,7 +89,7 @@
         .is-pc #news_grid_container::-webkit-scrollbar { width: 8px; }
         .is-pc #news_grid_container::-webkit-scrollbar-thumb { background: #00aaff; border-radius: 10px; }
         .is-pc #news_grid_container { backdrop-filter: blur(5px);}
-        
+
         .is-pc #main_site_header {
             position: fixed; top: 0; left: 0; right: 0;
             height: 90px; background: rgba(0, 0, 0, 0.5);
@@ -115,7 +115,7 @@
         }
         @keyframes rotate { to { --angle: 360deg; } }
         @keyframes tileReveal { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
-        
+
         .is-pc .news_card_wrapper { display: inline-block; vertical-align: top; margin: 12px; width: 260px; opacity: 0; animation: tileReveal 0.4s ease-out forwards; }
         .is-pc .news_card {
             width: 100%; height: 390px; border-radius: 12px;
@@ -154,17 +154,23 @@
         .is-ps3 body { background-attachment: scroll !important; }
         .is-ps3 #main_site_header { position: absolute; top: 0; left: 0; width: 100%; height: 100px; background: rgba(0, 0, 0, 0.7); border-bottom: 2px solid #888; z-index: 100; text-align: center; }
         .is-ps3 .background_waves { display: none; }
+
+        .is-ps3 #news_grid_container {
+            position: fixed !important; 
+            overflow-y: scroll !important;
+        }
+
         .is-ps3 .news_card_wrapper { display: inline-block; vertical-align: top; margin: 10px; }
-        
-        .is-ps3 .news_card { width: 290px; height: 480px; background: #111; border: 2px solid #555; text-align: left; position: relative; overflow: hidden; transition: border-color 0.2s; }
+
+        .is-ps3 .news_card { width: 290px; height: 480px; background: #111; border: 2px solid #555; text-align: left; position: relative; overflow: hidden; }
         .is-ps3 .news_card:hover { border-color: #00aaff; }
-        
-        .is-ps3 .news_card_image { width: 100%; height: 170px; border-bottom: 2px solid #00aaff; object-fit: cover; cursor: pointer; }
+
+        .is-ps3 .news_card_image { width: 100%; height: 170px; border-bottom: 2px solid #00aaff; object-fit: cover; cursor: pointer; display: block;}
         .is-ps3 .news_card_title { padding: 10px; margin-bottom: -10px; background: #000; color: #F0E68C; font-weight: bold; font-size: 14px; height: 55px; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; }
         .is-ps3 .news_card_excerpt { padding: 10px 15px; font-size: 12px; color: #ddd; height: 180px; overflow: hidden; border-top: 1px solid #333; }
         .is-ps3 .news_card_meta { position: absolute; bottom: 52px; left: 0; right: 0; font-size: 11px; background: rgba(0,0,0,0.9); padding: 4px 10px; text-align: center; border-top: 1px solid #222; }
         .is-ps3 .news_card_buttons { position: absolute; bottom: 0; left: 0; right: 0; padding: 10px; background: #000; text-align: center; }
-        .is-ps3 .button_base { display: inline-block; padding: 8px 0; font-size: 12px; font-weight: bold; text-decoration: none; text-align: center; border: 1px solid #555; width: 95%; transition: 0.2s; }
+        .is-ps3 .button_base { display: inline-block; padding: 8px 0; font-size: 12px; font-weight: bold; text-decoration: none; text-align: center; border: 1px solid #555; width: 95%; }
         .is-ps3 .button_open_forum { display: none !important; }
 
         .is-ps3 #scroll-to-bottom:hover, 
@@ -189,7 +195,7 @@
         .is-ps3 .button_close_modal { position: absolute; top: 10px; right: 10px; background: #f00; border: 1px solid #fff; color: white; padding: 5px 10px; font-weight: bold; z-index: 210; }
 
         .background_waves { position: fixed; bottom: 0; width: 100%; height: 60px; pointer-events: none; z-index: 10; }
-    </style>
+	</style>
     <body>
         <header id="main_site_header">
             <div>
@@ -197,11 +203,11 @@
                 <p style="font-size: 16px; margin: 8px 0 5px 0; color: #ccc;">PSX-Place.com - Latest Homebrew & Scene News</p>
             </div>
         </header>
-    
+
         <div id="news_grid_container">
             <div id="loading_status" style="margin-top:50px; font-size:20px; color:#00aaff;">Syncing Scene Feed...</div>
         </div>
-    
+
         <div id="scroll-to-top" onclick="scrollToTop()">&#8593;</div>
         <div id="scroll-to-bottom" onclick="scrollToBottom()">&#8595;</div>
 
@@ -221,7 +227,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="background_waves">
             <svg viewBox="0 24 150 28" preserveAspectRatio="none" style="width:100%; height:100%;">
                 <defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" /></defs>
@@ -244,6 +250,7 @@
         var g_isAutoScrolling = false; 
 
         var G_IMG_BUFFER = isPS3 ? 850 : 1500;
+        var G_DOM_CARDS = [];
 
         function formatDateText(rawString) {
             if (!rawString || rawString === "Unknown") return "Unknown Date";
@@ -268,7 +275,7 @@
         function processXMLData(data) {
             var maxArticles = isPS3 ? 100 : 999; 
             var currentArticle = null;
-            
+
             var currentPos = 0;
             var nextPos = 0;
 
@@ -328,14 +335,14 @@
         function buildNewsGrid() {
             var gridContainer = document.getElementById("news_grid_container");
             gridContainer.style.display = "none";
-            
+
             var htmlArray = []; 
-            
+
             for (var i = 0; i < articlesList.length; i++) {
                 var article = articlesList[i];
                 var finalImgUrl = isPS3 ? article.img.replace('/uncompressed/', '/compressed/') : article.img.replace('/compressed/', '/uncompressed/');
                 var dateParts = article.date.split(" - ");
-                
+
                 htmlArray.push('<div class="news_card_wrapper" style="animation-delay: ' + (i * 0.08) + 's;">' +
                                 '<div class="news_card">' +
                                     '<img src="' + G_EMPTY_GIF + '" data-src="' + finalImgUrl + '" class="news_card_image" onclick="openArticleModal(' + i + ')">' +
@@ -351,22 +358,24 @@
                                 '</div>' +
                             '</div>');
             }
-            
+
             gridContainer.innerHTML = htmlArray.join('');
             gridContainer.style.display = "block";
 
+            G_DOM_CARDS = document.querySelectorAll('.news_card_image');
+
             var v_h = window.innerHeight;
-            var cards = document.querySelectorAll('.news_card_wrapper');
+            var cardsWrappers = document.querySelectorAll('.news_card_wrapper');
             animCutoffFound = false;
 
-            for (var t = 0; t < cards.length; t++) {
+            for (var t = 0; t < cardsWrappers.length; t++) {
                 if (animCutoffFound) {
-                    cards[t].className += ' no-anim';
+                    cardsWrappers[t].className += ' no-anim';
                 } else {
-                    var rect = cards[t].getBoundingClientRect();
+                    var rect = cardsWrappers[t].getBoundingClientRect();
                     if (rect.top > v_h) {
                         animCutoffFound = true;
-                        cards[t].className += ' no-anim';
+                        cardsWrappers[t].className += ' no-anim';
                     }
                 }
             }
@@ -374,7 +383,7 @@
             var scrollTimer = null;
             gridContainer.addEventListener('scroll', function() {
                 if(scrollTimer) clearTimeout(scrollTimer);
-                scrollTimer = setTimeout(manageImagesRAM, 50);
+                scrollTimer = setTimeout(manageImagesRAM, isPS3 ? 150 : 50);
             });
 
             setTimeout(manageImagesRAM, 200); 
@@ -426,33 +435,39 @@
 
         function manageImagesRAM() {
             var v_h = window.innerHeight;
-            var cards = document.querySelectorAll('.news_card_wrapper');
             var buffer = G_IMG_BUFFER; 
+            var statesToChange = [];
 
-            for (var i = 0; i < cards.length; i++) {
-                var img = cards[i].querySelector('.news_card_image');
-                var rect = cards[i].getBoundingClientRect();
-                var targetUrl = img.getAttribute('data-src');
+            for (var i = 0; i < G_DOM_CARDS.length; i++) {
+                var img = G_DOM_CARDS[i];
+                var rect = img.getBoundingClientRect();
                 var isVisible = (rect.bottom > -buffer && rect.top < v_h + buffer);
+                statesToChange.push({ img: img, isVisible: isVisible });
+            }
 
-                if (isVisible) {
+            for (var j = 0; j < statesToChange.length; j++) {
+                var item = statesToChange[j];
+                var imgObj = item.img;
+                var targetUrl = imgObj.getAttribute('data-src');
+
+                if (item.isVisible) {
                     if (!isPS3) {
-                        if (img.getAttribute('src') !== targetUrl) {
-                            img.setAttribute('src', targetUrl);
+                        if (imgObj.getAttribute('src') !== targetUrl) {
+                            imgObj.setAttribute('src', targetUrl);
                         }
                     } else {
-                        var state = img.getAttribute('data-state');
+                        var state = imgObj.getAttribute('data-state');
                         if (state !== 'loaded' && state !== 'queued') {
-                            img.setAttribute('data-state', 'queued');
-                            g_imageQueue.push(img);
+                            imgObj.setAttribute('data-state', 'queued');
+                            g_imageQueue.push(imgObj);
                         }
                     }
                 } else {
                     if (isPS3) {
-                        var state = img.getAttribute('data-state');
-                        if (state !== 'empty') {
-                            img.setAttribute('src', G_EMPTY_GIF);
-                            img.setAttribute('data-state', 'empty');
+                        var stateEmpty = imgObj.getAttribute('data-state');
+                        if (stateEmpty !== 'empty') {
+                            imgObj.setAttribute('src', G_EMPTY_GIF);
+                            imgObj.setAttribute('data-state', 'empty');
                         }
                     }
                 }
