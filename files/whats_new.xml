@@ -9,6 +9,14 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/qCFW_-_Arrives_to_Slim_(2500-3000)_&_SuperSlim_(4000-NOR)_PlayStation_3_Models.jpg">UPDATE (Feb. 20) -PS3HEN 3.4.2 Open Beta: Test #1 Released- (Forum Link)UPDATE (Feb. 20) -qCFW updated(forum link)   --qcfw-20260220-release(github link)UPDATE (Feb. 17) -qCFW and Future potential(Forum Thread)by@aomsin2526>here<UPDATE (Feb. 13) -BadWDSD/qCFW + HW Flasher/NoBT(Forum Thread)UPDATE (Feb. 11) -qCFW files have been temporary removed from github by the developer, due to a bug, see@aomsin2526's post >here<  & >also here<UPDATE (Feb. 3)-PS3HEN v3.4.1 (STABLE) has now been releasedby@esc0rtd3w, graduating from the 3.4.1 BETA builds. (Note: v3.4.1+ is required for qCFW)​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
+		<mtrl id="0" lastm="2025-8-3T22:44:00.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
+			<desc>[BD-JB-1250] New Exploit (bluray) for PlayStation 4 supporting upto 12.50 firmware from Gezine</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[BD-JB-1250]_New_Exploit_(bluray)_for_PlayStation_4_supporting_upto_12.50_firmware_from_Gezine.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/bd-jb-1250-new-exploit-bluray-for-playstation-4-supporting-upto-12-50-firmware-from-gezine.48161/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[BD-JB-1250]_New_Exploit_(bluray)_for_PlayStation_4_supporting_upto_12.50_firmware_from_Gezine.jpg">The PlayStation 4 has new BluRay exploit that supports upto 12.50 Firmware. Thanks to the efforts of developerGezine,who has released the source code and helloworld.iso to complete the proof of work of this recent exploit for the PS4.  Below you can see the readme for the project. Also some community reaction and comments about the new exploit for the PS4 from Abkarino & Modded Warefare dives into the exploit in one of his latest video attached​</description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
 		<mtrl id="0" lastm="2025-6-24T01:48:00.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
 			<desc>{CFW Release} 4.92.2 Evilnat  Custom Firmware (w/ Cobra v8.5) - Includes: CEX/PEX/D-PEX) + noBD/BT</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/{CFW_Release}_4.92.2_Evilnat__Custom_Firmware_(w_Cobra_v8.5)_-_Includes_CEXPEXD-PEX)_+_noBDBT.jpg</url>
@@ -17,7 +25,15 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/{CFW_Release}_4.92.2_Evilnat__Custom_Firmware_(w_Cobra_v8.5)_-_Includes_CEXPEXD-PEX)_+_noBDBT.jpg">After a successful Open Beta for 4.92.2, PlayStation 3 CFW developer@Evilnathas nowOFFICIALLYupdated hisEvilnat Custom Firmware'sfor the PS3 to version4.92.2,A number of new changes and options have been added in this release for your PS3 FAT and Early Slim models capable of installing a CFW PUP.Various patches to the CFW have been made as well as various new additions to theCobra Payload, Also theXAI Pluginwas not left out, as there are some new options one being a newNew Overclock menuhas been introduced to the firmware.  Now we no longer need a dedicated PUP to change overclock settings, it can be done directly on the XMB. All the details and changes can be found in Evilnat's release note's found below and also in the link provided at the bottom.​</description>
 			<creators>Evilnat</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2025-5-10T13:47:00.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
+		<mtrl id="0" lastm="2025-6-14T04:10:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>ProtoPwn (Protokernel Exploit by pcm720) -  Now all PS2s are hackable via MemoryCard  (MILESTONE)</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/ProtoPwn_(Protokernel_Exploit_by_pcm720)_-__Now_all_PS2s_are_hackable_via_MemoryCard__(MILESTONE).jpg</url>
+			<target type="u">https://www.psx-place.com/threads/protopwn-protokernel-exploit-by-pcm720-now-all-ps2s-are-hackable-via-memorycard-milestone.47708/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/ProtoPwn_(Protokernel_Exploit_by_pcm720)_-__Now_all_PS2s_are_hackable_via_MemoryCard__(MILESTONE).jpg">Breaking Newsin the PS2 Scene,as a NEW MemoryCard Exploit for Protokernel PS2s (SCPH-10000, SCPH-15000, and DTL-H10000(S)) just got released!!!It took 25 years to reach this point, butNOW ALL PS2s including ALL special models(Arcade, Prototype, Debug, Consumer-model, "special/custom builds")can load Homebrew WITHOUT DISCS!​</description>
+			<creators>TnA</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2025-5-10T13:47:00.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>BadWDSD HW Exploit - With new powerful qCFW for PS3 Slim & SuperSlim NOR models on the horizon</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/BadWDSD_HW_Exploit_-_With_new_powerful_qCFW_for_PS3_Slim_&_SuperSlim_NOR_models_on_the_horizon.jpg</url>
 			<target type="u">https://www.psx-place.com/threads/badwdsd-hw-exploit-with-new-powerful-qcfw-for-ps3-slim-superslim-nor-models-on-the-horizon.47475/</target>
@@ -47,6 +63,14 @@
 			<target type="u">https://www.psx-place.com/threads/ps3-toolset-by-bguerville-with-4-92-support-has-been-released.47135/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3_Toolset_(by_bguerville)_with_4.92_support_has_been_released..jpg">If you have a Custom Firmware compatible PlayStation 3 Model and are running 4.92 Official Firmware and need to Jailbreak for the first time or if you updated your previous CFW installation by mistake to 4.92 OFW. Then the PS3 Toolset will exploit your PS3 via the console's web browser and visitingps3toolset.com website(see tutorial tab), then once the process has completed you will be able to install a Custom Firmware (such as 4.92 Evilnat)  once again or for the first time.Your PlayStation 3 model must be able to install a CFW, these would be all the FAT models PS3 and Early production Slim Models. The easiest and most effective ways to determine if your PS3 can install a cfw​</description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2025-3-9T11:56:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>4.92 Littlebalup's DUALBOOT firmware Released</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/4.92_Littlebalup's_DUALBOOT_firmware_Released.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/4-92-littlebalups-dualboot-firmware-released.46963/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/4.92_Littlebalup's_DUALBOOT_firmware_Released.jpg">Since the4.92 firmware updatethings have been flowing out from the community in response. We have seenPS3HEN (& hfw) releasedfor 4.92 and we have seenEvilnat updateand release his cfw collection on 4.92. Now developer@littlebalupdrops by the forumand release the latestDualBoot (DB) firmwareto support 4.92 firmware.This release for Custom Firmware user's is a very useful firmware, if you use PSN still and do not want to go online with a modded system and risk a potential ban. As it allows you to use an Official firmware that can re-install a CFW without having re-exploiting the console with the toolset or flash writer. See full details in @littlebalups release notes about the Dualboot firmware concept.​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2025-3-9T11:24:00.000Z" until="2100-12-31T23:59:00.000Z">
@@ -137,85 +161,85 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3_4.91_Firmware_Released_-_Do_Not_Update!!!.jpg">UPDATE:its now safe to update to 4.91. PS3HEN (& HFW), CFW & PS3 Toolset have been updated to support 4.91.PS3 Firmware 4.91 is now LiveThe expected once a year firmware update has been executed by Sony, PS3 4.91 Firmware is now Live. While an expected update, could this bring other changes to the firmware? Likely not but its still early to conclude as this update is fresh as of writing .Do not update, various exploits / tools / essential homebrew will need to be updated to support the latest firmware update of 4.91. See below for a short FAQ on 4.91, as there is always some confusions around the update process. .​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2017-5-27T06:48:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Henkaku 10th release - Now you don't need memory card even on Vita 1000</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Henkaku_10th_release_-_Now_you_don't_need_memory_card_even_on_Vita_1000.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/henkaku-10th-release-now-you-dont-need-memory-card-even-on-vita-1000.13904/</target>
+		<mtrl id="0" lastm="2019-1-5T00:39:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>[Update x2] RetroArch (PS2) Preview (includes 2 cores) - Introducing New Nigthly PS2 Releases</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Update_x2]_RetroArch_(PS2)_Preview_(includes_2_cores)_-_Introducing_New_Nigthly_PS2_Releases.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/update-x2-retroarch-ps2-preview-includes-2-cores-introducing-new-nigthly-ps2-releases.22007/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Henkaku_10th_release_-_Now_you_don't_need_memory_card_even_on_Vita_1000.jpg">RecentlyTeam moleculeissued an update to their popular exploit that has unlocked tVita/Pstv) withHENkaku R10which provided the ability to install the exploit without the need of a memory card by moving files to ur0:tai, This works on the original Vita - 1000 models, Full details of this update can be seen in the provided logs, ​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Update_x2]_RetroArch_(PS2)_Preview_(includes_2_cores)_-_Introducing_New_Nigthly_PS2_Releases.jpg">Update(2x): Reports are coming in this PS2 Homebrew is also working on PS3 HAN & PS4 (5.05).With progress making headway on the upcomingPS4 port of RetroArchfrom a group of developer's, Another developer (fjtrujy) started progress on a PlayStation 2 (PS2) portseveral months back (view previous progress)and now has  a port that progressed enough for a public soft release, Now available in the newRetroArch PS2 Nightiesfor anyone interested in downloading and trying out the multi-system emulator on your homebrew capable PS2 hardware.@fjtrujy warns that many things need implemented yet and many pending issue remain and only these early release contains two cores currently2048andQuickNES. Which is likely to grow and a good gauge to base what is expected for the PS2 port, Would be to view the PSP as that should be a good baseline of what to expect and the PS2 may be able to handy more then the PSP likely.​</description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2018-10-10T12:02:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>(Progress Update) RetroArch PS2  - New port now In development for PlayStation 2</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/(Progress_Update)_RetroArch_PS2__-_New_port_now_In_development_for_PlayStation_2.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/progress-update-retroarch-ps2-new-port-now-in-development-for-playstation-2.20946/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/(Progress_Update)_RetroArch_PS2__-_New_port_now_In_development_for_PlayStation_2.jpg">(UPDATE x3 - Progress Report - DEC 2018)RetroArchand its Libretro Cores have invaded just about every electronic device known to man it seems, as the retro emulation project continues to grow its ecosystem and support a vast amount of platforms,  With ports to the PS3, PS Vita, PlayStationTV, PSP & so many other supported platforms (seen here),  many PlayStation 2  fans were left wonder if a PS2 port would ever arise and some wondered if it was even doable.  Well the libretro team via twitter has answered some of those question with an announcement of an in developmentRetroArch PS2 Port.This is still early but its good news to see some progress and knowing that this could be coming a reality soon for the PS2 community.​</description>
 			<creators>kozarovv</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2017-5-25T21:39:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Adrenaline-4.1 Released -  TheFlow zaps a few bugs with new update</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Adrenaline-4.1_Released_-__TheFlow_zaps_a_few_bugs_with_new_update.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/adrenaline-4-1-released-theflow-zaps-a-few-bugs-with-new-update.13879/</target>
+		<mtrl id="0" lastm="2018-7-22T10:55:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>OPL (Open PS2 Loader) - Latest Improvements</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/OPL_(Open_PS2_Loader)_-_Latest_Improvements.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/opl-open-ps2-loader-latest-improvements.19349/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Adrenaline-4.1_Released_-__TheFlow_zaps_a_few_bugs_with_new_update.jpg">TheFlowreleased new version of Adrenaline, in6.61 Adrenaline-4.1the developer attended to several bug fixes. For PlayStation TV[VitaTV]user's PlayStation 1 Games now scale correctly, Also holding the R trigger will now open the Recovery Menu in 4.1, A bug was squashed that affected Little Big Planet(possibly others)game saves, now your savedate won't be corrupted with the latest contribution from TheFlow who continues to evolve the Vita's on-board PSP emulator with a dose of Adrenaline.​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/OPL_(Open_PS2_Loader)_-_Latest_Improvements.jpg">While we have seen PS2 developer like@sp193busy with several new updates toFree Memory Card Boot (FMCB) exploitrecently, the dev along with other PS2 devs likeMaximus32have been putting in some work and making some"HUGE Advancements"to OPLas@TnAdetails.Open PS2 Loaderor better known as simplyOPLis moving along nicely with the times and making great strides still in 2018, from here i will leave it to TnA who has summed up the various progressions of this very popular PS2 Project​</description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2018-7-21T20:16:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Free Memory Card Boot v1.964 Release - A Series of new updates for FMCB since June '18 by sp193</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Free_Memory_Card_Boot_v1.964_Release_-_A_Series_of_new_updates_for_FMCB_since_June_'18_by_sp193.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/free-memory-card-boot-v1-964-release-a-series-of-new-updates-for-fmcb-since-june-18-by-sp193.19337/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Free_Memory_Card_Boot_v1.964_Release_-_A_Series_of_new_updates_for_FMCB_since_June_'18_by_sp193.jpg">The PS2 Community is still going strong and developer@sp193continues to make improvements across the board on the PS2, with some of the dev's latest work coming with a series of new updates toFree Memory Card Boot (FMCB),Since June of this year the dev has provided the progress and reports as seen inthe thread (in the psx-place forums)and kept us informed. There has been alot of new changes since June and each of those changes can be seen  in the "Recent Developments" along with some other details about the project be sure to view all links the dev has provided for additional details about this project if your a new comer to FMCB or the PS2.​</description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2018-1-20T12:28:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS2 Netemu Selector - Easy way to toggle ps2 emulator (on PS3 CFW)</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS2_Netemu_Selector_-_Easy_way_to_toggle_ps2_emulator_(on_PS3_CFW).jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps2-netemu-selector-easy-way-to-toggle-ps2-emulator-on-ps3-cfw.16095/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS2_Netemu_Selector_-_Easy_way_to_toggle_ps2_emulator_(on_PS3_CFW).jpg">Hello, I created small app (PS2 Netemu Selector) based on XMBM+ installer. Nothing big, just a GUI to changeps2_netemu (ps2 emulator)file. As a bonus I fixed few things in installer, and emulators itself. Like fixed in-game XMB flickering in installer, and correct display in every modes for temperatures in emu patched using@3141cardpayload. Also changed refresh time little bit. App is work only with 4.81, 4.82 firmwares due to files structure, while embed emulator files are compatible with 4.75-4.82 firmwares.​</description>
 			<creators>kozarovv</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2017-5-25T21:15:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Autoboot Configurator v1.0:  Now Config Autoboot Plugin with ease</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Autoboot_Configurator_v1.0__Now_Config_Autoboot_Plugin_with_ease.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/autoboot-configurator-v1-0-now-config-autoboot-plugin-with-ease.13878/</target>
+		<mtrl id="0" lastm="2017-8-17T05:17:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>NIM - PS2 Edition [Port by Theldus]</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/NIM_-_PS2_Edition_[Port_by_Theldus].jpg</url>
+			<target type="u">https://www.psx-place.com/threads/nim-ps2-edition-port-by-theldus.14601/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Autoboot_Configurator_v1.0__Now_Config_Autoboot_Plugin_with_ease.jpg">Thanks to theOneLua Teamwe have seen alot of great utilities, powered by LUA. we just seengdljjrodreleaseApp Manager Plus (v2.10). NowDavis Nunezhas a new releaseAutoBoot Configurator v1.0, this app works alongside  Rinnegatamante's recent release of Autoboot {plugin) that will allow you to auto-boot Apps on Henkaku boot. This apps makes the process much easier when it comes to configuring the plugin. Checkout the details of this latest release.​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/NIM_-_PS2_Edition_[Port_by_Theldus].jpg">Its 2017 and the PlayStation 2 community continues adding new content, that keeps the system going with new interest.This time around developerTheldusadds a port ofNIMto the library ofPS2 Homebrew.This simple game is all about using your math skills in strategic pursuit to avoid being the last to make a move. The dev has shared a bit of information on the title and a bit about the projects development, so give it a look as this simple port is a welcome addition to the PS2 Community.-STLcardsWS​</description>
 			<creators>kozarovv</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2017-5-14T09:59:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>idstorage dumper released</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/idstorage_dumper_released.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/idstorage-dumper-released.13711/</target>
+		<mtrl id="0" lastm="2017-5-21T10:36:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>[PS2 Emu on PS3] - Unlock  Config Mode & Debug Info Mode Menus</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[PS2_Emu_on_PS3]_-_Unlock__Config_Mode_&_Debug_Info_Mode_Menus.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps2-emu-on-ps3-unlock-config-mode-debug-info-mode-menus.13833/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/idstorage_dumper_released.jpg">The very informative@zecoxaohas a new released tool for the PS Vita / PlayStation TV Community. With this new plugin zecoxao now has a utility that is designed  to dump idstorage leafs to ux0:dump.  The release comes in the form of a plugin and is easy to setup, checkout the details and examples (wiki link at bottom) for all the details surrounding this small utility.​</description>
-			<creators>kozarovv</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[PS2_Emu_on_PS3]_-_Unlock__Config_Mode_&_Debug_Info_Mode_Menus.jpg">@3141cardstops by the forums today to show off one of his recent discoveries for the PS3.  Following some of the progressions thatPS2 Config Tooland the PS2 advancements inManaGunz by Zarhave brought of recent. Developer 3141card(Same dev who gave us the firstVSH menu POCon the PS3)unlocks some new menus, when using the ps2netemu (PS2 Emulator) . Now accessconfiguration settings & debug informationthat can be obtained by pressing a simple button combo , that was until now unknown.  When you are in the ps2netemu menu. you are able to perform the button combo outlined by the dev's discovery, which then unlocks and gives access two new menus & options as seen in the video / screenshot provided,.​</description>
+			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2017-5-13T17:23:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>BrownNoise (plugin) v.1.0 for PSTV released!</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/BrownNoise_(plugin)_v.1.0_for_PSTV_released!.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/brownnoise-plugin-v-1-0-for-pstv-released.13710/</target>
+		<mtrl id="0" lastm="2017-5-13T12:11:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>wLaunchELF v4.43a - New improvements to this very functional File Manager</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/wLaunchELF_v4.43a_-_New_improvements_to_this_very_functional_File_Manager.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/wlaunchelf-v4-43a-new-improvements-to-this-very-functional-file-manager.13759/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/BrownNoise_(plugin)_v.1.0_for_PSTV_released!.jpg">PS VIta / PlayStation TV developerRinnegatamantecomes through with a simple solution for a big problem to some PlayStation TV (Vita TV) user's who may be using an external audio components that may drop the signal when there is no audio signal making it a bit of annoying process for some user's ,so the solution to emit a low level audio to keep these devices connected. Its a simple release that may not be useful to everyone but its something that could be an extreme need for your setup, checkout the release quote for details from the developer.​</description>
-			<creators>kozarovv</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/wLaunchELF_v4.43a_-_New_improvements_to_this_very_functional_File_Manager.jpg">The file manager for the PlayStation 2 that keep evolving as developer's are still keeping the legacy of the PS2 going. Developer's@sp193& AKuHAKhave taking over a new unofficial fork of the project titledwLaunchELF, which is a progression of the first unofficial build (uLaunchELF) and the original build ofLaunchELF. this project spans many years and seen various developer's input and work within the projectover the years, Here we are not even midway in 2017 and we seen the 2nd update already to this very functional file manager for your Homebrew Enabled PS2 Console. The PS2 Homebrew Community is still doing some great things and progressing things very well with various improvements such as this file manager that keeps getting better through time and dedicated developers..​</description>
+			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2017-5-12T20:32:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>[Plugin} O'clock Vita Minimal by reprep</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Plugin}_O'clock_Vita_Minimal_by_reprep.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/plugin-oclock-vita-minimal-by-reprep.13715/</target>
+		<mtrl id="0" lastm="2017-2-17T22:03:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>OPL Manager v18:  New OPL Simulator, Game Cover Spine (LAB) Support & Alot from danielb</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/OPL_Manager_v18__New_OPL_Simulator,_Game_Cover_Spine_(LAB)_Support_&_Alot_from_danielb.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/opl-manager-v18-new-opl-simulator-game-cover-spine-lab-support-alot-from-danielb.12793/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Plugin}_O'clock_Vita_Minimal_by_reprep.jpg">Developerreprep(@ReRepRep) releasedO'Clock Vita Minimal. What's that? It's a kernel plugin that allow you to overclock your Vita/PSTV. Specially useful for PSTV users where power consumption is not a problem, and there is no need to disable it ever. Big advantage in that case is that plugin don't need any input from user, just add needed games to config, and forget you got it.​</description>
-			<creators>kozarovv</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/OPL_Manager_v18__New_OPL_Simulator,_Game_Cover_Spine_(LAB)_Support_&_Alot_from_danielb.jpg">I noticed that last month PS2 developerdanielbupdatedOPL Managerto v18, This PC Utility is a great tool for maximizing your Game Library forOPL (Open Ps2 Loader). Various features will allow you to manage things such as fixing / changing ISO file names, Downloading Game Covers, Disc Covers & ScreenShots (in batch or individual), Edit Cheat files and various other functions  In v18 the dev has done alot since the previous update of v17, OPL Simulator is a new feature that is now accessible in the "Tools Menu" and its purpose is to emulate OPL on the PC, Splines of game covers now have support alot of other additions and improvements can be seen listed in the v18 Release Notes​</description>
+			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2017-5-12T00:54:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Camera Patch Lite Alt released - Right analog support for PSP games</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Camera_Patch_Lite_Alt_released_-_Right_analog_support_for_PSP_games.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/camera-patch-lite-alt-released-right-analog-support-for-psp-games.13712/</target>
+		<mtrl id="0" lastm="2017-2-11T11:13:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>HDLGameInstaller v0.810 - Improved Network Reliability / Compressed Transfer Support by SP193</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/HDLGameInstaller_v0.810_-_Improved_Network_Reliability__Compressed_Transfer_Support_by_SP193.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/hdlgameinstaller-v0-810-improved-network-reliability-compressed-transfer-support-by-sp193.12675/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Camera_Patch_Lite_Alt_released_-_Right_analog_support_for_PSP_games.jpg">Developerbosshunterknown from his contribution in to PSP scene released modified version of Camera Patch Lite. Plugin taking little bit different approach to enable right analog support on PSP games played on Vita/PSTV. This resulted in improvement support in some games (eg. SOCOM series).​</description>
-			<creators>kozarovv</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2017-5-9T15:43:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Team molecule New Teaser Video:  Shows HENkaku on System Boot  (CFW or NOT? That is the question)</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Team_molecule_New_Teaser_Video__Shows_HENkaku_on_System_Boot__(CFW_or_NOT_That_is_the_question).jpg</url>
-			<target type="u">https://www.psx-place.com/threads/team-molecule-new-teaser-video-shows-henkaku-on-system-boot-cfw-or-not-that-is-the-question.13721/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Team_molecule_New_Teaser_Video__Shows_HENkaku_on_System_Boot__(CFW_or_NOT_That_is_the_question).jpg">Evolution continues as some serious progression appears on the horizon for HENkaku user's on firmware 3.60. As a new video shared fromYifan LuofTeam Molecule(creators of HENkaku / TaiHEN)which shows the group is back at it with a new release we will see on the 29th of July. In the teaser video the team showcasesHENkaku/TaiHENactive on system boot(unlike having to be launched after system boot currently)and as a little extra spice the team shows what appears to be acustom coldboot modificationas well. Is this the progression of a HEN maturing into the first true Custom Firmware for PS Vita & PlayStation TV devices?  On the surface it appears that is a possibility as the video teases a bit, but until more details are learned I would caution calling it anything such as CFW, but one thing is for sure this is from a legitimate group that brought us the original hacks and come late July we should have more details with I am sure some teaser and information will arise in between.​</description>
-			<creators>kozarovv</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2017-5-9T03:19:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Noled - Plugin to disable blue home button led</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Noled_-_Plugin_to_disable_blue_home_button_led.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/noled-plugin-to-disable-blue-home-button-led.13716/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Noled_-_Plugin_to_disable_blue_home_button_led.jpg">Noledis a recent kernel plugin released for the PS Vita created originally byXerpi,and then has been released in compiled version byreprep(@ReRepRep).  This taiHEN (kernel) plugin is very simple as it can becomes very useful when you are gaming or watching video's in the dark and the led light becomes a major distraction.  Now you have the option to say goodbye to light while you have this plugin running.​</description>
-			<creators>kozarovv</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2017-4-26T03:06:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Mounting internal storage  (imc0:) coming to Adrenaline, and Vitashell</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Mounting_internal_storage__(imc0)_coming_to_Adrenaline,_and_Vitashell.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/mounting-internal-storage-imc0-coming-to-adrenaline-and-vitashell.13593/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Mounting_internal_storage__(imc0)_coming_to_Adrenaline,_and_Vitashell.jpg">Looking at recent commits onTheFlow'sgithub You can see that developerhyln9added very nice feature to both Adrenaline plugin, and Vitashell app. New feature is mounting imc0: which looks like internal memory card, and can give us another 1GB on slim PSV and on PSTV. Actually is very good idea because when external memory is used that 1GB of space is totally unused.​</description>
-			<creators>kozarovv</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/HDLGameInstaller_v0.810_-_Improved_Network_Reliability__Compressed_Transfer_Support_by_SP193.jpg">PlayStation 2 developer@sp193droppedby the psx-place forums to let us knowof the latest update toHDLGameInstaller, with the release of version 0.810 the developer has improved realiablity of network support, new support for compress has been a couple of the changes outlined in the changelog, plus the included PC client (HDLGManClient) see some changes as well in v0.810, view those details and features provided below, for  project history & additional details visit the source link to the developer's project page. Have a suggestion or some feedback, let developer SP193 know in the comments.​</description>
+			<creators>STLcardsWS</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2023-3-23T18:53:00.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>The OFFICIAL bguerville's PS3 Toolset is back online with a new official URL and 4.90 Support !!!</desc>
