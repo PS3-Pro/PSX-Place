@@ -9,14 +9,6 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/qCFW_-_Arrives_to_Slim_(2500-3000)_&_SuperSlim_(4000-NOR)_PlayStation_3_Models.jpg">UPDATE (Feb. 20) -PS3HEN 3.4.2 Open Beta: Test #1 Released- (Forum Link)UPDATE (Feb. 20) -qCFW updated(forum link)   --qcfw-20260220-release(github link)UPDATE (Feb. 17) -qCFW and Future potential(Forum Thread)by@aomsin2526>here<UPDATE (Feb. 13) -BadWDSD/qCFW + HW Flasher/NoBT(Forum Thread)UPDATE (Feb. 11) -qCFW files have been temporary removed from github by the developer, due to a bug, see@aomsin2526's post >here<  & >also here<UPDATE (Feb. 3)-PS3HEN v3.4.1 (STABLE) has now been releasedby@esc0rtd3w, graduating from the 3.4.1 BETA builds. (Note: v3.4.1+ is required for qCFW)​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2025-8-3T22:44:00.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
-			<desc>[BD-JB-1250] New Exploit (bluray) for PlayStation 4 supporting upto 12.50 firmware from Gezine</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[BD-JB-1250]_New_Exploit_(bluray)_for_PlayStation_4_supporting_upto_12.50_firmware_from_Gezine.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/bd-jb-1250-new-exploit-bluray-for-playstation-4-supporting-upto-12-50-firmware-from-gezine.48161/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[BD-JB-1250]_New_Exploit_(bluray)_for_PlayStation_4_supporting_upto_12.50_firmware_from_Gezine.jpg">The PlayStation 4 has new BluRay exploit that supports upto 12.50 Firmware. Thanks to the efforts of developerGezine,who has released the source code and helloworld.iso to complete the proof of work of this recent exploit for the PS4.  Below you can see the readme for the project. Also some community reaction and comments about the new exploit for the PS4 from Abkarino & Modded Warefare dives into the exploit in one of his latest video attached​</description>
-			<creators>STLcardsWS</creators>
-		</mtrl>
 		<mtrl id="0" lastm="2025-6-24T01:48:00.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
 			<desc>{CFW Release} 4.92.2 Evilnat  Custom Firmware (w/ Cobra v8.5) - Includes: CEX/PEX/D-PEX) + noBD/BT</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/{CFW_Release}_4.92.2_Evilnat__Custom_Firmware_(w_Cobra_v8.5)_-_Includes_CEXPEXD-PEX)_+_noBDBT.jpg</url>
@@ -25,15 +17,7 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/{CFW_Release}_4.92.2_Evilnat__Custom_Firmware_(w_Cobra_v8.5)_-_Includes_CEXPEXD-PEX)_+_noBDBT.jpg">After a successful Open Beta for 4.92.2, PlayStation 3 CFW developer@Evilnathas nowOFFICIALLYupdated hisEvilnat Custom Firmware'sfor the PS3 to version4.92.2,A number of new changes and options have been added in this release for your PS3 FAT and Early Slim models capable of installing a CFW PUP.Various patches to the CFW have been made as well as various new additions to theCobra Payload, Also theXAI Pluginwas not left out, as there are some new options one being a newNew Overclock menuhas been introduced to the firmware.  Now we no longer need a dedicated PUP to change overclock settings, it can be done directly on the XMB. All the details and changes can be found in Evilnat's release note's found below and also in the link provided at the bottom.​</description>
 			<creators>Evilnat</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2025-6-14T04:10:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>ProtoPwn (Protokernel Exploit by pcm720) -  Now all PS2s are hackable via MemoryCard  (MILESTONE)</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/ProtoPwn_(Protokernel_Exploit_by_pcm720)_-__Now_all_PS2s_are_hackable_via_MemoryCard__(MILESTONE).jpg</url>
-			<target type="u">https://www.psx-place.com/threads/protopwn-protokernel-exploit-by-pcm720-now-all-ps2s-are-hackable-via-memorycard-milestone.47708/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/ProtoPwn_(Protokernel_Exploit_by_pcm720)_-__Now_all_PS2s_are_hackable_via_MemoryCard__(MILESTONE).jpg">Breaking Newsin the PS2 Scene,as a NEW MemoryCard Exploit for Protokernel PS2s (SCPH-10000, SCPH-15000, and DTL-H10000(S)) just got released!!!It took 25 years to reach this point, butNOW ALL PS2s including ALL special models(Arcade, Prototype, Debug, Consumer-model, "special/custom builds")can load Homebrew WITHOUT DISCS!​</description>
-			<creators>TnA</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2025-5-10T13:47:00.000Z" until="2100-12-31T23:59:00.000Z">
+		<mtrl id="0" lastm="2025-5-10T13:47:00.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
 			<desc>BadWDSD HW Exploit - With new powerful qCFW for PS3 Slim & SuperSlim NOR models on the horizon</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/BadWDSD_HW_Exploit_-_With_new_powerful_qCFW_for_PS3_Slim_&_SuperSlim_NOR_models_on_the_horizon.jpg</url>
 			<target type="u">https://www.psx-place.com/threads/badwdsd-hw-exploit-with-new-powerful-qcfw-for-ps3-slim-superslim-nor-models-on-the-horizon.47475/</target>
@@ -63,14 +47,6 @@
 			<target type="u">https://www.psx-place.com/threads/ps3-toolset-by-bguerville-with-4-92-support-has-been-released.47135/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3_Toolset_(by_bguerville)_with_4.92_support_has_been_released..jpg">If you have a Custom Firmware compatible PlayStation 3 Model and are running 4.92 Official Firmware and need to Jailbreak for the first time or if you updated your previous CFW installation by mistake to 4.92 OFW. Then the PS3 Toolset will exploit your PS3 via the console's web browser and visitingps3toolset.com website(see tutorial tab), then once the process has completed you will be able to install a Custom Firmware (such as 4.92 Evilnat)  once again or for the first time.Your PlayStation 3 model must be able to install a CFW, these would be all the FAT models PS3 and Early production Slim Models. The easiest and most effective ways to determine if your PS3 can install a cfw​</description>
-			<creators>STLcardsWS</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2025-3-9T11:56:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>4.92 Littlebalup's DUALBOOT firmware Released</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/4.92_Littlebalup's_DUALBOOT_firmware_Released.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/4-92-littlebalups-dualboot-firmware-released.46963/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/4.92_Littlebalup's_DUALBOOT_firmware_Released.jpg">Since the4.92 firmware updatethings have been flowing out from the community in response. We have seenPS3HEN (& hfw) releasedfor 4.92 and we have seenEvilnat updateand release his cfw collection on 4.92. Now developer@littlebalupdrops by the forumand release the latestDualBoot (DB) firmwareto support 4.92 firmware.This release for Custom Firmware user's is a very useful firmware, if you use PSN still and do not want to go online with a modded system and risk a potential ban. As it allows you to use an Official firmware that can re-install a CFW without having re-exploiting the console with the toolset or flash writer. See full details in @littlebalups release notes about the Dualboot firmware concept.​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2025-3-9T11:24:00.000Z" until="2100-12-31T23:59:00.000Z">
@@ -161,85 +137,85 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3_4.91_Firmware_Released_-_Do_Not_Update!!!.jpg">UPDATE:its now safe to update to 4.91. PS3HEN (& HFW), CFW & PS3 Toolset have been updated to support 4.91.PS3 Firmware 4.91 is now LiveThe expected once a year firmware update has been executed by Sony, PS3 4.91 Firmware is now Live. While an expected update, could this bring other changes to the firmware? Likely not but its still early to conclude as this update is fresh as of writing .Do not update, various exploits / tools / essential homebrew will need to be updated to support the latest firmware update of 4.91. See below for a short FAQ on 4.91, as there is always some confusions around the update process. .​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2023-12-30T10:41:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Movian M7 (by deank)  - "libav" swapped for "ffmpeg"  & slight name change</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Movian_M7_(by_deank)__-_libav_swapped_for_ffmpeg__&_slight_name_change.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/movian-m7-by-deank-libav-swapped-for-ffmpeg-slight-name-change.42453/</target>
+		<mtrl id="0" lastm="2017-5-27T06:48:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Henkaku 10th release - Now you don't need memory card even on Vita 1000</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Henkaku_10th_release_-_Now_you_don't_need_memory_card_even_on_Vita_1000.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/henkaku-10th-release-now-you-dont-need-memory-card-even-on-vita-1000.13904/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Movian_M7_(by_deank)__-_libav_swapped_for_ffmpeg__&_slight_name_change.jpg">Developer@deankwho has been continuing development of the (modded version) of the original media center that started on the PS3(now runs on Android, Amazon Fire Stick, MacOS ,Windown ,Linux  & Raspberry pi). The media center originally was named "Showtime" on the PS3 but later renamed to "Movian" by the original developerAndreas Omanyears ago.Since that time, we have not seen the official project do much in recent years (currentlyhome siteis down as of writing), but developer deank has been keeping the project alive and evolving (see changelogsover at brewologyfor all archived changes). One of the biggest changes you will see within Movian-M7 compared to older version, is the change from the older (abandoned) "libav" video decoders/parsers to the current "ffmpeg" that was just replaced in the recent M7 update . This should improve compatibility and make for a more up-to date and versatile media player for all supported platforms including the PS3.Also, deank  has made a quick stop in the forum's, then to see a reported issue and provided a fix (seen here) that is now present in v7.0.2​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Henkaku_10th_release_-_Now_you_don't_need_memory_card_even_on_Vita_1000.jpg">RecentlyTeam moleculeissued an update to their popular exploit that has unlocked tVita/Pstv) withHENkaku R10which provided the ability to install the exploit without the need of a memory card by moving files to ur0:tai, This works on the original Vita - 1000 models, Full details of this update can be seen in the provided logs, ​</description>
+			<creators>kozarovv</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2023-12-27T22:41:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>[Update v1.06] Itemzflow (PS5) -  Homebrew & Game Manager with PS5 game Support</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Update_v1.06]_Itemzflow_(PS5)_-__Homebrew_&_Game_Manager_with_PS5_game_Support.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/update-v1-06-itemzflow-ps5-homebrew-game-manager-with-ps5-game-support.42429/</target>
+		<mtrl id="0" lastm="2017-5-25T21:39:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Adrenaline-4.1 Released -  TheFlow zaps a few bugs with new update</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Adrenaline-4.1_Released_-__TheFlow_zaps_a_few_bugs_with_new_update.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/adrenaline-4-1-released-theflow-zaps-a-few-bugs-with-new-update.13879/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Update_v1.06]_Itemzflow_(PS5)_-__Homebrew_&_Game_Manager_with_PS5_game_Support.jpg">Following the release ofetaHEN(AIO Homebrew Enabler for the PS5)last month from@lightingModz.Now, the release ofItemzFlowhas arrived for the PlayStation 5 from developer @ligthingmodz. Originally thisHomebrew & Game Managerwas released on the PS4, but the developer has made a special Christmas Release now bringing the homebrew app for the PS5 that is handy for managing and preserving your personal backups.(JUN 27, 2024) Update: v1.06has been released with new improvements and features.​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Adrenaline-4.1_Released_-__TheFlow_zaps_a_few_bugs_with_new_update.jpg">TheFlowreleased new version of Adrenaline, in6.61 Adrenaline-4.1the developer attended to several bug fixes. For PlayStation TV[VitaTV]user's PlayStation 1 Games now scale correctly, Also holding the R trigger will now open the Recovery Menu in 4.1, A bug was squashed that affected Little Big Planet(possibly others)game saves, now your savedate won't be corrupted with the latest contribution from TheFlow who continues to evolve the Vita's on-board PSP emulator with a dose of Adrenaline.​</description>
+			<creators>kozarovv</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2023-12-19T21:10:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Alien Resurrection - (A cheat code to unlock boot disc feature for backups)</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Alien_Resurrection_-_(A_cheat_code_to_unlock_boot_disc_feature_for_backups).jpg</url>
-			<target type="u">https://www.psx-place.com/threads/alien-resurrection-a-cheat-code-to-unlock-boot-disc-feature-for-backups.42354/</target>
+		<mtrl id="0" lastm="2017-5-25T21:15:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Autoboot Configurator v1.0:  Now Config Autoboot Plugin with ease</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Autoboot_Configurator_v1.0__Now_Config_Autoboot_Plugin_with_ease.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/autoboot-configurator-v1-0-now-config-autoboot-plugin-with-ease.13878/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Alien_Resurrection_-_(A_cheat_code_to_unlock_boot_disc_feature_for_backups).jpg">This is a very interesting discovery or rather disclosure from one of the developer's of the PlayStation 1 (PS1) gameAlien Resurrection(Martin Piper) who had reached out to YouTuberMVGwho has been given permission to disclose something that has always been there all this time in the game, but needed a cheat code to unlock the ability to run backups on a stock retail PS1, acting as a boot disc for the swap method.  MVG details the process here in this video:​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Autoboot_Configurator_v1.0__Now_Config_Autoboot_Plugin_with_ease.jpg">Thanks to theOneLua Teamwe have seen alot of great utilities, powered by LUA. we just seengdljjrodreleaseApp Manager Plus (v2.10). NowDavis Nunezhas a new releaseAutoBoot Configurator v1.0, this app works alongside  Rinnegatamante's recent release of Autoboot {plugin) that will allow you to auto-boot Apps on Henkaku boot. This apps makes the process much easier when it comes to configuring the plugin. Checkout the details of this latest release.​</description>
+			<creators>kozarovv</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2023-11-5T08:21:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>[Update v1.8B] etaHEN - AIO Homebrew enabler for the PS5</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Update_v1.8B]_etaHEN_-_AIO_Homebrew_enabler_for_the_PS5.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/update-v1-8b-etahen-aio-homebrew-enabler-for-the-ps5.42050/</target>
+		<mtrl id="0" lastm="2017-5-14T09:59:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>idstorage dumper released</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/idstorage_dumper_released.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/idstorage-dumper-released.13711/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Update_v1.8B]_etaHEN_-_AIO_Homebrew_enabler_for_the_PS5.jpg">The PlayStation 5 has an early Christmas gift this year as developerLighting Modshas releasedetaHEN - AIO Homebrew Enabler for the PlayStation 5 (PS5), Currently there is not much homebrew to launch for the PS5, but the developer hasported his PS4 HB Store to the PlayStation 5and thanks to theability to run PS4 fpkgs on the PS5, there is various PS4 homebrew that can run such as some of Lapy's homebrew games.Update (Aug. 12):New update has been released by @ligthingmods, now bringing etaHEN to v1.8B, See changelog tab below or guthub links for latest changes and features incorporated in this update and other updates since its release that has jump started the PS5 community. .​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/idstorage_dumper_released.jpg">The very informative@zecoxaohas a new released tool for the PS Vita / PlayStation TV Community. With this new plugin zecoxao now has a utility that is designed  to dump idstorage leafs to ux0:dump.  The release comes in the form of a plugin and is easy to setup, checkout the details and examples (wiki link at bottom) for all the details surrounding this small utility.​</description>
+			<creators>kozarovv</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2023-10-14T10:58:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Celebrating Nine Year's of PSX-Place.com</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Celebrating_Nine_Year's_of_PSX-Place.com.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/celebrating-nine-years-of-psx-place-com.41855/</target>
+		<mtrl id="0" lastm="2017-5-13T17:23:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>BrownNoise (plugin) v.1.0 for PSTV released!</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/BrownNoise_(plugin)_v.1.0_for_PSTV_released!.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/brownnoise-plugin-v-1-0-for-pstv-released.13710/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Celebrating_Nine_Year's_of_PSX-Place.com.jpg">The psx-place.com website celebrates its 9th birthday on this day, originally opening in2014onOctober 14to the public. The site remains a pillar in the PlayStation Homebrew / Hacking community, thanks to the tremendous developer & user support that has blessed our forums. The past 9 years we have witnessed some amazing things in these forums, we have seen idea's and theories mature into full blown exploits and projects, we have seen developer's share and bounce idea to each other and even teamed up, which have spawned and improved many projects/aspects in the community. We have seen many developer's choose the psx-place forum to host their Release/Support threads for their projects. It has been a destination for developer's and user's to learn more about the community and even take part in it. Truly a place where people can come together for a common goal and that goal has been getting the most out of our beloved PlayStation devices.​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/BrownNoise_(plugin)_v.1.0_for_PSTV_released!.jpg">PS VIta / PlayStation TV developerRinnegatamantecomes through with a simple solution for a big problem to some PlayStation TV (Vita TV) user's who may be using an external audio components that may drop the signal when there is no audio signal making it a bit of annoying process for some user's ,so the solution to emit a low level audio to keep these devices connected. Its a simple release that may not be useful to everyone but its something that could be an extreme need for your setup, checkout the release quote for details from the developer.​</description>
+			<creators>kozarovv</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2023-8-12T07:19:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Athena - A performant JavaScript Runtime Environment for the PS2</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Athena_-_A_performant_JavaScript_Runtime_Environment_for_the_PS2.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/athena-a-performant-javascript-runtime-environment-for-the-ps2.41393/</target>
+		<mtrl id="0" lastm="2017-5-12T20:32:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>[Plugin} O'clock Vita Minimal by reprep</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Plugin}_O'clock_Vita_Minimal_by_reprep.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/plugin-oclock-vita-minimal-by-reprep.13715/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Athena_-_A_performant_JavaScript_Runtime_Environment_for_the_PS2.jpg">AthenaEnv (JavaScript-Runtime) and the bright future of development on the PS2!​</description>
-			<creators>TnA</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Plugin}_O'clock_Vita_Minimal_by_reprep.jpg">Developerreprep(@ReRepRep) releasedO'Clock Vita Minimal. What's that? It's a kernel plugin that allow you to overclock your Vita/PSTV. Specially useful for PSTV users where power consumption is not a problem, and there is no need to disable it ever. Big advantage in that case is that plugin don't need any input from user, just add needed games to config, and forget you got it.​</description>
+			<creators>kozarovv</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2023-8-1T20:30:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>FuHEN Contest Submissions - The Four of Us Are Dying / Beat2x / Zik-Zak Vita / Sonic SMS 3 Timelines</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/FuHEN_Contest_Submissions_-_The_Four_of_Us_Are_Dying__Beat2x__Zik-Zak_Vita__Sonic_SMS_3_Timelines.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/fuhen-contest-submissions-the-four-of-us-are-dying-beat2x-zik-zak-vita-sonic-sms-3-timelines.41305/</target>
+		<mtrl id="0" lastm="2017-5-12T00:54:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Camera Patch Lite Alt released - Right analog support for PSP games</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Camera_Patch_Lite_Alt_released_-_Right_analog_support_for_PSP_games.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/camera-patch-lite-alt-released-right-analog-support-for-psp-games.13712/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/FuHEN_Contest_Submissions_-_The_Four_of_Us_Are_Dying__Beat2x__Zik-Zak_Vita__Sonic_SMS_3_Timelines.jpg">The FuHEN - PS Vita Contest is underway and we have already 4 submissions that have been approved for entry: We have seen 3 Game Ports submitted and also a new Original Game for the PS Vita.  If you have not heard yet, there is a a PS Vita Contest that is currently on going and the submission period for projects is fromJuly 22nd, 2023  September 22nd, 2023You can learn more about the contest prizes, rules and the submissions process at the official website.We have an ambitious Original Game that has been in the making for awhile and aims to provide AAA graphics and effects. The gameplay is still early but the developer has big plans for the game called "The Four of us are Dying".byJosh Allen / noradninja.this game is a Silent Hill 2/Alan Wake style survival horror game.In the Game Port category we have seen 3 entries approved we have seen PS Vita legendary developer@Rinnegatamanteprovide three projects the first being"Beat2k" (A Dance Dance Revolution Clone)and also the developer has entered"Zik-Zak Vita"which is a great game that testes your reaction time getting through each level , Then@Rinnegatamantealso submitted "Eldritch" is a first person shooter inspired by games like roguelikes, immersive sims, and H. P. Lovecraft.  Then tou round out the first wave of entries we have seen developer@MDashKenter"Sonic SMS 3 Timelines"which is port of a fan made Sonic game that takes Sonic on a new adventure.​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Camera_Patch_Lite_Alt_released_-_Right_analog_support_for_PSP_games.jpg">Developerbosshunterknown from his contribution in to PSP scene released modified version of Camera Patch Lite. Plugin taking little bit different approach to enable right analog support on PSP games played on Vita/PSTV. This resulted in improvement support in some games (eg. SOCOM series).​</description>
+			<creators>kozarovv</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2023-6-21T17:22:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>The Future of the PlayStation 2 Internal Hard Drive by Berion</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/The_Future_of_the_PlayStation_2_Internal_Hard_Drive_by_Berion.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/the-future-of-the-playstation-2-internal-hard-drive-by-berion.40924/</target>
+		<mtrl id="0" lastm="2017-5-9T15:43:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Team molecule New Teaser Video:  Shows HENkaku on System Boot  (CFW or NOT? That is the question)</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Team_molecule_New_Teaser_Video__Shows_HENkaku_on_System_Boot__(CFW_or_NOT_That_is_the_question).jpg</url>
+			<target type="u">https://www.psx-place.com/threads/team-molecule-new-teaser-video-shows-henkaku-on-system-boot-cfw-or-not-that-is-the-question.13721/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/The_Future_of_the_PlayStation_2_Internal_Hard_Drive_by_Berion.jpg">The Future of the PlayStation 2 Internal Hard DriveWe have recently started 2023, and the so-called PlayStation 2 console scene is surprisingly still doing well, yes, even better than ever before and better than on not one newer platform! And one of the leading projects that anyone interested can mention without a long moment's hesitation isOpen PS2 Loader- the successor to HDLoader and USB Advance, a program used to run games from USB, i.Link (FireWire), MX4SIO (a reader for e.g. SDXC in the Memory Card slot), the local network and the internal hard drive, whose operation is still stuck in the darkness of the Middle Ages.Before I get into specifics, it's worth recalling what the current, extremely exotic logical disk structure that Sony designed looks like, and which is supported by every software written to date that supports theinternalhard drive. Without understanding the APA, you won't understand the idea of a hybrid drive. It is only later that I will discuss the concept of building a Frankenstein with something modern, familiar, while providing a full or residual layer of compatibility.​</description>
-			<creators>Berion</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Team_molecule_New_Teaser_Video__Shows_HENkaku_on_System_Boot__(CFW_or_NOT_That_is_the_question).jpg">Evolution continues as some serious progression appears on the horizon for HENkaku user's on firmware 3.60. As a new video shared fromYifan LuofTeam Molecule(creators of HENkaku / TaiHEN)which shows the group is back at it with a new release we will see on the 29th of July. In the teaser video the team showcasesHENkaku/TaiHENactive on system boot(unlike having to be launched after system boot currently)and as a little extra spice the team shows what appears to be acustom coldboot modificationas well. Is this the progression of a HEN maturing into the first true Custom Firmware for PS Vita & PlayStation TV devices?  On the surface it appears that is a possibility as the video teases a bit, but until more details are learned I would caution calling it anything such as CFW, but one thing is for sure this is from a legitimate group that brought us the original hacks and come late July we should have more details with I am sure some teaser and information will arise in between.​</description>
+			<creators>kozarovv</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2023-5-4T20:47:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>(Update) Baryon Sweeper: Unbrick PSP 1000, 2000, 3000 /PSP Slim 04g, 07g, 09g/ PSP Street 11g  model</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/(Update)_Baryon_Sweeper_Unbrick_PSP_1000,_2000,_3000_PSP_Slim_04g,_07g,_09g_PSP_Street_11g__model.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/update-baryon-sweeper-unbrick-psp-1000-2000-3000-psp-slim-04g-07g-09g-psp-street-11g-model.32503/</target>
+		<mtrl id="0" lastm="2017-5-9T03:19:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Noled - Plugin to disable blue home button led</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Noled_-_Plugin_to_disable_blue_home_button_led.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/noled-plugin-to-disable-blue-home-button-led.13716/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/(Update)_Baryon_Sweeper_Unbrick_PSP_1000,_2000,_3000_PSP_Slim_04g,_07g,_09g_PSP_Street_11g__model.jpg">Update (May - 2023):Now PSP models Slim 04g, 07g, 09g models, & the PSP Street 11g model are now supported >> See Details from@zecoxaoin the post via>>this link<<Original Article (Jan 2021): For more than ten years PSP-3000 owner's have been used to the fact that their device couldn't be restored (unbricked) at home. Many fear the brick as if it's the worst nightmare that could ever happen when experimenting with your device.  Even worse in 2021, now because warranty for all PSPs are over, so bricked later (psp) models go either for parts or are doomed to dust in boxes and drawers they'd never return from... that is, if this thread didn't appear with the release ofBaryon Sweeper R1:^)​</description>
-			<creators>zecoxao</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Noled_-_Plugin_to_disable_blue_home_button_led.jpg">Noledis a recent kernel plugin released for the PS Vita created originally byXerpi,and then has been released in compiled version byreprep(@ReRepRep).  This taiHEN (kernel) plugin is very simple as it can becomes very useful when you are gaming or watching video's in the dark and the led light becomes a major distraction.  Now you have the option to say goodbye to light while you have this plugin running.​</description>
+			<creators>kozarovv</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2023-4-1T01:06:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS3HEN v3.2.2 - New Additions/ Fixes & Backported Firmware's  Support from Team PS3Xploit.</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3HEN_v3.2.2_-_New_Additions_Fixes_&_Backported_Firmware's__Support_from_Team_PS3Xploit..jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ps3hen-v3-2-2-new-additions-fixes-backported-firmwares-support-from-team-ps3xploit.40129/</target>
+		<mtrl id="0" lastm="2017-4-26T03:06:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Mounting internal storage  (imc0:) coming to Adrenaline, and Vitashell</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Mounting_internal_storage__(imc0)_coming_to_Adrenaline,_and_Vitashell.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/mounting-internal-storage-imc0-coming-to-adrenaline-and-vitashell.13593/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3HEN_v3.2.2_-_New_Additions_Fixes_&_Backported_Firmware's__Support_from_Team_PS3Xploit..jpg">Update 4/25/2023: PS3HEN 3.2.2 has been released. Check the changelog for details.We have seen a lot of developer's back in the fold after the4.90 official firmware updatethat hit the PlayStation 3 several weeks ago. We seen a couple weeks ago developer's@Joonieand@esc0rtd3wof thePs3Xploit Teamupdate Ps3HEN to v3.2.0, now we have a new update with the release of v3.2.1..Ps3HENis a Homebrew Enabler that is an alternative exploit to custom firmware (cfw) for models that can not install a CFW. unlikecustom firmwareon the ps3, Ps3HEN has the ability to run on all ps3 model's, while many feature that are in CFW can be found in PS3HEN it does not completely replicate the CFW experience so if your PS3 has the ability to run a CFW that is the better route, but Ps3HEN is a very powerful and capable exploit. See a CFW vs Ps3HEN comparison>here<for a rundown of feature's.In the update v3.2.1, there has been a number of changes and added support to Ps3HEN.@Jooniehas released a backport ofHFW (hybrid firmware) for 4.83, this was done as Ps3HEN has provided support for 4.83 FW, plus 4.84 DEX firmware is also now supported.  There has been a number of other supported firmware and various other changes in the payload and plugin to PS3HEN, Plus this fixes the wMM bug that was creating freezing issue in v3.2.0.  See latest changelogs provided below.​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Mounting_internal_storage__(imc0)_coming_to_Adrenaline,_and_Vitashell.jpg">Looking at recent commits onTheFlow'sgithub You can see that developerhyln9added very nice feature to both Adrenaline plugin, and Vitashell app. New feature is mounting imc0: which looks like internal memory card, and can give us another 1GB on slim PSV and on PSTV. Actually is very good idea because when external memory is used that 1GB of space is totally unused.​</description>
+			<creators>kozarovv</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2023-3-23T18:53:00.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>The OFFICIAL bguerville's PS3 Toolset is back online with a new official URL and 4.90 Support !!!</desc>
