@@ -561,85 +561,85 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Update_3-_v1.0.0_Released]_Apollo_Save_Tool_(new_PS4_version)_Released_by_bucanero.jpg">Update 3 (Jan. 30 2022)-v1.00 ReleasedFrequent PS3/PS4 developer seen in the psx-place forums@bucanerohas now officially released a new homebrew for the PS4(graduating from somerecent Beta testbuilds), Bringing a  PS4 version of his popular PS3 homebrew utility for handling and managing saves games now for the PS4 Jailbroken user's(9.00 Support currently not supported, but will bein next update),  TheApollo Save Toolis a homebrew app that runs on a homebrew enabled PS4 console and as PS3 CFW / HEN user;s will tell you its been a very useful utility for Save Games Management over the past couple of years with lots of handy features and frequent updates that have brought alot of new functionality and features.  .Recently, the developer decided to try and bring this concept and homebrew tp the PS4 and the developer has managed to do just that with this recent release for the PS4. The development journey can be seen in hisdevelopment threadthat tracked progress of the PS4 version from the developerfound herein the forum's( also, here is the development thread forthe PS3 versionand also therelease threadhere for the PS3 app for those interested with a PS3.).View all the details of the latest PS4 release from developer@bucanerofound below​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2022-1-30T07:04:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>[Homebrew Revival PS3.1] Featuring "UFO Racer" by ThatOtherDev</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Homebrew_Revival_PS3.1]_Featuring_UFO_Racer_by_ThatOtherDev.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/homebrew-revival-ps3-1-featuring-ufo-racer-by-thatotherdev.36357/</target>
+		<mtrl id="0" lastm="2015-1-21T05:58:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>CyanogenMOD PSP-C  - Version 3.00 by Joel16</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/CyanogenMOD_PSP-C__-_Version_3.00_by_Joel16.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/cyanogenmod-psp-c-version-3-00-by-joel16.1145/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Homebrew_Revival_PS3.1]_Featuring_UFO_Racer_by_ThatOtherDev.jpg">Homebrew Revialis a new feature at psx-place.com where we explore some great projects of the past to educate new user's on some homebrew they may not of known about and also to perhaps sparks some new development in various projects we spotlight in this series, checkout another exclusive psx-place series withThe Power Supplythat has interviewed various developer's who have powered the community (will continue with a new season of interviews soon).First up, we have a great homebrew game that was developed for the Wii and the PS3 by developerThatOtherDev(aka ThatOtherPerson)calledUFO Racer, it's a game with a great foundation and has alot of potential to be a really great homebrew title, but the original developer has not made an update since 2012, However the source code is available, using an early version of PSL1GHT.. Can this be a project that see's a rival in 2022, 10 years after it was released? Checkout some of the source code and the tutorials this developer wrote for the PS3. Also, take note during the source code release of UFO Racer and many other games created by ThatOtherDev. The developer states the following about using the source code: "Make something. There is an appalling, lack of original games being made in the homebrew community and I implore you to take part in changing this." see full statement in tab below.​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/CyanogenMOD_PSP-C__-_Version_3.00_by_Joel16.jpg">​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2022-1-2T11:15:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>[Update v1.2]  SATURN-FPKG - Convert Saturn Games into PS4 fPKGs!</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Update_v1.2]__SATURN-FPKG_-_Convert_Saturn_Games_into_PS4_fPKGs!.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/update-v1-2-saturn-fpkg-convert-saturn-games-into-ps4-fpkgs.36031/</target>
+		<mtrl id="0" lastm="2015-1-21T04:44:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>6.61 PRO-C f3 - PSP Custom Firmware Released</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/6.61_PRO-C_f3_-_PSP_Custom_Firmware_Released.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/6-61-pro-c-f3-psp-custom-firmware-released.1143/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Update_v1.2]__SATURN-FPKG_-_Convert_Saturn_Games_into_PS4_fPKGs!.jpg">Following the recentPS4 9.00 Jailbreak, Ps4 developer@Jabuhas a new tool for 9.00 FW , you may remember this developer's previous release's for the PS4 with theps2-fpkgandpsx-fpkgtools that allowed for Ps2 / Ps1 games into a fpkg's  to install on a homebrew enabled PS4.  Following that same concept of injecting custom roms into an fpkg the developer now has a new tool that convertsSega Saturngames into PS4 fpkgs.  With the release of  "Cotton Guardian Force Saturn Tribute"(a Sega Saturn Game)for the PS4, it has equipped a useful Sega Saturn emulator that is said to be based off theSSF emulator.  (According to ZiL0G80) and performing well. Upon seeing this game release is when developer@Jabuinterest peaked and then decided to develop and release the following tool to make running your Sega Saturn games easily on your homebrew equipped PS4 (9.00 FW).....​</description>
-			<creators>Jabu</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/6.61_PRO-C_f3_-_PSP_Custom_Firmware_Released.jpg">Since Sony'sPSP 6.61 firmware updatethe PSP scene has come alive and a few more interesting developments have been made. We recently reported the updatedChronoswitchwhich allows downgrading PSP's from firmware 6.61 to 6.60. Developer qwikrazor87 at around the same time also released this PSP custom firmware.​</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2022-1-1T13:12:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>TeamFAPS Release CEX2DEX for Vita</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/TeamFAPS_Release_CEX2DEX_for_Vita.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/teamfaps-release-cex2dex-for-vita.36069/</target>
+		<mtrl id="0" lastm="2015-1-20T23:03:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>[PSP / PS1]  Latest News and Updates about Resident Evil 1.5</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[PSP__PS1]__Latest_News_and_Updates_about_Resident_Evil_1.5.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/psp-ps1-latest-news-and-updates-about-resident-evil-1-5.1138/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/TeamFAPS_Release_CEX2DEX_for_Vita.jpg">CEX2DEX for the PS VitaBy Team Fapps**PSTV & VitaTV planned for future date**​</description>
-			<creators>atreyu187</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2021-12-12T23:45:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS4 Firmware 9.00 Jailbreak Update (Released)</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_Firmware_9.00_Jailbreak_Update_(Released).jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ps4-firmware-9-00-jailbreak-update-released.35900/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_Firmware_9.00_Jailbreak_Update_(Released).jpg">"In this project you will find an implementation that tries to make use of a filesystem bug for the Playstation 4 on firmware 9.00. The bug was found while diffing the 9.00 and 9.03 kernels. It will require a drive with a modified exfat filesystem. Successfully triggering it will allow you to run arbitrary code as kernel, to allow jailbreaking and kernel-level modifications to the system. will launch the usual payload launcher (on port 9020).- via project's official readme"PS4 Firmware 9.00Jailbreak Released(awesome work bychendochap&@Znullptr)​</description>
-			<creators>Death_Dealer</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2021-7-25T19:06:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>4.88.2 Evilnat Cobra (8.3) Custom FirmWare (CFW-CEX) Released</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/4.88.2_Evilnat_Cobra_(8.3)_Custom_FirmWare_(CFW-CEX)_Released.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/4-88-2-evilnat-cobra-8-3-custom-firmware-cfw-cex-released.32057/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/4.88.2_Evilnat_Cobra_(8.3)_Custom_FirmWare_(CFW-CEX)_Released.jpg">UPDATE 4.88.2:PS3 Developer@Evilnathas updated and released4.88.2Evilnat (Cobra 8.3) CFW ,there is a number of new options like an added File manager, Option to toggle Cobra version, and various other new options detailed in the changlog provided below. Also the developer has provided a number of  fixes and improvements, View all the details of 4.88.2 release of this latest CFW by@Evilnat​</description>
-			<creators>Evilnat</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2021-7-22T22:52:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>RetroArch (PS2) Progress : New Cores incoming,  gpSP  (GameBoy Advance @ Full-Speed)</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/RetroArch_(PS2)_Progress__New_Cores_incoming,__gpSP__(GameBoy_Advance_@_Full-Speed).jpg</url>
-			<target type="u">https://www.psx-place.com/threads/retroarch-ps2-progress-new-cores-incoming-gpsp-gameboy-advance-full-speed.34680/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/RetroArch_(PS2)_Progress__New_Cores_incoming,__gpSP__(GameBoy_Advance_@_Full-Speed).jpg">Emulation on a Homebrew Enabled PS2 Console has some great progress in the past year plus,  thanks to still very much active PS2 development scene.  Developer's like@fjtrujyhasported RetroArchto the PS2 about and since then has been adding more and more support for additional emulation with additional libretro core's., Recently the developer previewed some big things that  have been in the pipeline for the  PlayStation 2 port of RetroArch (a multi-system emulator).The PS2 now has a new full speedGBA (GameBoy Advance) emulatorcoming soon with thegpsplibretro corenow running very well @ full speed with the work of@fjtrujyand@davidgfnetcollaborating to bring dynarec to provide a full speed gba emu on the PS2 Console.  Also, the Lutro Core (Lua) improvements are right around the corner as well with some progress being made (seen here) to the core . See some of the progress that has been made on the PS2 port of RetroArch so far in 2021 below.​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[PSP__PS1]__Latest_News_and_Updates_about_Resident_Evil_1.5.jpg">Resident Evil 1.5has two separate releases that I thought was interesting and should share, the first being a PSP port of the game that was done by PSP developerCoraje187.This port appears to be an early version of Resident Evil 1.5, and is not as progressed as theMartinBiohazzardBuilds. Which brings me to the second release asMartinBiohazzardin late 2014 updated his patch to include all his previous additions and fixes and also 9 new playable rooms.​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2021-7-22T22:28:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>jfduke3d-vita + jfsw-vita + vitaRTCW released + Doom3 Port in the works</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/jfduke3d-vita_+_jfsw-vita_+_vitaRTCW_released_+_Doom3_Port_in_the_works.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/jfduke3d-vita-jfsw-vita-vitartcw-released-doom3-port-in-the-works.34648/</target>
+		<mtrl id="0" lastm="2015-1-20T11:55:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PSP 6.61 Downgrader Update - Downgrade From FW 6.61 To 6.60 & More</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PSP_6.61_Downgrader_Update_-_Downgrade_From_FW_6.61_To_6.60_&_More.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/psp-6-61-downgrader-update-downgrade-from-fw-6-61-to-6-60-more.1136/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/jfduke3d-vita_+_jfsw-vita_+_vitaRTCW_released_+_Doom3_Port_in_the_works.jpg">Following theKYUHEN Homebrew Contest, the PS Vita platform has been getting some new homebrew updates and ports from a familiar developer to all in the PS Vita community. Developer@Rinnegatamanterecently provided updates toVitaQuakeIII (v1.0),re3-gta (v1.4)andVitaVoyager (v0.8)Following those updates another project seen an update with the release ofVitaRTCW (v0.4)here in the psx-place forum's,.Now comes the introduction of a few new projects, some have been released already here in the psx-place.com forums,1st up we havefsw-vita - Port of Shadow Warrior Classicand then today we seen the release ofjfduke3d-vita iport of jfduke3d (JonoF's Duke 3D).​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PSP_6.61_Downgrader_Update_-_Downgrade_From_FW_6.61_To_6.60_&_More.jpg">A quick update to thePSP 6.61 Downgraderis out. Developer qwikrazor87 has released a new version that now supports firmware 6.61 to 6.60 downgrading. Also for those with other model PSP's the downgrader is capable of downgrading any PSP to its base firmware version and tested till as low as 5.00.​</description>
+			<creators>Tranced</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2015-1-18T12:18:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Qwikrazor87 Releases PSP 6.61 Downgrader</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Qwikrazor87_Releases_PSP_6.61_Downgrader.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/qwikrazor87-releases-psp-6-61-downgrader.1123/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Qwikrazor87_Releases_PSP_6.61_Downgrader.jpg">​</description>
+			<creators>Tranced</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2015-1-15T10:58:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>A PSP Firmware Update Was Released - Version 6.61</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/A_PSP_Firmware_Update_Was_Released_-_Version_6.61.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/a-psp-firmware-update-was-released-version-6-61.1099/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/A_PSP_Firmware_Update_Was_Released_-_Version_6.61.jpg">​</description>
+			<creators>Tranced</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2015-1-12T02:38:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>[PSP-VITA] Chuckie Egg v2.0 by Richie (insoft)</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[PSP-VITA]_Chuckie_Egg_v2.0_by_Richie_(insoft).jpg</url>
+			<target type="u">https://www.psx-place.com/threads/psp-vita-chuckie-egg-v2-0-by-richie-insoft.1064/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[PSP-VITA]_Chuckie_Egg_v2.0_by_Richie_(insoft).jpg">​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2021-7-13T22:34:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>KYUHEN  PS Vita / PSTV  Homebrew Contest Winner's have been announced!!</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/KYUHEN__PS_Vita__PSTV__Homebrew_Contest_Winner's_have_been_announced!!.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/kyuhen-ps-vita-pstv-homebrew-contest-winners-have-been-announced.34499/</target>
+		<mtrl id="0" lastm="2015-1-12T02:14:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>[PSP] Newton Voyage: Indie Game by sebastianmihai</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[PSP]_Newton_Voyage_Indie_Game_by_sebastianmihai.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/psp-newton-voyage-indie-game-by-sebastianmihai.1062/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/KYUHEN__PS_Vita__PSTV__Homebrew_Contest_Winner's_have_been_announced!!.jpg">After a couple months of development of various homebrew projects for the PS Vita and PlayStation TV, theKYUHEN Contestfor the PS Vita has came to a close recently and now the Winners have been Announced (top 3 from each category). The Full Rankings (& Doiwnloads) can be found on the "Result" Page on the Contest's Official Website.  The Contest yielded36 entries(about the same as GekiHEN Contest (39))that spawned across the following 4 categories:Game 1 , Game 2, Utility, Port. No doubt has been some impressive showing and some great projects that are now available on your Homebrew Enabled PS Vita or PlayStation TV(vita tv).​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[PSP]_Newton_Voyage_Indie_Game_by_sebastianmihai.jpg">​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2021-7-12T00:26:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>re3-Vita (Grand Theft Auto III port) updated to v1.4</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/re3-Vita_(Grand_Theft_Auto_III_port)_updated_to_v1.4.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/re3-vita-grand-theft-auto-iii-port-updated-to-v1-4.34564/</target>
+		<mtrl id="0" lastm="2014-12-16T02:12:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PSP - (L)ME CFW v2.3 - Updated by Rahim-US</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PSP_-_(L)ME_CFW_v2.3_-_Updated_by_Rahim-US.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/psp-l-me-cfw-v2-3-updated-by-rahim-us.800/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/re3-Vita_(Grand_Theft_Auto_III_port)_updated_to_v1.4.jpg">Recently the re3-vita (GTA III Port)is back with a new update with the release of version 1.4, this update provided by developer@Rinnegatamante, who has recently updatedVitaQuakeIII (v1.0)&VitaVoyager (v0.8)Has now updated this amazing vita port of re3 with various fixes for all "game-breaking issues affecting previous release's" and v1.4 also includes some features like the inclusion of a Game Manual.  To round out the update we have support for video playback now in v1.4 and instructions in how to get your Video's converted to work on the PS Vita / PSTV, Checkout all the details below:​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PSP_-_(L)ME_CFW_v2.3_-_Updated_by_Rahim-US.jpg">​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2021-7-6T19:23:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>VitaQuakeIII  v1.0   +  VitaVoyager v0.8:  New updates to vitaGL provides new performance boost !</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/VitaQuakeIII__v1.0___+__VitaVoyager_v0.8__New_updates_to_vitaGL_provides_new_performance_boost_!.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/vitaquakeiii-v1-0-vitavoyager-v0-8-new-updates-to-vitagl-provides-new-performance-boost.34500/</target>
+		<mtrl id="0" lastm="2014-12-8T14:59:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>CyanogenMOD PSP v2.4 BETA</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/CyanogenMOD_PSP_v2.4_BETA.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/cyanogenmod-psp-v2-4-beta.747/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/VitaQuakeIII__v1.0___+__VitaVoyager_v0.8__New_updates_to_vitaGL_provides_new_performance_boost_!.jpg">Developer@Rinnegatamantedropped by the forums here at psx-place.com to release a couple of new items for the homebrew community.  First up we have an update toVitaQuakeIIIwith the release of version 1.0. This update has provided the port withMultitexturing supportandTexture CombinerWhat this does, is improves performance on the PS Vita and provides support for features like dynamic light that previously has been disabled prior to this update (see video below for a showcase of examples).  In regards to the recentadvancements to VitaGLthe developer states "Expect a branch of releases for idTech3 derivates plus maybe some new idTech 3 derivates ports in the future" be sure to keep a look out in the future here in thepsx-place forumsand @VitaDBfor when those release appear directly fromRinnegatamante.​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/CyanogenMOD_PSP_v2.4_BETA.jpg">​</description>
+			<creators>pinkfloydviste</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2021-3-28T20:39:00.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>KYUHEN  - A New Vita Homebrew Contest (Now Live - Submissions ends on May 27, 2021)</desc>
