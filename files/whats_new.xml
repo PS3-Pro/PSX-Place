@@ -241,165 +241,165 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3HEN_v3.2.2_-_New_Additions_Fixes_&_Backported_Firmware's__Support_from_Team_PS3Xploit..jpg">Update 4/25/2023: PS3HEN 3.2.2 has been released. Check the changelog for details.We have seen a lot of developer's back in the fold after the4.90 official firmware updatethat hit the PlayStation 3 several weeks ago. We seen a couple weeks ago developer's@Joonieand@esc0rtd3wof thePs3Xploit Teamupdate Ps3HEN to v3.2.0, now we have a new update with the release of v3.2.1..Ps3HENis a Homebrew Enabler that is an alternative exploit to custom firmware (cfw) for models that can not install a CFW. unlikecustom firmwareon the ps3, Ps3HEN has the ability to run on all ps3 model's, while many feature that are in CFW can be found in PS3HEN it does not completely replicate the CFW experience so if your PS3 has the ability to run a CFW that is the better route, but Ps3HEN is a very powerful and capable exploit. See a CFW vs Ps3HEN comparison>here<for a rundown of feature's.In the update v3.2.1, there has been a number of changes and added support to Ps3HEN.@Jooniehas released a backport ofHFW (hybrid firmware) for 4.83, this was done as Ps3HEN has provided support for 4.83 FW, plus 4.84 DEX firmware is also now supported.  There has been a number of other supported firmware and various other changes in the payload and plugin to PS3HEN, Plus this fixes the wMM bug that was creating freezing issue in v3.2.0.  See latest changelogs provided below.​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2016-7-25T19:11:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Ben Heck's - Nintendo Sony PlayStation (Prototype Teardown & Repair ) Video 2 of 2 Released</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Ben_Heck's_-_Nintendo_Sony_PlayStation_(Prototype_Teardown_&_Repair_)_Video_2_of_2_Released.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ben-hecks-nintendo-sony-playstation-prototype-teardown-repair-video-2-of-2-released.10046/</target>
+		<mtrl id="0" lastm="2017-4-16T12:45:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>ManaGunZ v1.28  (by Zar)  -  New Features: PS2 Config Creator / Plugin Manager / & much more</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/ManaGunZ_v1.28__(by_Zar)__-__New_Features_PS2_Config_Creator__Plugin_Manager__&_much_more.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/managunz-v1-28-by-zar-new-features-ps2-config-creator-plugin-manager-much-more.13458/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Ben_Heck's_-_Nintendo_Sony_PlayStation_(Prototype_Teardown_&_Repair_)_Video_2_of_2_Released.jpg">Last week we showed you a bit ofnews about the rare Nintendo Sony PlayStation (SNES-CD ), as we seen developer's released aa very nice working homebrew gamefor the system and have aworking emulator, but also we told you about a recent Teardown & Repair that Ben Heck was in the process of doing on the Ben Heck Show. At the time there was just the first of the two part edpisode but recentlyBen Heckdives into the repair process of the prototype console that is EXTREMELY rare and is a true symbol of gaming history. As this was the launch that really brought Sony to the forefront of the gaming market as we all know the Nintendo and Sony relationship went Sour and the CD add-on for the SNES was a distant dream, but Sony's work as we know  it as today did not go to waste​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/ManaGunZ_v1.28__(by_Zar)__-__New_Features_PS2_Config_Creator__Plugin_Manager__&_much_more.jpg">You know when there is an update forManaGunZ,your more then likely in store for alot of great changes. While updates can have bigger gaps them some releases developer Zar always deliver's lots of new progress and features with each update, This PS3 Homebrew for CFW user;s continues to evolve into a great PS3 Backup manager (aka AIO Homebrew), ManaGunZ has many unique features and this updates add some great new additions. Such as adding a PS2 CONFIG editor, PS2 Widescreen Options,  A Plugin Manager has also surfaced from this update, Then also Zip extration has been added to the file manager within ManaGunZ. Plus tons of additional changes that can be seen in full release notes for this update by developer@Zar​</description>
+			<creators>kozarovv</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2016-12-17T05:38:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>TaiHENkaku beta 8 released. Stable for daily use now</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/TaiHENkaku_beta_8_released._Stable_for_daily_use_now.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/taihenkaku-beta-8-released-stable-for-daily-use-now.11954/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/TaiHENkaku_beta_8_released._Stable_for_daily_use_now.jpg">DeveloperYifan Luannounced that eight beta oftaiHENkakuis available. In this release Yifan is suggesting that current beta release is good moment to move from stable Henkaku releases to beta taiHENkaku. Looks like taiHENkaku is now very stable, and is good time to help teamMoleculeto find out there is something that they can improve. One of points in changelog is "Compability for a future VitaShell update". Which can be small teasing forlatest USB connectivity find outsbyTheFlow.​</description>
+			<creators>kozarovv</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2016-12-6T00:23:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>ONElua VITA - Lua interpreter updated to V2R0</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/ONElua_VITA_-_Lua_interpreter_updated_to_V2R0.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/onelua-vita-lua-interpreter-updated-to-v2r0.11657/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/ONElua_VITA_-_Lua_interpreter_updated_to_V2R0.jpg">ONElua teamupdated their lua language interpreter for PS Vita/Playstation TV toversion 2r0to theGekiHEN entry. This release adding many new possibilities to developers. Included real-time debugger for sure help to track any bugs. Addedsuport for MP3, you can nowcall uri's, use https addresses, ability to compress files, and folders. Also from these release you can usescreen streamingbased onRinnegatamanterinCheat. Many new possibilities with this release, I hope that developers will use that in their homebrews.​</description>
+			<creators>kozarovv</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2016-12-2T13:21:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>JellyCar Vita 1.5 for PS Vita and PSTV released</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/JellyCar_Vita_1.5_for_PS_Vita_and_PSTV_released.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/jellycar-vita-1-5-for-ps-vita-and-pstv-released.11779/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/JellyCar_Vita_1.5_for_PS_Vita_and_PSTV_released.jpg">DeveloperDrakonPLupdated his Jelly Car homebrew game port to version 1.5. In JellyCar, players drive a small car across various platforms and through obstacles in order to reach the goal. As the player advances through the level, a meter begins to fill, when it fills to capacity, the player can make the car expand and grow into a monster truck, allowing it to traverse larger obstacles for a short period of time. New 1.5 update added 30 levels, and many improvements to menu and game itself, for details check changelog below.​</description>
+			<creators>kozarovv</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2016-11-29T09:59:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>VitaShell 1.43 by TheFlow released</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/VitaShell_1.43_by_TheFlow_released.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/vitashell-1-43-by-theflow-released.11739/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/VitaShell_1.43_by_TheFlow_released.jpg">DeveloperTheFlowupdated his well known Vitashell application to version 1.43. If you somehow still don't know that, Vitashell is absolute must have for every Vita/PSTV user with Henkaku and/or taiHENkaku installed. Most important change in this release is added taiHEN config.txt reload option previously available only in latest molecularShell release introduced withfifth beta release of taiHENkaku. With this, taiHEN configuration can be updated without rebooting PSV/PSTV.​</description>
+			<creators>kozarovv</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2016-11-29T08:57:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>4.81 CFW FERROX Standard Edition v1.1 released</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/4.81_CFW_FERROX_Standard_Edition_v1.1_released.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/4-81-cfw-ferrox-standard-edition-v1-1-released.11738/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/4.81_CFW_FERROX_Standard_Edition_v1.1_released.jpg">Alexanderreleased his4.81 CFW FERROX Standard Edition (v1.1).Standard CFW mean there is no cobra payload integrated into CFW, but MAMBA can be used instead if needed. Changes are done only on visual side, so if you are on v1.00 and you are happy, there is no need for update. New features comparing to version 1.00 is Package Manager instead of Install Package Files, and integrated Graphic Mod Installer.​</description>
+			<creators>kozarovv</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2016-11-27T04:05:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>taiHENkaku beta 5: rewrote the kernel payload and installer. Aka, stability fixes</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/taiHENkaku_beta_5_rewrote_the_kernel_payload_and_installer._Aka,_stability_fixes.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/taihenkaku-beta-5-rewrote-the-kernel-payload-and-installer-aka-stability-fixes.11708/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/taiHENkaku_beta_5_rewrote_the_kernel_payload_and_installer._Aka,_stability_fixes.jpg">Yifan Lu posted on his twitter that new taiHENkaku beta is available.  Beta 5 is a stability update, molecule team rewrote both kernel payload and installer. On installer side taiHENkaku should be now more stable than in older releases. Kernel payload update bring not only more stability, but also ability to update HENkaku config and taiHEN config.txt without needing a reboot. VitaShell needs to be updated to use this feature though. Remember that taiHENkaku is still in beta stage, so use it only if you want to test new features, or if you want to give feedback for developers. For every other purposes stable henkaku is what you already need.​</description>
+			<creators>kozarovv</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2016-11-25T06:47:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>MacOS PS3 Net Server GUI released</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/MacOS_PS3_Net_Server_GUI_released.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/macos-ps3-net-server-gui-released.11694/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/MacOS_PS3_Net_Server_GUI_released.jpg">Often time the MAC is left out of many of the communities tools, but slowly we have been seeing MAC get a bit of support on various tools and utilities andpsykosisis back to share with us a welcome addition for MAC user's. As this initial build of PS3 Net Server GUI for the MAC has been released. This will no doubt be a handy utility for the user's out there who prefer a MAC or just is simply more ideal for your personal setup of streaming content such as PS3 games & Videos to your PS3 from your MAC with the help from this utility . Checkout the release details frompsykosis​</description>
+			<creators>kozarovv</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2016-11-23T17:53:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>[Update v0.4.1] Qcma v0.4.0 released</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Update_v0.4.1]_Qcma_v0.4.0_released.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/update-v0-4-1-qcma-v0-4-0-released.11673/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Update_v0.4.1]_Qcma_v0.4.0_released.jpg">Developercodestationupdated his cross-platform Qcma to version 0.4.0. Qcma is well known alternative for Sony CMA, with support for Windows, Linux, and MAC OS X. Application have many useful features, and developer still adding them. Qcma in Version 0.4.0 have many improvements, and bug fixes. Also some new features are there, all that listed in changelog below.​</description>
+			<creators>kozarovv</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2016-11-23T17:25:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>E/S/S/S/E Resigner v4.5.4 released - New SELF to FSELF option added</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/ESSSE_Resigner_v4.5.4_released_-_New_SELF_to_FSELF_option_added.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/e-s-s-s-e-resigner-v4-5-4-released-new-self-to-fself-option-added.11672/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/ESSSE_Resigner_v4.5.4_released_-_New_SELF_to_FSELF_option_added.jpg">E/S/S/S/E (EBOOT / SELF / SPRX / SDAT/ EDAT) Resigner tool get small update from developer@bigjokker. Newly added ability to convert CEX .self file into DEX (debug) .fself (fake self) should be useful for game modders and other debug researchers. Until version 4.5.3, E/S/S/S/E Resigner had only option to resign eboot.bin from retail to debug one, now program can do same thing with every self file. This new feature is mostly for CFW users, but remember that E/S/S/S/E is also great tool for ODE users.​</description>
+			<creators>kozarovv</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2023-1-14T00:31:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Dead Space v1.3  (Vita Port) Released by gl33ntwine</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Dead_Space_v1.3__(Vita_Port)_Released_by_gl33ntwine.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/dead-space-v1-3-vita-port-released-by-gl33ntwine.39039/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Dead_Space_v1.3__(Vita_Port)_Released_by_gl33ntwine.jpg">The release of v1.3Dead Space (Vita)has been released by developer @gl33ntwine, in this update the developer has made several improvements and enchanments with analog contols, FPS limiter option, to fix the audio cut off issue's the developer hopes increasing the audio buffer to 1MB will do the trick, See Complete changelog provided in the details below.In order to play this game you will need as quoted from the readme  "Legally obtain your copy ofDead Space Mobile for Xperia Playin a form of an.apk file.The version for regular Android devices, also known as the latest/Google Play version,will not work!Make sure that your game isv1.1.33(this is the last one supported on Xperia Play and provided via EA Store back in 2012)." so be sure to grab the right game if you do not already own it.​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2016-3-28T22:17:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Universal Media Server v6.2.1 Released by Subjunk</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Universal_Media_Server_v6.2.1_Released_by_Subjunk.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/universal-media-server-v6-2-1-released-by-subjunk.9463/</target>
+		<mtrl id="0" lastm="2022-12-28T08:58:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>HENlo - WebKit+Kernel exploit chain for all PS Vita firmwares by TheFl0w</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/HENlo_-_WebKit+Kernel_exploit_chain_for_all_PS_Vita_firmwares_by_TheFl0w.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/henlo-webkit-kernel-exploit-chain-for-all-ps-vita-firmwares-by-thefl0w.38982/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Universal_Media_Server_v6.2.1_Released_by_Subjunk.jpg">The developers ofUniversal Media Server (UMS)have released a new version of the DNLA Media Server that supports many devices such as the PS3, PS4, PS Vita and even more devices as seen onthe official website.  In this release of version 6.2.1 lead developerSubjunkdetails the changes in the changelog provided but essentially this updates fixes various bugs and also improves support even farther fromv6.2.0for Panasonic & Samsung TVs.</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/HENlo_-_WebKit+Kernel_exploit_chain_for_all_PS_Vita_firmwares_by_TheFl0w.jpg">Well known console developer and hackerAndy Nguyen@theflow0has released an old project of his for the PS Vita a "WebKit+Kernel exploit chain for all PS Vita firmwares" the exploit works, but the developer never made into a full jailbreak as there really has never been a need. Its just another solution to have around but the most useful part may just be the research for others at this moment. The hacker has made a few comments about the release as we have attached below the quotes and related links to the project.This release is more for the development and developer's who wish to learn more as we already have solutions for the PS Vita and PSTV but the developer does hope to see someone pick up the project and make a full jailbreak out of it. As the developer states it could be a great learning experience for some to finish the project.​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2016-3-12T13:32:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Universal Media Server (DLNA) updated to v 6.2.0  by Subunk & UMS Team</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Universal_Media_Server_(DLNA)_updated_to_v_6.2.0__by_Subunk_&_UMS_Team.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/universal-media-server-dlna-updated-to-v-6-2-0-by-subunk-ums-team.9364/</target>
+		<mtrl id="0" lastm="2022-12-25T04:23:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>XtremeEliteBoot + (PLUS) - First (limited-preview) Release!</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/XtremeEliteBoot_+_(PLUS)_-_First_(limited-preview)_Release!.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/xtremeeliteboot-plus-first-limited-preview-release.38965/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Universal_Media_Server_(DLNA)_updated_to_v_6.2.0__by_Subunk_&_UMS_Team.jpg">Lead developerSubjunkand his the UMS team have released a new update forUniversal Media Server (UMS). This update labeled as v6.2.0 brings new improvements to the DNLA media server with an new and improved web interface feature, Then if you own Samsung (J55xx) or Panasonic (VT60)  SmartTVs you will see improved support on those renderers. Also in v6.2.0 a new image overlay for thumbnails replaces the old text ones for some improved eye-candy on this excellent  DLNA Media</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/XtremeEliteBoot_+_(PLUS)_-_First_(limited-preview)_Release!.jpg">PlayStation 2 DeveloperHowling Wolf & Chelseaknown here in the psx-place forums as(@HWNJ)released afirst OPEN Test-buildof their long-term project"XtremeEliteBoot + (PLUS)",although for the time being it is intentionally limited in some aspects (until the release of the first stable/full release)! Consider this release as a Preview/Showcase and Playground (especially for developers interested in LUA) of the full project that is come later on,​</description>
+			<creators>TnA</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2022-12-15T23:59:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>RetroArch (PS2) - v1.14.0 - Adds exFAT (USB) Support + Support for new PS2 Driver's</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/RetroArch_(PS2)_-_v1.14.0_-_Adds_exFAT_(USB)_Support_+_Support_for_new_PS2_Driver's.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/retroarch-ps2-v1-14-0-adds-exfat-usb-support-support-for-new-ps2-drivers.38888/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/RetroArch_(PS2)_-_v1.14.0_-_Adds_exFAT_(USB)_Support_+_Support_for_new_PS2_Driver's.jpg">The officialRetroArchproject has been updated to v1.14.0 and with this update a few changes have been adopted for the PS2 port,  Thanks to scene developer and RetroArch contributor@fjtrujy(Francisco J. Trujillo)improvements now have been made, recently the developer has been tinkering with the PS2 and not too long ago was trying toadd compatibility for OpenGL , as well as trying toadding SDL support(2)(3)for the PS2 , since the dev has taken his attention to PS2 port of RetroArch to provideexFAT (USB) support+ support for thenewly created PS2 driver'sthat makes it now much easier for dev's to use the PS2's IO drivers​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2016-2-23T10:23:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>A Quick Update To PS Multi Tools - Version 12.0.3 Now Available</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/A_Quick_Update_To_PS_Multi_Tools_-_Version_12.0.3_Now_Available.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/a-quick-update-to-ps-multi-tools-version-12-0-3-now-available.9239/</target>
+		<mtrl id="0" lastm="2022-12-15T22:44:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Psxitarch v3 Released (A Linux distribution for PS4 designed to be light & fast)</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Psxitarch_v3_Released_(A_Linux_distribution_for_PS4_designed_to_be_light_&_fast).jpg</url>
+			<target type="u">https://www.psx-place.com/threads/psxitarch-v3-released-a-linux-distribution-for-ps4-designed-to-be-light-fast.38886/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/A_Quick_Update_To_PS_Multi_Tools_-_Version_12.0.3_Now_Available.jpg">PS Multi Tools Version 12.03 Changelog:​</description>
-			<creators>Tranced</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2016-2-22T10:23:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>UMS Gets Another Update As Version 6.1.0 Is Released</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/UMS_Gets_Another_Update_As_Version_6.1.0_Is_Released.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ums-gets-another-update-as-version-6-1-0-is-released.9230/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/UMS_Gets_Another_Update_As_Version_6.1.0_Is_Released.jpg">​</description>
-			<creators>Tranced</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2016-2-21T11:18:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS Multi Tools Update Out - Version 12.0.2</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS_Multi_Tools_Update_Out_-_Version_12.0.2.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ps-multi-tools-update-out-version-12-0-2.9219/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS_Multi_Tools_Update_Out_-_Version_12.0.2.jpg">Features for PS Multi Tools:​</description>
-			<creators>Tranced</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2016-2-9T14:24:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>A Loss To The Hacking Community - Ben Byer aka bushing aka @gnihsub Passes Away</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/A_Loss_To_The_Hacking_Community_-_Ben_Byer_aka_bushing_aka_@gnihsub_Passes_Away.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/a-loss-to-the-hacking-community-ben-byer-aka-bushing-aka-gnihsub-passes-away.9124/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/A_Loss_To_The_Hacking_Community_-_Ben_Byer_aka_bushing_aka_@gnihsub_Passes_Away.jpg">I do not know where to start when it comes to news this sad. When a hacker only two years older than I am has passed away. We can remember him when he and his team made the promise that the PlayStation 3 was as hacked as the Wii and they would restore Linux to the PlayStation 3 that Sony took away from us. (aka other OS) Bushing was part of the fail0verflow panel that literally brought us to our knees. Their findings is what has brought us to where we are today. That and what our current developers have brought to the scene is rather remarkable.</description>
-			<creators>Tranced</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2016-1-30T23:30:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Universal Media Server (UMS) -  v6.0.0 Released</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Universal_Media_Server_(UMS)_-__v6.0.0_Released.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/universal-media-server-ums-v6-0-0-released.8972/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Universal_Media_Server_(UMS)_-__v6.0.0_Released.jpg">Homebrew​Supported Devices​Compare Media Servers​UMS PluginsDownloadsUniversal Media ServerLinkLink...</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Psxitarch_v3_Released_(A_Linux_distribution_for_PS4_designed_to_be_light_&_fast).jpg">The developer's over at PSXITA.it have released version 3.0 of the popular Linux distribution for the PS4 known as Psxitarch v3.  Psxitarch Linux is "designed to be light, fast and low on resources (it occupies less than 370mb of ram)" In this update there have been a number of changes under the hood with new functionality and features. All features and details can be seen in the release details provided below, but some features include integration of the ps4fancontrol, to help keep your PS4 running smoothly  Other changes include the ability to "Ability to switch from Vulkan (ACO) to Vulkan (LLVM) on the fly."v3 like previous versions have some included applications, some of those include RetroArch (Linux) / Dolphin / mupen64plus / PPSSPP are just some of the included emulators, Other software /utilities includeWindows Manager: / Web Browser: / File Manager:/ Text Editor:/ Archive Manager:/ Network Connection Manager: / Bluetooth Manager /  Image Viewer / Video/Music Player / Terminal Emulator/ Partition Editor / Audio Device Manager / PDF Viewer / Wine/. See full detyails and installation help in the release notes provided below and at the source link attached​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2016-1-19T06:58:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>[Incoming] PS3 4.78 OFW + PS Vite / PlayStation TV 3.57 OFW</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Incoming]_PS3_4.78_OFW_+_PS_Vite__PlayStation_TV_3.57_OFW.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/incoming-ps3-4-78-ofw-ps-vite-playstation-tv-3-57-ofw.8878/</target>
+		<mtrl id="0" lastm="2022-11-14T21:01:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS3 Dynarec support on PicoDrive (Sega 32x & Improved Sega CD) on the horizon from OsirisX</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3_Dynarec_support_on_PicoDrive_(Sega_32x_&_Improved_Sega_CD)_on_the_horizon_from_OsirisX.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps3-dynarec-support-on-picodrive-sega-32x-improved-sega-cd-on-the-horizon-from-osirisx.38675/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Incoming]_PS3_4.78_OFW_+_PS_Vite__PlayStation_TV_3.57_OFW.jpg">​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3_Dynarec_support_on_PicoDrive_(Sega_32x_&_Improved_Sega_CD)_on_the_horizon_from_OsirisX.jpg">Good news if your a fan of retro emulation and have a jailbroken PS3, as developer@OsirisXhas made a bit of a breakthrough for emulation on the PS3. Following OsirisX other emulation release's / contributions  like theunofficial PS4 port of RetroArchand the progress of theRetroArch Psl1ght PS3 portThe developer is now tackling taking on a new adventure on the PS3.One of the issues on the PS3, has always been the supporting of later generations(the 3d era+)of emulation. While we have seen PS1 / PSP / PS2 emulated  on the PS3, they are using the unlocked  system's firmware emulator's from Sony,. homebrew emulation has not achieved the same success, without support of a dynarec and the emulators re-written to support such a dynarec on the PS3, user's have been stuck side-scrolling in their Retro experiances.  We seen an early example years ago when developer IngPeria released a PoC PS1 emulator (not Sony's firmware one) with dynarec support, but not many other developer's took on the task for any other emulators.​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2016-1-10T17:07:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Universal Media Server (UMS) - 6.0.0-b2 and 5.5.0 Released</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Universal_Media_Server_(UMS)_-_6.0.0-b2_and_5.5.0_Released.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/universal-media-server-ums-6-0-0-b2-and-5-5-0-released.3905/</target>
+		<mtrl id="0" lastm="2022-11-9T20:47:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>RetroArch (PS4) Official Release is progressing, could we see an official PS4 debut soon?</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/RetroArch_(PS4)_Official_Release_is_progressing,_could_we_see_an_official_PS4_debut_soon.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/retroarch-ps4-official-release-is-progressing-could-we-see-an-official-ps4-debut-soon.38653/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Universal_Media_Server_(UMS)_-_6.0.0-b2_and_5.5.0_Released.jpg">​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/RetroArch_(PS4)_Official_Release_is_progressing,_could_we_see_an_official_PS4_debut_soon.jpg">Could we see an official RetroArch PS4 debut soon?  perhaps some recent clues suggest there is some preparations starting in that direction. A few days ago, PlayStation 4 developerfrangarcjhas prepared a PR on the officialRetroArch (libretro) githubto begin the process for "an official PS4 Release". There is no ETA to report as there appears to still be various task needed to complete this process, however this is a great sign to see for anyone hoping to see the official PS4 Release of the Retro experience.The official release will be powered by theOpen-Source SDK, where as the currentunofficial RetroArch PS4 portdoes not use the Open So​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2016-1-2T22:40:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>A look back @ 2015, As we arrived to 2016</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/A_look_back_@_2015,_As_we_arrived_to_2016.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/a-look-back-2015-as-we-arrived-to-2016.3820/</target>
+		<mtrl id="0" lastm="2022-10-25T20:35:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Apollo Save Tool v1.1.0 - View bucanero latest changes to the PS Vita port</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Apollo_Save_Tool_v1.1.0_-_View_bucanero_latest_changes_to_the_PS_Vita_port.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/apollo-save-tool-v1-1-0-view-bucanero-latest-changes-to-the-ps-vita-port.38551/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/A_look_back_@_2015,_As_we_arrived_to_2016.jpg">A look back at 2015, as we start 2016..Happy New Yeareveryone who happens to read this, lets hope for a great 2016, but lets take a look back at 2015 and reflect a bit as this was a huge year for not only PSX-Place where we celebrated the sites first birthday in 2015, but for many of the current consoles and devices as we seen major breakthroughs on the PlayStation 4 with first theCturt kernel exploit and jailbreak possibilitiesthat exist and then followed by therecent demo of Linux running on the PS4from the familiar fail0verflow team. The PS Vita (& PlayStationTV)saw the emergence of the Rejuvenate exploit( @Yifan Lu ) that gave the Vita (& PSTV) the ability to run native homebrew. All these advancements happening later in 2015, should prove to be in the news in 2016 as these hacking scene develops and matures. [break]ss[/break]Then the PS3 have proved to still be the king in many ways still, While not the current generation console it still has proven to be the one of most developed console in the hacking scene. We have seen many advancements in the PS3 community this past year asMAMBA has maturedto be on par with COBRA (excluding PS2/PSP) in nearly about every aspect thanks to the efforts of  @_NzV_who continued where @Estwald left off when he created the MAMBA payload originally forIris Manager. Developer  @3141cardpicked up an early...</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Apollo_Save_Tool_v1.1.0_-_View_bucanero_latest_changes_to_the_PS_Vita_port.jpg">Developer@bucanerohas a new update forApollo Save Tool (Vita), as some of you may or may not know the developer also has aPS3andPS4version of the homebrew utility available for those platforms as well. The utility is a great app for your save game files as you can resign and unlock and even download save's from other from the database.  The tool originally debuted on the PS3 when developer@bucaneroforked the GUI ofArtemis-a Cheat Engine by Dnawrkshp for the PS3Since thatPS3 releaseand many updates we seen aPS4 versionemerge and also aPS Vita port.​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2015-11-7T10:15:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PlayStation Now - 105 New PS3 Games Added to the Subscription Service</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PlayStation_Now_-_105_New_PS3_Games_Added_to_the_Subscription_Service.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/playstation-now-105-new-ps3-games-added-to-the-subscription-service.3443/</target>
+		<mtrl id="0" lastm="2022-10-25T19:19:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Flycast-Vita  (Dreamcast Emulator) v1.1:  Fast GDRom Load option + Latest downstreamed commits</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Flycast-Vita__(Dreamcast_Emulator)_v1.1__Fast_GDRom_Load_option_+_Latest_downstreamed_commits.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/flycast-vita-dreamcast-emulator-v1-1-fast-gdrom-load-option-latest-downstreamed-commits.38548/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PlayStation_Now_-_105_New_PS3_Games_Added_to_the_Subscription_Service.jpg">​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Flycast-Vita__(Dreamcast_Emulator)_v1.1__Fast_GDRom_Load_option_+_Latest_downstreamed_commits.jpg">PlayStation Vita developer@Rinnegatamantecontinues the magic in the homebrew scene.  Over the last weeks we have already seen various release's likeDoom64EX/VitaDB Downloader/RigelEngine Vita /Zelda3 Vitaand today the developer stopped by the forum to release v1.1 update ofFlycast-Vita (Dreamcast Emulator),in this update the option for "Fast GDRom Load" has been added, this will provide faster loading times, however the v1.1 chanelog also warns that some games may cause more issues then benefits with this option enables.  Also in the update this port was Downstreamed to the latest official Flycast commit, Take note that BoxArt Support is now disabled by default. This should help performance if you have alot of roms in your directory.Find the installation process and setup along with some tips in the official release thread >here< in the psx-place forums​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2015-10-26T21:45:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>1 Year PS+ Give Away - PSX Place's 1 Year Anniversary Cellebration</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/1_Year_PS+_Give_Away_-_PSX_Place's_1_Year_Anniversary_Cellebration.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/1-year-ps-give-away-psx-places-1-year-anniversary-cellebration.3293/</target>
+		<mtrl id="0" lastm="2022-10-19T23:57:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PlayStation Home  v0.41 (GDC Demo 2007) playable on HEN & CFW from DeViL303</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PlayStation_Home__v0.41_(GDC_Demo_2007)_playable_on_HEN_&_CFW_from_DeViL303.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/playstation-home-v0-41-gdc-demo-2007-playable-on-hen-cfw-from-devil303.38492/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/1_Year_PS+_Give_Away_-_PSX_Place's_1_Year_Anniversary_Cellebration.jpg">A member of PSX-Place, wishing to remain anonymous, has been kind enough to donate a1-Year PS+ Code(US) to be used as a give away in our1-Year Anniversary Celebrations. We are always more than happy to give back to such a wonderful community that has given us so much. The member was also kind enough to put together a way to help spread the word about this amazing "Place" so many of us call home. [break].[/break]It's a perfect time to Follow PSX-Place onFaceBookandTwitter. We hope you will share this with your friends, and enjoy your time with us​</description>
-			<creators>PSX-Place</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2015-10-13T23:08:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Happy Birthday PSX-Place.com !!!</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Happy_Birthday_PSX-Place.com_!!!.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/happy-birthday-psx-place-com.3155/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Happy_Birthday_PSX-Place.com_!!!.jpg">TodayOctober 14, 2015marks a special day for us all, the1 Year Anniversary of PSX-Place.com. It has been a fantastic ride that has been full of excitement since we opened the cyber doors here at our "Place" . We have seen this forum grow at a healthy rate attracting some of the best Developer's and Members in the PlayStation Homebrew Communities. It has been a personal pleasure of this Staff to serve the Homebrew Community with the latest news, scene releases, along with the knowledge and documentation needed to properly serve a community. [break]ss[/break]​</description>
-			<creators>PSX-Place</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2015-8-20T13:28:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Universal Media Server Version 5.2.2 Out</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Universal_Media_Server_Version_5.2.2_Out.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/universal-media-server-version-5-2-2-out.2625/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Universal_Media_Server_Version_5.2.2_Out.jpg">​</description>
-			<creators>Tranced</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2015-8-10T11:10:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>SKFU's Pr0xy³ Updated</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/SKFU's_Pr0xy³_Updated.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/skfus-pr0xy-updated.2538/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/SKFU's_Pr0xy³_Updated.jpg">​</description>
-			<creators>Tranced</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2015-7-10T01:37:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Universal Media Server v5.2.0 - PlayStation 4 Support Is Here</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Universal_Media_Server_v5.2.0_-_PlayStation_4_Support_Is_Here.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/universal-media-server-v5-2-0-playstation-4-support-is-here.2328/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Universal_Media_Server_v5.2.0_-_PlayStation_4_Support_Is_Here.jpg">​</description>
-			<creators>Tranced</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2015-6-14T21:01:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Universal Media Server (UMS) v5.1.4</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Universal_Media_Server_(UMS)_v5.1.4.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/universal-media-server-ums-v5-1-4.2130/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Universal_Media_Server_(UMS)_v5.1.4.jpg">Universal Media Server​via official website said:What is Univarsal Media Server?:  Universal Media Server is a DLNA-compliant UPnP Media Server. It was  originally based on PS3 Media Server by shagrath. UMS was started by  SubJunk, an official developer of PMS, in order to ensure greater  stability and file-compatibility.To see a comparison of popular media servers,click here​Universal Media Server supports all major operating systems, with versions for Windows, Linux and Mac OS X. The program streams or transcodes video, audio and image formats with little or no configuration. It is powered by FFmpeg, MEncoder, tsMuxeR, MediaInfo and more,  which combine to offer support for a wide range of media formats.If you would like to donate to the project, you can view the donate buttonhere (via the official website):​Click to expand...Update v5.1.4​Changes for v5.1.4:General:Limits clickable areas of settings more preciselyUses a default renderer image when none existMade H.264 transcoding fasterImproved...Click to expand...</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PlayStation_Home__v0.41_(GDC_Demo_2007)_playable_on_HEN_&_CFW_from_DeViL303.jpg">PlayStation 3 developer@DeViL303has been working on a new project of late, taking a break from some of the fantastic XMB work and various firmware hacks and tweaks. The developer has recently set his sights on PlayStation Home and bringing some of the functionality back while preserving some of the history of the project.  DeViL303 has managed to get alot working in the GDC Demo 2007 of Home. There are various notes and details provided below along with a video demonstration of what is working. See full details in the release thread linked​</description>
 			<creators>STLcardsWS</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2015-5-5T15:58:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PlayStation Now Subscriptions coming to the PS3</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PlayStation_Now_Subscriptions_coming_to_the_PS3.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/playstation-now-subscriptions-coming-to-the-ps3.1852/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PlayStation_Now_Subscriptions_coming_to_the_PS3.jpg">​</description>
-			<creators>STLcardsWS</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2015-5-4T07:46:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Universal Media Server 5.1.3 With Improvements & Fixes</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Universal_Media_Server_5.1.3_With_Improvements_&_Fixes.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/universal-media-server-5-1-3-with-improvements-fixes.1850/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Universal_Media_Server_5.1.3_With_Improvements_&_Fixes.jpg">​</description>
-			<creators>Tranced</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2022-10-19T19:25:00.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>[UPDATE x5] What is Evilnat brewing up in his next PS3 CFW Release?  4.89.3 in development</desc>
@@ -481,84 +481,84 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4Load_(by_bucanero)_-_Load_SELF_files_over_Network.jpg">Developer@bucanerohas another release for the PS4 Community, following the recentPS4 Apollo Save Toolport there is another well known PS3 utility for homebrew development that is making it's way to the PS4. Many have known aboutPS3Load/PS3LoadXbuilt fromPSL1GHT.Now for the PS4 there is a new build using the Open Orbis SDK and now we have PS4Load.With this homebrew utility you can load SELF files over a network, which is a handy utility for developer's testing apps throughout the development process. Any tools making it easier for PS4 Homebrew Development is a step forward in the right direction. If you want to start coding your PS4 project be sure to checkout thePS4 Homebrew Development sub-forumhere at psx-place for additional links and resources for developing your next Homebrew Project.​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2018-12-29T17:35:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Huge Vita News from #35C3- @yifanlu & @DaveeFTW presents their Talk "Viva la Vita Vida"</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Huge_Vita_News_from_#35C3-_@yifanlu_&_@DaveeFTW_presents_their_Talk_Viva_la_Vita_Vida.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/huge-vita-news-from-35c3-yifanlu-daveeftw-presents-their-talk-viva-la-vita-vida.21908/</target>
+		<mtrl id="0" lastm="2022-5-10T18:50:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>4.89 PS3 Firmware is now live. - Does it affect a Jailbroken / Homebrew Enabled  PS3?</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/4.89_PS3_Firmware_is_now_live._-_Does_it_affect_a_Jailbroken__Homebrew_Enabled__PS3.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/4-89-ps3-firmware-is-now-live-does-it-affect-a-jailbroken-homebrew-enabled-ps3.37206/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Huge_Vita_News_from_#35C3-_@yifanlu_&_@DaveeFTW_presents_their_Talk_Viva_la_Vita_Vida.jpg">Following up with theirannouncement that they will introduce their Achievementsin "Vita Hacking" at the#35C3-Congress, both Developers@yifanluand@DaveeFTWfrom@TeamMoleculetoday presented their Talk:"Viva la Vita Vida". And in this Thread, you will learn what they got achievedwith their Hacks but alsowhat this means for the Communityof "Vita Hacking"in future.And to "spoil" you a little bit, we recommend thatyou will read this Articlewhilesitting on your chairin caseyou would come offbecause ofyour roar with laughter.For an overview about the #35C3-Congress in General, or where you can find allLivestreamsfrom this Talk as well from other important ones, please clickhere.​</description>
-			<creators>Roxanne</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2018-11-27T16:09:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Could Sony be working on a PSVITA successor? [UPDATE: No they don't!]</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Could_Sony_be_working_on_a_PSVITA_successor_[UPDATE_No_they_don't!].jpg</url>
-			<target type="u">https://www.psx-place.com/threads/could-sony-be-working-on-a-psvita-successor-update-no-they-dont.21487/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Could_Sony_be_working_on_a_PSVITA_successor_[UPDATE_No_they_don't!].jpg">UPDATE (29th Nov.): A quick clarification - No this won't be a PSVITA successor!Thanks to the"sharp eyes"from our community member@Naked_Snake1995, thisPatent Filing doesn't describe a Cartridge using for a PSVITA successor, where he explaines thatthis Cartridge is already in use for a total different Sony Product sold in South Korea only.You can find hisexplanationdown below while the Original News is kept for reference only. I (Roxanne) have to apologize personally for any missunderstanding!​</description>
-			<creators>Roxanne</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2018-10-7T11:34:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>(UPDATED to v1.2) -  A new project (Unity-SA) porting GTA: San Andreas to Unity</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/(UPDATED_to_v1.2)_-__A_new_project_(Unity-SA)_porting_GTA_San_Andreas_to_Unity.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/updated-to-v1-2-a-new-project-unity-sa-porting-gta-san-andreas-to-unity.20854/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/(UPDATED_to_v1.2)_-__A_new_project_(Unity-SA)_porting_GTA_San_Andreas_to_Unity.jpg">(UPDATED (October 7 2018) see "Update v1.2" TAB in article for new Major Improvements with Weapon System & more)(Original article via September 29) >> The Grand Theft Auto San Andreas experience on the Vita? Yes, you have read that right,  GTA-SA to Unity (dubbedUnity-SASAunity). While not a complete port of the game, many aspects of the Open World Game (that debuted on the PS2) Classic are being added with some Proof-Of-Concept media (Screenshots & Video) shared of this project. The Vita build is still in development  and needs some work yet but the project is coming along and hopefully we see this progress, there is no VPK for installing on your exploited PS Vita / PlayStation TV devices (yet as it still in development), however  the source code has been published onGithubfor anyone to contribute.Stay tuned as this is a very interesting project to hit the platform.​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/4.89_PS3_Firmware_is_now_live._-_Does_it_affect_a_Jailbroken__Homebrew_Enabled__PS3.jpg">Latest Status Update (May 20)​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2018-8-30T19:38:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>RetroArch v1.7.4  - PS3 / VITA / PSP & other platforms updated</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/RetroArch_v1.7.4__-_PS3__VITA__PSP_&_other_platforms_updated.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/retroarch-v1-7-4-ps3-vita-psp-other-platforms-updated.20603/</target>
+		<mtrl id="0" lastm="2022-3-1T00:50:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>uKaruga demake (new) + VitaRTCW (Return to Castle Wolfenstien) v0.5 update by Rinnegatamante</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/uKaruga_demake_(new)_+_VitaRTCW_(Return_to_Castle_Wolfenstien)_v0.5_update_by_Rinnegatamante.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ukaruga-demake-new-vitartcw-return-to-castle-wolfenstien-v0-5-update-by-rinnegatamante.36656/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/RetroArch_v1.7.4__-_PS3__VITA__PSP_&_other_platforms_updated.jpg">The libretro team has dropped the latest release ofRetroArchwith the arrival of version 1.7.4(following1.7.3/1.7.2)and it appears all/most supported platforms have seen a  version bump and that includes the PS Vita (&pstv) / PlayStation 3  (PS3) & PlayStation Portable (PSP) with several platform spefic changes for those platforms. Also we see a good amount of global changes seen throughout all ports. While also some features being unavailable for some platforms. For all the changes and details checkout the info below and also the source link provided for the FULL RELEASE NOTES, as below is just a summary and some additional core info we provided..  How is the PS3 / PSP / VITA ports doing for you now in v1.7.4? Comment below and let us know your experiences..​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/uKaruga_demake_(new)_+_VitaRTCW_(Return_to_Castle_Wolfenstien)_v0.5_update_by_Rinnegatamante.jpg">Following up on the recent update ofvitaFF4 v1.2,  developer@Rinnegatamantehas also updated another existing project withv0.5 of VitaRTCW(Return to Castle Wolfenstein based on iortcw) which incorporates the latest vitaGL changes and graphical enchantments like fixing of fog rending  also a new Aim Assist Feature for single player has been added in this update. Then the vita developer also introduced a new homebrew release with a very interesting demake with the release ofnKaruga.A vertical shoot 'em up game that is a"demake popular bullet hell game Ikaruga, released in 2002 for Dreamcast and 2003 for Gamecube".​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2018-8-25T19:26:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>LOLIcon - New Overclocking plugin (500MHz) by dots_tb released</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/LOLIcon_-_New_Overclocking_plugin_(500MHz)_by_dots_tb_released.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/lolicon-new-overclocking-plugin-500mhz-by-dots_tb-released.20536/</target>
+		<mtrl id="0" lastm="2022-2-18T20:09:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>FF4-Vita v.1.2:   Final Fantasy IV (Android) port for PS-Vita by Rinnegatamante, frangarcj & TheFloW</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/FF4-Vita_v.1.2___Final_Fantasy_IV_(Android)_port_for_PS-Vita_by_Rinnegatamante,_frangarcj_&_TheFloW.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ff4-vita-v-1-2-final-fantasy-iv-android-port-for-ps-vita-by-rinnegatamante-frangarcj-theflow.36556/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/LOLIcon_-_New_Overclocking_plugin_(500MHz)_by_dots_tb_released.jpg">.Developerdots_tbhas released a new Overclocking plugin calledLOLiconfor the PS Vita / PlayStation TV that will obtain an overclock speed of 500MHz!!! This is kernel plugin that utilizesJoel16's VSH Menuand as a result provides you with onscreen access and options that the LOLIxon plugin provides, this plugin is still a work in progress and labeled experimental but it appears the developer has a great foundation to the project that is surely to evolve.As i was prepping this article psx-place member@Naked_Snake1995posted in the comments below a great point, Vita user's may be at a disadvantage as the power consumption could drain your battery quicker, where as PSTV user's would not have that worry, this is theory is untested at this very time and unknown exactly how much your battery would be impacted but it surely going to impact it in some way. So beware of that aspect and let us know your experiences after using this plugin (but keep in mind its still experimental)..​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/FF4-Vita_v.1.2___Final_Fantasy_IV_(Android)_port_for_PS-Vita_by_Rinnegatamante,_frangarcj_&_TheFloW.jpg">PS Vita developer'sRinnegatamante,frangarcj&TheFloWhave updated their Wrapper/Port ofFinal Fantasy 4 (IV)(Android)for your PS Vita or PlayStation TV(& Vita TV}to version 1.2 with a few new changes and enchantments by updating to the latest vitaShaRK & vitaGL commits, Also included in v1.2 an added option to swapOandXbutton functionality and to round out the update the added possibility to "force english dub usage". was added in 1.2If you are fan of Final Fantasy and have a Homebrew enabled PS Vita (or PS TV), then you must checkout the other android ports ofFinal Fantasy III&Final Fantasy V (5)from this same trio of talented developer's. Also, checkout some of other projects by these developer's found at VitaDB.viewRinnegatamante,frangarcj&TheFloWpages for more excellent brew by these developer's who continue to share some great projects to us all. You will find great projects like a wrapper ports ofGrand Theft Auto: Chinatown Wars&Grand Theft Auto: San Andreasand many other projects that are now powered by the community supported PS Vita Platform, lead by some great developer's that have brought some amazing projects to the platform.​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2018-8-24T00:03:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>EDuke32 Vita v1.0 (by Rinnegatamante) - Play Duke Nukem 3D on your VITA / PSTV</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/EDuke32_Vita_v1.0_(by_Rinnegatamante)_-_Play_Duke_Nukem_3D_on_your_VITA__PSTV.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/eduke32-vita-v1-0-by-rinnegatamante-play-duke-nukem-3d-on-your-vita-pstv.20518/</target>
+		<mtrl id="0" lastm="2022-2-13T12:38:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>pPlay v3.8: A homebrew Video Player now with PS4 Support by Cpasjuste</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/pPlay_v3.8_A_homebrew_Video_Player_now_with_PS4_Support_by_Cpasjuste.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/pplay-v3-8-a-homebrew-video-player-now-with-ps4-support-by-cpasjuste.36505/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/EDuke32_Vita_v1.0_(by_Rinnegatamante)_-_Play_Duke_Nukem_3D_on_your_VITA__PSTV.jpg">Rinnegatamantewhom is known for his extensive library of PS Vita Homebrew(see complete list of Homebrew / plugins >>here) is back with a new release for Duke Nuken 3D fans as the dev has a new port for the community asEDuke32 Vita v1.0has been released. As usual Rinnegatamante has some plans laid out for what could come in the next updates as well. See full release notes included​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/pPlay_v3.8_A_homebrew_Video_Player_now_with_PS4_Support_by_Cpasjuste.jpg">Homebrew enabled PlayStation 4's (PS4) have seen a new homebrew release from a developer who has been killing it with some great releases of late(some of those includedpNESpSNES&pFBNEOto name a few of the recent PS4 releases). Now PS4 devCpasjustehas ported another project from the Switch with the release ofpPlay (a new video player for the PS4). Starting in v3.6 (now resides at v3.8 time of this writing) the developer provided PS4 support for the project (source codehere) and since then provided several quick updates (in v3.7 &  v3.8) to improve the PS4 port of this handy application for your PS4 Console.The PlayStation 4 has another Video Player for the PS4 calledPS4 Playerfrom developer Lapy, which is a useful app but an application that has only seen maintenance updates for sometime and has limited codec support . This video player (pPlay) aims to provided a needed solution for the PS4.  The PS3 had a great media player inMovainand hopefully pPlay can emerge and become a must have option for your homebrew enabled PS4 as well..​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2018-8-22T19:19:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PARAM.SFO EDITOR updated to v1.2 - Now Supporting PS4 /PS3 / VITA / PSP</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PARAM.SFO_EDITOR_updated_to_v1.2_-_Now_Supporting_PS4_PS3__VITA__PSP.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/param-sfo-editor-updated-to-v1-2-now-supporting-ps4-ps3-vita-psp.20491/</target>
+		<mtrl id="0" lastm="2022-2-8T22:23:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>RetroArch (Community Edition) Beta 4  - Unofficial PS3 Port by Crystal</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/RetroArch_(Community_Edition)_Beta_4__-_Unofficial_PS3_Port_by_Crystal.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/retroarch-community-edition-beta-4-unofficial-ps3-port-by-crystal.36469/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PARAM.SFO_EDITOR_updated_to_v1.2_-_Now_Supporting_PS4_PS3__VITA__PSP.jpg">The Darkprogramercame by the site the other day and alerted us of an update to his Resource page (here),as the dev provided us with the latest update toPARAM SFO EDITOR v1.2that is now supportingPS4/PS3/VITA&PSPplatforms in this handy utility for editing various options / paths, useful for various task, if you are unfamiliar with this tool be sure to make backups of the PARAM.SFO your editing as you could make your Homebrew / App / Game ect. unbootable or change some settings, nothing serious but good to have a backup just incase.  Checkout the latest details from@The Darkprogramerfound in the quote provided below:​</description>
-			<creators>The Darkprogramer</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2018-7-1T14:10:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>h-encore: The newly Released Vita Jailbreak (Supporting 3.65, 3.67 & 3.68 Firmware) by TheFlow</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/h-encore_The_newly_Released_Vita_Jailbreak_(Supporting_3.65,_3.67_&_3.68_Firmware)_by_TheFlow.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/h-encore-the-newly-released-vita-jailbreak-supporting-3-65-3-67-3-68-firmware-by-theflow.18881/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/h-encore_The_newly_Released_Vita_Jailbreak_(Supporting_3.65,_3.67_&_3.68_Firmware)_by_TheFlow.jpg">Asexpected and promised byTheFlowa new Vita Jailbreak has been delivered to the PS Vita / PlayStation TV (vita tv) community with the release of"h-encore"which is a new exploit that is now supporting3.65(Supports Henkaku & Enso),3.6 7&3.68(Supports Henkaku but does not support Enso)firmware's.  The next chapter in the Vita Community has been opened and anyone who missed out on 3.60 now has a new window to exploit your device. TheFlow has plans for a Source Code release but has no intentions on doing so until the bug has been patched by Sony..There is a vast amount of homebrew and hacks you can find for the VITA & PSTV. Need help finding Vita Homebrew???  Of course we have our own download section here at psx-place.com >>Link .Then also sites likeBrewology.com& also over at theVitaDBcontain a huge number of downloads as well for the PS Vita / PlayStation TV / Vita TV...​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/RetroArch_(Community_Edition)_Beta_4__-_Unofficial_PS3_Port_by_Crystal.jpg">RetroArch(CommunityEdition)has reachedBeta 4with a recent update provided by PlayStation 3 Homebrew developer@Crystal,.  RetroArch (CE)  "is a community effort to restore a functional build for the homebrew PS3 Community,". The official port for the PS3 from the libretro team been temporary shelved during a code transition. So, that is whereRetroArch  (CE)has been filling the gap in providing a port that has fixed some longstanding issues on the PS3 with a greater focus on the console itself. The result becomes one of the most stable RetroArch builds on the PS3 with more libretro core's (emulators) then ever to add to the RetroArch (frontend) for your Homebrew enabled PS3 powered by either your favoriteCFWorPS3HEN.,There is alot more information on this unofficial port along with various links and details for instructions to setup many of the libretro cores being used. Checkout the officialthread herein the PSX-Place forumsand join the discussion for this unofficial PS3 Port.​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2018-6-16T10:45:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>[UPDATE] New Vita Jailbreak coming in July 2018 (3.65-3.68 HENkaku / 3.65 Enso) from TheFlow</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[UPDATE]_New_Vita_Jailbreak_coming_in_July_2018_(3.65-3.68_HENkaku__3.65_Enso)_from_TheFlow.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/update-new-vita-jailbreak-coming-in-july-2018-3-65-3-68-henkaku-3-65-enso-from-theflow.18532/</target>
+		<mtrl id="0" lastm="2022-1-31T19:54:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS4 EMC (SouthBridge) CFW for PHAT Models CUH-1000 / CUH-1100 (Tutorial by zecoxao)</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_EMC_(SouthBridge)_CFW_for_PHAT_Models_CUH-1000__CUH-1100_(Tutorial_by_zecoxao).jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps4-emc-southbridge-cfw-for-phat-models-cuh-1000-cuh-1100-tutorial-by-zecoxao.36389/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[UPDATE]_New_Vita_Jailbreak_coming_in_July_2018_(3.65-3.68_HENkaku__3.65_Enso)_from_TheFlow.jpg">As the PS Vita Community knows hacker/developer TheFlow had discoveredanew vulnerabilityfor jailbreaking thePS Vita / PlayStation TV (Vita TV).The developer had planned for a much later releases since the Vita seems to be nearing the end of its life cycle and since official support could cease down the road. The idea being it was better to hold on to this exploit saving it until Sony officially pulled the plug on the device(s). However, since that timeanother exploit was foundand thus this exploit(the first one)has moved up the release date  to a new date of >>July 1 2018.With firmware's 3.65-.3.68 there will be a new window to install the HENkakuhackwhich is a HEN (Homebrew Enabler), But if your on 3.65 firmware you can even take it a step farther by having the ability to install Enso (the CFW framework), With this soon to be released methodTheFlow is saying you will need a Memory Card(see update), as no other storage medium including the system's internal storage will not work.​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_EMC_(SouthBridge)_CFW_for_PHAT_Models_CUH-1000__CUH-1100_(Tutorial_by_zecoxao).jpg">Update (Additional Tutorial):Software method for 5.05 only(5.05 hackable CUH-1000 and CUH-1100 ONLY!):We had some interesting developments on thePlayStation 5's 4.03 firmware just recently, Now developer@zecoxaohas dropped news for the PS4 in the psx-place forums today with a new tutorial that i must say interesting for the PlayStation 4 (PS4) community, asPS4 PHAT Models (CUH-1000 / 1100)now has theability for a CFW (in the southbridge emc that acts like a second syscon).  Now, this is an advanced task and you can do some damage to your PS4 if you do not follow the instructions and even so there is always a risk when your messing with internal flash (EMC in this case) ,So this is aUSE AT YOUR OWN RISKrelease.You have been warned of the potentials.This works on firmware upto 9.03, also works on devkits / early testkits  From@zecoxao"This only grants permanence over the southbridge and syscon, but does not grant permanence over samu it's just over southbridge and syscon you can think of it as a second syscon" So in laymen terms this is not like your traditional PSP/PS3 CFW, but rather a firmware for the EMC chip not the actual PS4's firmware (don't confuse the two).,The CFW (EMC) will allow for various things like " making the console beep, change temperature limits, increase or decrease fan speed etc"​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2018-4-26T00:04:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>RetroArch 1.7.2 ( PS3 / Vita / PSP ):  "Runahead Latency Reduction" headlines many New  additions</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/RetroArch_1.7.2_(_PS3__Vita__PSP_)__Runahead_Latency_Reduction_headlines_many_New__additions.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/retroarch-1-7-2-ps3-vita-psp-runahead-latency-reduction-headlines-many-new-additions.17648/</target>
+		<mtrl id="0" lastm="2022-1-30T19:23:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Icon Mask ( update  v1.05)  Change the appearance of your PS4 icons</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Icon_Mask_(_update__v1.05)__Change_the_appearance_of_your_PS4_icons.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/icon-mask-update-v1-05-change-the-appearance-of-your-ps4-icons.36373/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/RetroArch_1.7.2_(_PS3__Vita__PSP_)__Runahead_Latency_Reduction_headlines_many_New__additions.jpg">Following the release ofRetroArch v1.7.1and then the recentRetroArch 1.7.1 PS3 Extended Version(from @Ezio / @Zar). The official team has now dropped version 1.7.2 for all platforms and that includes the ports for the PlayStation 3, PS Vita (PSTV) & PSP. While version 1.7.2 is packed with alot of new changes that applies to all builds there is one feature that is quite interesting with the  "Runhead Latency Reduction"  feature which the devs say gives better latency then the real hardware, the PS3 is a port that supports this feature and is used as an example within the release notes. You can checkout all these new features and additional details in the release notes provided​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Icon_Mask_(_update__v1.05)__Change_the_appearance_of_your_PS4_icons.jpg">Update v1.05 ReleasedOriginal article: DeveloperLapyhas a new utility ps4 homebrew he has released recently along with two quick updates to provide additional functionality with the release ofIcon Mask. Many of you know Lapy from his various homebrew creations on the Ps4 / PS Vita. We have seen from Lapy Games titles likeDuck Hunt remake/Wild Gunman RemakeBrain Splitter& various others you can see in theLapy Games Collection.  the developer has released various utility applications likePS4-Xplorer/PS4 Tempature&PS4 App LockNow withIcon Maskthe developer has gave user's an easy way to customizes Icons on the PS4's main menu, giving a custom look to the UI with a variety of "mask" that can be used with more planned to be added in the future.. Below are some of the details of Icon Mask (which currently sits at v1.02 and supports 9.00 FW)​</description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2022-1-30T16:20:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>pFBNEO (FBA) / pSNES (SNES9x) / pNES (Nestopia) Released for PS4 (9.00 FW) ports by Cpasjuste</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/pFBNEO_(FBA)__pSNES_(SNES9x)__pNES_(Nestopia)_Released_for_PS4_(9.00_FW)_ports_by_Cpasjuste.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/pfbneo-fba-psnes-snes9x-pnes-nestopia-released-for-ps4-9-00-fw-ports-by-cpasjuste.36372/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/pFBNEO_(FBA)__pSNES_(SNES9x)__pNES_(Nestopia)_Released_for_PS4_(9.00_FW)_ports_by_Cpasjuste.jpg">You may know developerCpasjustework from the PS Vita with releases likepFBA/pSNES / pNES, well the developer recently released 3 emulator ports for the PS4.pFBNEO(a Final Burn Alpha emulator)/pSNES(SNES9X (Super Nintendo) Emulator/pNES(Nestopia (Nintendo NES) emulator).These emulators are compatible with the 9.00 jailbreak. View each below for the corresponding emulator details​</description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2022-1-30T13:37:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>A small writeup + code for  ROP userland execution for PS5 firmware 4.03</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/A_small_writeup_+_code_for__ROP_userland_execution_for_PS5_firmware_4.03.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/a-small-writeup-code-for-rop-userland-execution-for-ps5-firmware-4-03.36369/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/A_small_writeup_+_code_for__ROP_userland_execution_for_PS5_firmware_4.03.jpg">Following the recent9.00 PS4 Jailbreak. developer's:Znullptr&ChendoChapnow recently have released a small write-up and some code examples forROPuserlandexecutionon PS5firmware 4.03. Now this isnota jailbreak. what we have is a userland exploit via webkit, an entry point essentially.  A way to attack / control the kernel will be the next obstacle and typically the more difficult task to achieve but this provides a  sorta foot into the door for future exploration and what hopes to be a future kernel exploit to combine with this entry point.However it may prove to also be a great window to learn more about the PS5 for developer's and hacker's as it still new and they are still trying to figure out how Sony has tried to keep other's out. The developer's have stated the PS5 security is vastly improved over the PS4.  It will be a process and take sometime but looks like there is a crack open in 4.03 for more exploration. Will it lead to the front-door being busted wide open in the future and a full fledged jailbreak? Only time will tell in the meantime checkout the interesting write up below and what the experts have to say on this write-up... ​</description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2022-1-30T10:06:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>[Update 3- v1.0.0 Released] Apollo Save Tool (new PS4 version) Released by bucanero</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Update_3-_v1.0.0_Released]_Apollo_Save_Tool_(new_PS4_version)_Released_by_bucanero.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/update-3-v1-0-0-released-apollo-save-tool-new-ps4-version-released-by-bucanero.36085/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Update_3-_v1.0.0_Released]_Apollo_Save_Tool_(new_PS4_version)_Released_by_bucanero.jpg">Update 3 (Jan. 30 2022)-v1.00 ReleasedFrequent PS3/PS4 developer seen in the psx-place forums@bucanerohas now officially released a new homebrew for the PS4(graduating from somerecent Beta testbuilds), Bringing a  PS4 version of his popular PS3 homebrew utility for handling and managing saves games now for the PS4 Jailbroken user's(9.00 Support currently not supported, but will bein next update),  TheApollo Save Toolis a homebrew app that runs on a homebrew enabled PS4 console and as PS3 CFW / HEN user;s will tell you its been a very useful utility for Save Games Management over the past couple of years with lots of handy features and frequent updates that have brought alot of new functionality and features.  .Recently, the developer decided to try and bring this concept and homebrew tp the PS4 and the developer has managed to do just that with this recent release for the PS4. The development journey can be seen in hisdevelopment threadthat tracked progress of the PS4 version from the developerfound herein the forum's( also, here is the development thread forthe PS3 versionand also therelease threadhere for the PS3 app for those interested with a PS3.).View all the details of the latest PS4 release from developer@bucanerofound below​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2022-1-30T07:04:00.000Z" until="2100-12-31T23:59:00.000Z">
@@ -641,85 +641,85 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/VitaQuakeIII__v1.0___+__VitaVoyager_v0.8__New_updates_to_vitaGL_provides_new_performance_boost_!.jpg">Developer@Rinnegatamantedropped by the forums here at psx-place.com to release a couple of new items for the homebrew community.  First up we have an update toVitaQuakeIIIwith the release of version 1.0. This update has provided the port withMultitexturing supportandTexture CombinerWhat this does, is improves performance on the PS Vita and provides support for features like dynamic light that previously has been disabled prior to this update (see video below for a showcase of examples).  In regards to the recentadvancements to VitaGLthe developer states "Expect a branch of releases for idTech3 derivates plus maybe some new idTech 3 derivates ports in the future" be sure to keep a look out in the future here in thepsx-place forumsand @VitaDBfor when those release appear directly fromRinnegatamante.​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2021-3-28T20:39:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>KYUHEN  - A New Vita Homebrew Contest (Now Live - Submissions ends on May 27, 2021)</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/KYUHEN__-_A_New_Vita_Homebrew_Contest_(Now_Live_-_Submissions_ends_on_May_27,_2021).jpg</url>
-			<target type="u">https://www.psx-place.com/threads/kyuhen-a-new-vita-homebrew-contest-now-live-submissions-ends-on-may-27-2021.33403/</target>
+		<mtrl id="0" lastm="2015-9-3T08:14:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>webMAN MOD 1.43.01 With Improved Fan Control & 4.76 CEX Support</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/webMAN_MOD_1.43.01_With_Improved_Fan_Control_&_4.76_CEX_Support.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/webman-mod-1-43-01-with-improved-fan-control-4-76-cex-support.2770/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/KYUHEN__-_A_New_Vita_Homebrew_Contest_(Now_Live_-_Submissions_ends_on_May_27,_2021).jpg">There is a newVita Homebrew Contestthat is starting in the Vita Community, in the past we have seen theRejuvenate Contestthat helped spark some early development in the Vita Scene, then later on we had theGekiHEN Contestwhich psx-place took a part in along with other scene sites, now we have the a new contest for the Vita Community calledKYUHEN,Spearheaded byCimmerian , 2old4Gaming , frangarcjwith assistance from psx-place.com / wololo.net / playstationhax.xyz / Customprotocol.com .The Contest will consist of a2 month development periodand spanacross 4 categories.  Those categories include 2 separate"Games"categories one for SDK Homebrew and one for Project powered by ported engine's such as Unity or GameMaker. Then there will be a separate category for"Ports"of  games/emulators ect..  Then to round out the last category there is"Utilities"and this one is open to both applications and plugins .​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/webMAN_MOD_1.43.01_With_Improved_Fan_Control_&_4.76_CEX_Support.jpg">​</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2021-3-17T20:02:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>[Update] Apollo Save Tool v1.8.4 released</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Update]_Apollo_Save_Tool_v1.8.4_released.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/update-apollo-save-tool-v1-8-4-released.28124/</target>
+		<mtrl id="0" lastm="2015-9-3T07:42:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PlayStation 3 Flash Tool Version 4.0 By Abkarino</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PlayStation_3_Flash_Tool_Version_4.0_By_Abkarino.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/playstation-3-flash-tool-version-4-0-by-abkarino.2767/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Update]_Apollo_Save_Tool_v1.8.4_released.jpg">Update v1.8.4 ReleasedOriginal Introduction:PS3 development has been seeing an upkick lately and developer@bucanerohas been one of the developers playing a part. The developer has recently updatedArtemis with new supportand also releasedPKGi (PS3)but now the developer shares a great utility that involves PS3 Game Saves calledApollo, built utilizing the Artemis GUI this homebrew capable of running on CFW and PS3HEN will allow you to Patch & Resign your Game Saves / Download Game Saves / Unlock Game Saves all from the convenience of your PS3 console and not PC tools are required.  Below you can see the release thread from the developer himself: So i'll let@bucanerotake it from here with another great release:​</description>
-			<creators>bucanero</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PlayStation_3_Flash_Tool_Version_4.0_By_Abkarino.jpg">​</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2021-3-17T18:59:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>(Update 1.1) Grand Theft Auto:  Chinatown Wars  (GTA CTW)  Vita Port by @theflow0 /  @Rinnegatamante</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/(Update_1.1)_Grand_Theft_Auto__Chinatown_Wars__(GTA_CTW)__Vita_Port_by_@theflow0___@Rinnegatamante.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/update-1-1-grand-theft-auto-chinatown-wars-gta-ctw-vita-port-by-theflow0-rinnegatamante.33283/</target>
+		<mtrl id="0" lastm="2015-9-3T02:42:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PlayStation 3 Mandatory 4.76 Firmware Update Out</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PlayStation_3_Mandatory_4.76_Firmware_Update_Out.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/playstation-3-mandatory-4-76-firmware-update-out.2760/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/(Update_1.1)_Grand_Theft_Auto__Chinatown_Wars__(GTA_CTW)__Vita_Port_by_@theflow0___@Rinnegatamante.jpg">Update v1.1 ReleasedOriginal Article (March 17):The duo of PS Vita legends developer'sTheFlowand@Rinnegatamanteteam up again with another great release for the PS Vita Community. We have seen the family ofGrand Theft Auto Seriesmake the journey to the PS Vita with various ports and techniques but have we been missing one from the PSP era in the form of a native port? First we seen the release ofre3 (GTA III)followed byreVC (GTA: Vice City)which utilized a reversed engineered engine .. Then several weeks ago we seen those two classic GTA game's followed by what may be the most iconic game in the series withgtaSA_Vita (GTA: San Andreas)as we just witnessed updatev1.6released  Whichtook a different approach and utilized the Android port of the game and puts TheFlow's kubridge plugin to work serving as a wrapper for aiding in the porting some Android games to the PS Vita (seeMax Payneas another Android game ported)Now, that brings us to today's release with is a port of another GTA Classic from the PSP with the release ofGrand Theft Auto: Chinatown Wars, (GTA:CFW Vita) a 3D top view game from the series , LikeMax PayneandGTASAthis is a port of the Android version with magic from@Rinnegatamanteand TheFlow.​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PlayStation_3_Mandatory_4.76_Firmware_Update_Out.jpg">​</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2021-3-14T18:35:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>{UPDATE] PS4 Jailbreak 7.50 /7.55 w/ Mira Support Released</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/{UPDATE]_PS4_Jailbreak_7.50_7.55_w_Mira_Support_Released.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/update-ps4-jailbreak-7-50-7-55-w-mira-support-released.33239/</target>
+		<mtrl id="0" lastm="2015-9-2T08:27:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>CTurt Showcases A GameBoy Emulator On The PS4</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/CTurt_Showcases_A_GameBoy_Emulator_On_The_PS4.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/cturt-showcases-a-gameboy-emulator-on-the-ps4.2750/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/{UPDATE]_PS4_Jailbreak_7.50_7.55_w_Mira_Support_Released.jpg">UPDATE7.55 w/ Mira Support ReleasedOriginal Article (7.50) Not only did we just see aPS1 exploit released, the exploited PS4 firmware latter has extended a step to now firmware 7.50 has been officially exploited and released to the public as developerSleirsgoevyhas released the latest PS4 Jailbreak that has utilized the latest findings fromTheFlowin his disclosed bug that has the potential to work upto 7.55 but is currently targeted for 7.50 for this release.TheFlowhas tweeted several hints regarding 7.55 (tweet1/2) but 7.55 is yet to be solved by other,@zecoxaoprovided some details and shared via twitter see below.This is not a fully functional jailbreak yet as there is elements that are needed to be ported like the Mira/HEN and other Payload, so you should not update to this exploit from previous exploits yet. Let it mature, but if your on a PS4 on 7.50 or lower and missed out on previous exploits, Stay Tuned as this progresses,​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/CTurt_Showcases_A_GameBoy_Emulator_On_The_PS4.jpg">​</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2021-3-12T21:51:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>[PS3 XMB MOD] Now have Individual Gameboots for each emulator / system / homebrew launched</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[PS3_XMB_MOD]_Now_have_Individual_Gameboots_for_each_emulator__system__homebrew_launched.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ps3-xmb-mod-now-have-individual-gameboots-for-each-emulator-system-homebrew-launched.33240/</target>
+		<mtrl id="0" lastm="2015-9-2T04:07:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS4 Firmware 3.00 Features Released</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_Firmware_3.00_Features_Released.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps4-firmware-3-00-features-released.2747/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[PS3_XMB_MOD]_Now_have_Individual_Gameboots_for_each_emulator__system__homebrew_launched.jpg">If you have an exploited PS3 and have been following some of the progress that@DeViL303has made with XMB modding ,then you already know about some of these great project's the xmb mod developer has been working on lately. For those of you new to his work, some recent mods from DeViL303 includeUltimate ToolboxandPixel Art possibilitiesand many more from the past .  Now the developer has taken on enhancing the Gameboot animation when launching content from the PS3's XMB.  Having the same boring sequence for all your content simply won't cut it anymore. Now withwebMAN MODhelping fuel the concept we now have the abilityto set individual Gameboots per contentsuch as bringing back those iconic start-ups from the PS1 and PS2 or having the system startups for your favorite retro roms. Well now you have that ability and more with the latest release from@DeViL303and the latest update to webMAN MOD from@aldostoolsthat helps power the concept the two have been working on the past several weeks seen here in the psx-place forums (here)​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_Firmware_3.00_Features_Released.jpg">​</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2021-3-12T19:18:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>tonyhax - A Software backup loader exploit for the PS1 (leverages save game exploit)</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/tonyhax_-_A_Software_backup_loader_exploit_for_the_PS1_(leverages_save_game_exploit).jpg</url>
-			<target type="u">https://www.psx-place.com/threads/tonyhax-a-software-backup-loader-exploit-for-the-ps1-leverages-save-game-exploit.33236/</target>
+		<mtrl id="0" lastm="2015-9-1T06:48:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>CCAPI Now With 4.75 DEX Support</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/CCAPI_Now_With_4.75_DEX_Support.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ccapi-now-with-4-75-dex-support.2737/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/tonyhax_-_A_Software_backup_loader_exploit_for_the_PS1_(leverages_save_game_exploit).jpg">Looks like those Classic PlayStation Consoles are still making waves in the homebrew scene. We have seen vibrant development on the PS2 with just recent things likeOpenTunaand also recentMechaCon Firmware dumpedwhich can potentially bring various possibilities discussedhere. However the PS2 is not alone as its daddy the original OG the PlayStation 1 now has a Software Backup Loader Exploit that leverages saves game exploits from Tony Hawk Pro Skater 2 & 3 from developersocram8888. The developer has titled the project "tonyhax" and will work with both the PAL and NTSC versions of the gameThe developer has provided a technical write up and easy to follow explanation as well as a YouTube video we have also attached below. Checkout the latest exploit to hit the PS1.​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/CCAPI_Now_With_4.75_DEX_Support.jpg">​</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2021-3-12T17:45:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>IRISMAN v4.87.1:   Adds support for mounting Compressed ISO's ( ZIP, RAR or 7-Zip)</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/IRISMAN_v4.87.1___Adds_support_for_mounting_Compressed_ISO's_(_ZIP,_RAR_or_7-Zip).jpg</url>
-			<target type="u">https://www.psx-place.com/threads/irisman-v4-87-1-adds-support-for-mounting-compressed-isos-zip-rar-or-7-zip.33210/</target>
+		<mtrl id="0" lastm="2015-8-31T10:06:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Bigboss Releases PS4Client & PS4Link Tools</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Bigboss_Releases_PS4Client_&_PS4Link_Tools.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/bigboss-releases-ps4client-ps4link-tools.2727/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/IRISMAN_v4.87.1___Adds_support_for_mounting_Compressed_ISO's_(_ZIP,_RAR_or_7-Zip).jpg">Following some of the recent advancements made towebMAN MOD,  PlayStation 3 Homebrew developer@aldostoolshas now looked to incorporate a new feature in the PS3 Homebrew(CFW/PS3HEN) fbackup manager known asIRISMAN. It's currently a new and experimental feature added in the recent release ofv4.87.1that provides the backup manager the ability tomount compressed ISO in .zip / .7z / .rar formats.  This features supports thePS3's Internal HDD or a FAT32 external storage device for PS1 / PSP / PS2 / PS3/ DVD / BluRay ISO's..​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Bigboss_Releases_PS4Client_&_PS4Link_Tools.jpg">​</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2021-2-19T21:08:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Another new/old Exploit for the PS2! OpenTuna!</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Another_newold_Exploit_for_the_PS2!_OpenTuna!.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/another-new-old-exploit-for-the-ps2-opentuna.32893/</target>
+		<mtrl id="0" lastm="2015-8-29T12:33:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS2Ident Version 0.821 Released</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS2Ident_Version_0.821_Released.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps2ident-version-0-821-released.2703/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Another_newold_Exploit_for_the_PS2!_OpenTuna!.jpg">The year is 2021 and the PlayStation 2 Hacking Scene is still alive and kicking very well and we have a new/old Exploit for our PS2 to share!Even with later generations of PlayStation Console like the PS3 / PS4 / PS5 / PS Vita around, the PS2 is still thriving in the development / homebrew community, while serving a great audience for the console. We have seen the progression of several major projects and exploits in the past year for the PlayStation 2 (PS2) like the updates toOpen PS2 Loader  (OPL)to version 1.0.0 andFreeDVDBootexploit.We now have"OpenTuna", brought to you by@alexparrado!OpenTunaIt is an open source version of another recent exploit found and developed back in late 2019 for the PS2 called theFortuna exploit. Additional details about this newly open-source variant of the Fortuna project and what it could mean for the PS2 community can be found in the information provided below:​</description>
-			<creators>TnA</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS2Ident_Version_0.821_Released.jpg">​</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2021-2-18T13:56:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS4 Tools (Library w/ Unity Support) updated with "huge update" by The Darkprogrammer</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_Tools_(Library_w_Unity_Support)_updated_with_huge_update_by_The_Darkprogrammer.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ps4-tools-library-w-unity-support-updated-with-huge-update-by-the-darkprogrammer.32904/</target>
+		<mtrl id="0" lastm="2015-8-29T11:59:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PSP - CSPSP 1.92+ With New Online Server</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PSP_-_CSPSP_1.92+_With_New_Online_Server.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/psp-cspsp-1-92-with-new-online-server.2697/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_Tools_(Library_w_Unity_Support)_updated_with_huge_update_by_The_Darkprogrammer.jpg">Alongside of the recent release ofPS4 Trophy UnlockerPS4 developer@The Darkprogrameralso had a big update forPS4 Tools, a Open Source suite of tools in all-in-one library. Various projects have utilized this library in their projects likePS4's PS2 Classic GUI,PS4 PKG Tool, ,PS4 Xploreralong with various other tools (listed below). but the dev is back with new updates for developer;s who may want to use this library that supports Unity development.  In this "huge update" from@The Darkprogramerdevs now have the ability to use the recently releasedTrophy Unlockerand other Recovery Tools in their projects. Not really an end-user release but useful for developer;s who especially have used Unity in creation of their projects. The DarkProgrammer has a homebrew he hopes to release very soon also utilizing this library. .​</description>
-			<creators>The Darkprogramer</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PSP_-_CSPSP_1.92+_With_New_Online_Server.jpg">​</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2021-2-18T13:54:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS4 Trophy Unlocker v1.0 by The Darkprogramer</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_Trophy_Unlocker_v1.0_by_The_Darkprogramer.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ps4-trophy-unlocker-v1-0-by-the-darkprogramer.32970/</target>
+		<mtrl id="0" lastm="2015-8-28T03:42:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Homebrew Game Pong Played On the PS4</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Homebrew_Game_Pong_Played_On_the_PS4.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/homebrew-game-pong-played-on-the-ps4.2690/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_Trophy_Unlocker_v1.0_by_The_Darkprogramer.jpg">PlayStation 4 (PS4) developer@The Darkprogramerhas released a new project for the community calledPS4 TrophyUnlocker.  There is a PC utility that will unlock the trophies using a new method that relies on the game files itself to achieve, It will create a new pkg of the game installation, so if you have it installed already, be aware some files could potentially get lost if your have to overwrite your game. So be aware of that going in also this project isstill in the BETA stage, (v1.0 Released) so expect some bugs and different results depending on the game's trophies your unlocking. if you do experiance an error report it to the developer directly or in the comments below.. Also take note of the another recent release by this developer for developer with theupdate toPS4 Tools​</description>
-			<creators>The Darkprogramer</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Homebrew_Game_Pong_Played_On_the_PS4.jpg">​</description>
+			<creators>Tranced</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2021-2-17T08:23:00.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>[Update v1.6] Grand Theft Auto: San Andreas now playable on the PS Vita / PSTV with new port</desc>
@@ -1201,84 +1201,84 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Super_Console_Wars_-_v1.0_(by_@Acekone1_&_@Lapy05575948).jpg">We have a new Homebrew Game released for the PS4(Also available on Windows / Android / Xone / Switch (updatenow on PS Vita))from developerLapyof Lapy Games, this time around the developer who has brought us other games likeRiver Raid Remake&Duck Hunt /Wild Gunman Remake's(and many games other's (9) found in theLapy's Game Collectionhas collaborated withAcekone1in this release. Acekone1 came up with the original concept, while also designing many of the elements that reside in the game. Where as developer Lapy did the programming portion of the game Powered by the Unity Engine for this Homebrew Game creation.Super Console Warsis the title, its gameplay can be seen in the included ScreenShots and Video attached, S.C.W.'s main characters are some familiar faces from the video game industry as head figures of Sony, Microsoft & Nintendo who embark's on a new journey in this title  where  you"Choose your side and fight against fans & haters!". This platform shooter put those characters in an adventure that spans 5 stages (sectors).  With an included final boss, but along the way you will encounter 4 different types of enemies in this journey(more info on those enemies in the tab below).The game can be played in both English or Spanish languages. Also, the devs have snuck in some Easter Eggs to be found​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2017-5-21T12:01:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>[Incoming Release] - PSP Homebrew Browser for Vita's Adrenaline -  [Sound/Music Producers Wanted]</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Incoming_Release]_-_PSP_Homebrew_Browser_for_Vita's_Adrenaline_-__[SoundMusic_Producers_Wanted].jpg</url>
-			<target type="u">https://www.psx-place.com/threads/incoming-release-psp-homebrew-browser-for-vitas-adrenaline-sound-music-producers-wanted.13835/</target>
+		<mtrl id="0" lastm="2020-5-17T15:06:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>[UPDATE] webMAN MOD 1.47.27 (20200517): Big Announcement - Important milestone's achieved ....</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[UPDATE]_webMAN_MOD_1.47.27_(20200517)_Big_Announcement_-_Important_milestone's_achieved_.....jpg</url>
+			<target type="u">https://www.psx-place.com/threads/update-webman-mod-1-47-27-20200517-big-announcement-important-milestones-achieved.29200/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Incoming_Release]_-_PSP_Homebrew_Browser_for_Vita's_Adrenaline_-__[SoundMusic_Producers_Wanted].jpg">We have seen theVita Homebrew BrowserfromArkanite&Devnoname, which is an amazing Homebrew Store for Native Vita  Homebrew (Vita / PsTV),it now appearsalso aPSP Homebrew Browserin the works forHENkakuuser's and even better nearing a release soon, as Arknanite details some bits of info about this project, as the team is seeking"Music Producers & Sound Designers"  for PSPHBB, as detailed in the recent reddit post, so if your an interested party or can lend a hand, be sure to get in contact with these devs,. With this announcement we have some screenshots and details that are quite interesting to say the least about this upcoming vpk. Check it out and be sure to stay tuned for when this release drops (perhaps in the next week). Which will make  Installing PSP homebrew on your Vita a breeze, once this drops​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[UPDATE]_webMAN_MOD_1.47.27_(20200517)_Big_Announcement_-_Important_milestone's_achieved_.....jpg">Update (v1.47.27 - 20200517)since the initial release of webMAN MOD v1.47.27@aldostoolshas made huge improvements to the plugin with these latest revisions to v1.47.27.The developer is adding alot of new functionality to the plugin and has some big announcements in the latest changes. SeeUPDATED changelogand also quote from developer Aldostools himself about the latest progress provided to the PS3 Plugin in this latest update(Original Article) Developer@aldostoolswhom recently updatedIRISMANfor4.86 Support(& more) has also updated the popular pluginwebMAN MODto version 1.47.27 with support for 4.86 firmware. That has not been the only changes provided to the webMAN MOD plugin. For instance, If you are transferring files via FTP that information will be displayed in the Temperature Monitoring page (from a networked connected broswser:your ps3ip/cpursx.ps3). The plugin has some other additional features and fixes provided in this update marked in the changelog provided below.​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2017-5-18T21:31:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>AppManager PLUS v2.0 released</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/AppManager_PLUS_v2.0_released.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/appmanager-plus-v2-0-released.13812/</target>
+		<mtrl id="0" lastm="2020-5-12T22:34:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>N64 Emulator (PS3 PoC wii64 Port by emukidid) Surfaces 9 years after first announced</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/N64_Emulator_(PS3_PoC_wii64_Port_by_emukidid)_Surfaces_9_years_after_first_announced.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/n64-emulator-ps3-poc-wii64-port-by-emukidid-surfaces-9-years-after-first-announced.29604/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/AppManager_PLUS_v2.0_released.jpg">Following theinitial release ofAppManager Plus,developergdljjrodof theONElua teamhas now released version 2.0 and one of the highlight features in this update a new USB Mode and other changes reside in v2.0 like VPK recognition improvements & scanning optimizations are just a few of the changes present in v2.0.​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/N64_Emulator_(PS3_PoC_wii64_Port_by_emukidid)_Surfaces_9_years_after_first_announced.jpg">We have more Nintendo 64 Emulation news following the recentport to the Vita, It appears after 9 years since it was first announcements and previewed, the mythical PS3 Port of wii64 (mupen64) has finally surfaced, From one of the developer behind the portemukidid,the developer recently found the files for the old (unreleased)PoC for the PS3on an old HDD and decided it was time to release the PoC to the public, However, don't get too excited as the emulator is very rough around the edges and is simply a proof of concept as stated that needs alot of work but the developer does leave some bits of info and even a lending hand. Back in 2011 development did not get off the ground to far past the initial phases due to various roadbloacks (explained below), In the current form its only running in "interpreter only" and does not have the advancements needed to run many games at all, but compiled in pslight v2 could provide some recent changes and maybe even better support. Below you will see a quote from the developer (emukidid)and also some instructions / video demo from psx-place user@SniperSnakewhom recentlywas exploringsome N64 options himself.Its great to see this emulator and its source finally emerge and perhaps gives some hope or inspirations for others to bring this project full circle and create a stable n64 emulator for the PS3.​</description>
+			<creators>SniperSnake</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2020-5-12T21:43:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Mira Project Source Code Release + OpenOrbis PS4 Toolchain (OoSDK) Released</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Mira_Project_Source_Code_Release_+_OpenOrbis_PS4_Toolchain_(OoSDK)_Released.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/mira-project-source-code-release-openorbis-ps4-toolchain-oosdk-released.29597/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Mira_Project_Source_Code_Release_+_OpenOrbis_PS4_Toolchain_(OoSDK)_Released.jpg">The long awaited PS4 project titled no other then theMira ProjectfromTeamOrbis(seeour pastcoverage) has released the source code (no compiled version)  for the project on Github and to follow developerSpecterDevfrom the team has also released theOpenOribis SDK (PS4 Toolchain)which should spark some native PS4 homebrew development as developer's can create homebrew without the need of the Official SDK. like how PSl1ght was the OpenSDK used for the PS3 .​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2017-5-15T11:28:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>psvimgtools-frontend v0.4 - New Update in by SiilcaAndPina</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/psvimgtools-frontend_v0.4_-_New_Update_in_by_SiilcaAndPina.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/psvimgtools-frontend-v0-4-new-update-in-by-siilcaandpina.13787/</target>
+		<mtrl id="0" lastm="2020-4-25T13:22:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>The Power Supply (Vol. 06) - Our Guest Today: "Blu-Play and BD-J Developer mr_lou"</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/The_Power_Supply_(Vol._06)_-_Our_Guest_Today_Blu-Play_and_BD-J_Developer_mr_lou.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/the-power-supply-vol-06-our-guest-today-blu-play-and-bd-j-developer-mr_lou.29325/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/psvimgtools-frontend_v0.4_-_New_Update_in_by_SiilcaAndPina.jpg">SilcaAndPinahas been on a roll of late releasing various utilities and tools forHENkakuexploited PS Vita's (& pstv), Today the dev stops by the forums to drop off the latest release details of the frontend (GUI) for Team molecule's psvimgtools. Inpsvimgtools-frontend v0.4MacOS support debuts, but note this an early beta version, so be sure to leave some feedback if you are using that build. Version 0.4 has brought a variety of changes to the tool that is used for decrptying & extracting ,psvimg files, which are your PS Vita (or pstv)  backup files. For additional details about this update and this release checkout all details provided.​</description>
-			<creators>SilicaAndPina</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/The_Power_Supply_(Vol._06)_-_Our_Guest_Today_Blu-Play_and_BD-J_Developer_mr_lou.jpg">In ourInterview Series, we always try thatyou can profitwith each of our candidates by mainlythree things. First,you gain an insight behind each Developerand his/her work he/she is doing for the community. Second,we summarize the most important Releases from each Developer, so you can get agood overview of which Tools and Homebrew you needto make a specific task easier by your own (like for "jailbreaking" your PS3 for instance). And as a third goal,we always try to make those interviews so useful, that you can draw some lessons from itwhen you want to study further behind some Hacks, Exploits, and other Homebrew orwhen you want to develop your own Hacks and Homebrew Applications from ground-up. This is why you already probably recognized from our previous coverages, while the "final questions" were mostly such of them. But with our guest today, we can promise thatyou will learn more than ever before, even already from the very first question.And the coolest thing is,you don't even need a hacked console to make his Homebrew runnable since it even runs on Original Firmwarefor both the PS3 and the PS4.And didn't you always dreamed about creating a Homebrew Game on your own as a small kid?If so, then you should read further because without further ado, our Guest Today isBD-J Developermr_lou- the creator of "Blu-Play"!​</description>
+			<creators>Roxanne</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2017-5-14T14:27:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>VitaShellMod 1.61 (by BenMitnicK,) - Add even more new additions to this modded version of VitaShell</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/VitaShellMod_1.61_(by_BenMitnicK,)_-_Add_even_more_new_additions_to_this_modded_version_of_VitaShell.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/vitashellmod-1-61-by-benmitnick-add-even-more-new-additions-to-this-modded-version-of-vitashell.13743/</target>
+		<mtrl id="0" lastm="2020-4-18T18:36:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Littlebalup's 4.86 Dual-Boot (DB) firmware released</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Littlebalup's_4.86_Dual-Boot_(DB)_firmware_released.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/littlebalups-4-86-dual-boot-db-firmware-released.29196/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/VitaShellMod_1.61_(by_BenMitnicK,)_-_Add_even_more_new_additions_to_this_modded_version_of_VitaShell.jpg">We all are a fan of TheFlow'sVitaShellbut other developer's have tinkered with the source code to add some additions to VitaShell, this release called VitaShellMod (v1.61) comes to us by developer@BenMitnicK, in this latest updated to this very functional and useful vita homebrew comes alot new additions and changes. There is a variety of features you will not find in the original build of VitaShell, so give this a try and see if you enjoy the extra additions nd provide some feedback for the developer in the comments below as well.​</description>
-			<creators>BenMitnicK</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2017-5-14T09:59:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>idstorage dumper released</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/idstorage_dumper_released.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/idstorage-dumper-released.13711/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/idstorage_dumper_released.jpg">The very informative@zecoxaohas a new released tool for the PS Vita / PlayStation TV Community. With this new plugin zecoxao now has a utility that is designed  to dump idstorage leafs to ux0:dump.  The release comes in the form of a plugin and is easy to setup, checkout the details and examples (wiki link at bottom) for all the details surrounding this small utility.​</description>
-			<creators>kozarovv</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2017-5-14T09:29:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>CardUnlock v1.0  (by  cnsldv) : Now easily access memory cards assignd to different FW</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/CardUnlock_v1.0__(by__cnsldv)__Now_easily_access_memory_cards_assignd_to_different_FW.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/cardunlock-v1-0-by-cnsldv-now-easily-access-memory-cards-assignd-to-different-fw.13673/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/CardUnlock_v1.0__(by__cnsldv)__Now_easily_access_memory_cards_assignd_to_different_FW.jpg">Developercnsldvhas a solution for unlocking your memory cards. When inserting a memory card from a >3.60 Vita in your HENkaku Vita you get the "You must update" dialog. This homebrew mounts the card in a way that  isn't checked, deletes the file and unmounts again. On reboot the Vita thinks it's a new card and it passes the check. Only works on PS Vita Slim models  and also  PlayStation TV (Vita TV) , also needs to run HENkaku without a card inserted.​</description>
-			<creators>atreyu187</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2017-5-13T17:23:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>BrownNoise (plugin) v.1.0 for PSTV released!</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/BrownNoise_(plugin)_v.1.0_for_PSTV_released!.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/brownnoise-plugin-v-1-0-for-pstv-released.13710/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/BrownNoise_(plugin)_v.1.0_for_PSTV_released!.jpg">PS VIta / PlayStation TV developerRinnegatamantecomes through with a simple solution for a big problem to some PlayStation TV (Vita TV) user's who may be using an external audio components that may drop the signal when there is no audio signal making it a bit of annoying process for some user's ,so the solution to emit a low level audio to keep these devices connected. Its a simple release that may not be useful to everyone but its something that could be an extreme need for your setup, checkout the release quote for details from the developer.​</description>
-			<creators>kozarovv</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2017-5-13T15:00:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Vita Moonlight v0.2.0 - Recent update by d3m3vilurr</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Vita_Moonlight_v0.2.0_-_Recent_update_by_d3m3vilurr.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/vita-moonlight-v0-2-0-recent-update-by-d3m3vilurr.13732/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Vita_Moonlight_v0.2.0_-_Recent_update_by_d3m3vilurr.jpg">Moonlight VitaPort has been updated recently byd3m3vilurrto version 0.2.0 in this vpk forHENkaku, the Game Streaming Utility now has support for the more recent vitasdk, plus a few other enchantments are seen in the update logs . For those of you who are unfamiliar what this project is all about, its a useful port of Moonlight (official page) for PS Vita & PlayStation TV (Vita Port) user's (using HENkaku on FW 3.60) and have access to a NVIDIA GameStream compatible PC on your local network, which then allows for Streaming of Games and App from your PC to other devices and your vita/pstv with this port. If you meet the requirements its a great Remote Play type of feature for your PC to your Henkaku enabled device​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Littlebalup's_4.86_Dual-Boot_(DB)_firmware_released.jpg">Developer@littlebaluphas released a4.86 Dualboot Firmware. This firmware only of use for current PS3 Custom Firmware user's was an idea originally crafted by@habibseveral years ago. The purpose was to give Custom Firmware user's a safe way to go online (such as playing your disc based games) without a risk of a ban for using a Custom Firmware.The Dualboot (DB) firmware is nothing else but an Official Firmware (OFW) . The ONLY difference is that you can RETURN and INSTALL a (4.86) CFW directly (without having to run an exploit again). So this is only useful for those existing CFW user's. To review, basically you install this PUP when you want to be official (for doing things like using PSN) and then re-install your CFW PUP  when you want your custom firmware abilities back, such as launching homebrew. Additional details about this firmware can be seen below in the release notes provided by littlebalup​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2017-5-13T12:36:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>ONElua updated to v 3.1 with added Functions & fixes</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/ONElua_updated_to_v_3.1_with_added_Functions_&_fixes.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/onelua-updated-to-v-3-1-with-added-functions-fixes.13747/</target>
+		<mtrl id="0" lastm="2020-4-18T18:17:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS2 Classic GUI  v1.0.0.21 - New  Compatibility Check Added (PS2<>PS4)</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS2_Classic_GUI__v1.0.0.21_-_New__Compatibility_Check_Added_(PS2PS4).jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps2-classic-gui-v1-0-0-21-new-compatibility-check-added-ps2-ps4.29072/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/ONElua_updated_to_v_3.1_with_added_Functions_&_fixes.jpg">Following the release of the utilityAppManager Plus, that theONELua teamreleased themselves rjust a couple of days ago, has now also released an update to the interpreter itselfONEluaprogressing to version 3.1 (v3r1) with a variety of new functions that can be seen in the release notes included,  that also details a few fixes to round out this new update, that is for sure worth checking out if you plan on creating some LUA homebrew projects in the future..​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS2_Classic_GUI__v1.0.0.21_-_New__Compatibility_Check_Added_(PS2PS4).jpg">If you have a Jailbroken PS4 and want to bring your personal PS2 Collection to your exploited PS4. Then this tool calledPS4-PS2 Classic GUIby@The Darkprogrameris an easy to use solution for transforming your old PS2 disc(note: tool only processes ISO file's, ps2 disc not support directly)into an installable PKG format PS2 Classic game. Recently@The Darkprogramerhas provided an update to the tool withv1.0.0.21and provided some new features and improvements such as the inclusion of a newCompatibility Checksystem on the fly when an ISO is loaded into the tool. The compatibility is checked against thePS4devwiki databasethat the ps4 community has compiled over time. Checkout various changes the developer made recently in the logs provided below ,​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2017-5-13T12:27:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>MediaImporter - Import Videos to Vita's Video Player (No need for CMA or QCMA )</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/MediaImporter_-_Import_Videos_to_Vita's_Video_Player_(No_need_for_CMA_or_QCMA_).jpg</url>
-			<target type="u">https://www.psx-place.com/threads/mediaimporter-import-videos-to-vitas-video-player-no-need-for-cma-or-qcma.13758/</target>
+		<mtrl id="0" lastm="2020-4-18T16:11:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>ControlConsole API CCAPI) v2.80 - REV.7: Developer Enstone provides 4.86 CFW (CEX) Support</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/ControlConsole_API_CCAPI)_v2.80_-_REV.7_Developer_Enstone_provides_4.86_CFW_(CEX)_Support.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/controlconsole-api-ccapi-v2-80-rev-7-developer-enstone-provides-4-86-cfw-cex-support.29138/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/MediaImporter_-_Import_Videos_to_Vita's_Video_Player_(No_need_for_CMA_or_QCMA_).jpg">cnsldvhas releasedMediaImporterfor your PS Vita /PS TV, this homebrew utility will import MP4 format videos to the Vita's Video Application, this importer is great because you do not need to use CMA or QCMA to import Video's, the developer behind the project has said if there is interest from others, he could work on doing the same with Music and Photo's. So give this and go and leave the developer some comments about this project that makes things a bit easier.​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/ControlConsole_API_CCAPI)_v2.80_-_REV.7_Developer_Enstone_provides_4.86_CFW_(CEX)_Support.jpg">DONOTUSE ON PS3HEN, THIS ISNOTFOR PS3HEN. PS3 CUSTOM FIRMWARE (CFW) USAGE ONLYDeveloperEnstonerecently released an update to the CFW ONLY application CCAPI (Control Console API), that should never be used on PS3HEN/With 4.86 released, CCAPIlike other homebrewneeded a small maintenance update to support the new4.86 firmwarefor CUSTOM FIRMWARE user's and Enstone has provided that update earlier this weekControlConsole API (CCAPI)allows for communications from your PS3 to other device's for software designed for either your PC or Android Smartphone/Devices . This can provide PS3 Temperature monitoring, Editing of IDPS and PSID, Running of non-fself *fself in real-time and Real Time (RTM) Game Modding as well. CFW user's have this project as a choice and also thePS3MAPI solutionas well(nowadays implemented into webMAN MOD).. You checkout some of the release details and information about this project from developer Enstone below​</description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2020-4-17T19:37:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS4 App Lock (by Lapy) v1.00 - Need to lock your apps or games on your Ps4?</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_App_Lock_(by_Lapy)_v1.00_-_Need_to_lock_your_apps_or_games_on_your_Ps4.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps4-app-lock-by-lapy-v1-00-need-to-lock-your-apps-or-games-on-your-ps4.29124/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_App_Lock_(by_Lapy)_v1.00_-_Need_to_lock_your_apps_or_games_on_your_Ps4.jpg">DeveloperLapyhas been creating various PS4 Homebrew Projects (powered by unity) and now a new one to add to the collections that is growing, We have seen the developer produce many Homebrew games, likeRiver Raid Remakeand many others which can be found in theLapy Game Collections (includes 9 games).The developer has created various utilities likePS4 Player,PKG ExtractorandPS4 Xplorer.Now the developer has created a new utility calledPS4 App Lock.The project does what the title implies, allow you to LOCK your apps/games from being accessed. Have roommates, kids, younger siblings or anyone you want to restrict on your PS4, With this app by Lapy you can create a custom PIN Code and apply it to your games. We have some screenshots attached of the application in action, where also a rating of the game is displayed in the lock screen. Checkout it out below.​</description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2020-4-13T19:20:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>4.86 FERROX COBRA (v8.20) Custom Firmware by Alexander</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/4.86_FERROX_COBRA_(v8.20)_Custom_Firmware_by_Alexander.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/4-86-ferrox-cobra-v8-20-custom-firmware-by-alexander.29103/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/4.86_FERROX_COBRA_(v8.20)_Custom_Firmware_by_Alexander.jpg">As the4.86 OFW updatehas the PS3 developer cranking out updates, we now have a couple Custom Firmware choices for capable PS3 models (to know if your PS3 model can install a CFW, simply load the exploits page ofbguerville PS3 Toolsetin your PS3 Browser, more infohere) Its good having two well known developer's release CFW's since the 4.86 OFW update .First we had@Joonie(of team rebug & hfw developer)release4.86 REBUG LITE, now we have another known Custom Firmware developer in@Alexanderwith the release of4.86 FERROX COBRA.this cobra cfw comes with v8.20 of the payload and contains the usual tweaks in the FERROX brand . For those of you new to this CFW you can view some of the features listed below, the developer offer's some additional XMB mods that can be found in the source link provided below wi6th instructions in how to install.​</description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2020-4-12T20:33:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Movian (Media Center) v5.0.701 by deank - Improved OSD  / HLS bitrate switching Fixed / ...</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Movian_(Media_Center)_v5.0.701_by_deank_-_Improved_OSD___HLS_bitrate_switching_Fixed__....jpg</url>
+			<target type="u">https://www.psx-place.com/threads/movian-media-center-v5-0-701-by-deank-improved-osd-hls-bitrate-switching-fixed.29075/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Movian_(Media_Center)_v5.0.701_by_deank_-_Improved_OSD___HLS_bitrate_switching_Fixed__....jpg">Developer @deank(who werecently interviewed) has pushed an unofficial update forMovian, a multi-platform project originally developed byAndreas Smas(available on Android, Linux, OS/X, Raspberry Pi and PS3).For those of your that are new to this longstanding PS3 project, it's a robustmedia centerthat comes equipped with additional support for video and audio codecs then what you would find in the PS3's official media player. Various plugins are also available from within the application such as YouTube plugin giving user's an additional option vs the YouTube app .There are other various plugins you can use that provide ranging functions some include themeing /info / other functionalities. Recently deank has releasedv5.0.701and there has been a few cosmetic changes (listed in the changelogs provide) and a couple of  bug fixes provided (see 2nd tab)..​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2020-4-12T19:51:00.000Z" until="2100-12-31T23:59:00.000Z">
@@ -1521,85 +1521,85 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS5_Logo_Introduced_@_CES_&_New_PS5_forums_here_at_psx-place.jpg">The latest move in the next gen hype has embarked on us as Sony unveils thePS4PS5 logo as CES to leave the gaming community on a cliffhanger. While not much was mentioned about the next generation console we have came to one conclusion that the PS5 logo budget seems to be about the same as the budget for PS3 firmware updates.  Also a few days ago i figured it was due time to add a PlayStation 5 Section to the forum as well. Right now there is just ageneral discussionarea for now, it will evolve as the PlayStation 5 is released in the 2020 holiday season  We have a dissuasion thread here in the forum about some of the rumors and specs of the next generation consolehere.Are you hyped for the PS5? Will you buy at launch or do you like to give the platform time to mature?​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2020-1-5T09:30:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Artemis PS3 (r6.3): Cheating system updated with 4.8x CFW Support & New Features added</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Artemis_PS3_(r6.3)_Cheating_system_updated_with_4.8x_CFW_Support_&_New_Features_added.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/artemis-ps3-r6-3-cheating-system-updated-with-4-8x-cfw-support-new-features-added.27690/</target>
+		<mtrl id="0" lastm="2018-1-24T02:56:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Ps3Xploit Tools v2.0 - Improved Flash Writers & Dumpers (Even easier to install CFW on 4.82 OFW )</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Ps3Xploit_Tools_v2.0_-_Improved_Flash_Writers_&_Dumpers_(Even_easier_to_install_CFW_on_4.82_OFW_).jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps3xploit-tools-v2-0-improved-flash-writers-dumpers-even-easier-to-install-cfw-on-4-82-ofw.16139/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Artemis_PS3_(r6.3)_Cheating_system_updated_with_4.8x_CFW_Support_&_New_Features_added.jpg">Developer@dnawrkshporiginally portedLazy Bastards'sArtemisto the PS3. The PlayStation 3 port is a cheating system for applying cheat to games utilized on CFW/HEN enabled console's that also comes with a companion plugin (sprx) for additional functionality.@bucanerowho you may recall is the developer who portedPKGirecently to the PS3. has now turned attention to updatingArtemis-PS3for 4.85 use and the developer has added two new features to go along. First, we have anOnline Cheat Databasethat will allow you keep your cheats up to date with a simple online download and also aLocal Database Updatefeature has also been incorporated into the system. Also a shoutout to@Berionwho's designs still looks great in the GUI.​</description>
-			<creators>bucanero</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Ps3Xploit_Tools_v2.0_-_Improved_Flash_Writers_&_Dumpers_(Even_easier_to_install_CFW_on_4.82_OFW_).jpg">UPDATE 04-02-2020These tools have been superseded by the BG Toolset** www.** ** www.ps3xploit.net  > Domain no Longer owned by team**  (NEW URL = http://ps3toolset.com)  > Domain no Longer owned by team**  (NEW URL =  http://ps3toolset.com  > Domain no Longer owned by team**  (NEW URL = http://ps3toolset.com)/bgtoolset/UPDATE (OCT. 11 2018) - With therelease of OFW 4.83 portions of PS3Xploit have been patched, The team is looking at workarounds, STAY ON 4.82, DO NOT UPDATE TO 4.83 AT THIS TIME:IMPORTANT UPDATE (MARCH-2019) v3.0.1 was released providing support for 4.84 HFW (a new hybrid firmware that restores PS3Xploit for 4.84 OFW user's (See Link to HFW)I will start this off withNOyou can not jailbreak your PS3 SuperSlim Console's (seems to be a popular question), however that does not mean thePs3Xploit Team,(bguerville, esc0rtd3w, habib &W), has not been hard at work, with this new release ofPs3Xploit v2.0.. In this release all the tools(IDPS Dumper, Flash Dumper&Flash Writer)have seen significant improvements and now performing the task such as installing a Custom Firmware on your 4.82 OFW PS3 (with flash writer) has been made even easier and very stable thanks to the team's new checks implemented and progression of the exploit. The Flash and IDPS dumper are also much improved. All the details are provided below please read all the spoiler and tabs before asking any questions.​</description>
+			<creators>esc0rtd3w</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2020-1-4T11:30:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>(Updated) RetroArch (unofficial PS4- R2) Now includes 37 libretro cores (Yabause / Mupen64 addded)</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/(Updated)_RetroArch_(unofficial_PS4-_R2)_Now_includes_37_libretro_cores_(Yabause__Mupen64_addded).jpg</url>
-			<target type="u">https://www.psx-place.com/threads/updated-retroarch-unofficial-ps4-r2-now-includes-37-libretro-cores-yabause-mupen64-addded.27573/</target>
+		<mtrl id="0" lastm="2018-1-20T12:28:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS2 Netemu Selector - Easy way to toggle ps2 emulator (on PS3 CFW)</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS2_Netemu_Selector_-_Easy_way_to_toggle_ps2_emulator_(on_PS3_CFW).jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps2-netemu-selector-easy-way-to-toggle-ps2-emulator-on-ps3-cfw.16095/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/(Updated)_RetroArch_(unofficial_PS4-_R2)_Now_includes_37_libretro_cores_(Yabause__Mupen64_addded).jpg">(Update R2 released)Developer@OsirisXis back with release 2 of the PS4 port of RetroArch , this unofficial port(based on v1.8.1 of the main project)now contains37 libretro coresadding an additional 12 since the initial release, those cores include the arcade core FBA & also a Sega SaturnYabause(curious how that compares to thestandalone from znullptr), while N64 emulation still needs some work theparallel_64core included in v1 has seen a new companion and n64 offering in the addition of theMupen64core. The new n64 core does offer some small speed improvements from parallei_64 and may still need some improvements to come in the future hopefully(please share your results/feedback below, which games are working for you?).. Also a bug other's and myself experienced has been addressed, the issue being (in r1) where we could not launch any content in other locations, such as in playlist has now been fixed in the r2 release. That is a welcomed bug to be squashed as now playslist/collections/favorites ect.. should work fine. The PS4 homebrew scene looks in alot better position then it did weeks ago.  You have to really stop and look the PS4 now has 37 different things it can now run that was not possible a couple weeks ago.  Stay tuned as this is port is sure to mature even more with time and likely become an official release sooner or later for the RetroArch project. The libretro team has already expressed support..​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS2_Netemu_Selector_-_Easy_way_to_toggle_ps2_emulator_(on_PS3_CFW).jpg">Hello, I created small app (PS2 Netemu Selector) based on XMBM+ installer. Nothing big, just a GUI to changeps2_netemu (ps2 emulator)file. As a bonus I fixed few things in installer, and emulators itself. Like fixed in-game XMB flickering in installer, and correct display in every modes for temperatures in emu patched using@3141cardpayload. Also changed refresh time little bit. App is work only with 4.81, 4.82 firmwares due to files structure, while embed emulator files are compatible with 4.75-4.82 firmwares.​</description>
+			<creators>kozarovv</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2018-1-14T16:30:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>CCAPI (Control Console API) v2.80-r2:  4.82 CFW Support / New VSH Menu / ps3 TOOL Support ...</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/CCAPI_(Control_Console_API)_v2.80-r2__4.82_CFW_Support__New_VSH_Menu__ps3_TOOL_Support_....jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ccapi-control-console-api-v2-80-r2-4-82-cfw-support-new-vsh-menu-ps3-tool-support.16045/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/CCAPI_(Control_Console_API)_v2.80-r2__4.82_CFW_Support__New_VSH_Menu__ps3_TOOL_Support_....jpg">PS3 DeveloperEnstonehas released a new version ofCCAPI (Control Console API),this update (v2.80-rev.2) not only adds the expected 4.82 CFW CEX Support, but also some new features are tucked away in this update. One of those new features as seen in the screenshot below is a newVSH Menu(XMB popup Menu)that provides various shortcuts for some of CCAPI Options/Features. Checkout the full list of changes in this release along with other useful information in the release notes provided below:​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2020-1-3T23:39:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Flash Writer (PS3Xploit) Unofficial Update by Imn7:  Checks for HFW / Factory  Installed  FW /...</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Flash_Writer_(PS3Xploit)_Unofficial_Update_by_Imn7__Checks_for_HFW__Factory__Installed__FW_....jpg</url>
-			<target type="u">https://www.psx-place.com/threads/flash-writer-ps3xploit-unofficial-update-by-imn7-checks-for-hfw-factory-installed-fw.27673/</target>
+		<mtrl id="0" lastm="2017-12-26T15:19:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>RetroArch v1.7 Release: PS3 / PSP / VITA / PlayStation TV Ports Updated + Other Platforms</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/RetroArch_v1.7_Release_PS3__PSP__VITA__PlayStation_TV_Ports_Updated_+_Other_Platforms.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/retroarch-v1-7-release-ps3-psp-vita-playstation-tv-ports-updated-other-platforms.15908/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Flash_Writer_(PS3Xploit)_Unofficial_Update_by_Imn7__Checks_for_HFW__Factory__Installed__FW_....jpg">ThePS3Xploit's Flash Writerhas seen anunofficial updateprovided by developer@Imn7that adds a few additional checks to see ifHFWis installedprior to using(HFW is a simple modified (hybrid) firmware that re-adds a vulnerability (from OFW 4.82) used in ps3xploit tools), dont have HFW installed or do not know upon launching you will be prompt with"You must installHybrid Firmware (HFW) 4.85 before using the flash writer!"Also a check to view theminimum factory firmware that was installed in factory on your console. This is important check(automated or done manually)because it will help determine if your console is a Custom FirmWare compatible unit or not. Anything over 3.56 firmware installed in the factory can not install a CFW(those models should look into usingPS3HENif that is the case.).This unofficial build of the flash writer will provides extra detection/checks in the addition to the magic found in the original tool, a list of full checks can be seen in the release notes provided by the developer below:​</description>
-			<creators>lmn7</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2019-12-27T06:47:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>[Replays added] The 36th Chaos Communication Congress (#36C3) - Everything you need to know!</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Replays_added]_The_36th_Chaos_Communication_Congress_(#36C3)_-_Everything_you_need_to_know!.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/replays-added-the-36th-chaos-communication-congress-36c3-everything-you-need-to-know.27305/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Replays_added]_The_36th_Chaos_Communication_Congress_(#36C3)_-_Everything_you_need_to_know!.jpg">Year after year, manyHackers and Developers around the Globecome together for a "Meet&Greet" at the City of Leipzig, Germany, where theyshare and discuss their newest Achievements with Hacking and other Security Subjectsleading the way. Since you are a trustfully reader of this Site, you shouldn't be suprised anymore that like for last year, we decided to give you thefull coverage about this years Chaos Communication Congressagain - stylized as"36C3 - RESOURCE EXHAUSTION"by it'shost.Last years Congress (35C3) was already an impressive one, which showed us manynew Achievements, especially for both thePlayStation 4and thePlayStation Vita. Indeed, speaking about the PSVita, the stages at 35C3 led to variousnew Exploits and Homebrew Releasesafterwards, which you are already familiar about and probably downloaded a thousand times. This years Congress will also show us thenewest Achievements in the Console Sceneandsince your own demand was already so high for the last year, we had a reason more to keep you informed for the full coverage of this years 36C3.So, the only thing you need to do like you did last year is to keep this Articlebookmarked, since we keep this Articleupdated after each new presentation. So you won't miss anything!​</description>
-			<creators>Roxanne</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2019-12-24T12:05:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PSX-Place.com wishes you a Merry Christmas & Happy Holidays!</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PSX-Place.com_wishes_you_a_Merry_Christmas_&_Happy_Holidays!.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/psx-place-com-wishes-you-a-merry-christmas-happy-holidays.27540/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PSX-Place.com_wishes_you_a_Merry_Christmas_&_Happy_Holidays!.jpg">ThePSX-Place.com-Community wishes everyone aMerry Christmas and Happy Holidays!Merry Christmas for everyone! We hope that you will enjoy the festive season with your Family and your loved ones.​</description>
-			<creators>Roxanne</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2019-12-17T12:22:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>OpenBOR Engine ported to Ps4 (by Znullptr)</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/OpenBOR_Engine_ported_to_Ps4_(by_Znullptr).jpg</url>
-			<target type="u">https://www.psx-place.com/threads/openbor-engine-ported-to-ps4-by-znullptr.27443/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/OpenBOR_Engine_ported_to_Ps4_(by_Znullptr).jpg">It appears thatOpenBOR Enginehas been ported to Jailbroken PS4's from developer@Znullptr.we seen last year when the engine wasported to the PS3by@White Dragon, but now we see Znullptr whom has been supplying the scene with various PS4 Homebrew releases like the recent Mednafen (multi-system emulator), Sega Saturn, mGBA and other emulation now has released (via@Markus95) the latest PS4 brew in the form of this classic beat em up style game-engine that support many unique user created creations found around the net at places likeChronocrash.com. Currently the highest firmware hackable on a PS4 is 5.05 (also 5.07 FW found in select regions). Thanks to the efforts of znullptr we have been seeing some great brew finally coming to the PS4, Hopefully this trend does not stop and we see improvements to what has been released and/or some new things but we have a great toy to tinker with as this new engine is now available for the PS4.​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/RetroArch_v1.7_Release_PS3__PSP__VITA__PlayStation_TV_Ports_Updated_+_Other_Platforms.jpg">The RetroArch emulation project continues to evolve, now progressing to version 1.7 across most supported platforms. This includes updates for the PS3, PSP & VITA/PSTV with various changes across each port. Looking at thePS3 portthere has been some new changes and fixes that included a much improved font rendering, Now HTTP request are working which allows for some features such as Downloads & Core Updater to now be utilized on the PS3 Port& a ton of new changes and fixes.ThePSPportseen a number of fixes and improvements, the first task was to get this port working again and a fix to content loading has made the port usable, then also the audio syncing issues have now been resolved. Also 64MB can now be used when avaiable and to round out the PSP changes and to segue in theVITA/PSTV changesthe PSP portcan now be used on Vita's Adrenaline and also for PS Vita / PlayStation TV you can now enjoy improved installation times and improved packaging of the homebrew: Checkout all the misc. changes and changes to other ports in the full RetroArch v1.7 Changelog​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2019-12-7T15:29:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Meet "PSVshell" - a very beautiful and useful Overclocking Plugin by Electry</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Meet_PSVshell_-_a_very_beautiful_and_useful_Overclocking_Plugin_by_Electry.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/meet-psvshell-a-very-beautiful-and-useful-overclocking-plugin-by-electry.27290/</target>
+		<mtrl id="0" lastm="2017-12-26T14:39:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>ManaGunZ v1.31  - Now Compatible w/ 4.82 CFW + New Features & Fixes from Zar</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/ManaGunZ_v1.31__-_Now_Compatible_w_4.82_CFW_+_New_Features_&_Fixes_from_Zar.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/managunz-v1-31-now-compatible-w-4-82-cfw-new-features-fixes-from-zar.15882/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Meet_PSVshell_-_a_very_beautiful_and_useful_Overclocking_Plugin_by_Electry.jpg">ThePlayStation Vitawas a "powerful" Handheld Console back when it was released by the end of 2011 -wow, already 8 years old btw. But claiming by Sony that it can bring you the same power and good Gaming Experience like a Home Console, soon many people found out that this isn't the case for all Games released. But luckily, thanks to thegreat Homebrew Community behind the PSVita, we already saw in the past many "Overclocking Plugins", which can bring you thefull potential to your PSVita, even more powerful than Sony would allowed. But sometimes, even those weren't perfect. Eitherthey slowed down your Gameswhen in use, theycrashed the whole Systemor it was justsome simple things like that the whole Screen was "crowded" with the Details of each of your setting everytime when you needed to change them.But the cool thing is,this Homebrew Community hears your complaints.SoDeveloper Electryworked on that and introduced his very own Overclocking Plugin -it's "yet another overclocking plugin" to quote him - byfixing all those problems mentioned before. And the coolest thing is, it looks pretty damn good and it's very useful as well, if you ask me!​</description>
-			<creators>Roxanne</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/ManaGunZ_v1.31__-_Now_Compatible_w_4.82_CFW_+_New_Features_&_Fixes_from_Zar.jpg">Developer@Zaris back with a new update to the very popular and functional homebrew, ManaGunZ is a excellent feature rich Backup Manager, the best for PS2 Backups w/ PS2 Config Editor built-in that has improved in this release. Also this update nowsupports 4.82 CFW (CEX), also the addition of a Plugin Monitor has been implemented this will allow you to load and unload plugins from the ps3 homebrew. New translation have been added (Italian, Hungarian and Spanish), plus additional fixes have been applied, all and more can be seen in the release notes provided below along with some important details about the new & ImprovedPS2 CONFIG Editor.​</description>
+			<creators>sandungas</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2019-12-7T14:54:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS-Phwoar! (for 5.05): A new Exploit Host Menu (with PS4 Home inspired theme) by Leeful</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS-Phwoar!_(for_5.05)_A_new_Exploit_Host_Menu_(with_PS4_Home_inspired_theme)_by_Leeful.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ps-phwoar-for-5-05-a-new-exploit-host-menu-with-ps4-home-inspired-theme-by-leeful.27289/</target>
+		<mtrl id="0" lastm="2017-12-11T18:22:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>FERROX 4.82 v1.01 COBRA 7.55 by Alexander</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/FERROX_4.82_v1.01_COBRA_7.55_by_Alexander.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ferrox-4-82-v1-01-cobra-7-55-by-alexander.15724/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS-Phwoar!_(for_5.05)_A_new_Exploit_Host_Menu_(with_PS4_Home_inspired_theme)_by_Leeful.jpg">Were-tweeted thiswhen it was released a week or so ago but wanted to get something up on the news page about this project, Developerleefulhas recently released a new Exploit Host menu for serving up the essential payloads for exploited PS4 (5.05) Consoles's. This host menu theme is based on the PS4's main home screen bringing a seamless look. The host menu contains descriptions of various payloads it provides (which is about all) that will provide alot of features when executed such as Fan Controls, Linux Loader, Mod Menu's, firmware spoof, Update blocks ect.. You can see many of the payloads included in the sceenshots attached. Various methods to using this exploit host menu are available , see additional details in the installation tab below about using this new host menu:.The host menu also adds the convenience of replacing the User Manual (first option in Settings>>User Manual/Helpful info) for easy and quick launching for when you power on your Console and have to activate HEN.​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/FERROX_4.82_v1.01_COBRA_7.55_by_Alexander.jpg">New CFW build released from developer@Alexander,in this build we can find the introduction of the new7.55 COBRAThis updated version of COBRA includes a bug fix for deleting PKGs and Game Updates that was present in v7.54. Alexander & Beta Tester's (@ CyberModding,it) discovered this problem during a late test session before release of FERROXv1.01. There are also other fixes contained in this new build as outlined in the release note provided below for4.82 FERROX COBRA (v7.55) CFW v1.01​</description>
+			<creators>LizZo</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2017-12-9T13:47:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>4.82 NoBD CFW Options ( REBUG / FERROX / OVERFLOW ) : Unable to boot Apps / Games from PS3 XMB?</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/4.82_NoBD_CFW_Options_(_REBUG__FERROX__OVERFLOW_)__Unable_to_boot_Apps__Games_from_PS3_XMB.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/4-82-nobd-cfw-options-rebug-ferrox-overflow-unable-to-boot-apps-games-from-ps3-xmb.15739/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/4.82_NoBD_CFW_Options_(_REBUG__FERROX__OVERFLOW_)__Unable_to_boot_Apps__Games_from_PS3_XMB.jpg">Here is a type of CFW for PlayStation 3 consoles with abrokenBD Logic Board/Driveand contains an issue of not being able to boot anything from the PS3 XMB.It does not matter if the content is stored on the DISC or HDD, you can not launch anything from the XMB with PS3 Console's contain this defect. If that sounds like a PS3 console you have laying around or know someone who might have that issue, there is good news as there is an easy fix (Yes, Sony its easy and Sony should issue this patch themselves). Simply by disabling & patching the Disc drive, developer's in the PS3 community have found out this allows those otherwise useless consoles to launch items once again from the PS3 XMB, So play your purchased Content from PSN / Disc Backups ect/  Purchase things from PSN store/ play video & use services once again on your PS3. noBD CFW for a majority will never be used, but is a great option for PS3 owners that are otherwise stuck with a broken console that would only use would be a power hungry screensaver. So lets take a look at some of the NoBD CFW options and favors we have seen released to this point​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2019-12-7T12:54:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Mednafen v0.3 (PS4 Homebrew) - Multi-System Emulator adds support for new emulation</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Mednafen_v0.3_(PS4_Homebrew)_-_Multi-System_Emulator_adds_support_for_new_emulation.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/mednafen-v0-3-ps4-homebrew-multi-system-emulator-adds-support-for-new-emulation.27286/</target>
+		<mtrl id="0" lastm="2017-12-3T13:46:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>REBUG 4.82.1: LITE Edition CFW (w/ Rebug Toolbox 2.02.15  + Cobra v7.54)</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/REBUG_4.82.1_LITE_Edition_CFW_(w_Rebug_Toolbox_2.02.15__+_Cobra_v7.54).jpg</url>
+			<target type="u">https://www.psx-place.com/threads/rebug-4-82-1-lite-edition-cfw-w-rebug-toolbox-2-02-15-cobra-v7-54.15687/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Mednafen_v0.3_(PS4_Homebrew)_-_Multi-System_Emulator_adds_support_for_new_emulation.jpg">There has been a PS4 developer's known asZnullptrwho has ported several emulators to the PS4 (jailbroken) already with systems like theSega Saturn, Dreamcast &PS1to name a few of the ps4 homebrew ports present on the GameOS side of the console (ps4). We know already that emulation viaPS4 Linuxis capable of running many more emulators likeRetroArch (Linux)for example, but lets be honest ps4linux can be a bit of process to get up and running when you power on your console for some quick convient play. So when we see new things on the PS4's main menu that is exciting to see, when its in regards to emulation especially.This time around the dev decided to port a popular multi-system emulator, no not RetroArch butMednafen,originally the port was released some weeks ago by port developerZnullptrand presented to us byMarkus95and since@Markus95has seen presented some improvements with regards to the cfg file that has fixed several broken platforms (Virtual Boy, WonderSwan & WonderSwan Color) due to the control scheme that was not compatible with the DualShock 4 layout, with a re-configured "mednafen.cfg" file those issue are eliminated. There has been 4 player support added also and a few new tweaks Markus95 plans on addressing via future tweaks of the cfg file.​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/REBUG_4.82.1_LITE_Edition_CFW_(w_Rebug_Toolbox_2.02.15__+_Cobra_v7.54).jpg">Team Rebughas decided to release4.82 REBUG- LITE EDITION, this is not aREBUG REX CFW.  REX is a hybrid type of firmware that usesCEX (retail firmware) &DEX (debug firmware), DEX firmware usually takes some time after a firmware update to emerge into the public hand, this has not happened for 4.82 at this time. So, the team decided to release a 100% CEX based CFW for 4.82. This only make sense with an influx of new CFW user's looking for a quality CFW thanks to thePS3Xploit Nor/Nand Flash Writer for CFW Installs on 4.82 OFW.By default (after installation) this firmware acts similar to a "Standard CFW", but when REBUG TOOLBOX is installed(see tab below for details about REBUG Toolbox), you can toggle "ON" COBRA (v7.54) to make this a full fledged COBRA CFW with a simple Toggle Option inRebug Toolbox, Cobra is essentially a payload that adds various features to the CFW, such as Background Plugin Support on boot, Local streaming of games, ISO Support (PS3/PS2/PS1/PSP/DVD/BD) are just a few of the many highlights that COBRA adds to a CFW (all Features can be viewed in the COBRA tab.).​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2019-12-3T23:37:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>The PS2 Fortuna Project (Homebrew Launcher) & N64 Emulation highlights a big week in PS2 development</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/The_PS2_Fortuna_Project_(Homebrew_Launcher)_&_N64_Emulation_highlights_a_big_week_in_PS2_development.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/the-ps2-fortuna-project-homebrew-launcher-n64-emulation-highlights-a-big-week-in-ps2-development.27243/</target>
+		<mtrl id="0" lastm="2017-12-3T10:43:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>(Update v2.05+) XMBLock v2.05 [by ermak86] - Adds 4.82 CFW Support</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/(Update_v2.05+)_XMBLock_v2.05_[by_ermak86]_-_Adds_4.82_CFW_Support.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/update-v2-05-xmblock-v2-05-by-ermak86-adds-4-82-cfw-support.15684/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/The_PS2_Fortuna_Project_(Homebrew_Launcher)_&_N64_Emulation_highlights_a_big_week_in_PS2_development.jpg">The PlayStation 2 Scene is still going strong as we head into 2020 and with the great grandchild the PS5 is on the horizon in the near future, the ps2 continues to prove it'shas been astill a powerhouse in the homebrew/development community. This week alone we have seen several developments in the community that are quite spectacular to see released. First we seen a glimpse of potential N64 emulation on the PS2 and then yet another new exploit for the PS2 (not to be confused with this recent method involving a demo disc) that will enable homebrew on your PS2.​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/(Update_v2.05+)_XMBLock_v2.05_[by_ermak86]_-_Adds_4.82_CFW_Support.jpg">[UPDATE - v2.05+ (12/6/2017)]As the days past since the4.82 OFWupdate, developer's are scrambling to update various Apps / Mods / Tools / CFW, while not every release needs an update to support a new firmware version, some things will and no better place to checkout then our4.82 Homebrew / CFW thread for all those 4.82 related releases.XMBLockfrom developer@ermak86is a XMB Modification that will allow you disable (lock) some of the XMB settings,The "Lite Lock" will lock the Update / System Settings / Internet Settings, where as the"Full Lock"will lock the entire settings category. Now be aware that Update Lock only is for the XMB a game prompt asking you to update, will not be locked.. There is screenshots / video of this mod in action. So check it out (contains easy installer for the mod) and protect your PS3 if you have other's using it with the great XMB Mod​</description>
 			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2017-12-2T07:46:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Gamesonic Manager v3.95 + Fan Control Utility-  Adds 4.82 CFW Support /  Misc. Fixes</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Gamesonic_Manager_v3.95_+_Fan_Control_Utility-__Adds_4.82_CFW_Support___Misc._Fixes.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/gamesonic-manager-v3-95-fan-control-utility-adds-4-82-cfw-support-misc-fixes.15672/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Gamesonic_Manager_v3.95_+_Fan_Control_Utility-__Adds_4.82_CFW_Support___Misc._Fixes.jpg">GameSonic Manageris another PS3 backup manager (an Iris Manager fork) from@Orion, the dev now adds support for recent4.82 CFW releases, supporting both Standard Editions and Cobra (v7.53) (CEX based CFW's). While making some additional changes and also brings theControl Fan utilityalong with the journey, checkout all the details in Orion's release post found below​</description>
+			<creators>Orion</creators>
 		</mtrl>
 	</spc>
 </nsx>
