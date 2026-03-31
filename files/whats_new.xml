@@ -1521,85 +1521,85 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS5_Logo_Introduced_@_CES_&_New_PS5_forums_here_at_psx-place.jpg">The latest move in the next gen hype has embarked on us as Sony unveils thePS4PS5 logo as CES to leave the gaming community on a cliffhanger. While not much was mentioned about the next generation console we have came to one conclusion that the PS5 logo budget seems to be about the same as the budget for PS3 firmware updates.  Also a few days ago i figured it was due time to add a PlayStation 5 Section to the forum as well. Right now there is just ageneral discussionarea for now, it will evolve as the PlayStation 5 is released in the 2020 holiday season  We have a dissuasion thread here in the forum about some of the rumors and specs of the next generation consolehere.Are you hyped for the PS5? Will you buy at launch or do you like to give the platform time to mature?​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2020-1-5T09:30:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Artemis PS3 (r6.3): Cheating system updated with 4.8x CFW Support & New Features added</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Artemis_PS3_(r6.3)_Cheating_system_updated_with_4.8x_CFW_Support_&_New_Features_added.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/artemis-ps3-r6-3-cheating-system-updated-with-4-8x-cfw-support-new-features-added.27690/</target>
+		<mtrl id="0" lastm="2015-7-24T08:36:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Remote Play PC - Remote Play Your PS4 Games On Your PC (WIP)</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Remote_Play_PC_-_Remote_Play_Your_PS4_Games_On_Your_PC_(WIP).jpg</url>
+			<target type="u">https://www.psx-place.com/threads/remote-play-pc-remote-play-your-ps4-games-on-your-pc-wip.2418/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Artemis_PS3_(r6.3)_Cheating_system_updated_with_4.8x_CFW_Support_&_New_Features_added.jpg">Developer@dnawrkshporiginally portedLazy Bastards'sArtemisto the PS3. The PlayStation 3 port is a cheating system for applying cheat to games utilized on CFW/HEN enabled console's that also comes with a companion plugin (sprx) for additional functionality.@bucanerowho you may recall is the developer who portedPKGirecently to the PS3. has now turned attention to updatingArtemis-PS3for 4.85 use and the developer has added two new features to go along. First, we have anOnline Cheat Databasethat will allow you keep your cheats up to date with a simple online download and also aLocal Database Updatefeature has also been incorporated into the system. Also a shoutout to@Berionwho's designs still looks great in the GUI.​</description>
-			<creators>bucanero</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Remote_Play_PC_-_Remote_Play_Your_PS4_Games_On_Your_PC_(WIP).jpg">​</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2020-1-4T11:30:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>(Updated) RetroArch (unofficial PS4- R2) Now includes 37 libretro cores (Yabause / Mupen64 addded)</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/(Updated)_RetroArch_(unofficial_PS4-_R2)_Now_includes_37_libretro_cores_(Yabause__Mupen64_addded).jpg</url>
-			<target type="u">https://www.psx-place.com/threads/updated-retroarch-unofficial-ps4-r2-now-includes-37-libretro-cores-yabause-mupen64-addded.27573/</target>
+		<mtrl id="0" lastm="2015-7-22T06:23:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PlayStation 4 Firmware Update Out - 2.57</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PlayStation_4_Firmware_Update_Out_-_2.57.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/playstation-4-firmware-update-out-2-57.2408/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/(Updated)_RetroArch_(unofficial_PS4-_R2)_Now_includes_37_libretro_cores_(Yabause__Mupen64_addded).jpg">(Update R2 released)Developer@OsirisXis back with release 2 of the PS4 port of RetroArch , this unofficial port(based on v1.8.1 of the main project)now contains37 libretro coresadding an additional 12 since the initial release, those cores include the arcade core FBA & also a Sega SaturnYabause(curious how that compares to thestandalone from znullptr), while N64 emulation still needs some work theparallel_64core included in v1 has seen a new companion and n64 offering in the addition of theMupen64core. The new n64 core does offer some small speed improvements from parallei_64 and may still need some improvements to come in the future hopefully(please share your results/feedback below, which games are working for you?).. Also a bug other's and myself experienced has been addressed, the issue being (in r1) where we could not launch any content in other locations, such as in playlist has now been fixed in the r2 release. That is a welcomed bug to be squashed as now playslist/collections/favorites ect.. should work fine. The PS4 homebrew scene looks in alot better position then it did weeks ago.  You have to really stop and look the PS4 now has 37 different things it can now run that was not possible a couple weeks ago.  Stay tuned as this is port is sure to mature even more with time and likely become an official release sooner or later for the RetroArch project. The libretro team has already expressed support..​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PlayStation_4_Firmware_Update_Out_-_2.57.jpg">​</description>
+			<creators>Tranced</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2015-7-3T00:47:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS4 Reseach by JaiCrab (UART ports on board SAA-001+ Jaibrute v1 Tool)</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_Reseach_by_JaiCrab_(UART_ports_on_board_SAA-001+_Jaibrute_v1_Tool).jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps4-reseach-by-jaicrab-uart-ports-on-board-saa-001-jaibrute-v1-tool.2280/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_Reseach_by_JaiCrab_(UART_ports_on_board_SAA-001+_Jaibrute_v1_Tool).jpg">​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2020-1-3T23:39:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Flash Writer (PS3Xploit) Unofficial Update by Imn7:  Checks for HFW / Factory  Installed  FW /...</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Flash_Writer_(PS3Xploit)_Unofficial_Update_by_Imn7__Checks_for_HFW__Factory__Installed__FW_....jpg</url>
-			<target type="u">https://www.psx-place.com/threads/flash-writer-ps3xploit-unofficial-update-by-imn7-checks-for-hfw-factory-installed-fw.27673/</target>
+		<mtrl id="0" lastm="2015-6-16T03:05:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS4 Official Media Player Released</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_Official_Media_Player_Released.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps4-official-media-player-released.2145/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Flash_Writer_(PS3Xploit)_Unofficial_Update_by_Imn7__Checks_for_HFW__Factory__Installed__FW_....jpg">ThePS3Xploit's Flash Writerhas seen anunofficial updateprovided by developer@Imn7that adds a few additional checks to see ifHFWis installedprior to using(HFW is a simple modified (hybrid) firmware that re-adds a vulnerability (from OFW 4.82) used in ps3xploit tools), dont have HFW installed or do not know upon launching you will be prompt with"You must installHybrid Firmware (HFW) 4.85 before using the flash writer!"Also a check to view theminimum factory firmware that was installed in factory on your console. This is important check(automated or done manually)because it will help determine if your console is a Custom FirmWare compatible unit or not. Anything over 3.56 firmware installed in the factory can not install a CFW(those models should look into usingPS3HENif that is the case.).This unofficial build of the flash writer will provides extra detection/checks in the addition to the magic found in the original tool, a list of full checks can be seen in the release notes provided by the developer below:​</description>
-			<creators>lmn7</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2019-12-27T06:47:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>[Replays added] The 36th Chaos Communication Congress (#36C3) - Everything you need to know!</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Replays_added]_The_36th_Chaos_Communication_Congress_(#36C3)_-_Everything_you_need_to_know!.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/replays-added-the-36th-chaos-communication-congress-36c3-everything-you-need-to-know.27305/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Replays_added]_The_36th_Chaos_Communication_Congress_(#36C3)_-_Everything_you_need_to_know!.jpg">Year after year, manyHackers and Developers around the Globecome together for a "Meet&Greet" at the City of Leipzig, Germany, where theyshare and discuss their newest Achievements with Hacking and other Security Subjectsleading the way. Since you are a trustfully reader of this Site, you shouldn't be suprised anymore that like for last year, we decided to give you thefull coverage about this years Chaos Communication Congressagain - stylized as"36C3 - RESOURCE EXHAUSTION"by it'shost.Last years Congress (35C3) was already an impressive one, which showed us manynew Achievements, especially for both thePlayStation 4and thePlayStation Vita. Indeed, speaking about the PSVita, the stages at 35C3 led to variousnew Exploits and Homebrew Releasesafterwards, which you are already familiar about and probably downloaded a thousand times. This years Congress will also show us thenewest Achievements in the Console Sceneandsince your own demand was already so high for the last year, we had a reason more to keep you informed for the full coverage of this years 36C3.So, the only thing you need to do like you did last year is to keep this Articlebookmarked, since we keep this Articleupdated after each new presentation. So you won't miss anything!​</description>
-			<creators>Roxanne</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2019-12-24T12:05:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PSX-Place.com wishes you a Merry Christmas & Happy Holidays!</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PSX-Place.com_wishes_you_a_Merry_Christmas_&_Happy_Holidays!.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/psx-place-com-wishes-you-a-merry-christmas-happy-holidays.27540/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PSX-Place.com_wishes_you_a_Merry_Christmas_&_Happy_Holidays!.jpg">ThePSX-Place.com-Community wishes everyone aMerry Christmas and Happy Holidays!Merry Christmas for everyone! We hope that you will enjoy the festive season with your Family and your loved ones.​</description>
-			<creators>Roxanne</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2019-12-17T12:22:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>OpenBOR Engine ported to Ps4 (by Znullptr)</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/OpenBOR_Engine_ported_to_Ps4_(by_Znullptr).jpg</url>
-			<target type="u">https://www.psx-place.com/threads/openbor-engine-ported-to-ps4-by-znullptr.27443/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/OpenBOR_Engine_ported_to_Ps4_(by_Znullptr).jpg">It appears thatOpenBOR Enginehas been ported to Jailbroken PS4's from developer@Znullptr.we seen last year when the engine wasported to the PS3by@White Dragon, but now we see Znullptr whom has been supplying the scene with various PS4 Homebrew releases like the recent Mednafen (multi-system emulator), Sega Saturn, mGBA and other emulation now has released (via@Markus95) the latest PS4 brew in the form of this classic beat em up style game-engine that support many unique user created creations found around the net at places likeChronocrash.com. Currently the highest firmware hackable on a PS4 is 5.05 (also 5.07 FW found in select regions). Thanks to the efforts of znullptr we have been seeing some great brew finally coming to the PS4, Hopefully this trend does not stop and we see improvements to what has been released and/or some new things but we have a great toy to tinker with as this new engine is now available for the PS4.​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_Official_Media_Player_Released.jpg">ScreenShots​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2019-12-7T15:29:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Meet "PSVshell" - a very beautiful and useful Overclocking Plugin by Electry</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Meet_PSVshell_-_a_very_beautiful_and_useful_Overclocking_Plugin_by_Electry.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/meet-psvshell-a-very-beautiful-and-useful-overclocking-plugin-by-electry.27290/</target>
+		<mtrl id="0" lastm="2015-6-9T13:09:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>New PS4 Hardware Mods by eXtreme/Meistaschrauba/Jriquelme/ForestFairy</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/New_PS4_Hardware_Mods_by_eXtremeMeistaschraubaJriquelmeForestFairy.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/new-ps4-hardware-mods-by-extreme-meistaschrauba-jriquelme-forestfairy.2087/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Meet_PSVshell_-_a_very_beautiful_and_useful_Overclocking_Plugin_by_Electry.jpg">ThePlayStation Vitawas a "powerful" Handheld Console back when it was released by the end of 2011 -wow, already 8 years old btw. But claiming by Sony that it can bring you the same power and good Gaming Experience like a Home Console, soon many people found out that this isn't the case for all Games released. But luckily, thanks to thegreat Homebrew Community behind the PSVita, we already saw in the past many "Overclocking Plugins", which can bring you thefull potential to your PSVita, even more powerful than Sony would allowed. But sometimes, even those weren't perfect. Eitherthey slowed down your Gameswhen in use, theycrashed the whole Systemor it was justsome simple things like that the whole Screen was "crowded" with the Details of each of your setting everytime when you needed to change them.But the cool thing is,this Homebrew Community hears your complaints.SoDeveloper Electryworked on that and introduced his very own Overclocking Plugin -it's "yet another overclocking plugin" to quote him - byfixing all those problems mentioned before. And the coolest thing is, it looks pretty damn good and it's very useful as well, if you ask me!​</description>
-			<creators>Roxanne</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2019-12-7T14:54:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS-Phwoar! (for 5.05): A new Exploit Host Menu (with PS4 Home inspired theme) by Leeful</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS-Phwoar!_(for_5.05)_A_new_Exploit_Host_Menu_(with_PS4_Home_inspired_theme)_by_Leeful.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ps-phwoar-for-5-05-a-new-exploit-host-menu-with-ps4-home-inspired-theme-by-leeful.27289/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS-Phwoar!_(for_5.05)_A_new_Exploit_Host_Menu_(with_PS4_Home_inspired_theme)_by_Leeful.jpg">Were-tweeted thiswhen it was released a week or so ago but wanted to get something up on the news page about this project, Developerleefulhas recently released a new Exploit Host menu for serving up the essential payloads for exploited PS4 (5.05) Consoles's. This host menu theme is based on the PS4's main home screen bringing a seamless look. The host menu contains descriptions of various payloads it provides (which is about all) that will provide alot of features when executed such as Fan Controls, Linux Loader, Mod Menu's, firmware spoof, Update blocks ect.. You can see many of the payloads included in the sceenshots attached. Various methods to using this exploit host menu are available , see additional details in the installation tab below about using this new host menu:.The host menu also adds the convenience of replacing the User Manual (first option in Settings>>User Manual/Helpful info) for easy and quick launching for when you power on your Console and have to activate HEN.​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/New_PS4_Hardware_Mods_by_eXtremeMeistaschraubaJriquelmeForestFairy.jpg">eXtremehas stop by our forums recently to inform us of some impressive newPS4 Hardware Modsappearing over atextreme-modding.deand around the communities. eXtreme himself has built anotherimpressive PS4 Mod, as he creates a Cooling Mod for the PS4 console with some additional eye candy for this mod that is a must see. All the pics of this mod can be viewed  be[break]ss[/break]low along with several other recently created mods that have appeared over at eXtreme's website. So, be sure to checkoutextreme-modding.defor all the latest Console Mods that always appearing.​Cooling Mod by eXtremeSource & additional info:Cooling Mod by eXtreme » PS4 eXtreme ModdingPS4 LED Mod by eXtreme[video=youtube;w0i75IRwako]https://www.youtube.com/watch?feature=player_embedded&amp;v=w0i75IRwako[/video]​PS4 LED Mod by eXtreme » PS4 eXtreme ModdingPS4 Cooling Mod by Meistaschrauba[TABLE="class:...​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2019-12-7T12:54:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Mednafen v0.3 (PS4 Homebrew) - Multi-System Emulator adds support for new emulation</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Mednafen_v0.3_(PS4_Homebrew)_-_Multi-System_Emulator_adds_support_for_new_emulation.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/mednafen-v0-3-ps4-homebrew-multi-system-emulator-adds-support-for-new-emulation.27286/</target>
+		<mtrl id="0" lastm="2015-6-3T11:28:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>New PlayStation 4 Models Incoming</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/New_PlayStation_4_Models_Incoming.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/new-playstation-4-models-incoming.2030/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Mednafen_v0.3_(PS4_Homebrew)_-_Multi-System_Emulator_adds_support_for_new_emulation.jpg">There has been a PS4 developer's known asZnullptrwho has ported several emulators to the PS4 (jailbroken) already with systems like theSega Saturn, Dreamcast &PS1to name a few of the ps4 homebrew ports present on the GameOS side of the console (ps4). We know already that emulation viaPS4 Linuxis capable of running many more emulators likeRetroArch (Linux)for example, but lets be honest ps4linux can be a bit of process to get up and running when you power on your console for some quick convient play. So when we see new things on the PS4's main menu that is exciting to see, when its in regards to emulation especially.This time around the dev decided to port a popular multi-system emulator, no not RetroArch butMednafen,originally the port was released some weeks ago by port developerZnullptrand presented to us byMarkus95and since@Markus95has seen presented some improvements with regards to the cfg file that has fixed several broken platforms (Virtual Boy, WonderSwan & WonderSwan Color) due to the control scheme that was not compatible with the DualShock 4 layout, with a re-configured "mednafen.cfg" file those issue are eliminated. There has been 4 player support added also and a few new tweaks Markus95 plans on addressing via future tweaks of the cfg file.​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/New_PlayStation_4_Models_Incoming.jpg">​</description>
+			<creators>Tranced</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2015-4-22T01:02:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS4 Firmware update v2.51 Now Live</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_Firmware_update_v2.51_Now_Live.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps4-firmware-update-v2-51-now-live.1786/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_Firmware_update_v2.51_Now_Live.jpg">​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2019-12-3T23:37:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>The PS2 Fortuna Project (Homebrew Launcher) & N64 Emulation highlights a big week in PS2 development</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/The_PS2_Fortuna_Project_(Homebrew_Launcher)_&_N64_Emulation_highlights_a_big_week_in_PS2_development.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/the-ps2-fortuna-project-homebrew-launcher-n64-emulation-highlights-a-big-week-in-ps2-development.27243/</target>
+		<mtrl id="0" lastm="2015-4-15T07:34:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Vevo App Now Available For PS4 & PS3</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Vevo_App_Now_Available_For_PS4_&_PS3.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/vevo-app-now-available-for-ps4-ps3.1762/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/The_PS2_Fortuna_Project_(Homebrew_Launcher)_&_N64_Emulation_highlights_a_big_week_in_PS2_development.jpg">The PlayStation 2 Scene is still going strong as we head into 2020 and with the great grandchild the PS5 is on the horizon in the near future, the ps2 continues to prove it'shas been astill a powerhouse in the homebrew/development community. This week alone we have seen several developments in the community that are quite spectacular to see released. First we seen a glimpse of potential N64 emulation on the PS2 and then yet another new exploit for the PS2 (not to be confused with this recent method involving a demo disc) that will enable homebrew on your PS2.​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Vevo_App_Now_Available_For_PS4_&_PS3.jpg">​</description>
+			<creators>Tranced</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2015-3-27T00:50:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PlayStation 4  Firmware Updates v2.50 "Yukimura" -  Now Officially Released!</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PlayStation_4__Firmware_Updates_v2.50_Yukimura_-__Now_Officially_Released!.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/playstation-4-firmware-updates-v2-50-yukimura-now-officially-released.1655/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PlayStation_4__Firmware_Updates_v2.50_Yukimura_-__Now_Officially_Released!.jpg">​</description>
 			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2015-3-25T09:32:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS4 Yukimura 2.50 & PS Vita 3.50 Firmware Updates Hit Tomorrow</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_Yukimura_2.50_&_PS_Vita_3.50_Firmware_Updates_Hit_Tomorrow.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps4-yukimura-2-50-ps-vita-3-50-firmware-updates-hit-tomorrow.1643/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_Yukimura_2.50_&_PS_Vita_3.50_Firmware_Updates_Hit_Tomorrow.jpg">​</description>
+			<creators>Tranced</creators>
 		</mtrl>
 	</spc>
 </nsx>
