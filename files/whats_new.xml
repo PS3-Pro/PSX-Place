@@ -1281,85 +1281,85 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Movian_(Media_Center)_v5.0.701_by_deank_-_Improved_OSD___HLS_bitrate_switching_Fixed__....jpg">Developer @deank(who werecently interviewed) has pushed an unofficial update forMovian, a multi-platform project originally developed byAndreas Smas(available on Android, Linux, OS/X, Raspberry Pi and PS3).For those of your that are new to this longstanding PS3 project, it's a robustmedia centerthat comes equipped with additional support for video and audio codecs then what you would find in the PS3's official media player. Various plugins are also available from within the application such as YouTube plugin giving user's an additional option vs the YouTube app .There are other various plugins you can use that provide ranging functions some include themeing /info / other functionalities. Recently deank has releasedv5.0.701and there has been a few cosmetic changes (listed in the changelogs provide) and a couple of  bug fixes provided (see 2nd tab)..​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2020-4-12T19:51:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>RetroArch (PS2) - New WIP Toolchain (by fjtrujy) could provide increased performance soon</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/RetroArch_(PS2)_-_New_WIP_Toolchain_(by_fjtrujy)_could_provide_increased_performance_soon.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/retroarch-ps2-new-wip-toolchain-by-fjtrujy-could-provide-increased-performance-soon.29074/</target>
+		<mtrl id="0" lastm="2016-5-20T08:06:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Universal Media Server 6.3.1 Released</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Universal_Media_Server_6.3.1_Released.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/universal-media-server-6-3-1-released.9658/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/RetroArch_(PS2)_-_New_WIP_Toolchain_(by_fjtrujy)_could_provide_increased_performance_soon.jpg">Developer@fjtrujyknown for portingRetroArch to the PS2(which now an official port of RetroArch), has also recently announced the intentions of creating homebrew projects with the PS4(as seenhere). However the developer hasn't brushed off or set aside the PS2 port. Experimenting with a newWork-in-Progress toolchainthe dev has been able to maximize performance in some cores like theQuickNEScore running full FPS (see comparison video below). The toolchain may even provide support for cores that require a bit more juice like the arcade emulatorMAME2000,while the core has alot of work yet to be fully optimized  it has shown some potential and played some games likeGhost-n-Goblinswell (seen in the video attached below),The developer is seeking " help of the GCC community to finish, some CPU instructions are pending to implement" to maximizes the potential of this new (wip) toolchain. Additional info can be found in the recent tweets by the developer found below. Looks like its early yet for the toolchain and more work needs to be done but appears the dev is on the right track in tapping into some additional potential from the iconic and still development strong PS2.. .​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Universal_Media_Server_6.3.1_Released.jpg">In this update toUniversal Media Serverthe developers have fixed a issue with PAL DVD's. Connectivity has also been addressed so you can expect UMS to play better with your devices. Remember that UMS can be used for many devices but the ones we generally find of interest are the PlayStation 4, PlayStation 3, PS Vita and the PSTV.</description>
+			<creators>Tranced</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2016-5-7T10:16:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Universal Media Server 6.3.0 - Improvements & New File Host</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Universal_Media_Server_6.3.0_-_Improvements_&_New_File_Host.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/universal-media-server-6-3-0-improvements-new-file-host.9589/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Universal_Media_Server_6.3.0_-_Improvements_&_New_File_Host.jpg">SubJunk and team have just released their latest release of Universal Media Server. The update brings further device improvements and a few bug fixes together with updated components such as FFmpeg, MediaInfo and MPlayer.</description>
+			<creators>Tranced</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2016-4-2T23:09:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>[TuT] How to run Linux on your PS4 by Senaxx</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[TuT]_How_to_run_Linux_on_your_PS4_by_Senaxx.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/tut-how-to-run-linux-on-your-ps4-by-senaxx.9498/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[TuT]_How_to_run_Linux_on_your_PS4_by_Senaxx.jpg">​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2020-4-12T17:39:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>[Update 2]  PS3 Simple File Manager (by tps)  v0.5.0  Released</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Update_2]__PS3_Simple_File_Manager_(by_tps)__v0.5.0__Released.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/update-2-ps3-simple-file-manager-by-tps-v0-5-0-released.29071/</target>
+		<mtrl id="0" lastm="2016-4-2T13:35:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>[PS4 - FW 1.76]  Fully Functional dlclose Exploit (w/ Linux Loader) by kR105</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[PS4_-_FW_1.76]__Fully_Functional_dlclose_Exploit_(w_Linux_Loader)_by_kR105.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps4-fw-1-76-fully-functional-dlclose-exploit-w-linux-loader-by-kr105.9493/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Update_2]__PS3_Simple_File_Manager_(by_tps)__v0.5.0__Released.jpg">Updated(2) v0.5.0 -Provides External Support for manager's (0.4.0) + NTFS Support (v0.5.0)(original Article v0.3.0)The PS3 has no shortage of File Management solutions and alot of choices via homebrew managers like(multiMAN, IRISMAN, ManaGunZ or webMAN / webMAN MOD/ XMB Mods / Apps like Comgenies File Manager, FTP support), but developer@tps(aka lmirel) has released another choice in file management for the PS3, this is currently in the early stages and in the currently labeled as a test release. The file manager itself contains basic features, though with a name likeSimple File Managerthe developer intentions is more then likely focusing on perfecting the basic functions for a Simple File Manager that is easy to use. The ps3 homebrew utility currently supports exFAT and FAT file systems, view the release notes from the developer below​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[PS4_-_FW_1.76]__Fully_Functional_dlclose_Exploit_(w_Linux_Loader)_by_kR105.jpg">The PlayStation 4 Hacking Scene is evolving each and every day and the latest advancement will excite many as developerkR105is filling in the missing pieces for everyoner to boot Linux on the PS4. As the developer unleashes a dlclose exploit that isfully functional, while we have seen in recent days news about a dlclose exploit it was not fully operational and was not complete, but now with this release the holes have been filled and the missing pieces provided along with aLinux Loaderthat comes compiled to make things much easier.​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2020-4-12T17:18:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Artemis r6.1 - Ps3 Cheat App updated by bucanero</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Artemis_r6.1_-_Ps3_Cheat_App_updated_by_bucanero.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/artemis-r6-1-ps3-cheat-app-updated-by-bucanero.29070/</target>
+		<mtrl id="0" lastm="2016-3-22T22:53:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>WARNING - -  - PS4 2.50 CFW Claims</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/WARNING_-_-__-_PS4_2.50_CFW_Claims.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/warning-ps4-2-50-cfw-claims.9428/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Artemis_r6.1_-_Ps3_Cheat_App_updated_by_bucanero.jpg">A new update forArtemis(r6.1)has been been released by the developer@bucanerothat included some handy new enchantments for the Cheat System for both PS3 CFW user's and PS3HEN user's ,The app on startup will now check for a new update and process the update automatically, A new plugin selection system has been added, the reason for the implementation is that different version of the plugin run better depending on your console's exploration path (CFW or PS3HEN). For instances on PS3HEN the r5 plugin has performed much better then the later r6 plugin that is suggested for CFW user's. So the app gives you the ability to choose easily which plugin you would like to use. Several other new enchantments make their way in this latest update from a developer(seen the release notes below)that has been impressing lately with some of his PS3 projects likePS3 Apollo Save ToolandPKGi​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/WARNING_-_-__-_PS4_2.50_CFW_Claims.jpg">With all the positives coming from the PS4 hacking scene there is the unfortunate side of some negative stories or i should say what most likely appears to be a scam and i would personally proceed with alot of caution. There is a rumor that is circulating through various scene sites of a team that has a CFW for PS4 and also the same team is said to have a downgrade device in the works as well, this is highly unlikely and this team of unknowns does not give ANY information or any Proof of Concept to prove they have accomplished this.​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2020-4-12T12:13:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>IRISMAN 4.86 + MAMBA v8.3 update by Aldostools</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/IRISMAN_4.86_+_MAMBA_v8.3_update_by_Aldostools.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/irisman-4-86-mamba-v8-3-update-by-aldostools.29059/</target>
+		<mtrl id="0" lastm="2016-3-20T23:46:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS4 inching closer to a Jailbreak? Latest POC by bigboss (psxdev)</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_inching_closer_to_a_Jailbreak_Latest_POC_by_bigboss_(psxdev).jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps4-inching-closer-to-a-jailbreak-latest-poc-by-bigboss-psxdev.9420/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/IRISMAN_4.86_+_MAMBA_v8.3_update_by_Aldostools.jpg">Update v4.86.1:see below for changesDeveloper@aldostoolswhom we recently interviewed inThe Power Supply Series,if you have not seen that interview yet, it can be seen>here<.Now the developer is back with a new update for the popularIRISMAN(AIO) manager for homebrew enabled PS3 consoles to support thenew 4.86 (firmware) update.The developer has not just added new FW support but has also made an update (v8.3) toMAMBApayload(an alternative for Cobra on non Cobra CFWs).This update to MAMBA(that's injected from IRISMAN)has added support for@DeViL303PoC of loading games from a modified Photo Columnthat appears in "Games". There are some other neat MAMBA features, like when you disable CFW syscalls they can be re enabled without a restart to the PS3 Console, This mamba update also provides some other tweaks and enchantments that the developer has outlined in the changelog below:​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_inching_closer_to_a_Jailbreak_Latest_POC_by_bigboss_(psxdev).jpg">Recent PS4 Hacking News:CTurt​fasil0verflow​bigboss:[*=left]Overview booting Linux.[*=left]Analysis of sys_dynlib[*=left]Loading Linux (files)...</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2020-4-12T11:51:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>XForge PS QRC Tool -  Modifying aspects of the XMB is now easier then ever.</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/XForge_PS_QRC_Tool_-__Modifying_aspects_of_the_XMB_is_now_easier_then_ever..jpg</url>
-			<target type="u">https://www.psx-place.com/threads/xforge-ps-qrc-tool-modifying-aspects-of-the-xmb-is-now-easier-then-ever.28804/</target>
+		<mtrl id="0" lastm="2016-3-3T03:50:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>fail0verflow Releases Files Needed To Load Linux On The PlayStation 4 - No Exploit Though</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/fail0verflow_Releases_Files_Needed_To_Load_Linux_On_The_PlayStation_4_-_No_Exploit_Though.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/fail0verflow-releases-files-needed-to-load-linux-on-the-playstation-4-no-exploit-though.9298/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/XForge_PS_QRC_Tool_-__Modifying_aspects_of_the_XMB_is_now_easier_then_ever..jpg">We have seen many XMB visual mods published so far in the lifetime of the PS3 but the QRC format (a type of container) has been always problematic, tricky, and very restricted.XForgeis intended to solve all this problems once for all, it allows full freedom torebuild the QRC filesand modify all his contentsThere are many files inside the QRC containers that are candidates to be modified, XForge is the first tool that allows to modify them in a "noob friendly" way, everything made from a intuitive interface with preview panelsSay goodbye to the previous manual methods that required dealing with zlib compressed files or injecting them with a hex-editor to create a custom wave, to replace XMB main icons, to change background wallpapers, etc... XForge supersedes all that tutorials, manuals methods, and tools, there is a long list of features supported by XForge, for more detailed descriptions see the feature list below​</description>
-			<creators>pink1</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/fail0verflow_Releases_Files_Needed_To_Load_Linux_On_The_PlayStation_4_-_No_Exploit_Though.jpg">​</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2020-4-12T11:15:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS4 Xplorer v1.18 (by Lapy) - New Theme Support / zip,tar & rar support added / ...</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_Xplorer_v1.18_(by_Lapy)_-_New_Theme_Support__zip,tar_&_rar_support_added__....jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ps4-xplorer-v1-18-by-lapy-new-theme-support-zip-tar-rar-support-added.29060/</target>
+		<mtrl id="0" lastm="2016-3-2T20:49:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>A possible leaked PS4 Exploit? ( BadIRET kernel exploit )</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/A_possible_leaked_PS4_Exploit_(_BadIRET_kernel_exploit_).jpg</url>
+			<target type="u">https://www.psx-place.com/threads/a-possible-leaked-ps4-exploit-badiret-kernel-exploit.9290/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_Xplorer_v1.18_(by_Lapy)_-_New_Theme_Support__zip,tar_&_rar_support_added__....jpg">Following the recent release ofRiver Raid Remakeand also the utility homebrewPKG Extractor, DeveloperLapyis back again with another update to one of his PS4 Homebrew Applications (powered by Unity), not a game this time around but an update (v1.18) of the utility known asPS4 Xplorer. In this update the developer provides a number of new features that consist of Theme Support(also released aTheme Makertool- more info below), Zip,Tar and Rar Support for compressed files and a few other tweaks seen in the changelog (included below), Take note the developer has officially taken this project out of BETA phase with the v1.18 update. See complete details about this update below from Lapy..Also worth noting that Lapy has requested some idea's of new projects for the developer to consider undertaking, if you have an idea, reply below or directly to Lapy's tweet foundhere​</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/A_possible_leaked_PS4_Exploit_(_BadIRET_kernel_exploit_).jpg">For now this is not useful for the end-user, as more details are needed to truly figure out the significance of this leak, stay tuned as we will be keeping a watch as details arise.​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2020-4-8T20:51:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>The Power Supply (vol. 05): A chat with (PS Vita Developer) Rinnegatamante</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/The_Power_Supply_(vol._05)_A_chat_with_(PS_Vita_Developer)_Rinnegatamante.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/the-power-supply-vol-05-a-chat-with-ps-vita-developer-rinnegatamante.28318/</target>
+		<mtrl id="0" lastm="2016-3-1T08:37:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PlayStation 4 Beta Firmware 3.50 Releases Tomorrow</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PlayStation_4_Beta_Firmware_3.50_Releases_Tomorrow.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/playstation-4-beta-firmware-3-50-releases-tomorrow.9275/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/The_Power_Supply_(vol._05)_A_chat_with_(PS_Vita_Developer)_Rinnegatamante.jpg">Well it's that time again as we have another talented developer featured inThe Power Supply(A developer Interview Series brought to you by PSX-Place). So far you have seen us explore various talents from the PS3 & PS4 in the first four editions(view the complete collection of interviewhere, some great reads and insight from some of the best), so this time around invol.5of the series we wanted to expand on another PlayStation Platform and we thought it was time for a PS Vita inclusions. So, with so many great candidates to approach we wanted to explore a bit about homebrew development and this developer is someone whom has developed a few projects on the platform (okay alot of projects) That's right we have the talented developer known asRinnganmantewho has been a huge contributor to the PS Vita Community.   In our chat we posed various development questions / future intentions along with some insight on various projects in this discussion, so like our previous interview's your bound to learn something new.​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PlayStation_4_Beta_Firmware_3.50_Releases_Tomorrow.jpg">​</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2020-4-4T15:51:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>[UPDATE 4] PS3 Toolset by bguerville: A powerful collection of tools fueled by new PS3 exploit</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[UPDATE_4]_PS3_Toolset_by_bguerville_A_powerful_collection_of_tools_fueled_by_new_PS3_exploit.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/update-4-ps3-toolset-by-bguerville-a-powerful-collection-of-tools-fueled-by-new-ps3-exploit.28658/</target>
+		<mtrl id="0" lastm="2016-2-22T10:44:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Wanted: Beta Testers For Upcoming PS4 Update</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Wanted_Beta_Testers_For_Upcoming_PS4_Update.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/wanted-beta-testers-for-upcoming-ps4-update.9233/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[UPDATE_4]_PS3_Toolset_by_bguerville_A_powerful_collection_of_tools_fueled_by_new_PS3_exploit.jpg">UPDATE FEB 2023 (The domain's of ** ** www.ps3xploit.net  > Domain no Longer owned by team**  (NEW URL = http://ps3toolset.com)  > Domain no Longer owned by team**  (NEW URL =  http://ps3toolset.com and .com are no longer in poccession of the team, A new address will be posted in future release coverage.Update (4) Now supporting 4.86 Fully  & Issue fixed with NAND console's in raresituationsYou may recall a recentarticlerevealing a few exclusive screenshots of bguerville's latest project, now the time has come to introduce the next evolution in PS3 Jailbreaking solutions. ThePlayStation 3 Toolsetby@bguervilleis a new suite of tools, built upon a new PS3 exploitation framework & fueled bya new exploit discovered on the PS3 by the developer.The new exploit (and the toolset project as a whole)is compatible withall PS3 models running 4.82 - 4.86 OFW/HFW/CFWWhileps3xploitteam member's@habibcontinued research and development ofPS3HENfor nonCFW models with assistance from@esc0rtd3w, @bguervillemeanwhile was working on his own research and developing other tools and exploits as you will see with this new PlayStation 3 Toolset, which thorough testing was conducted by@esc0rtd3w(whom we recently interviewed). All the team of talented devs have done some amazing work in the scene in recent years with all thePS3Xploitprojects and that trend continues with this release.ThePS3 toolsetis a project that@bguervillehas been working on for some time,the developer gave us a brief timeline of events since thePs3XploitTools 2.0 framework(flash writer and dumper(s)) that led to this new release (see the timeline section).​</description>
-			<creators>STLcardsWS</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2020-4-1T20:48:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>4.86.1 REBUG LITE EDITION + REBUG TOOLBOX 2.03.04 MULTI RELEASED</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/4.86.1_REBUG_LITE_EDITION_+_REBUG_TOOLBOX_2.03.04_MULTI_RELEASED.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/4-86-1-rebug-lite-edition-rebug-toolbox-2-03-04-multi-released.28809/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/4.86.1_REBUG_LITE_EDITION_+_REBUG_TOOLBOX_2.03.04_MULTI_RELEASED.jpg">UPDATE - Builds for Broken Console's (NoBD / NoBT / RSOD) - See link at bottom of articleIt has been a busy week and especially for the PS3, First we had introduction ofbguerville PS3 Toolset(which introduce a new ps3 Exploit along with some powerful tools). Then we had4.86 Official Firmwaredropped (no exploits patched)  Then  developer@JoonieofTeam Rebugwas quick to release an updatedHybridFirmWare(forPS3HENuser's when an update toPS3HENarrives for those nonCFW models)and now the developer follows that with the release of4.86.1 REBUG LITE Edition,supplying us with one of the best firmware as the first option for 4.86 Custom FirmwareChoices.This CFW comes equipped Cobra 8.2 payload, this payload provides various features some of those highlights include background running plugins, burnt optical media support as well as ISO Support are a few of the many Cobra features included in v8.2. The release details found below detail the various features & patches found in this CFW release. Also it's worth checking out at the download location (link below) the additional info and ":how to" information pertaining to use of REBUG LITE's CFW functionality.​</description>
-			<creators>STLcardsWS</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2020-3-31T19:49:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>4.87.1 PS3 HFW (Hybrid Firmware) - HFW is helpful for installing PS3HEN on 4.84/4.85/4.86/4.87 FW</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/4.87.1_PS3_HFW_(Hybrid_Firmware)_-_HFW_is_helpful_for_installing_PS3HEN_on_4.844.854.864.87_FW.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/4-87-1-ps3-hfw-hybrid-firmware-hfw-is-helpful-for-installing-ps3hen-on-4-84-4-85-4-86-4-87-fw.23094/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/4.87.1_PS3_HFW_(Hybrid_Firmware)_-_HFW_is_helpful_for_installing_PS3HEN_on_4.844.854.864.87_FW.jpg">UPDATE (May, 2022) 4.89 HFW Releasedsee here.Original Article (4.84 HFW - March 2019): Huge News as the PS3 exploit ladder has taken a step up into 4.84 rung, with a new approach tobring back PS3Xploit functionality on 4.84.With a Hybrid Firmware (NOT A CFW) that can be installed onANY MODEL PS3 over any Official Firmware (OFW) version..The only thing this modified firmware essentially does is bring back the patched webkit from OFW 4.82 that was an entry point forPS3Xploit, if you recall when 4.84 was released developers@bguervilleand@esc0rtd3wstated the exploit was not actually patched but rather only the webkit entry used was removed in 4.83+ which rendered the actual exploit unreachable (not patched and could be restored). Now the webkit is back for 4.84 OFW thanks to this new clever magic that has allowed OFW user's to use and install this slightly modified Firmware.​</description>
-			<creators>Joonie</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Wanted_Beta_Testers_For_Upcoming_PS4_Update.jpg">​</description>
+			<creators>Tranced</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2020-3-30T17:59:00.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>River Raid Remake (by Lapy Games) - A remake from the Atari 2600 library now on a homebrew PS4</desc>
