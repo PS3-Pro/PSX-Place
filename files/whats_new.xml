@@ -161,85 +161,85 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3_4.91_Firmware_Released_-_Do_Not_Update!!!.jpg">UPDATE:its now safe to update to 4.91. PS3HEN (& HFW), CFW & PS3 Toolset have been updated to support 4.91.PS3 Firmware 4.91 is now LiveThe expected once a year firmware update has been executed by Sony, PS3 4.91 Firmware is now Live. While an expected update, could this bring other changes to the firmware? Likely not but its still early to conclude as this update is fresh as of writing .Do not update, various exploits / tools / essential homebrew will need to be updated to support the latest firmware update of 4.91. See below for a short FAQ on 4.91, as there is always some confusions around the update process. .​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2023-12-30T10:41:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Movian M7 (by deank)  - "libav" swapped for "ffmpeg"  & slight name change</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Movian_M7_(by_deank)__-_libav_swapped_for_ffmpeg__&_slight_name_change.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/movian-m7-by-deank-libav-swapped-for-ffmpeg-slight-name-change.42453/</target>
+		<mtrl id="0" lastm="2016-5-16T12:12:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>UO gрSP Kai - A Game Boy Advance Emulator For The PSP</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/UO_gрSP_Kai_-_A_Game_Boy_Advance_Emulator_For_The_PSP.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/uo-grsp-kai-a-game-boy-advance-emulator-for-the-psp.9641/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Movian_M7_(by_deank)__-_libav_swapped_for_ffmpeg__&_slight_name_change.jpg">Developer@deankwho has been continuing development of the (modded version) of the original media center that started on the PS3(now runs on Android, Amazon Fire Stick, MacOS ,Windown ,Linux  & Raspberry pi). The media center originally was named "Showtime" on the PS3 but later renamed to "Movian" by the original developerAndreas Omanyears ago.Since that time, we have not seen the official project do much in recent years (currentlyhome siteis down as of writing), but developer deank has been keeping the project alive and evolving (see changelogsover at brewologyfor all archived changes). One of the biggest changes you will see within Movian-M7 compared to older version, is the change from the older (abandoned) "libav" video decoders/parsers to the current "ffmpeg" that was just replaced in the recent M7 update . This should improve compatibility and make for a more up-to date and versatile media player for all supported platforms including the PS3.Also, deank  has made a quick stop in the forum's, then to see a reported issue and provided a fix (seen here) that is now present in v7.0.2​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/UO_gрSP_Kai_-_A_Game_Boy_Advance_Emulator_For_The_PSP.jpg">A developer going by the nameErikPshathas taken it upon himself to rejuvenate a homebrew emulator called gpSP kai. Dubbed UO gрSP Kai, aka GameplaySP, is a Gameboy Advance emulator for the Playstation Portable. The developer has released his unofficial build which introduces some bug fixes, adds a few fixes such as running almost all games from ZIP archives.</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2023-12-27T22:41:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>[Update v1.06] Itemzflow (PS5) -  Homebrew & Game Manager with PS5 game Support</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Update_v1.06]_Itemzflow_(PS5)_-__Homebrew_&_Game_Manager_with_PS5_game_Support.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/update-v1-06-itemzflow-ps5-homebrew-game-manager-with-ps5-game-support.42429/</target>
+		<mtrl id="0" lastm="2016-5-8T06:04:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Evilnat Releases Version 6.0.2 Of SEN Enabler - CFW 4.80 Support</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Evilnat_Releases_Version_6.0.2_Of_SEN_Enabler_-_CFW_4.80_Support.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/evilnat-releases-version-6-0-2-of-sen-enabler-cfw-4-80-support.9598/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Update_v1.06]_Itemzflow_(PS5)_-__Homebrew_&_Game_Manager_with_PS5_game_Support.jpg">Following the release ofetaHEN(AIO Homebrew Enabler for the PS5)last month from@lightingModz.Now, the release ofItemzFlowhas arrived for the PlayStation 5 from developer @ligthingmodz. Originally thisHomebrew & Game Managerwas released on the PS4, but the developer has made a special Christmas Release now bringing the homebrew app for the PS5 that is handy for managing and preserving your personal backups.(JUN 27, 2024) Update: v1.06has been released with new improvements and features.​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Evilnat_Releases_Version_6.0.2_Of_SEN_Enabler_-_CFW_4.80_Support.jpg">Following Sony's latestPlayStation 3 updatewe had seen a slew of homebrews that brought PSN back to older custom firmware versions. One been the SEN Enabler previouslyreported here.DeveloperEvilnatis back with his latest build of the popular homebrew app and with it bringing support for</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2023-12-19T21:10:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Alien Resurrection - (A cheat code to unlock boot disc feature for backups)</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Alien_Resurrection_-_(A_cheat_code_to_unlock_boot_disc_feature_for_backups).jpg</url>
-			<target type="u">https://www.psx-place.com/threads/alien-resurrection-a-cheat-code-to-unlock-boot-disc-feature-for-backups.42354/</target>
+		<mtrl id="0" lastm="2016-5-7T11:29:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Gamesonic Manager Version 3.92 Out</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Gamesonic_Manager_Version_3.92_Out.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/gamesonic-manager-version-3-92-out.9591/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Alien_Resurrection_-_(A_cheat_code_to_unlock_boot_disc_feature_for_backups).jpg">This is a very interesting discovery or rather disclosure from one of the developer's of the PlayStation 1 (PS1) gameAlien Resurrection(Martin Piper) who had reached out to YouTuberMVGwho has been given permission to disclose something that has always been there all this time in the game, but needed a cheat code to unlock the ability to run backups on a stock retail PS1, acting as a boot disc for the swap method.  MVG details the process here in this video:​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Gamesonic_Manager_Version_3.92_Out.jpg">Orion is back with another update toGamesonic Manager.The update brings support for debug/test PlayStation 3 consoles. Also in the mix is the ability to play background music in file formats OGG and MP3.</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2023-11-5T08:21:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>[Update v1.8B] etaHEN - AIO Homebrew enabler for the PS5</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Update_v1.8B]_etaHEN_-_AIO_Homebrew_enabler_for_the_PS5.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/update-v1-8b-etahen-aio-homebrew-enabler-for-the-ps5.42050/</target>
+		<mtrl id="0" lastm="2016-5-7T10:16:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Universal Media Server 6.3.0 - Improvements & New File Host</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Universal_Media_Server_6.3.0_-_Improvements_&_New_File_Host.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/universal-media-server-6-3-0-improvements-new-file-host.9589/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/[Update_v1.8B]_etaHEN_-_AIO_Homebrew_enabler_for_the_PS5.jpg">The PlayStation 5 has an early Christmas gift this year as developerLighting Modshas releasedetaHEN - AIO Homebrew Enabler for the PlayStation 5 (PS5), Currently there is not much homebrew to launch for the PS5, but the developer hasported his PS4 HB Store to the PlayStation 5and thanks to theability to run PS4 fpkgs on the PS5, there is various PS4 homebrew that can run such as some of Lapy's homebrew games.Update (Aug. 12):New update has been released by @ligthingmods, now bringing etaHEN to v1.8B, See changelog tab below or guthub links for latest changes and features incorporated in this update and other updates since its release that has jump started the PS5 community. .​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Universal_Media_Server_6.3.0_-_Improvements_&_New_File_Host.jpg">SubJunk and team have just released their latest release of Universal Media Server. The update brings further device improvements and a few bug fixes together with updated components such as FFmpeg, MediaInfo and MPlayer.</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2023-10-14T10:58:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Celebrating Nine Year's of PSX-Place.com</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Celebrating_Nine_Year's_of_PSX-Place.com.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/celebrating-nine-years-of-psx-place-com.41855/</target>
+		<mtrl id="0" lastm="2016-3-14T11:25:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PSPdisp Gets A Update - Support For Newer Operating Systems</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PSPdisp_Gets_A_Update_-_Support_For_Newer_Operating_Systems.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/pspdisp-gets-a-update-support-for-newer-operating-systems.9391/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Celebrating_Nine_Year's_of_PSX-Place.com.jpg">The psx-place.com website celebrates its 9th birthday on this day, originally opening in2014onOctober 14to the public. The site remains a pillar in the PlayStation Homebrew / Hacking community, thanks to the tremendous developer & user support that has blessed our forums. The past 9 years we have witnessed some amazing things in these forums, we have seen idea's and theories mature into full blown exploits and projects, we have seen developer's share and bounce idea to each other and even teamed up, which have spawned and improved many projects/aspects in the community. We have seen many developer's choose the psx-place forum to host their Release/Support threads for their projects. It has been a destination for developer's and user's to learn more about the community and even take part in it. Truly a place where people can come together for a common goal and that goal has been getting the most out of our beloved PlayStation devices.​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PSPdisp_Gets_A_Update_-_Support_For_Newer_Operating_Systems.jpg">PSPdisp, a homebrew app that allows you to use your PSP and a second screen, has been updated to version 0.6.1. This small update addresses a issue with the installer that did not recognise newer operating systems. So grab this version if you are using Windows 8 or 10. Also updated is the USB driver libusb.</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2023-8-12T07:19:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Athena - A performant JavaScript Runtime Environment for the PS2</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Athena_-_A_performant_JavaScript_Runtime_Environment_for_the_PS2.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/athena-a-performant-javascript-runtime-environment-for-the-ps2.41393/</target>
+		<mtrl id="0" lastm="2016-3-11T11:29:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS3ITA Releases MAMBA / PRX Autoloader Version 3.1.0 (Unofficial MAMBA Release)</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3ITA_Releases_MAMBA__PRX_Autoloader_Version_3.1.0_(Unofficial_MAMBA_Release).jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps3ita-releases-mamba-prx-autoloader-version-3-1-0-unofficial-mamba-release.9360/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Athena_-_A_performant_JavaScript_Runtime_Environment_for_the_PS2.jpg">AthenaEnv (JavaScript-Runtime) and the bright future of development on the PS2!​</description>
-			<creators>TnA</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3ITA_Releases_MAMBA__PRX_Autoloader_Version_3.1.0_(Unofficial_MAMBA_Release).jpg">Following the previous release of this unofficial version ofMAMBA/PRX Autoloadercomes the update that was mentioned in said news post. In version 3.1.0 developerRancid-0and thePS3ITA Teamhave added thePSP ISO supportas promised. Do note that some custom firmware versions are not compatible.</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2023-8-1T20:30:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>FuHEN Contest Submissions - The Four of Us Are Dying / Beat2x / Zik-Zak Vita / Sonic SMS 3 Timelines</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/FuHEN_Contest_Submissions_-_The_Four_of_Us_Are_Dying__Beat2x__Zik-Zak_Vita__Sonic_SMS_3_Timelines.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/fuhen-contest-submissions-the-four-of-us-are-dying-beat2x-zik-zak-vita-sonic-sms-3-timelines.41305/</target>
+		<mtrl id="0" lastm="2016-3-9T10:36:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Saints Row: Undercover - A Unfinished PSP Game By Volition Tweaked A Bit To Run On Your PS3</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Saints_Row_Undercover_-_A_Unfinished_PSP_Game_By_Volition_Tweaked_A_Bit_To_Run_On_Your_PS3.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/saints-row-undercover-a-unfinished-psp-game-by-volition-tweaked-a-bit-to-run-on-your-ps3.9346/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/FuHEN_Contest_Submissions_-_The_Four_of_Us_Are_Dying__Beat2x__Zik-Zak_Vita__Sonic_SMS_3_Timelines.jpg">The FuHEN - PS Vita Contest is underway and we have already 4 submissions that have been approved for entry: We have seen 3 Game Ports submitted and also a new Original Game for the PS Vita.  If you have not heard yet, there is a a PS Vita Contest that is currently on going and the submission period for projects is fromJuly 22nd, 2023  September 22nd, 2023You can learn more about the contest prizes, rules and the submissions process at the official website.We have an ambitious Original Game that has been in the making for awhile and aims to provide AAA graphics and effects. The gameplay is still early but the developer has big plans for the game called "The Four of us are Dying".byJosh Allen / noradninja.this game is a Silent Hill 2/Alan Wake style survival horror game.In the Game Port category we have seen 3 entries approved we have seen PS Vita legendary developer@Rinnegatamanteprovide three projects the first being"Beat2k" (A Dance Dance Revolution Clone)and also the developer has entered"Zik-Zak Vita"which is a great game that testes your reaction time getting through each level , Then@Rinnegatamantealso submitted "Eldritch" is a first person shooter inspired by games like roguelikes, immersive sims, and H. P. Lovecraft.  Then tou round out the first wave of entries we have seen developer@MDashKenter"Sonic SMS 3 Timelines"which is port of a fan made Sonic game that takes Sonic on a new adventure.​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Saints_Row_Undercover_-_A_Unfinished_PSP_Game_By_Volition_Tweaked_A_Bit_To_Run_On_Your_PS3.jpg">Going back to a previous news post of over a month ago that got quite a bit of attention. Here are some further developments from that thread that might interest a few who would like to try the unreleased game on your custom firmware PlayStation 3. The game in question isSaints Row: Undercover for the PSP, a game that was</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2023-6-21T17:22:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>The Future of the PlayStation 2 Internal Hard Drive by Berion</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/The_Future_of_the_PlayStation_2_Internal_Hard_Drive_by_Berion.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/the-future-of-the-playstation-2-internal-hard-drive-by-berion.40924/</target>
+		<mtrl id="0" lastm="2016-3-7T10:58:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PSP Plugin PowerFlashLight+ Version 3.0 Released</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PSP_Plugin_PowerFlashLight+_Version_3.0_Released.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/psp-plugin-powerflashlight-version-3-0-released.9335/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/The_Future_of_the_PlayStation_2_Internal_Hard_Drive_by_Berion.jpg">The Future of the PlayStation 2 Internal Hard DriveWe have recently started 2023, and the so-called PlayStation 2 console scene is surprisingly still doing well, yes, even better than ever before and better than on not one newer platform! And one of the leading projects that anyone interested can mention without a long moment's hesitation isOpen PS2 Loader- the successor to HDLoader and USB Advance, a program used to run games from USB, i.Link (FireWire), MX4SIO (a reader for e.g. SDXC in the Memory Card slot), the local network and the internal hard drive, whose operation is still stuck in the darkness of the Middle Ages.Before I get into specifics, it's worth recalling what the current, extremely exotic logical disk structure that Sony designed looks like, and which is supported by every software written to date that supports theinternalhard drive. Without understanding the APA, you won't understand the idea of a hybrid drive. It is only later that I will discuss the concept of building a Frankenstein with something modern, familiar, while providing a full or residual layer of compatibility.​</description>
-			<creators>Berion</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PSP_Plugin_PowerFlashLight+_Version_3.0_Released.jpg">Developer MixeryMaxe dropped by with a update to one of his PlayStation Portable plugins. PowerFlashLight has seen many updates over the years and this update serves to trim down some unnecessary functionality. PowerFlashLight will get your PSP acting as a light source and more.</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2023-5-4T20:47:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>(Update) Baryon Sweeper: Unbrick PSP 1000, 2000, 3000 /PSP Slim 04g, 07g, 09g/ PSP Street 11g  model</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/(Update)_Baryon_Sweeper_Unbrick_PSP_1000,_2000,_3000_PSP_Slim_04g,_07g,_09g_PSP_Street_11g__model.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/update-baryon-sweeper-unbrick-psp-1000-2000-3000-psp-slim-04g-07g-09g-psp-street-11g-model.32503/</target>
+		<mtrl id="0" lastm="2016-3-5T12:02:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>ScummVM Multi System Game Emulator Update Released - Version 1.8.0</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/ScummVM_Multi_System_Game_Emulator_Update_Released_-_Version_1.8.0.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/scummvm-multi-system-game-emulator-update-released-version-1-8-0.9320/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/(Update)_Baryon_Sweeper_Unbrick_PSP_1000,_2000,_3000_PSP_Slim_04g,_07g,_09g_PSP_Street_11g__model.jpg">Update (May - 2023):Now PSP models Slim 04g, 07g, 09g models, & the PSP Street 11g model are now supported >> See Details from@zecoxaoin the post via>>this link<<Original Article (Jan 2021): For more than ten years PSP-3000 owner's have been used to the fact that their device couldn't be restored (unbricked) at home. Many fear the brick as if it's the worst nightmare that could ever happen when experimenting with your device.  Even worse in 2021, now because warranty for all PSPs are over, so bricked later (psp) models go either for parts or are doomed to dust in boxes and drawers they'd never return from... that is, if this thread didn't appear with the release ofBaryon Sweeper R1:^)​</description>
-			<creators>zecoxao</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/ScummVM_Multi_System_Game_Emulator_Update_Released_-_Version_1.8.0.jpg">ScummVM emulator has received another update since we last reported the PlayStation 2 versionhere.This update adds support for more games and also support for the Raspberry Pi and the open source gaming console called the GCW0.</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2023-4-1T01:06:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS3HEN v3.2.2 - New Additions/ Fixes & Backported Firmware's  Support from Team PS3Xploit.</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3HEN_v3.2.2_-_New_Additions_Fixes_&_Backported_Firmware's__Support_from_Team_PS3Xploit..jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ps3hen-v3-2-2-new-additions-fixes-backported-firmwares-support-from-team-ps3xploit.40129/</target>
+		<mtrl id="0" lastm="2016-3-5T11:03:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Mathieu Hervais Releases PS3 & PSP Communication Processor Exploits</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Mathieu_Hervais_Releases_PS3_&_PSP_Communication_Processor_Exploits.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/mathieu-hervais-releases-ps3-psp-communication-processor-exploits.9315/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3HEN_v3.2.2_-_New_Additions_Fixes_&_Backported_Firmware's__Support_from_Team_PS3Xploit..jpg">Update 4/25/2023: PS3HEN 3.2.2 has been released. Check the changelog for details.We have seen a lot of developer's back in the fold after the4.90 official firmware updatethat hit the PlayStation 3 several weeks ago. We seen a couple weeks ago developer's@Joonieand@esc0rtd3wof thePs3Xploit Teamupdate Ps3HEN to v3.2.0, now we have a new update with the release of v3.2.1..Ps3HENis a Homebrew Enabler that is an alternative exploit to custom firmware (cfw) for models that can not install a CFW. unlikecustom firmwareon the ps3, Ps3HEN has the ability to run on all ps3 model's, while many feature that are in CFW can be found in PS3HEN it does not completely replicate the CFW experience so if your PS3 has the ability to run a CFW that is the better route, but Ps3HEN is a very powerful and capable exploit. See a CFW vs Ps3HEN comparison>here<for a rundown of feature's.In the update v3.2.1, there has been a number of changes and added support to Ps3HEN.@Jooniehas released a backport ofHFW (hybrid firmware) for 4.83, this was done as Ps3HEN has provided support for 4.83 FW, plus 4.84 DEX firmware is also now supported.  There has been a number of other supported firmware and various other changes in the payload and plugin to PS3HEN, Plus this fixes the wMM bug that was creating freezing issue in v3.2.0.  See latest changelogs provided below.​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Mathieu_Hervais_Releases_PS3_&_PSP_Communication_Processor_Exploits.jpg">Us long time 'sceners' all know the name Mathieulh as he was involved in many scenes. Most notable to me would be the PlayStation 3 scene because that was the only scene I really got involved with. Those days back when the PS3 was a hack in progress he was very active and some would remember his constant hints to exploits</description>
+			<creators>Tranced</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2023-3-23T18:53:00.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>The OFFICIAL bguerville's PS3 Toolset is back online with a new official URL and 4.90 Support !!!</desc>
