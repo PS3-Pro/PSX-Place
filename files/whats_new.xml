@@ -81,30 +81,6 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/4.92_Evilnat_Custom_Firmware_(w_Cobra_v8.5)_Released_-_CEX,PEX,D-PEX,DEX_builds.jpg">UPDATExai_plugin:New Overclocking Tools (change on the fly) / New ps2netemu improvements added.Following the4.92 firmware updatedeveloper's from around the community have been updating various projects. This time around PS3 CFW developer@Evilnatdrops by the forumand leave's us with a suite of ps3 custom firmware's that support 4.92 firmware.  4 Flavor's (CEX, PEX, D-PEX & DEX) are available for 4.92 Evilnat CFW, depending on your console/taste, all builds are equipped with theCobra v8.5 payloadto provide expanded feature set over Standard CFW's.If you are already on PS3 CFW, updating is a breeze, you just need to install the new CFW PUP file via the official USB Method and you will be on Evilnat's latest release. If you have updated to 4.92 OFW you will have to wait, as you will have re-exploit your ps3 console to allow for a Custom Firmware installation once again. The good news is that developer@bguervilleshould be rolling out a new update soon for the PS3 Toolset that support 4.92 firmware.  The offline tool CFW Flash Writer may take longer for the community to update it, but we hope to see an update for that tool soon as well.​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2025-3-9T11:09:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS3HEN 3.4.0 + HFW 4.92 - Officially released by esc0rtd3w of Team PS3Xploit</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3HEN_3.4.0_+_HFW_4.92_-_Officially_released_by_esc0rtd3w_of_Team_PS3Xploit.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ps3hen-3-4-0-hfw-4-92-officially-released-by-esc0rtd3w-of-team-ps3xploit.46959/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3HEN_3.4.0_+_HFW_4.92_-_Officially_released_by_esc0rtd3w_of_Team_PS3Xploit.jpg">PS3 Developer@esc0rtd3whas released the latest update toPS3HENwith support to recent firmware updateof 4.92.  Along with the PS3HEN update is the release ofHybrid Firmware (HFW), which is just an official firmware (4.92) with the "silk_webkit.sprx" file replace from 4.82 OFW (that has a vulnerability patched in 4.83 OFW, the last attempt Sony made to curb homebrew). HFW was created by@Joonieand has been apart of this 4.92 release of well.There have been a number of new changes in this update marked v3.4.0 as it does not just provide 4.92 support but various changes as seen in the changelog provided​</description>
-			<creators>STLcardsWS</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2025-3-5T21:26:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS3 4.92 Official FIrmware has been released - PS3 CFW & PS3HEN DO NOT UPDATE to 4.92</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3_4.92_Official_FIrmware_has_been_released_-_PS3_CFW_&_PS3HEN_DO_NOT_UPDATE_to_4.92.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ps3-4-92-official-firmware-has-been-released-ps3-cfw-ps3hen-do-not-update-to-4-92.46837/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3_4.92_Official_FIrmware_has_been_released_-_PS3_CFW_&_PS3HEN_DO_NOT_UPDATE_to_4.92.jpg">As expectedthe PlayStation 3 has receivedfirmware update 4.92, if you are currently usingPS3HENorCFWyouSHOULD NOT updateyour PS3 Firmware to 4.92 at this time. Otherwise you will be temporary losing your jailbreak's and ability to run homebrew on the console, until developer's release new exploits/jailbreaks that support the new 4.92 firmware update. There isa processin which need to take place for things to catch up, as developer's@bguerville@esc0rtd3w@Evilnatand other's havebeen readyfor the update to launch to get to work quickly.We learned last week that@bguervillehas an update for the PS3 Toolset with new features being deployed as the developer explains in these two post >1<​</description>
-			<creators>STLcardsWS</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2024-12-25T12:44:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Update 4.91.3  > > > [PS3 CFW] Evilnat's 4.91.2 Custom Firmware's Collection Released</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Update_4.91.3_____[PS3_CFW]_Evilnat's_4.91.2_Custom_Firmware's_Collection_Released.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/update-4-91-3-ps3-cfw-evilnats-4-91-2-custom-firmwares-collection-released.45604/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Update_4.91.3_____[PS3_CFW]_Evilnat's_4.91.2_Custom_Firmware's_Collection_Released.jpg">UPDATEJanuary 2025:CFW Evilnat 4.91.3[BETA 1] released>>Click Here<<December '24:Merry Christmas and Happy Holiday's to everyone, PS3 Custom firmware developer@Evilnathas dropped by the psx-place forum's on this Christmas day to present the final build(4.91.2)of the developer's ps3 Custom Firmware suite, after a series of Open Beta releases, v4.91.2  now officially drops the "BETA" tag and in its final form for 4.91.2.  For discussion and full details about this PS3 firmware release and the various cfw types offered in this suite of releases, checkout the developer's release thread here in the forum's detailing all the various features and functions in Evilnat's latest releases notes and details for4.91 Evilnat's CFW (w/ Cobra v8.5).​</description>
-			<creators>STLcardsWS</creators>
-		</mtrl>
 		<mtrl id="0" lastm="2024-11-8T00:28:00.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>New PS1/PS2 Emulation Features for PS3 CFW user's + Evilnat's 4.91.2-BETA 12</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/New_PS1PS2_Emulation_Features_for_PS3_CFW_user's_+_Evilnat's_4.91.2-BETA_12.jpg</url>
@@ -119,14 +95,6 @@
 			<target type="u">https://www.psx-place.com/threads/cfw-flash-writer-unofficial-4-91-update.44229/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/CFW_Flash_Writer_-_Unofficial_4.91_update.jpg">Developer@aldostoolshas released an unofficial update for theCFW Flash Writerto supportHFW 4.91on the PS3. This can be a secondary candidate for allowing Custom Firmware installations whenbguerville's PS3Toolset (https://www.ps3toolset.com/bgtoolset/)isn't accessible or a self hosting offline option. However, ThePs3toolset is still the preferred  and safest method when available for hacking your capable ps3 model so its ready for PS3 Custom Firmware installations.​</description>
-			<creators>STLcardsWS</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2024-4-30T22:05:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PPPwn - PlayStation 4 PPPoE RCE - (The First PS4 Kernel RCE - Supporting upto FW 11.00) by TheFlow</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PPPwn_-_PlayStation_4_PPPoE_RCE_-_(The_First_PS4_Kernel_RCE_-_Supporting_upto_FW_11.00)_by_TheFlow.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/pppwn-playstation-4-pppoe-rce-the-first-ps4-kernel-rce-supporting-upto-fw-11-00-by-theflow.43655/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PPPwn_-_PlayStation_4_PPPoE_RCE_-_(The_First_PS4_Kernel_RCE_-_Supporting_upto_FW_11.00)_by_TheFlow.jpg">Scene Developer & HackerTheFlowwho has been a legend in various PlayStation Scene's, has done it yet again!! This time the developer has released "The first PlayStation 4 Kernel RCE, Supporting FWs upto 11.00".With the newly released (PoC) jailbreak the community will be able to update popular Homebrew Enabler's (Mira & GoldHEN) to support firmware 11.00 with this new jailbreak that TheFlow has disclosed (CVE-2006-4304) through the bounty program and has been patched in the latest PS4 firmware available​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2024-3-16T23:56:00.000Z" until="2100-12-31T23:59:00.000Z">
@@ -167,6 +135,30 @@
 			<target type="u">https://www.psx-place.com/threads/movian-m7-by-deank-libav-swapped-for-ffmpeg-slight-name-change.42453/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Movian_M7_(by_deank)__-_libav_swapped_for_ffmpeg__&_slight_name_change.jpg">Developer@deankwho has been continuing development of the (modded version) of the original media center that started on the PS3(now runs on Android, Amazon Fire Stick, MacOS ,Windown ,Linux  & Raspberry pi). The media center originally was named "Showtime" on the PS3 but later renamed to "Movian" by the original developerAndreas Omanyears ago.Since that time, we have not seen the official project do much in recent years (currentlyhome siteis down as of writing), but developer deank has been keeping the project alive and evolving (see changelogsover at brewologyfor all archived changes). One of the biggest changes you will see within Movian-M7 compared to older version, is the change from the older (abandoned) "libav" video decoders/parsers to the current "ffmpeg" that was just replaced in the recent M7 update . This should improve compatibility and make for a more up-to date and versatile media player for all supported platforms including the PS3.Also, deank  has made a quick stop in the forum's, then to see a reported issue and provided a fix (seen here) that is now present in v7.0.2​</description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2023-4-1T01:06:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS3HEN v3.2.2 - New Additions/ Fixes & Backported Firmware's  Support from Team PS3Xploit.</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3HEN_v3.2.2_-_New_Additions_Fixes_&_Backported_Firmware's__Support_from_Team_PS3Xploit..jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps3hen-v3-2-2-new-additions-fixes-backported-firmwares-support-from-team-ps3xploit.40129/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3HEN_v3.2.2_-_New_Additions_Fixes_&_Backported_Firmware's__Support_from_Team_PS3Xploit..jpg">Update 4/25/2023: PS3HEN 3.2.2 has been released. Check the changelog for details.We have seen a lot of developer's back in the fold after the4.90 official firmware updatethat hit the PlayStation 3 several weeks ago. We seen a couple weeks ago developer's@Joonieand@esc0rtd3wof thePs3Xploit Teamupdate Ps3HEN to v3.2.0, now we have a new update with the release of v3.2.1..Ps3HENis a Homebrew Enabler that is an alternative exploit to custom firmware (cfw) for models that can not install a CFW. unlikecustom firmwareon the ps3, Ps3HEN has the ability to run on all ps3 model's, while many feature that are in CFW can be found in PS3HEN it does not completely replicate the CFW experience so if your PS3 has the ability to run a CFW that is the better route, but Ps3HEN is a very powerful and capable exploit. See a CFW vs Ps3HEN comparison>here<for a rundown of feature's.In the update v3.2.1, there has been a number of changes and added support to Ps3HEN.@Jooniehas released a backport ofHFW (hybrid firmware) for 4.83, this was done as Ps3HEN has provided support for 4.83 FW, plus 4.84 DEX firmware is also now supported.  There has been a number of other supported firmware and various other changes in the payload and plugin to PS3HEN, Plus this fixes the wMM bug that was creating freezing issue in v3.2.0.  See latest changelogs provided below.​</description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2023-3-23T18:53:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>The OFFICIAL bguerville's PS3 Toolset is back online with a new official URL and 4.90 Support !!!</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/The_OFFICIAL_bguerville's_PS3_Toolset_is_back_online_with_a_new_official_URL_and_4.90_Support_!!!.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/the-official-bguervilles-ps3-toolset-is-back-online-with-a-new-official-url-and-4-90-support.40076/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/The_OFFICIAL_bguerville's_PS3_Toolset_is_back_online_with_a_new_official_URL_and_4.90_Support_!!!.jpg">Last week, we seen developer@bguervillereturn, and he brought theOFFICIAL bguerville PS3 Toolset back onlinewith an new official domain >ps3toolset.com.At first the developer brought back support for 4.80 - 4.89 OFW, but the 4.90 update was not ready quite yet during the relaunch of the website. After testing the 4.90 update, its now ready for a release and has been deployed at the new official URL (ps3toolset.com).PS3 User's should be aware the ps3xploit team lost some of the domain's of their website's late in 2022. Currently the official team website isps3xploit.me. The team lost it's (.com / .net / .org) domains and those are no longer owned by the team (read more here). Also, beware there are unfortunately a number of fraudulent / scammer's posing themselves as the PS3Xploit Team with cloned websites & domain's, .cc / .xyz are some of those fraudulent URL's posing as the team and/orhosting dangerous incomplete software.  Take a look here in>this thread<from@esc0rtd3win the official PS3Xploit Team forums here at psx-place for a listing of all the official domains of the PS3Xploit Team and status, always a good place to check (and spread the word) so you do not get scammed or get fooled into using something dangerous.Now with the official bguerville toolset released and also an update to support4.90...​</description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2023-3-4T11:07:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Exploiting 4.90 OFW (Installing CFW & Running PS3HEN) Flash Writer / PS3HEN now supporting 4.90 FW</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Exploiting_4.90_OFW_(Installing_CFW_&_Running_PS3HEN)_Flash_Writer__PS3HEN_now_supporting_4.90_FW.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/exploiting-4-90-ofw-installing-cfw-running-ps3hen-flash-writer-ps3hen-now-supporting-4-90-fw.39772/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Exploiting_4.90_OFW_(Installing_CFW_&_Running_PS3HEN)_Flash_Writer__PS3HEN_now_supporting_4.90_FW.jpg">(Update:PS3HEN 3.2.0w/ 4.90 Support Released)Exploiting a PlayStation 3 console in firmware 4.89 was a bit of a mess to say the least and added alot of confusion that was compounded by bad advice's on various platforms and even the emergence of dangerous software. Withincomplete versionof the closed source PS3 Toolset by bguerville (of PS3Xploit Team) that were being distributed around the net, Causing random bricks to user's as they were not using the true Toolset as it was not the Original Code of the Toolset (just partial code and some bypasses/removal of check's, that are normally designed to make the toolset safe and brick-proof originally in the official. but the incomplete you have to hope everything goes smoothly) .So, many great developer's that are active in the PS3 scene now and whom have return to the scene and a new name have come together with psx-place to bring you the proper exploration of 4.90 on your PS3 Console.  So we do not have the same confusion in the scene that we seen in 4.89 and the unofficial brick-ware floating from unreliable and untrustworthy sources and software..We want to set the stage for the safest methods from the names of developer's you trust that been in the scene for year's and the names who have been advancing the community for a long time.Not having to rely on the untrustworthy sources and services.​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2023-12-27T22:41:00.000Z" until="2100-12-31T23:59:00.000Z">
@@ -232,30 +224,6 @@
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/(Update)_Baryon_Sweeper_Unbrick_PSP_1000,_2000,_3000_PSP_Slim_04g,_07g,_09g_PSP_Street_11g__model.jpg">Update (May - 2023):Now PSP models Slim 04g, 07g, 09g models, & the PSP Street 11g model are now supported >> See Details from@zecoxaoin the post via>>this link<<Original Article (Jan 2021): For more than ten years PSP-3000 owner's have been used to the fact that their device couldn't be restored (unbricked) at home. Many fear the brick as if it's the worst nightmare that could ever happen when experimenting with your device.  Even worse in 2021, now because warranty for all PSPs are over, so bricked later (psp) models go either for parts or are doomed to dust in boxes and drawers they'd never return from... that is, if this thread didn't appear with the release ofBaryon Sweeper R1:^)​</description>
 			<creators>zecoxao</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2023-4-1T01:06:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS3HEN v3.2.2 - New Additions/ Fixes & Backported Firmware's  Support from Team PS3Xploit.</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3HEN_v3.2.2_-_New_Additions_Fixes_&_Backported_Firmware's__Support_from_Team_PS3Xploit..jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ps3hen-v3-2-2-new-additions-fixes-backported-firmwares-support-from-team-ps3xploit.40129/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS3HEN_v3.2.2_-_New_Additions_Fixes_&_Backported_Firmware's__Support_from_Team_PS3Xploit..jpg">Update 4/25/2023: PS3HEN 3.2.2 has been released. Check the changelog for details.We have seen a lot of developer's back in the fold after the4.90 official firmware updatethat hit the PlayStation 3 several weeks ago. We seen a couple weeks ago developer's@Joonieand@esc0rtd3wof thePs3Xploit Teamupdate Ps3HEN to v3.2.0, now we have a new update with the release of v3.2.1..Ps3HENis a Homebrew Enabler that is an alternative exploit to custom firmware (cfw) for models that can not install a CFW. unlikecustom firmwareon the ps3, Ps3HEN has the ability to run on all ps3 model's, while many feature that are in CFW can be found in PS3HEN it does not completely replicate the CFW experience so if your PS3 has the ability to run a CFW that is the better route, but Ps3HEN is a very powerful and capable exploit. See a CFW vs Ps3HEN comparison>here<for a rundown of feature's.In the update v3.2.1, there has been a number of changes and added support to Ps3HEN.@Jooniehas released a backport ofHFW (hybrid firmware) for 4.83, this was done as Ps3HEN has provided support for 4.83 FW, plus 4.84 DEX firmware is also now supported.  There has been a number of other supported firmware and various other changes in the payload and plugin to PS3HEN, Plus this fixes the wMM bug that was creating freezing issue in v3.2.0.  See latest changelogs provided below.​</description>
-			<creators>STLcardsWS</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2023-3-23T18:53:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>The OFFICIAL bguerville's PS3 Toolset is back online with a new official URL and 4.90 Support !!!</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/The_OFFICIAL_bguerville's_PS3_Toolset_is_back_online_with_a_new_official_URL_and_4.90_Support_!!!.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/the-official-bguervilles-ps3-toolset-is-back-online-with-a-new-official-url-and-4-90-support.40076/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/The_OFFICIAL_bguerville's_PS3_Toolset_is_back_online_with_a_new_official_URL_and_4.90_Support_!!!.jpg">Last week, we seen developer@bguervillereturn, and he brought theOFFICIAL bguerville PS3 Toolset back onlinewith an new official domain >ps3toolset.com.At first the developer brought back support for 4.80 - 4.89 OFW, but the 4.90 update was not ready quite yet during the relaunch of the website. After testing the 4.90 update, its now ready for a release and has been deployed at the new official URL (ps3toolset.com).PS3 User's should be aware the ps3xploit team lost some of the domain's of their website's late in 2022. Currently the official team website isps3xploit.me. The team lost it's (.com / .net / .org) domains and those are no longer owned by the team (read more here). Also, beware there are unfortunately a number of fraudulent / scammer's posing themselves as the PS3Xploit Team with cloned websites & domain's, .cc / .xyz are some of those fraudulent URL's posing as the team and/orhosting dangerous incomplete software.  Take a look here in>this thread<from@esc0rtd3win the official PS3Xploit Team forums here at psx-place for a listing of all the official domains of the PS3Xploit Team and status, always a good place to check (and spread the word) so you do not get scammed or get fooled into using something dangerous.Now with the official bguerville toolset released and also an update to support4.90...​</description>
-			<creators>STLcardsWS</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2023-3-4T11:07:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Exploiting 4.90 OFW (Installing CFW & Running PS3HEN) Flash Writer / PS3HEN now supporting 4.90 FW</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Exploiting_4.90_OFW_(Installing_CFW_&_Running_PS3HEN)_Flash_Writer__PS3HEN_now_supporting_4.90_FW.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/exploiting-4-90-ofw-installing-cfw-running-ps3hen-flash-writer-ps3hen-now-supporting-4-90-fw.39772/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Exploiting_4.90_OFW_(Installing_CFW_&_Running_PS3HEN)_Flash_Writer__PS3HEN_now_supporting_4.90_FW.jpg">(Update:PS3HEN 3.2.0w/ 4.90 Support Released)Exploiting a PlayStation 3 console in firmware 4.89 was a bit of a mess to say the least and added alot of confusion that was compounded by bad advice's on various platforms and even the emergence of dangerous software. Withincomplete versionof the closed source PS3 Toolset by bguerville (of PS3Xploit Team) that were being distributed around the net, Causing random bricks to user's as they were not using the true Toolset as it was not the Original Code of the Toolset (just partial code and some bypasses/removal of check's, that are normally designed to make the toolset safe and brick-proof originally in the official. but the incomplete you have to hope everything goes smoothly) .So, many great developer's that are active in the PS3 scene now and whom have return to the scene and a new name have come together with psx-place to bring you the proper exploration of 4.90 on your PS3 Console.  So we do not have the same confusion in the scene that we seen in 4.89 and the unofficial brick-ware floating from unreliable and untrustworthy sources and software..We want to set the stage for the safest methods from the names of developer's you trust that been in the scene for year's and the names who have been advancing the community for a long time.Not having to rely on the untrustworthy sources and services.​</description>
-			<creators>STLcardsWS</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2023-3-2T20:38:00.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>Rinnegatamante ports 6 new title's  (Anomaly / Funky Smuggler's / Sleepwalker's Journey / ........</desc>
@@ -1041,85 +1009,85 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Apollo_Save_Tool_v1.4.0_-_PS1__PS2_Classic_Save_Management.Added.jpg">Developer@bucanerowho has been quite the active developer in the PS3 Scene in 2020 /19, more on some of his latest progress onthis post here with PSL!GHT advancements. but for now lets look at the recently updated utility called toApollo Save Toolas it matures toversion 1.4.0, This is a ps3 homebrew that runs on the console and allows for patching and unlocking game save to use on your games as normally they are locked to a console and are not freely sharable (like in the days of an removable memory card, somehow sony went backwards with saves on the PS3). Therefore this utility can be very convenient especially on many CFW firmware's (& HEN) that may not have the luxury of using something like "Fake Save Data owner" a popular dex feature found in cfw's likeREBUG REX,but even those user's will see a ton of use and functionality for this great utility as it packed with various abilities (see changelog/read me tabs for a full rundown).​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2017-4-2T03:17:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>A New PS4 kernel exploit by qwertyoruiop</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/A_New_PS4_kernel_exploit_by_qwertyoruiop.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/a-new-ps4-kernel-exploit-by-qwertyoruiop.13294/</target>
+		<mtrl id="0" lastm="2015-6-3T11:28:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>New PlayStation 4 Models Incoming</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/New_PlayStation_4_Models_Incoming.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/new-playstation-4-models-incoming.2030/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/A_New_PS4_kernel_exploit_by_qwertyoruiop.jpg">Things are starting to get a bit interesting in the PlayStation 4 Hacking Scene, as well known hackerqwertyoruiop‏a couple of days ago releaseda webkit exploit for 4.0x firmware(non 4.50), however this exploit needs a kexploit (kernel exploit) on the same level as something like 1.76 firmware and did not work in 4.50. So the hacker has been working on a kernel exploit as well and in 5 days the developer has not only a kernel exploit but one that works for 4.50 but with 4.50 we do not have an entry point  to execute the kernel exploit, which is where the webkit exploit comes in. So 4.50 user's appear has some strong hope , .​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/New_PlayStation_4_Models_Incoming.jpg">​</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2017-3-15T20:32:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PlayStation Now soon to add PS4 Games to playable library</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PlayStation_Now_soon_to_add_PS4_Games_to_playable_library.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/playstation-now-soon-to-add-ps4-games-to-playable-library.13116/</target>
+		<mtrl id="0" lastm="2015-6-1T09:49:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PSP Homebrew: LangSwapper Plugin Version 1.6 Released</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PSP_Homebrew_LangSwapper_Plugin_Version_1.6_Released.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/psp-homebrew-langswapper-plugin-version-1-6-released.2006/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PlayStation_Now_soon_to_add_PS4_Games_to_playable_library.jpg">For those who don't know,PlayStation Nowwill now support PS4 game streaming. PlayStation Now as we already know supports streaming hundreds of PS3 games to your PS4 or PC. For 2017 PlayStation Now is now expanding to one of the newest platforms, PS4. All of the games in this service even PS4 games will be included with a single PlayStation Now subscription. In a few weeks Sony will be doing private tests with PS4 games on PlayStation Now. If you are an active PlayStation Now subscriber keep a close eye on your email inbox (the email you use for PlayStation Now) as you might get an invite!​</description>
-			<creators>SockNastez</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PSP_Homebrew_LangSwapper_Plugin_Version_1.6_Released.jpg">​</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2017-3-10T14:00:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PSXHAX.com provides more fake PS4 news (They want your pageclicks for purposely misleading you)</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PSXHAX.com_provides_more_fake_PS4_news_(They_want_your_pageclicks_for_purposely_misleading_you).jpg</url>
-			<target type="u">https://www.psx-place.com/threads/psxhax-com-provides-more-fake-ps4-news-they-want-your-pageclicks-for-purposely-misleading-you.13065/</target>
+		<mtrl id="0" lastm="2015-5-25T13:06:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Yifan Lu Calls Out To Programmers To Help With PS Vita Open SDK - Must Read</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Yifan_Lu_Calls_Out_To_Programmers_To_Help_With_PS_Vita_Open_SDK_-_Must_Read.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/yifan-lu-calls-out-to-programmers-to-help-with-ps-vita-open-sdk-must-read.1964/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PSXHAX.com_provides_more_fake_PS4_news_(They_want_your_pageclicks_for_purposely_misleading_you).jpg">Well this is nothing new but is very sad and well i figure I needed to speak on it a bit, since i get this questions about these type of claims often,, Scene sites are promotingFAKE NEWSleft and right., It really should tell the user who is thecreditable news sources in this scene and who is not.Why is psx-place.com not reporting the latest PS4 "progress" about 4.50 PS4 LINUX that has spewed out these fake news sites mainpage? Well, the simple answer isWE DO NOT REPORT FAKE NEWS,so that would be the main reason as there is no legitimacy to the claims of a PS4 4.50 Linux Hack. There is not much news for the end user on PS4 hacking,most of things stay private until they are ready or the time is right .  Did you know about other groundbreaking exploits in advance or did they just appear?​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Yifan_Lu_Calls_Out_To_Programmers_To_Help_With_PS_Vita_Open_SDK_-_Must_Read.jpg">We all have been hoping to see developers and hackers alike move away, albeit not too far away for some, from PSP Emu exploits to finding a native PS Vita exploit for the handheld. Over the last few months some developers have been more openly showing their interest in just that. What we have not reported here and what I would like to shed some light on now is aspeculatedupcoming Vita PSM exploit.[break].[/break]What is PSM?PlayStation Mobile is a SDK and publishing utility aimed at indie developers which Sony is to shutdown from June 2015. Yifan Lu through various Tweets suggested to Vita owners that one should sign up for a PSM licence, hinting as some have taken it, that something is about to come. Many have singed up for said licence but Sony recently announced that due to aspike in signupsthat not all will be approved before the shutdown. However, in a new postvia Yifan Lu's blog,he states that should you not register in time or not get approved, one just needs the "developer assistant installed on your Vita." You can find tutorials on how to install the developer assistanthereandhere,thanks to psx-place memberHakazefor the heads up.Now going back to the original subject of this article. Developer Yifan Lu is looking for developers and programmers to aid in creating a open source SDK for the PS Vita. This also lends to my theory that something in the PS Vita scene is about to happen. The developer goes on...</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2017-3-9T11:00:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>4.50 OFW has been released - With many new expected features such as External HDD Support</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/4.50_OFW_has_been_released_-_With_many_new_expected_features_such_as_External_HDD_Support.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/4-50-ofw-has-been-released-with-many-new-expected-features-such-as-external-hdd-support.13049/</target>
+		<mtrl id="0" lastm="2015-5-20T12:01:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>TrueAncestor PKG Repacker Version 2.00 Released</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/TrueAncestor_PKG_Repacker_Version_2.00_Released.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/trueancestor-pkg-repacker-version-2-00-released.1936/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/4.50_OFW_has_been_released_-_With_many_new_expected_features_such_as_External_HDD_Support.jpg">The bigupdate (v4.50)fromSonyis now Live on your PlayStation 4 Console after graduating from the closed beta stage the past weeks. This update brings some nice new features for user's and one that make sense for everyone with allowing External HDDs to store your game content & media. Why Sony pushes small HDDs on the consoles and then relys heavily on digital downloads these days were always a mystery to me, user's are often left with little spare space which has no doubt affect many of our purchases and decisions to purchase a game at times, now with expanded space and with external HDD options that will give us all a bit more flexibility and i would expect some additional game sales for Sony as well resulting from this new inclusions to4.50 OFW.. Maybe one day Sony can take a page from many of the devs and allow us to stream our games from our local networks, Until then checkout the vast amount of changes that Sony has detailed in recent days​</description>
-			<creators>STLcardsWS</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/TrueAncestor_PKG_Repacker_Version_2.00_Released.jpg">​</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2017-2-21T23:48:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Enable PS4 web-browser on 1.76 with deactivated/no PSN account.</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Enable_PS4_web-browser_on_1.76_with_deactivatedno_PSN_account..jpg</url>
-			<target type="u">https://www.psx-place.com/threads/enable-ps4-web-browser-on-1-76-with-deactivated-no-psn-account.12862/</target>
+		<mtrl id="0" lastm="2015-5-20T10:26:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Deank Rolling Out More Updates For multiMAN - v04.70.02 Out</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Deank_Rolling_Out_More_Updates_For_multiMAN_-_v04.70.02_Out.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/deank-rolling-out-more-updates-for-multiman-v04-70-02-out.1933/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Enable_PS4_web-browser_on_1.76_with_deactivatedno_PSN_account..jpg">With 1.76 having all the hacks recently buying a console on 1.76 can sometimes result in an unactivated psn account meaning your browser won't work. So basically this guide will allow you to enabled the web-browser of a PS4 if it denies you access. This is PERMANENT and requires NO activated PSN account. Originally there was no public or easy fix for this kind of thing until now, I am not writing a tutorial step-by-step since I thought a visual guide for this kind of thing is way easier and shorter than following steps. Luckily for youMODDED WARFAREmade a clear and easy tutorial to do this. So if you are someone stuck in this situation give it a try, good luck!​</description>
-			<creators>SockNastez</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Deank_Rolling_Out_More_Updates_For_multiMAN_-_v04.70.02_Out.jpg">​</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2017-2-14T22:30:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS4 Slim Bundles Price drop to $249.99:  A preemptive move with Nintendo Switch Incoming?</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_Slim_Bundles_Price_drop_to_$249.99__A_preemptive_move_with_Nintendo_Switch_Incoming.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ps4-slim-bundles-price-drop-to-249-99-a-preemptive-move-with-nintendo-switch-incoming.12756/</target>
+		<mtrl id="0" lastm="2015-5-13T06:56:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>System Manager Updated By Estwald</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/System_Manager_Updated_By_Estwald.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/system-manager-updated-by-estwald.1877/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_Slim_Bundles_Price_drop_to_$249.99__A_preemptive_move_with_Nintendo_Switch_Incoming.jpg">Want to buy a PS4? Think it's too expensive? Well now is your chance to buy a cheaper PS4! That's right February 12th through February 25th Sony is dropping the prices of bundles to $250. It is just the Slim PS4 bundle prices being dropped unfortunately. I have no clue as to what firmware these bundles are on that you can research into yourself. Additionally the Switch is coming out March 3rd in the U.S for $300 so this move by Sony seems reasonable to possibly steal some purchases from Nintendo.The Call of Duty: Infinite Warfare PS4 Bundleand the Uncharted 4 PS4 Bundle are the two bundles at the cheaper price of $250. Additionally if you order the exclusive Call of Duty: Infinite Warfare PS4 Bundle in Glacier White through Walmart (Walmart.com) you also get the $250 price promotion​</description>
-			<creators>SockNastez</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/System_Manager_Updated_By_Estwald.jpg">​</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2017-2-14T19:06:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>Ukko's Journey - BD-J Homebrew Game playable on OFW: PS4/PS3/X1 (via burned Media) & PS3 CFW (HDD)</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Ukko's_Journey_-_BD-J_Homebrew_Game_playable_on_OFW_PS4PS3X1_(via_burned_Media)_&_PS3_CFW_(HDD).jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ukkos-journey-bd-j-homebrew-game-playable-on-ofw-ps4-ps3-x1-via-burned-media-ps3-cfw-hdd.12753/</target>
+		<mtrl id="0" lastm="2015-5-4T07:46:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Universal Media Server 5.1.3 With Improvements & Fixes</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Universal_Media_Server_5.1.3_With_Improvements_&_Fixes.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/universal-media-server-5-1-3-with-improvements-fixes.1850/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Ukko's_Journey_-_BD-J_Homebrew_Game_playable_on_OFW_PS4PS3X1_(via_burned_Media)_&_PS3_CFW_(HDD).jpg">Ukko's Journeywas developed originally for cellphones back in 2008/2009 by LuBlu Entertainment. In 2017 the team decided to port the game to Blu-Play. Developermisthalusays this is a proof-of-concept demonstration to show what is possible with Blu-Play. Blu-Play games are "small-scale homebrew games coded withBlu-ray Disc Java (BD-J), and which therefore runs on any game-console that comes with a built-in Blu-ray player", which at present time includesPS3, PS4andXB1. In other words, you don't need a special version of a Blu-Play title in order to run it on your console. One disc runs on all.​</description>
-			<creators>SockNastez</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Universal_Media_Server_5.1.3_With_Improvements_&_Fixes.jpg">​</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2017-2-14T18:24:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS4  Save Editor "CYBER" to be released in March '17</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4__Save_Editor_CYBER_to_be_released_in_March_'17.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ps4-save-editor-cyber-to-be-released-in-march-17.12728/</target>
+		<mtrl id="0" lastm="2015-4-30T09:44:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>Updates For PPC+ & PPCiDB By DEFAULTDNB</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Updates_For_PPC+_&_PPCiDB_By_DEFAULTDNB.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/updates-for-ppc-ppcidb-by-defaultdnb.1831/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4__Save_Editor_CYBER_to_be_released_in_March_'17.jpg">As seen in this threadherea save editor was destined to be released for PS4 without the need for kexploit. Now while that thread's tweet and this tool aren't related I can't be sure of, I am guessing not. Just stating so that the creator of that thread doesn't yell at me. A Japanese company known as "Cyber Gadget" has shown off on their website a release for a tool called the CYBER save edit. This is a PC program that allows you to edit save files for the PS4. They claim this tool works on the PS4 Phat/Slim and the PS4 Pro. They did not however state if there was a firmware limit. As for buying this tool a single user license is 7,800 yen (68 USD), I am not sure why, but if you want to buy a three user license it will cost a whopping 14,800 yen (130 USD).​</description>
-			<creators>SockNastez</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/Updates_For_PPC+_&_PPCiDB_By_DEFAULTDNB.jpg">​</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2017-2-10T14:19:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS4 Link now noob friendly with PS4 Relink by theorywrong</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_Link_now_noob_friendly_with_PS4_Relink_by_theorywrong.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ps4-link-now-noob-friendly-with-ps4-relink-by-theorywrong.12670/</target>
+		<mtrl id="0" lastm="2015-4-30T05:47:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS Vita Game Save Decrypted By Mr.Gas</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS_Vita_Game_Save_Decrypted_By_Mr.Gas.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps-vita-game-save-decrypted-by-mr-gas.1829/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_Link_now_noob_friendly_with_PS4_Relink_by_theorywrong.jpg">So you own aVitaorPlayStation TVand want to useRemote Play?Well if you are a HENkaku user and didn't so this prior to losing PSN access you have been out of luck till earlier this week whenYifan Lu released a methodof doing this. Iwrote an article about his methodandthen I even posted a tutorial using other toolsto make it a tad bit simpler for everyone involved but now there is a way to do this by simply running an application developed earlier today that has automated the entire process.​</description>
-			<creators>atreyu187</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS_Vita_Game_Save_Decrypted_By_Mr.Gas.jpg">​</description>
+			<creators>Tranced</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2017-1-31T22:48:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS4 PuP Decrypt and Unpacker by idc - (Good for webkit exploits?)</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_PuP_Decrypt_and_Unpacker_by_idc_-_(Good_for_webkit_exploits).jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ps4-pup-decrypt-and-unpacker-by-idc-good-for-webkit-exploits.12534/</target>
+		<mtrl id="0" lastm="2015-4-28T05:13:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>UMS 5.1.2 Released</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/UMS_5.1.2_Released.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ums-5-1-2-released.1821/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/PS4_PuP_Decrypt_and_Unpacker_by_idc_-_(Good_for_webkit_exploits).jpg">PlayStation 4 devidcreleased new scripts on Github that invoke the PS4 kernel to decrypt the contents of a PS4 update file (firmware) and pup unpacker scripts, now before you ask no this release is not going to get you any steps closer to a PS4 CFW but aszecoxaooutlines onhis twitterthis can help "porting webkit exploit everywhere, for instance. you can decrypt any usermode elfs from 1.00 to 3.55/3.70 because sony forgot to change keyset",​</description>
-			<creators>LightningMods</creators>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/UMS_5.1.2_Released.jpg">​</description>
+			<creators>Tranced</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2020-7-18T09:52:00.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>PS1 Emulation gets native support on PS4! Thanks to the findings by @Vitt0x_Lar_YT</desc>
