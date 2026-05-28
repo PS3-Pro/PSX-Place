@@ -7,7 +7,7 @@ from io import BytesIO
 from urllib.parse import urljoin, urlparse
 from xml.sax.saxutils import escape
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 from curl_cffi import requests as curl_requests
 import requests as plain_requests
 from PIL import Image, ImageOps, UnidentifiedImageError
@@ -73,7 +73,28 @@ BAD_TITLES = {
     "share",
     "download",
     "source",
+    "forum",
+    "thread",
 }
+
+BAD_IMAGE_PARTS = [
+    "avatar",
+    "avatars",
+    "smilie",
+    "smilies",
+    "sprite",
+    "logo",
+    "reaction",
+    "styles/",
+    "blank.gif",
+    "data:image",
+    "joypixels",
+    "twemoji",
+    "emoji",
+    "unicode/64/",
+    "giphy.gif",
+    "facebook.com/tr",
+]
 
 
 # -----------------------------
@@ -132,6 +153,7 @@ def canonical_thread_url(url):
     if "/threads/" not in path:
         return ""
 
+    # Strip /post-123, /page-2, and other extra path parts.
     match = re.search(r"(/threads/[^/?#]+?\.\d+)(?:/.*)?$", path)
     if not match:
         return ""
@@ -161,8 +183,6 @@ def title_from_thread_url(url):
     slug = match.group(1)
     title = slug.replace("-", " ").replace("_", " ")
     title = clean_text(title)
-
-    # Keep this as a readable fallback only. The real article title is loaded from the thread page later.
     return title[:1].upper() + title[1:] if title else "PSX-Place Article"
 
 
@@ -183,7 +203,7 @@ def is_bad_title(text):
     if low in BAD_TITLES:
         return True
 
-    if len(title) < 5:
+    if len(title) < 8:
         return True
 
     if low.startswith("image:"):
@@ -287,96 +307,283 @@ def fetch_binary(url, timeout=25):
 
 
 # -----------------------------
-# Portal link extraction
+# Portal card extraction
 # -----------------------------
 
-def score_candidate(anchor, title, source_name, was_derived):
+def is_good_image_url(url):
+    if not url:
+        return False
+
+    low = url.lower()
+
+    if any(part in low for part in BAD_IMAGE_PARTS):
+        return False
+
+    if low.endswith(".gif") or low.endswith(".svg") or low.endswith(".webp"):
+        return False
+
+    # PSX-Place feature/card images usually live here, but keep external jpg/png too.
+    if "/data/features/" in low:
+        return True
+    if "/ewr-porta/attachments/" in low:
+        return True
+    if "/attachments/" in low:
+        return True
+    if "/data/attachments/" in low:
+        return True
+    if ".jpg" in low or ".jpeg" in low or ".png" in low:
+        return True
+
+    return False
+
+
+def safe_int(value, default=0):
+    try:
+        return int(str(value).strip())
+    except Exception:
+        return default
+
+
+def get_img_src(img, base_url):
+    for attr in ("data-url", "data-src", "src"):
+        src = img.get(attr)
+        if src:
+            return normalize_url(src, base_url)
+    return ""
+
+
+def is_probably_too_small(img):
+    width = safe_int(img.get("width"))
+    height = safe_int(img.get("height"))
+
+    if width and width < 120:
+        return True
+    if height and height < 120:
+        return True
+
+    return False
+
+
+def image_score(url, img_tag=None):
+    if not is_good_image_url(url):
+        return -1000
+
+    low = url.lower()
     score = 0
 
-    if source_name != "all-links-fallback":
-        score += 10
+    if "/data/features/" in low:
+        score += 140
+    if "/ewr-porta/attachments/" in low:
+        score += 110
+    if "/attachments/" in low:
+        score += 95
+    if "/data/attachments/" in low:
+        score += 90
+    if ".jpg" in low or ".jpeg" in low:
+        score += 25
+    if ".png" in low:
+        score += 15
 
-    if not was_derived:
-        score += 5
+    if img_tag is not None:
+        if is_probably_too_small(img_tag):
+            score -= 90
 
-    if len(title) >= 20:
-        score += 2
+        classes = " ".join(img_tag.get("class", [])) if img_tag.get("class") else ""
+        alt = (img_tag.get("alt") or "").lower()
+        title = (img_tag.get("title") or "").lower()
 
-    # Prefer title/header links over body links.
-    parent = anchor.parent
-    if parent and getattr(parent, "name", "") in {"h1", "h2", "h3"}:
-        score += 6
+        good_words = ["feature", "featured", "porta", "article", "cover", "image", "thumb"]
+        bad_words = ["emoji", "smilie", "avatar", "reaction", "icon", "logo"]
 
-    classes = " ".join(anchor.get("class", [])) + " " + " ".join(parent.get("class", []) if parent else [])
-    classes = classes.lower()
-    if any(token in classes for token in ["title", "porta", "article", "contentrow", "structitem"]):
-        score += 3
+        if any(word in classes.lower() for word in good_words):
+            score += 30
+        if any(word in alt for word in good_words):
+            score += 10
+        if any(word in title for word in good_words):
+            score += 10
 
-    href = anchor.get("href") or ""
-    if "/post-" not in href:
-        score += 1
+        if any(word in classes.lower() for word in bad_words):
+            score -= 160
+        if any(word in alt for word in bad_words):
+            score -= 160
+        if any(word in title for word in bad_words):
+            score -= 160
 
     return score
 
 
+def link_score(anchor, title):
+    score = 0
+    low_title = clean_text(title).lower()
+
+    if is_bad_title(title):
+        return -1000
+
+    if len(title) >= 20:
+        score += 20
+    if len(title) >= 45:
+        score += 5
+
+    if "/post-" in (anchor.get("href") or ""):
+        score -= 70
+
+    classes = " ".join(anchor.get("class", [])) if anchor.get("class") else ""
+    classes = classes.lower()
+    if any(token in classes for token in ["title", "porta", "article", "contentrow", "structitem"]):
+        score += 45
+
+    parent = anchor.parent
+    if parent and isinstance(parent, Tag):
+        parent_name = parent.name or ""
+        parent_classes = " ".join(parent.get("class", [])) if parent.get("class") else ""
+        parent_classes = parent_classes.lower()
+
+        if parent_name in {"h1", "h2", "h3"}:
+            score += 80
+        if any(token in parent_classes for token in ["title", "porta", "article", "contentrow", "structitem"]):
+            score += 45
+
+    # Strongly reject links that live inside body text. These are related/cited threads, not home cards.
+    for ancestor in anchor.parents:
+        if not isinstance(ancestor, Tag):
+            continue
+        ancestor_classes = " ".join(ancestor.get("class", [])) if ancestor.get("class") else ""
+        ancestor_classes = ancestor_classes.lower()
+        if "bbwrapper" in ancestor_classes or "message-body" in ancestor_classes:
+            score -= 160
+            break
+
+    if low_title in BAD_TITLES:
+        score -= 100
+
+    return score
+
+
+def find_card_container(anchor):
+    # Find the smallest ancestor that looks like a home/portal card and contains at least one image.
+    current = anchor
+    for depth in range(0, 10):
+        if not isinstance(current, Tag):
+            break
+
+        if depth > 0:
+            imgs = current.select("img")
+            if imgs:
+                thread_links = current.select("a[href*='/threads/']")
+                classes = " ".join(current.get("class", [])) if current.get("class") else ""
+                classes_low = classes.lower()
+                name = current.name or ""
+
+                looks_like_card = (
+                    name in {"article", "li"}
+                    or any(token in classes_low for token in [
+                        "porta", "article", "contentrow", "structitem", "block-row", "message--article", "porta-article"
+                    ])
+                )
+
+                # Even if class names changed, a small container with images and thread links is probably a card.
+                small_enough = len(thread_links) <= 8 and len(imgs) <= 8
+
+                if looks_like_card or small_enough:
+                    return current
+
+        current = current.parent
+
+    return None
+
+
+def get_best_card_image(container, base_url):
+    best = (float("-inf"), "")
+
+    for img in container.select("img"):
+        src = get_img_src(img, base_url)
+        score = image_score(src, img)
+        if score > best[0]:
+            best = (score, src)
+
+    if best[0] < 0:
+        return ""
+
+    return best[1]
+
+
+def get_best_card_link(container):
+    best = (float("-inf"), "", "")
+
+    for anchor in container.select("a[href*='/threads/']"):
+        href = normalize_url(anchor.get("href") or "")
+        canonical = canonical_thread_url(href)
+        if not canonical:
+            continue
+
+        raw_title = clean_title(anchor.get("title") or anchor.get_text(" ", strip=True))
+        if is_bad_title(raw_title):
+            # Do not derive body/cited thread titles from URLs for home-card mode.
+            continue
+
+        score = link_score(anchor, raw_title)
+        if score > best[0]:
+            best = (score, canonical, raw_title)
+
+    if best[0] < 0:
+        return "", ""
+
+    return best[1], best[2]
+
+
 def extract_portal_links(soup):
-    candidates = {}
+    container_map = {}
     raw_thread_href_count = 0
 
-    selector_groups = [
-        ("headline-links", "h1 a[href], h2 a[href], h3 a[href]"),
-        ("porta-links", "[class*='porta'] a[href], [class*='article'] a[href], [class*='contentRow'] a[href], [class*='structItem'] a[href]"),
-        ("all-links-fallback", "a[href]"),
-    ]
+    # Broad anchor scan is OK now because every candidate must resolve to a real image-owning card container.
+    for anchor in soup.select("a[href*='/threads/']"):
+        absolute_url = normalize_url(anchor.get("href") or "")
+        canonical_url = canonical_thread_url(absolute_url)
+        if not canonical_url:
+            continue
 
-    for source_name, selector in selector_groups:
-        for anchor in soup.select(selector):
-            href = anchor.get("href") or ""
-            absolute_url = normalize_url(href)
+        raw_thread_href_count += 1
+        container = find_card_container(anchor)
+        if not container:
+            continue
 
-            if "threads" in absolute_url:
-                raw_thread_href_count += 1
+        container_key = id(container)
+        if container_key not in container_map:
+            container_map[container_key] = container
 
-            canonical_url = canonical_thread_url(absolute_url)
-            if not canonical_url:
-                continue
+    items = []
+    seen_links = set()
 
-            raw_title = clean_title(anchor.get("title") or anchor.get_text(" ", strip=True))
-            was_derived = False
+    for container in container_map.values():
+        link, title = get_best_card_link(container)
+        if not link or link in seen_links:
+            continue
 
-            if is_bad_title(raw_title):
-                title = title_from_thread_url(canonical_url)
-                was_derived = True
-            else:
-                title = raw_title
+        image_url = get_best_card_image(container, link)
+        if not image_url:
+            log(f"Skipping candidate without a real home-card image: {title} | {link}")
+            continue
 
-            if is_bad_title(title):
-                continue
+        seen_links.add(link)
+        items.append({
+            "title": title,
+            "link": link,
+            "image_url": image_url,
+        })
 
-            score = score_candidate(anchor, title, source_name, was_derived)
+    log(
+        "Portal extraction debug: "
+        f"raw thread hrefs seen={raw_thread_href_count}, "
+        f"card containers={len(container_map)}, accepted home cards={len(items)}"
+    )
 
-            old = candidates.get(canonical_url)
-            if old is None or score > old["score"]:
-                candidates[canonical_url] = {
-                    "title": title,
-                    "link": canonical_url,
-                    "score": score,
-                    "source": source_name,
-                }
-
-    unique = []
-    for item in candidates.values():
-        unique.append({"title": item["title"], "link": item["link"]})
-
-    log(f"Portal extraction debug: raw thread hrefs seen={raw_thread_href_count}, unique candidates={len(unique)}")
-
-    if len(unique) == 0:
+    if len(items) == 0:
         sample_hrefs = []
-        for anchor in soup.select("a[href]")[:25]:
+        for anchor in soup.select("a[href]")[:35]:
             sample_hrefs.append(anchor.get("href") or "")
         log(f"Portal extraction debug: first href samples={sample_hrefs}")
 
-    return unique
+    return items
 
 
 # -----------------------------
@@ -407,180 +614,6 @@ def parse_date_to_ps3(value):
     except Exception:
         return "1970-01-01T00:00:00.000Z"
 
-
-def is_good_image_url(url):
-    if not url:
-        return False
-
-    low = url.lower()
-
-    bad_parts = [
-        "avatar",
-        "avatars",
-        "smilie",
-        "smilies",
-        "sprite",
-        "logo",
-        "reaction",
-        "styles/",
-        "blank.gif",
-        "data:image",
-        "joypixels",
-        "twemoji",
-        "emoji",
-        "unicode/64/",
-        "giphy.gif",
-        "facebook.com/tr",
-    ]
-
-    bad_extensions = [
-        ".gif",
-        ".svg",
-        ".webp",
-    ]
-
-    if any(part in low for part in bad_parts):
-        return False
-
-    if any(low.endswith(ext) for ext in bad_extensions):
-        return False
-
-    return True
-
-
-def safe_int(value, default=0):
-    try:
-        return int(str(value).strip())
-    except Exception:
-        return default
-
-
-def get_img_src(img, base_url):
-    for attr in ("data-url", "data-src", "src"):
-        src = img.get(attr)
-        if src:
-            return normalize_url(src, base_url)
-    return ""
-
-
-def is_probably_too_small(img):
-    width = safe_int(img.get("width"))
-    height = safe_int(img.get("height"))
-
-    if width and width < 120:
-        return True
-    if height and height < 120:
-        return True
-
-    return False
-
-
-def score_image_candidate(url, img_tag=None):
-    if not is_good_image_url(url):
-        return -1000
-
-    low = url.lower()
-    score = 0
-
-    if "/data/features/" in low:
-        score += 120
-    if "/ewr-porta/attachments/" in low:
-        score += 90
-    if "/attachments/" in low:
-        score += 80
-    if "/data/attachments/" in low:
-        score += 75
-    if low.endswith(".jpg") or low.endswith(".jpeg") or low.endswith(".png"):
-        score += 20
-    if ".jpg" in low or ".jpeg" in low or ".png" in low:
-        score += 10
-
-    if img_tag is not None:
-        if is_probably_too_small(img_tag):
-            score -= 90
-
-        classes = " ".join(img_tag.get("class", [])) if img_tag.get("class") else ""
-        alt = (img_tag.get("alt") or "").lower()
-        title = (img_tag.get("title") or "").lower()
-
-        bad_words = ["emoji", "smilie", "avatar", "reaction", "icon", "logo"]
-        if any(word in classes.lower() for word in bad_words):
-            score -= 120
-        if any(word in alt for word in bad_words):
-            score -= 120
-        if any(word in title for word in bad_words):
-            score -= 120
-
-        parent = img_tag.parent
-        if parent is not None:
-            parent_classes = " ".join(parent.get("class", [])) if parent.get("class") else ""
-            if any(word in parent_classes.lower() for word in bad_words):
-                score -= 120
-
-    return score
-
-
-def get_first_message_body(soup):
-    selectors = [
-        "article.message:first-of-type .bbWrapper",
-        "article.message--post:first-of-type .bbWrapper",
-        "article.message--article:first-of-type .bbWrapper",
-        ".message--article .bbWrapper",
-        ".message-body .bbWrapper",
-        "[itemprop='articleBody']",
-        ".bbWrapper",
-    ]
-
-    for selector in selectors:
-        body = soup.select_one(selector)
-        if body:
-            return body
-
-    return soup
-
-
-def extract_first_good_image(soup, base_url):
-    candidates = []
-
-    # 1) Prefer explicit feature/meta images when available.
-    for meta_key in ("og:image", "twitter:image"):
-        meta_img = get_meta_content(soup, meta_key)
-        if meta_img:
-            meta_img = normalize_url(meta_img, base_url)
-            candidates.append((score_image_candidate(meta_img), meta_img, "meta"))
-
-    # 2) If the feature image is missing/bad, scan the first thread message.
-    first_body = get_first_message_body(soup)
-    for img in first_body.select("img"):
-        src = get_img_src(img, base_url)
-        if not src:
-            continue
-        candidates.append((score_image_candidate(src, img), src, "first-message"))
-
-    # 3) Last fallback: scan every image on the page.
-    for img in soup.select("img"):
-        src = get_img_src(img, base_url)
-        if not src:
-            continue
-        candidates.append((score_image_candidate(src, img) - 20, src, "page"))
-
-    if not candidates:
-        return ""
-
-    # Keep first occurrence for duplicate URLs, but preserve the best score.
-    best_by_url = {}
-    for score, url, source in candidates:
-        if url not in best_by_url or score > best_by_url[url][0]:
-            best_by_url[url] = (score, url, source)
-
-    ranked = sorted(best_by_url.values(), key=lambda x: x[0], reverse=True)
-    best_score, best_url, best_source = ranked[0]
-
-    if best_score < 0:
-        return ""
-
-    log(f"Selected image from {best_source}: score={best_score} url={best_url}")
-    return best_url
 
 def extract_summary(soup):
     body = (
@@ -649,14 +682,17 @@ def extract_article_date(soup):
 
 
 def read_article_detail(item):
+    # Home-card only mode: the article image must come from the portal card, not from inside the thread.
+    portal_image_url = item.get("image_url", "")
+
     html = fetch_html(item["link"], timeout=30)
 
     if not html:
-        log(f"Could not open article, using fallback data: {item['link']}")
+        log(f"Could not open article, using home-card data only: {item['link']}")
         return {
             "title": clean_title(item["title"]),
             "link": item["link"],
-            "image_url": "",
+            "image_url": portal_image_url,
             "image_name": "default.png",
             "author": "PSX-Place",
             "summary": clean_title(item["title"]),
@@ -672,14 +708,13 @@ def read_article_detail(item):
         title = clean_title(get_meta_content(soup, "og:title") or item["title"])
 
     summary = extract_summary(soup) or title
-    image_url = extract_first_good_image(soup, item["link"])
     author = extract_author(soup)
     date = extract_article_date(soup)
 
     return {
         "title": title,
         "link": item["link"],
-        "image_url": image_url,
+        "image_url": portal_image_url,
         "image_name": "default.png",
         "author": author,
         "summary": summary,
@@ -760,10 +795,10 @@ def collect_news():
         soup = BeautifulSoup(html, "html.parser")
         links = extract_portal_links(soup)
 
-        log(f"Portal page {current_page}: found {len(links)} possible articles")
+        log(f"Portal page {current_page}: found {len(links)} home-card articles")
 
         if not links and current_page > 1:
-            log("No more articles found, stopping pagination")
+            log("No more article cards found, stopping pagination")
             break
 
         for item in links:
@@ -802,6 +837,7 @@ def process_images(news_list):
 
     for n in news_list:
         if not n["image_url"]:
+            # In home-card only mode this should not happen. Keep the old fallback for safety.
             n["image_name"] = "default.png"
             fallback += 1
             continue
@@ -860,12 +896,14 @@ def validate_feed_contract():
     material_close_count = content.count("</mtrl>")
     description_count = content.count("<description>")
     creator_count = content.count("<creators>")
+    default_count = content.count("default.png")
 
     log(f"XML size: {len(content)} chars")
     log(f"XML material count: {material_open_count}")
     log(f"XML material close count: {material_close_count}")
     log(f"XML description count: {description_count}")
     log(f"XML creators count: {creator_count}")
+    log(f"XML default image count: {default_count}")
 
     if material_open_count <= 0:
         log("ERROR: feed was created without any <mtrl> items")
@@ -891,7 +929,7 @@ def validate_feed_contract():
 
 
 def update_psx_news():
-    log("Starting PSX-Place Scraper v9 with first-message image fallback")
+    log("Starting PSX-Place Scraper v11 home-card only")
     log(f"Working directory: {os.getcwd()}")
     log(f"Max pages: {MAX_PAGES}")
     log(f"Max items: {MAX_ITEMS}")
@@ -909,7 +947,7 @@ def update_psx_news():
         log(f"Sample article: {n.get('title')} | {n.get('link')} | image={bool(n.get('image_url'))}")
 
     if not news_list:
-        log("ERROR: No news articles were found. Nothing will be saved.")
+        log("ERROR: No home-card articles were found. Nothing will be saved.")
         raise SystemExit(1)
 
     process_images(news_list)
