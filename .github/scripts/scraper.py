@@ -65,6 +65,10 @@ HTTP_METHODS = [
 ]
 
 
+# -----------------------------
+# Logging / basic helpers
+# -----------------------------
+
 def now_stamp():
     return datetime.now().strftime("%H:%M:%S")
 
@@ -90,6 +94,10 @@ def normalize_url(href, base=PSX_BASE):
     if not href:
         return ""
 
+    href = str(href).strip()
+    if href.startswith("data:"):
+        return href
+
     url = urljoin(base, href)
     url = url.split("#")[0]
     parsed = urlparse(url)
@@ -101,13 +109,8 @@ def canonical_thread_url(url):
     if not url:
         return ""
 
-    # Keep only the canonical /threads/title.id/ portion.
-    m = re.search(r"(https?://[^/]+/threads/[^/]+\.\d+/)", url)
-    if m:
-        return m.group(1)
-
-    # Some malformed links can miss the final slash.
-    m = re.search(r"(https?://[^/]+/threads/[^/]+\.\d+)", url)
+    # Keep only the canonical /threads/title.id/ part.
+    m = re.search(r"(https?://[^/]+/threads/[^/]+\.\d+)/?", url)
     if m:
         return m.group(1) + "/"
 
@@ -131,6 +134,10 @@ def portal_url(page):
         return PSX_BASE
     return f"{PSX_BASE}ewr-porta/page-{page}"
 
+
+# -----------------------------
+# HTTP
+# -----------------------------
 
 def fetch_html(url, timeout=30):
     last_status = "none"
@@ -180,6 +187,10 @@ def fetch_bytes(url, timeout=30):
     return b""
 
 
+# -----------------------------
+# Portal extraction
+# -----------------------------
+
 def is_article_url(url):
     return "/threads/" in url and re.search(r"\.\d+/?", url) is not None
 
@@ -211,6 +222,7 @@ def is_bad_title(text):
         "see also",
         "this thread",
         "forum thread",
+        "spoiler:",
     )
 
     if low.startswith(bad_starts):
@@ -267,7 +279,7 @@ def is_good_image_url(url):
 
 
 def get_img_src(img, base_url=PSX_BASE):
-    for attr in ("data-url", "data-src", "src"):
+    for attr in ("data-url", "data-src", "src", "href"):
         src = img.get(attr)
         if src:
             return normalize_url(src, base_url)
@@ -287,37 +299,85 @@ def extract_urls_from_style(style, base_url=PSX_BASE):
     return urls
 
 
-def find_images_near_link(link_tag, soup):
-    candidates = []
+def is_inside_body_text(tag):
+    # These wrappers are article/post body text. Links inside them are references, not portal cards.
+    body_class_fragments = (
+        "bbwrapper",
+        "message-body",
+        "message-content",
+        "message-main",
+        "articlebody",
+        "lbcontainer",
+    )
 
-    # First inspect the link and its parents. This catches images and background images in real portal cards.
-    current = link_tag
-    for depth in range(0, 7):
+    for parent in tag.parents:
+        classes = " ".join(parent.get("class", [])) if parent.get("class") else ""
+        class_low = classes.lower()
+        if any(fragment in class_low for fragment in body_class_fragments):
+            return True
+
+        itemprop = str(parent.get("itemprop", "")).lower()
+        if itemprop == "articlebody":
+            return True
+
+    return False
+
+
+def small_contexts_for_anchor(a):
+    # Only inspect the anchor itself and small containers. Never climb to huge page/list containers,
+    # because that can borrow a previous/next article image.
+    contexts = []
+    current = a
+
+    for depth in range(0, 5):
         if current is None:
             break
 
-        for img in current.select("img") if hasattr(current, "select") else []:
-            src = get_img_src(img)
-            if is_good_image_url(src):
-                candidates.append(("near-img", src))
-
-        if hasattr(current, "attrs"):
-            for src in extract_urls_from_style(current.get("style", "")):
-                if is_good_image_url(src):
-                    candidates.append(("near-style", src))
-
         if hasattr(current, "select"):
-            for styled in current.select("[style*='url']"):
-                for src in extract_urls_from_style(styled.get("style", "")):
-                    if is_good_image_url(src):
-                        candidates.append(("near-style-child", src))
+            thread_links = current.select("a[href*='/threads/']")
+            canonicals = {
+                canonical_thread_url(link.get("href"))
+                for link in thread_links
+                if link.get("href")
+            }
+            canonicals.discard("")
+
+            # Keep the link itself, and small repeated-link cards. Stop before page-sized blocks.
+            if depth == 0 or len(canonicals) <= 2:
+                contexts.append(current)
+            else:
+                break
 
         current = current.parent
 
-    # If the page uses a feature path by thread id, try it as a lightweight candidate.
-    thread_id = extract_thread_id(link_tag.get("href", ""))
-    if thread_id and thread_id.isdigit():
-        candidates.append(("feature-guess", f"{PSX_BASE}data/features/{thread_id}.jpg"))
+    return contexts
+
+
+def image_candidates_from_anchor(a):
+    candidates = []
+
+    for ctx in small_contexts_for_anchor(a):
+        # Direct style on the context.
+        if hasattr(ctx, "attrs"):
+            for src in extract_urls_from_style(ctx.get("style", "")):
+                if is_good_image_url(src):
+                    candidates.append(("same-card-style", src))
+
+            # Some image cards are anchors with href to image/attachment.
+            href_img = get_img_src(ctx)
+            if href_img and is_good_image_url(href_img) and "/threads/" not in href_img:
+                candidates.append(("same-card-href", href_img))
+
+        if hasattr(ctx, "select"):
+            for img in ctx.select("img"):
+                src = get_img_src(img)
+                if is_good_image_url(src):
+                    candidates.append(("same-card-img", src))
+
+            for styled in ctx.select("[style*='url']"):
+                for src in extract_urls_from_style(styled.get("style", "")):
+                    if is_good_image_url(src):
+                        candidates.append(("same-card-style-child", src))
 
     # Deduplicate while preserving order.
     out = []
@@ -331,114 +391,112 @@ def find_images_near_link(link_tag, soup):
     return out
 
 
-def is_inside_body_text(tag):
-    bad_selectors = [
-        ".bbWrapper",
-        ".message-body",
-        ".message-content",
-        ".message-main",
-        ".js-lbContainer",
-        ".block-body",
-        ".articleBody",
-        "[itemprop='articleBody']",
-    ]
-
-    for parent in tag.parents:
-        if not getattr(parent, "select_one", None):
-            continue
-
-        classes = " ".join(parent.get("class", [])) if parent.get("class") else ""
-        class_low = classes.lower()
-
-        if "bbwrapper" in class_low or "message-body" in class_low or "articlebody" in class_low:
-            return True
-
-        for selector in bad_selectors:
-            try:
-                if parent.select_one(selector) is not None and parent.select_one(selector) is not tag:
-                    # This parent contains a body wrapper; only treat as body if the link is inside that wrapper.
-                    nearest = tag.find_parent(selector)
-                    if nearest is not None:
-                        return True
-            except Exception:
-                pass
-
-    return False
-
-
-def is_probably_portal_link(a):
-    if not a or not a.get("href"):
-        return False
-
-    href = normalize_url(a.get("href"))
-    if not is_article_url(href):
-        return False
-
-    if "/post-" in href:
-        return False
-
-    title = clean_text(a.get("title") or a.get_text(" ", strip=True))
-
-    if is_bad_title(title):
-        return False
-
-    # Links inside content summaries are usually references to older threads, not home-card entries.
-    if is_inside_body_text(a):
-        return False
-
-    return True
-
-
 def extract_portal_links(soup):
-    found = []
-    seen = set()
-
-    # Use a broad scan because PSX-Place/XenPorta markup changes often.
+    # Build one record per canonical thread. Images are only collected from anchors that point
+    # to that exact canonical thread or from data/features/{thread_id}.jpg.
+    records = {}
+    order = []
     raw_thread_hrefs = 0
-    no_image = 0
+    body_links_skipped = 0
 
     for a in soup.select("a[href*='/threads/']"):
         href_raw = normalize_url(a.get("href"))
         raw_thread_hrefs += 1
 
-        if not is_probably_portal_link(a):
+        if not is_article_url(href_raw):
+            continue
+        if "/post-" in href_raw:
+            # Post links are references inside articles, not separate feed entries.
+            continue
+        if is_inside_body_text(a):
+            body_links_skipped += 1
             continue
 
         canonical = canonical_thread_url(href_raw)
-        if canonical in seen:
+        if not canonical:
             continue
+
+        if canonical not in records:
+            records[canonical] = {
+                "title": "",
+                "link": canonical,
+                "image_candidates": [],
+            }
+            order.append(canonical)
 
         title = clean_text(a.get("title") or a.get_text(" ", strip=True))
-        image_candidates = find_images_near_link(a, soup)
-        image_url = ""
+        if title and not is_bad_title(title):
+            current_title = records[canonical]["title"]
+            # Prefer the longest meaningful title for the same thread.
+            if len(title) > len(current_title):
+                records[canonical]["title"] = title
 
-        for source, candidate in image_candidates:
-            if is_good_image_url(candidate):
-                image_url = candidate
-                break
+        for source, src in image_candidates_from_anchor(a):
+            records[canonical]["image_candidates"].append((source, src))
 
-        if not image_url:
-            no_image += 1
-            log(f"Skipping article without portal image candidate: {title} | {canonical}")
+    found = []
+    skipped_bad_title = 0
+    skipped_no_candidates = 0
+
+    for canonical in order:
+        rec = records[canonical]
+        title = rec["title"]
+
+        if is_bad_title(title):
+            skipped_bad_title += 1
             continue
 
-        seen.add(canonical)
+        thread_id = extract_thread_id(canonical)
+        candidates = []
+
+        # First try the official XenPorta feature image path tied to this exact thread id.
+        if thread_id and thread_id.isdigit():
+            candidates.append(("feature-id", f"{PSX_BASE}data/features/{thread_id}.jpg"))
+
+        # Then try only images found in same canonical-link/card contexts.
+        candidates.extend(rec["image_candidates"])
+
+        # Deduplicate candidates.
+        clean_candidates = []
+        seen_candidates = set()
+        for source, src in candidates:
+            if not is_good_image_url(src):
+                continue
+            if src in seen_candidates:
+                continue
+            seen_candidates.add(src)
+            clean_candidates.append((source, src))
+
+        if not clean_candidates:
+            skipped_no_candidates += 1
+            log(f"Skipping article without same-card image candidates: {title} | {canonical}")
+            continue
+
         found.append({
             "title": title,
             "link": canonical,
-            "portal_image_url": image_url,
+            "image_candidates": clean_candidates,
         })
 
         if len(found) <= 8:
-            log(f"Accepted portal article: {title} | image={image_url}")
+            preview = ", ".join([f"{s}={u}" for s, u in clean_candidates[:3]])
+            log(f"Accepted portal article: {title} | candidates: {preview}")
+
+        if len(found) >= MAX_ITEMS:
+            break
 
     log(
         f"Portal extraction debug: raw thread hrefs seen={raw_thread_hrefs}, "
-        f"accepted={len(found)}, skipped_no_image={no_image}"
+        f"records={len(records)}, accepted={len(found)}, body_links_skipped={body_links_skipped}, "
+        f"skipped_bad_title={skipped_bad_title}, skipped_no_candidates={skipped_no_candidates}"
     )
 
     return found
 
+
+# -----------------------------
+# Article details
+# -----------------------------
 
 def get_meta_content(soup, *keys):
     for key in keys:
@@ -538,11 +596,11 @@ def read_article_detail(item):
     html = fetch_html(item["link"], timeout=30)
 
     if not html:
-        log(f"Could not open article, skipping later if image fails: {item['link']}")
+        log(f"Could not open article, using portal data: {item['link']}")
         return {
             "title": clean_title(item["title"]),
             "link": item["link"],
-            "image_url": item.get("portal_image_url", ""),
+            "image_candidates": item.get("image_candidates", []),
             "image_name": "",
             "author": "PSX-Place",
             "summary": clean_title(item["title"]),
@@ -564,13 +622,17 @@ def read_article_detail(item):
     return {
         "title": title,
         "link": item["link"],
-        "image_url": item.get("portal_image_url", ""),
+        "image_candidates": item.get("image_candidates", []),
         "image_name": "",
         "author": author,
         "summary": summary,
         "date": date,
     }
 
+
+# -----------------------------
+# Images
+# -----------------------------
 
 def make_image_name(title, link):
     thread_id = extract_thread_id(link)
@@ -622,6 +684,11 @@ def download_and_process_image(image_url, image_name):
 
     try:
         img = Image.open(BytesIO(content))
+        # Reject tiny decorative files that slipped through.
+        if img.width < 120 or img.height < 80:
+            log(f"Image rejected as too small for {image_name}: {img.width}x{img.height} from {image_url}")
+            return False
+
         save_jpeg_versions(img, path_uncompressed, path_compressed)
         log(f"Saved image: {image_name}")
         return True
@@ -629,6 +696,10 @@ def download_and_process_image(image_url, image_name):
         log(f"Image error for {image_name}: {e}")
         return False
 
+
+# -----------------------------
+# Main flow
+# -----------------------------
 
 def collect_news():
     seeds = []
@@ -683,23 +754,40 @@ def process_images(news_list):
     kept = []
     skipped_no_image = 0
     skipped_download = 0
+    used_images = {}
 
     for n in news_list:
-        image_url = n.get("image_url", "")
-
-        if not image_url:
+        image_candidates = n.get("image_candidates", [])
+        if not image_candidates:
             skipped_no_image += 1
-            log(f"Skipping article without image URL: {n.get('title')}")
+            log(f"Skipping article without image candidates: {n.get('title')}")
             continue
 
         image_name = make_image_name(n["title"], n["link"])
+        selected_url = ""
+        selected_source = ""
 
-        if download_and_process_image(image_url, image_name):
+        for source, candidate_url in image_candidates:
+            if candidate_url in used_images and used_images[candidate_url] != n["link"]:
+                log(
+                    f"Skipping reused image candidate for different article: {n.get('title')} | "
+                    f"candidate={candidate_url} already_used_by={used_images[candidate_url]}"
+                )
+                continue
+
+            if download_and_process_image(candidate_url, image_name):
+                selected_url = candidate_url
+                selected_source = source
+                used_images[candidate_url] = n["link"]
+                break
+
+        if selected_url:
             n["image_name"] = image_name
             kept.append(n)
+            log(f"Selected image for article: {n.get('title')} | source={selected_source} | url={selected_url}")
         else:
             skipped_download += 1
-            log(f"Skipping article because image could not be downloaded/decoded: {n.get('title')} | {image_url}")
+            log(f"Skipping article because no image candidate could be downloaded/decoded: {n.get('title')}")
 
     log(
         f"Image processing finished: kept={len(kept)}, "
@@ -774,7 +862,7 @@ def validate_feed_contract(min_items=1):
 
 
 def update_psx_news():
-    log("Starting PSX-Place Scraper v14 real-images-only")
+    log("Starting PSX-Place Scraper v15 same-thread image binding")
     log(f"Working directory: {os.getcwd()}")
     log(f"Max pages: {MAX_PAGES}")
     log(f"Max items: {MAX_ITEMS}")
@@ -789,7 +877,8 @@ def update_psx_news():
     log(f"Total news found before image filtering: {len(news_list)}")
 
     for n in news_list[:8]:
-        log(f"Sample article before filtering: {n.get('title')} | {n.get('link')} | image={n.get('image_url')}")
+        candidate_preview = ", ".join([f"{s}={u}" for s, u in n.get("image_candidates", [])[:2]])
+        log(f"Sample article before filtering: {n.get('title')} | {n.get('link')} | candidates={candidate_preview}")
 
     if not news_list:
         log("ERROR: No portal articles were found. Nothing will be saved.")
@@ -803,13 +892,13 @@ def update_psx_news():
         log(f"Sample kept article: {n.get('title')} | image_name={n.get('image_name')}")
 
     if not news_list:
-        log("ERROR: All articles were skipped because none had valid real images.")
+        log("ERROR: All articles were skipped because none had valid same-thread images.")
         raise SystemExit(1)
 
     write_xml(news_list)
     validate_feed_contract(min_items=1)
 
-    log("Success: XML and real images were generated")
+    log("Success: XML and same-thread images were generated")
     log(f"XML output: {XML_PATH}")
     log(f"Uncompressed images: {DIR_UNCOMPRESSED}")
     log(f"Compressed images: {DIR_COMPRESSED}")
