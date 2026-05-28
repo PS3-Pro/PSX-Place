@@ -1,74 +1,118 @@
-name: Update PSX-Place News Feed
-
-on:
-  schedule:
-    - cron: "0 * * * *"
-  workflow_dispatch:
-
-permissions:
-  contents: write
-
-jobs:
-  scrape-update:
-    runs-on: macos-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          persist-credentials: true
-
-      - name: Setup Python environment
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: Install required dependencies
+      - name: Probe PSX-Place access methods
         run: |
-          python -m pip install --upgrade pip
-          pip install curl_cffi beautifulsoup4 lxml Pillow
+          python - <<'PY'
+          from curl_cffi import requests as curl_requests
+          import requests as plain_requests
 
-      - name: Run PSX-Place scraper
-        run: |
-          echo "Working directory:"
-          pwd
+          URLS = [
+              "https://www.psx-place.com/",
+              "https://www.psx-place.com/ewr-porta/page-2",
+          ]
 
-          echo "Repository files before scraping:"
-          ls -la
+          CURL_PROFILES = [
+              "safari15_5",
+              "safari17_0",
+              "safari18_0",
+              "chrome101",
+              "chrome110",
+              "chrome120",
+              "chrome124",
+              "chrome131",
+              "edge101",
+              "edge110",
+          ]
 
-          python .github/scripts/scraper.py
+          HEADER_SETS = [
+              {
+                  "name": "minimal",
+                  "headers": {
+                      "User-Agent": "Mozilla/5.0",
+                  },
+              },
+              {
+                  "name": "safari-macos",
+                  "headers": {
+                      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15",
+                      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                      "Accept-Language": "en-US,en;q=0.9",
+                      "Referer": "https://www.psx-place.com/",
+                  },
+              },
+              {
+                  "name": "chrome-windows",
+                  "headers": {
+                      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+                      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+                      "Accept-Language": "en-US,en;q=0.9",
+                      "Referer": "https://www.psx-place.com/",
+                  },
+              },
+          ]
 
-      - name: Check generated files
-        run: |
-          echo "Checking generated XML..."
-          test -f files/whats_new.xml
+          def has_article_html(text):
+              if not text:
+                  return False
+              return "/threads/" in text or "Featured content" in text or "PSX-Place" in text
 
-          echo "XML material count:"
-          grep -c "<mtrl" files/whats_new.xml
+          print("=== PSX-PLACE ACCESS PROBE START ===")
 
-          echo "Files folder:"
-          ls -lah files || true
+          success = False
 
-          echo "Generated image sample:"
-          find resources/images -type f | head -50 || true
+          for url in URLS:
+              print("")
+              print(f"URL: {url}")
 
-          echo "Git status after scraper:"
-          git status --short
+              for profile in CURL_PROFILES:
+                  for header_set in HEADER_SETS:
+                      try:
+                          r = curl_requests.get(
+                              url,
+                              impersonate=profile,
+                              headers=header_set["headers"],
+                              timeout=30,
+                          )
 
-      - name: Commit and push changes
-        run: |
-          git config user.name "PS3-Pro Bot"
-          git config user.email "bot@ps3pro.com"
+                          ok = r.status_code == 200 and has_article_html(r.text)
+                          print(
+                              f"curl_cffi profile={profile} headers={header_set['name']} "
+                              f"status={r.status_code} size={len(r.text or '')} ok={ok}"
+                          )
 
-          git add files/
-          git add resources/images/uncompressed/
-          git add resources/images/compressed/
+                          if ok:
+                              success = True
+                      except Exception as e:
+                          print(
+                              f"curl_cffi profile={profile} headers={header_set['name']} "
+                              f"error={type(e).__name__}: {e}"
+                          )
 
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-            exit 0
-          fi
+              for header_set in HEADER_SETS:
+                  try:
+                      r = plain_requests.get(
+                          url,
+                          headers=header_set["headers"],
+                          timeout=30,
+                      )
 
-          git commit -m "Auto-update: PSX-Place News Feed"
-          git push
+                      ok = r.status_code == 200 and has_article_html(r.text)
+                      print(
+                          f"plain_requests headers={header_set['name']} "
+                          f"status={r.status_code} size={len(r.text or '')} ok={ok}"
+                      )
+
+                      if ok:
+                          success = True
+                  except Exception as e:
+                      print(
+                          f"plain_requests headers={header_set['name']} "
+                          f"error={type(e).__name__}: {e}"
+                      )
+
+          print("")
+          print("=== PSX-PLACE ACCESS PROBE END ===")
+
+          if success:
+              print("At least one method worked. The scraper can be adjusted to use it.")
+          else:
+              print("No method worked from this runner. This is probably an IP/network block.")
+          PY
