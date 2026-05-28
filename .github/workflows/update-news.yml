@@ -27,11 +27,10 @@ jobs:
       - name: Install required dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install curl_cffi beautifulsoup4 lxml Pillow
+          pip install curl_cffi beautifulsoup4 lxml Pillow requests
 
-      - name: Probe PSX-Place access
-        run: |
-          python .github/scripts/probe_psx_access.py
+      - name: Probe PSX-Place access methods
+        run: python .github/scripts/probe_psx_access.py
 
       - name: Run PSX-Place scraper
         run: |
@@ -45,14 +44,16 @@ jobs:
         run: |
           echo "Checking generated XML..."
           test -f files/whats_new.xml
+
           echo "XML material count:"
           grep -c "<mtrl" files/whats_new.xml
-          echo "Default image references:"
-          grep -c "default.png" files/whats_new.xml || true
+
           echo "Files folder:"
           ls -lah files || true
+
           echo "Generated image sample:"
           find resources/images -type f | head -50 || true
+
           echo "Git status after scraper:"
           git status --short
 

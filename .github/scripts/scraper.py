@@ -9,7 +9,8 @@ from xml.sax.saxutils import escape
 
 from bs4 import BeautifulSoup
 from curl_cffi import requests as curl_requests
-from PIL import Image, ImageOps
+import requests as plain_requests
+from PIL import Image, ImageOps, UnidentifiedImageError
 
 
 PSX_BASE = "https://www.psx-place.com/"
@@ -26,34 +27,17 @@ DIR_UNCOMPRESSED = os.path.join("resources", "images", "uncompressed")
 DIR_COMPRESSED = os.path.join("resources", "images", "compressed")
 XML_PATH = os.path.join(DIR_FILES, "whats_new.xml")
 
-HTTP_METHODS = [
+HEADER_SETS = [
     (
-        "curl_cffi",
-        "safari15_5",
         "safari-macos",
         {
             "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15",
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
             "Accept-Language": "en-US,en;q=0.9",
             "Referer": PSX_BASE,
-            "Cache-Control": "no-cache",
-            "Pragma": "no-cache",
         },
     ),
     (
-        "curl_cffi",
-        "safari17_0",
-        "safari-macos",
-        {
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-            "Accept-Language": "en-US,en;q=0.9",
-            "Referer": PSX_BASE,
-        },
-    ),
-    (
-        "curl_cffi",
-        "chrome124",
         "chrome-windows",
         {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
@@ -64,9 +48,36 @@ HTTP_METHODS = [
     ),
 ]
 
+CURL_PROFILES = [
+    "safari15_5",
+    "safari17_0",
+    "chrome120",
+    "chrome124",
+    "chrome131",
+]
+
+BAD_TITLES = {
+    "next",
+    "prev",
+    "previous",
+    "first",
+    "last",
+    "go",
+    "here",
+    "click here",
+    "read more",
+    "continue",
+    "like",
+    "quote",
+    "reply",
+    "share",
+    "download",
+    "source",
+}
+
 
 # -----------------------------
-# Logging / basic helpers
+# Logging helpers
 # -----------------------------
 
 def now_stamp():
@@ -76,6 +87,10 @@ def now_stamp():
 def log(message):
     print(f"[{now_stamp()}] {message}", flush=True)
 
+
+# -----------------------------
+# Text / URL helpers
+# -----------------------------
 
 def clean_text(text):
     if not text:
@@ -94,39 +109,11 @@ def normalize_url(href, base=PSX_BASE):
     if not href:
         return ""
 
-    href = str(href).strip()
-    if href.startswith("data:"):
-        return href
-
     url = urljoin(base, href)
     url = url.split("#")[0]
     parsed = urlparse(url)
+
     return f"{parsed.scheme}://{parsed.netloc}{parsed.path}"
-
-
-def canonical_thread_url(url):
-    url = normalize_url(url)
-    if not url:
-        return ""
-
-    # Keep only the canonical /threads/title.id/ part.
-    m = re.search(r"(https?://[^/]+/threads/[^/]+\.\d+)/?", url)
-    if m:
-        return m.group(1) + "/"
-
-    return url
-
-
-def extract_thread_id(url):
-    m = re.search(r"\.(\d+)/?(?:$|post-|page-)", url)
-    if m:
-        return m.group(1)
-
-    m = re.search(r"\.(\d+)", url)
-    if m:
-        return m.group(1)
-
-    return hashlib.md5(url.encode("utf-8")).hexdigest()[:8]
 
 
 def portal_url(page):
@@ -135,97 +122,68 @@ def portal_url(page):
     return f"{PSX_BASE}ewr-porta/page-{page}"
 
 
-# -----------------------------
-# HTTP
-# -----------------------------
+def canonical_thread_url(url):
+    if not url:
+        return ""
 
-def fetch_html(url, timeout=30):
-    last_status = "none"
-    last_size = 0
+    parsed = urlparse(url)
+    path = parsed.path
 
-    for method_name, profile, header_name, headers in HTTP_METHODS:
-        try:
-            response = curl_requests.get(
-                url,
-                impersonate=profile,
-                timeout=timeout,
-                headers=headers,
-            )
-            html = response.text or ""
-            last_status = str(response.status_code)
-            last_size = len(html)
-            log(f"GET {url} -> {method_name} profile={profile} headers={header_name} HTTP {response.status_code}, {len(html)} chars")
+    if "/threads/" not in path:
+        return ""
 
-            if response.status_code == 200 and html:
-                return html
+    match = re.search(r"(/threads/[^/?#]+?\.\d+)(?:/.*)?$", path)
+    if not match:
+        return ""
 
-        except Exception as e:
-            log(f"GET error {url} -> {method_name} profile={profile} headers={header_name}: {type(e).__name__}: {e}")
+    canonical_path = match.group(1)
+    if not canonical_path.endswith("/"):
+        canonical_path += "/"
 
-    log(f"Giving up: {url} last_status={last_status} last_size={last_size}")
-    return ""
+    return f"{parsed.scheme}://{parsed.netloc}{canonical_path}"
 
 
-def fetch_bytes(url, timeout=30):
-    for method_name, profile, header_name, headers in HTTP_METHODS:
-        try:
-            response = curl_requests.get(
-                url,
-                impersonate=profile,
-                timeout=timeout,
-                headers=headers,
-            )
-            content = response.content or b""
-            log(f"Image GET {url} -> {method_name} profile={profile} HTTP {response.status_code}, {len(content)} bytes")
+def extract_thread_id(url):
+    match = re.search(r"\.(\d+)/?$", url)
+    if match:
+        return match.group(1)
 
-            if response.status_code == 200 and content:
-                return content
-
-        except Exception as e:
-            log(f"Image GET error {url} -> {method_name} profile={profile}: {type(e).__name__}: {e}")
-
-    return b""
+    return hashlib.md5(url.encode("utf-8")).hexdigest()[:8]
 
 
-# -----------------------------
-# Portal extraction
-# -----------------------------
+def title_from_thread_url(url):
+    parsed = urlparse(url)
+    match = re.search(r"/threads/([^/]+?)\.\d+/?$", parsed.path)
 
-def is_article_url(url):
-    return "/threads/" in url and re.search(r"\.\d+/?", url) is not None
+    if not match:
+        return "PSX-Place Article"
+
+    slug = match.group(1)
+    title = slug.replace("-", " ").replace("_", " ")
+    title = clean_text(title)
+
+    # Keep this as a readable fallback only. The real article title is loaded from the thread page later.
+    return title[:1].upper() + title[1:] if title else "PSX-Place Article"
+
+
+def clean_title(title):
+    title = clean_text(title)
+    title = title.replace("(Forum Thread)", "").strip()
+    title = re.sub(r"\s*\|\s*PSX-Place\s*$", "", title).strip()
+    return title
 
 
 def is_bad_title(text):
-    if not text:
+    title = clean_text(text)
+    if not title:
         return True
 
-    title = clean_text(text)
     low = title.lower()
 
-    if len(title) < 15:
+    if low in BAD_TITLES:
         return True
 
-    bad_exact = {
-        "next", "prev", "previous", "first", "last", "go", "here",
-        "click here", "read more", "continue", "like", "quote", "reply",
-        "share", "forum link", "github link", "development thread",
-        "recent beta test", "the ps3 version", "ported retroarch",
-        "always running ftp server", "overclock your ps vita",
-    }
-
-    if low in bad_exact:
-        return True
-
-    bad_starts = (
-        "update (",
-        "also here",
-        "see also",
-        "this thread",
-        "forum thread",
-        "spoiler:",
-    )
-
-    if low.startswith(bad_starts):
+    if len(title) < 5:
         return True
 
     if low.startswith("image:"):
@@ -241,6 +199,213 @@ def is_bad_title(text):
         return True
 
     return False
+
+
+def safe_image_file_name(title, link):
+    thread_id = extract_thread_id(link)
+    safe_title = clean_title(title)
+    safe_title = re.sub(r"[^A-Za-z0-9._ -]+", "", safe_title)
+    safe_title = re.sub(r"\s+", "_", safe_title).strip("._-")
+    safe_title = safe_title[:88] or "psx_place"
+    return f"{thread_id}_{safe_title}.jpg"
+
+
+# -----------------------------
+# HTTP
+# -----------------------------
+
+def fetch_html(url, timeout=30):
+    # Most reliable method first. It matched the successful GitHub Actions run.
+    for profile in CURL_PROFILES:
+        for header_name, headers in HEADER_SETS:
+            try:
+                response = curl_requests.get(
+                    url,
+                    impersonate=profile,
+                    headers=headers,
+                    timeout=timeout,
+                )
+                html = response.text or ""
+                log(
+                    f"GET {url} -> curl_cffi profile={profile} "
+                    f"headers={header_name} HTTP {response.status_code}, {len(html)} chars"
+                )
+
+                if response.status_code == 200 and html:
+                    return html
+            except Exception as e:
+                log(f"curl_cffi error for {url} profile={profile} headers={header_name}: {e}")
+
+    for header_name, headers in HEADER_SETS:
+        try:
+            response = plain_requests.get(url, headers=headers, timeout=timeout)
+            html = response.text or ""
+            log(f"GET {url} -> requests headers={header_name} HTTP {response.status_code}, {len(html)} chars")
+
+            if response.status_code == 200 and html:
+                return html
+        except Exception as e:
+            log(f"requests error for {url} headers={header_name}: {e}")
+
+    log(f"Giving up after all HTTP methods failed: {url}")
+    return ""
+
+
+def fetch_binary(url, timeout=25):
+    for profile in CURL_PROFILES[:2]:
+        for header_name, headers in HEADER_SETS:
+            try:
+                response = curl_requests.get(
+                    url,
+                    impersonate=profile,
+                    headers=headers,
+                    timeout=timeout,
+                )
+                content = response.content or b""
+                log(
+                    f"Image GET {url} -> curl_cffi profile={profile} "
+                    f"headers={header_name} HTTP {response.status_code}, {len(content)} bytes"
+                )
+
+                if response.status_code == 200 and content:
+                    return content
+            except Exception as e:
+                log(f"Image curl_cffi error for {url}: {e}")
+
+    for header_name, headers in HEADER_SETS:
+        try:
+            response = plain_requests.get(url, headers=headers, timeout=timeout)
+            content = response.content or b""
+            log(f"Image GET {url} -> requests headers={header_name} HTTP {response.status_code}, {len(content)} bytes")
+
+            if response.status_code == 200 and content:
+                return content
+        except Exception as e:
+            log(f"Image requests error for {url}: {e}")
+
+    return b""
+
+
+# -----------------------------
+# Portal link extraction
+# -----------------------------
+
+def score_candidate(anchor, title, source_name, was_derived):
+    score = 0
+
+    if source_name != "all-links-fallback":
+        score += 10
+
+    if not was_derived:
+        score += 5
+
+    if len(title) >= 20:
+        score += 2
+
+    # Prefer title/header links over body links.
+    parent = anchor.parent
+    if parent and getattr(parent, "name", "") in {"h1", "h2", "h3"}:
+        score += 6
+
+    classes = " ".join(anchor.get("class", [])) + " " + " ".join(parent.get("class", []) if parent else [])
+    classes = classes.lower()
+    if any(token in classes for token in ["title", "porta", "article", "contentrow", "structitem"]):
+        score += 3
+
+    href = anchor.get("href") or ""
+    if "/post-" not in href:
+        score += 1
+
+    return score
+
+
+def extract_portal_links(soup):
+    candidates = {}
+    raw_thread_href_count = 0
+
+    selector_groups = [
+        ("headline-links", "h1 a[href], h2 a[href], h3 a[href]"),
+        ("porta-links", "[class*='porta'] a[href], [class*='article'] a[href], [class*='contentRow'] a[href], [class*='structItem'] a[href]"),
+        ("all-links-fallback", "a[href]"),
+    ]
+
+    for source_name, selector in selector_groups:
+        for anchor in soup.select(selector):
+            href = anchor.get("href") or ""
+            absolute_url = normalize_url(href)
+
+            if "threads" in absolute_url:
+                raw_thread_href_count += 1
+
+            canonical_url = canonical_thread_url(absolute_url)
+            if not canonical_url:
+                continue
+
+            raw_title = clean_title(anchor.get("title") or anchor.get_text(" ", strip=True))
+            was_derived = False
+
+            if is_bad_title(raw_title):
+                title = title_from_thread_url(canonical_url)
+                was_derived = True
+            else:
+                title = raw_title
+
+            if is_bad_title(title):
+                continue
+
+            score = score_candidate(anchor, title, source_name, was_derived)
+
+            old = candidates.get(canonical_url)
+            if old is None or score > old["score"]:
+                candidates[canonical_url] = {
+                    "title": title,
+                    "link": canonical_url,
+                    "score": score,
+                    "source": source_name,
+                }
+
+    unique = []
+    for item in candidates.values():
+        unique.append({"title": item["title"], "link": item["link"]})
+
+    log(f"Portal extraction debug: raw thread hrefs seen={raw_thread_href_count}, unique candidates={len(unique)}")
+
+    if len(unique) == 0:
+        sample_hrefs = []
+        for anchor in soup.select("a[href]")[:25]:
+            sample_hrefs.append(anchor.get("href") or "")
+        log(f"Portal extraction debug: first href samples={sample_hrefs}")
+
+    return unique
+
+
+# -----------------------------
+# Article detail extraction
+# -----------------------------
+
+def get_meta_content(soup, *keys):
+    for key in keys:
+        tag = soup.select_one(f'meta[property="{key}"]') or soup.select_one(f'meta[name="{key}"]')
+        if tag and tag.get("content"):
+            return clean_text(tag.get("content"))
+    return ""
+
+
+def parse_date_to_ps3(value):
+    if not value:
+        return "1970-01-01T00:00:00.000Z"
+
+    try:
+        value = value.strip().replace("Z", "+00:00")
+        dt = datetime.fromisoformat(value)
+
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+
+        dt = dt.astimezone(timezone.utc)
+        return dt.strftime("%Y-%m-%dT%H:%M:%S.000Z")
+    except Exception:
+        return "1970-01-01T00:00:00.000Z"
 
 
 def is_good_image_url(url):
@@ -261,272 +426,161 @@ def is_good_image_url(url):
         "blank.gif",
         "data:image",
         "joypixels",
-        "emoji",
-        "emojione",
         "twemoji",
-        "giphy",
-        "cdn.jsdelivr.net/joypixels",
+        "emoji",
+        "unicode/64/",
+        "giphy.gif",
+        "facebook.com/tr",
+    ]
+
+    bad_extensions = [
+        ".gif",
+        ".svg",
+        ".webp",
     ]
 
     if any(part in low for part in bad_parts):
         return False
 
-    bad_ext = (".gif", ".svg", ".webp")
-    if low.endswith(bad_ext):
+    if any(low.endswith(ext) for ext in bad_extensions):
         return False
 
     return True
 
 
-def get_img_src(img, base_url=PSX_BASE):
-    for attr in ("data-url", "data-src", "src", "href"):
+def safe_int(value, default=0):
+    try:
+        return int(str(value).strip())
+    except Exception:
+        return default
+
+
+def get_img_src(img, base_url):
+    for attr in ("data-url", "data-src", "src"):
         src = img.get(attr)
         if src:
             return normalize_url(src, base_url)
     return ""
 
 
-def extract_urls_from_style(style, base_url=PSX_BASE):
-    urls = []
-    if not style:
-        return urls
+def is_probably_too_small(img):
+    width = safe_int(img.get("width"))
+    height = safe_int(img.get("height"))
 
-    for match in re.finditer(r"url\((['\"]?)(.*?)\1\)", style):
-        raw = match.group(2).strip()
-        if raw:
-            urls.append(normalize_url(raw, base_url))
-
-    return urls
-
-
-def is_inside_body_text(tag):
-    # These wrappers are article/post body text. Links inside them are references, not portal cards.
-    body_class_fragments = (
-        "bbwrapper",
-        "message-body",
-        "message-content",
-        "message-main",
-        "articlebody",
-        "lbcontainer",
-    )
-
-    for parent in tag.parents:
-        classes = " ".join(parent.get("class", [])) if parent.get("class") else ""
-        class_low = classes.lower()
-        if any(fragment in class_low for fragment in body_class_fragments):
-            return True
-
-        itemprop = str(parent.get("itemprop", "")).lower()
-        if itemprop == "articlebody":
-            return True
+    if width and width < 120:
+        return True
+    if height and height < 120:
+        return True
 
     return False
 
 
-def small_contexts_for_anchor(a):
-    # Only inspect the anchor itself and small containers. Never climb to huge page/list containers,
-    # because that can borrow a previous/next article image.
-    contexts = []
-    current = a
+def score_image_candidate(url, img_tag=None):
+    if not is_good_image_url(url):
+        return -1000
 
-    for depth in range(0, 5):
-        if current is None:
-            break
+    low = url.lower()
+    score = 0
 
-        if hasattr(current, "select"):
-            thread_links = current.select("a[href*='/threads/']")
-            canonicals = {
-                canonical_thread_url(link.get("href"))
-                for link in thread_links
-                if link.get("href")
-            }
-            canonicals.discard("")
+    if "/data/features/" in low:
+        score += 120
+    if "/ewr-porta/attachments/" in low:
+        score += 90
+    if "/attachments/" in low:
+        score += 80
+    if "/data/attachments/" in low:
+        score += 75
+    if low.endswith(".jpg") or low.endswith(".jpeg") or low.endswith(".png"):
+        score += 20
+    if ".jpg" in low or ".jpeg" in low or ".png" in low:
+        score += 10
 
-            # Keep the link itself, and small repeated-link cards. Stop before page-sized blocks.
-            if depth == 0 or len(canonicals) <= 2:
-                contexts.append(current)
-            else:
-                break
+    if img_tag is not None:
+        if is_probably_too_small(img_tag):
+            score -= 90
 
-        current = current.parent
+        classes = " ".join(img_tag.get("class", [])) if img_tag.get("class") else ""
+        alt = (img_tag.get("alt") or "").lower()
+        title = (img_tag.get("title") or "").lower()
 
-    return contexts
+        bad_words = ["emoji", "smilie", "avatar", "reaction", "icon", "logo"]
+        if any(word in classes.lower() for word in bad_words):
+            score -= 120
+        if any(word in alt for word in bad_words):
+            score -= 120
+        if any(word in title for word in bad_words):
+            score -= 120
+
+        parent = img_tag.parent
+        if parent is not None:
+            parent_classes = " ".join(parent.get("class", [])) if parent.get("class") else ""
+            if any(word in parent_classes.lower() for word in bad_words):
+                score -= 120
+
+    return score
 
 
-def image_candidates_from_anchor(a):
+def get_first_message_body(soup):
+    selectors = [
+        "article.message:first-of-type .bbWrapper",
+        "article.message--post:first-of-type .bbWrapper",
+        "article.message--article:first-of-type .bbWrapper",
+        ".message--article .bbWrapper",
+        ".message-body .bbWrapper",
+        "[itemprop='articleBody']",
+        ".bbWrapper",
+    ]
+
+    for selector in selectors:
+        body = soup.select_one(selector)
+        if body:
+            return body
+
+    return soup
+
+
+def extract_first_good_image(soup, base_url):
     candidates = []
 
-    for ctx in small_contexts_for_anchor(a):
-        # Direct style on the context.
-        if hasattr(ctx, "attrs"):
-            for src in extract_urls_from_style(ctx.get("style", "")):
-                if is_good_image_url(src):
-                    candidates.append(("same-card-style", src))
+    # 1) Prefer explicit feature/meta images when available.
+    for meta_key in ("og:image", "twitter:image"):
+        meta_img = get_meta_content(soup, meta_key)
+        if meta_img:
+            meta_img = normalize_url(meta_img, base_url)
+            candidates.append((score_image_candidate(meta_img), meta_img, "meta"))
 
-            # Some image cards are anchors with href to image/attachment.
-            href_img = get_img_src(ctx)
-            if href_img and is_good_image_url(href_img) and "/threads/" not in href_img:
-                candidates.append(("same-card-href", href_img))
-
-        if hasattr(ctx, "select"):
-            for img in ctx.select("img"):
-                src = get_img_src(img)
-                if is_good_image_url(src):
-                    candidates.append(("same-card-img", src))
-
-            for styled in ctx.select("[style*='url']"):
-                for src in extract_urls_from_style(styled.get("style", "")):
-                    if is_good_image_url(src):
-                        candidates.append(("same-card-style-child", src))
-
-    # Deduplicate while preserving order.
-    out = []
-    seen = set()
-    for source, src in candidates:
-        if src in seen:
+    # 2) If the feature image is missing/bad, scan the first thread message.
+    first_body = get_first_message_body(soup)
+    for img in first_body.select("img"):
+        src = get_img_src(img, base_url)
+        if not src:
             continue
-        seen.add(src)
-        out.append((source, src))
+        candidates.append((score_image_candidate(src, img), src, "first-message"))
 
-    return out
-
-
-def extract_portal_links(soup):
-    # Build one record per canonical thread. Images are only collected from anchors that point
-    # to that exact canonical thread or from data/features/{thread_id}.jpg.
-    records = {}
-    order = []
-    raw_thread_hrefs = 0
-    body_links_skipped = 0
-
-    for a in soup.select("a[href*='/threads/']"):
-        href_raw = normalize_url(a.get("href"))
-        raw_thread_hrefs += 1
-
-        if not is_article_url(href_raw):
+    # 3) Last fallback: scan every image on the page.
+    for img in soup.select("img"):
+        src = get_img_src(img, base_url)
+        if not src:
             continue
-        if "/post-" in href_raw:
-            # Post links are references inside articles, not separate feed entries.
-            continue
-        if is_inside_body_text(a):
-            body_links_skipped += 1
-            continue
+        candidates.append((score_image_candidate(src, img) - 20, src, "page"))
 
-        canonical = canonical_thread_url(href_raw)
-        if not canonical:
-            continue
+    if not candidates:
+        return ""
 
-        if canonical not in records:
-            records[canonical] = {
-                "title": "",
-                "link": canonical,
-                "image_candidates": [],
-            }
-            order.append(canonical)
+    # Keep first occurrence for duplicate URLs, but preserve the best score.
+    best_by_url = {}
+    for score, url, source in candidates:
+        if url not in best_by_url or score > best_by_url[url][0]:
+            best_by_url[url] = (score, url, source)
 
-        title = clean_text(a.get("title") or a.get_text(" ", strip=True))
-        if title and not is_bad_title(title):
-            current_title = records[canonical]["title"]
-            # Prefer the longest meaningful title for the same thread.
-            if len(title) > len(current_title):
-                records[canonical]["title"] = title
+    ranked = sorted(best_by_url.values(), key=lambda x: x[0], reverse=True)
+    best_score, best_url, best_source = ranked[0]
 
-        for source, src in image_candidates_from_anchor(a):
-            records[canonical]["image_candidates"].append((source, src))
+    if best_score < 0:
+        return ""
 
-    found = []
-    skipped_bad_title = 0
-    skipped_no_candidates = 0
-
-    for canonical in order:
-        rec = records[canonical]
-        title = rec["title"]
-
-        if is_bad_title(title):
-            skipped_bad_title += 1
-            continue
-
-        thread_id = extract_thread_id(canonical)
-        candidates = []
-
-        # First try the official XenPorta feature image path tied to this exact thread id.
-        if thread_id and thread_id.isdigit():
-            candidates.append(("feature-id", f"{PSX_BASE}data/features/{thread_id}.jpg"))
-
-        # Then try only images found in same canonical-link/card contexts.
-        candidates.extend(rec["image_candidates"])
-
-        # Deduplicate candidates.
-        clean_candidates = []
-        seen_candidates = set()
-        for source, src in candidates:
-            if not is_good_image_url(src):
-                continue
-            if src in seen_candidates:
-                continue
-            seen_candidates.add(src)
-            clean_candidates.append((source, src))
-
-        if not clean_candidates:
-            skipped_no_candidates += 1
-            log(f"Skipping article without same-card image candidates: {title} | {canonical}")
-            continue
-
-        found.append({
-            "title": title,
-            "link": canonical,
-            "image_candidates": clean_candidates,
-        })
-
-        if len(found) <= 8:
-            preview = ", ".join([f"{s}={u}" for s, u in clean_candidates[:3]])
-            log(f"Accepted portal article: {title} | candidates: {preview}")
-
-        if len(found) >= MAX_ITEMS:
-            break
-
-    log(
-        f"Portal extraction debug: raw thread hrefs seen={raw_thread_hrefs}, "
-        f"records={len(records)}, accepted={len(found)}, body_links_skipped={body_links_skipped}, "
-        f"skipped_bad_title={skipped_bad_title}, skipped_no_candidates={skipped_no_candidates}"
-    )
-
-    return found
-
-
-# -----------------------------
-# Article details
-# -----------------------------
-
-def get_meta_content(soup, *keys):
-    for key in keys:
-        tag = soup.select_one(f'meta[property="{key}"]') or soup.select_one(f'meta[name="{key}"]')
-        if tag and tag.get("content"):
-            return clean_text(tag.get("content"))
-    return ""
-
-
-def parse_date_to_ps3(value):
-    if not value:
-        return "1970-01-01T00:00:00.000Z"
-
-    try:
-        value = value.strip().replace("Z", "+00:00")
-        dt = datetime.fromisoformat(value)
-        if dt.tzinfo is None:
-            dt = dt.replace(tzinfo=timezone.utc)
-        dt = dt.astimezone(timezone.utc)
-        return dt.strftime("%Y-%m-%dT%H:%M:%S.000Z")
-    except Exception:
-        return "1970-01-01T00:00:00.000Z"
-
-
-def clean_title(title):
-    title = clean_text(title)
-    title = title.replace("(Forum Thread)", "").strip()
-    title = re.sub(r"\s*\|\s*PSX-Place\s*$", "", title).strip()
-    return title
-
+    log(f"Selected image from {best_source}: score={best_score} url={best_url}")
+    return best_url
 
 def extract_summary(soup):
     body = (
@@ -537,6 +591,7 @@ def extract_summary(soup):
     )
 
     if body:
+        body = BeautifulSoup(str(body), "html.parser")
         for unwanted in body.select("script, style, blockquote, .bbCodeBlock"):
             unwanted.decompose()
 
@@ -553,6 +608,7 @@ def extract_summary(soup):
 
 def extract_author(soup):
     author = get_meta_content(soup, "author", "article:author")
+
     if author:
         return author
 
@@ -596,12 +652,12 @@ def read_article_detail(item):
     html = fetch_html(item["link"], timeout=30)
 
     if not html:
-        log(f"Could not open article, using portal data: {item['link']}")
+        log(f"Could not open article, using fallback data: {item['link']}")
         return {
             "title": clean_title(item["title"]),
             "link": item["link"],
-            "image_candidates": item.get("image_candidates", []),
-            "image_name": "",
+            "image_url": "",
+            "image_name": "default.png",
             "author": "PSX-Place",
             "summary": clean_title(item["title"]),
             "date": "1970-01-01T00:00:00.000Z",
@@ -616,14 +672,15 @@ def read_article_detail(item):
         title = clean_title(get_meta_content(soup, "og:title") or item["title"])
 
     summary = extract_summary(soup) or title
+    image_url = extract_first_good_image(soup, item["link"])
     author = extract_author(soup)
     date = extract_article_date(soup)
 
     return {
         "title": title,
         "link": item["link"],
-        "image_candidates": item.get("image_candidates", []),
-        "image_name": "",
+        "image_url": image_url,
+        "image_name": "default.png",
         "author": author,
         "summary": summary,
         "date": date,
@@ -633,16 +690,6 @@ def read_article_detail(item):
 # -----------------------------
 # Images
 # -----------------------------
-
-def make_image_name(title, link):
-    thread_id = extract_thread_id(link)
-    safe_title = re.sub(r"[\\/*?:\"<>|&{}\[\]#+=]", "", title)
-    safe_title = re.sub(r"[^A-Za-z0-9._ -]+", "", safe_title)
-    safe_title = re.sub(r"\s+", "_", safe_title).strip("._- ")
-    safe_title = safe_title[:80] or "psx_place"
-
-    return f"{thread_id}_{safe_title}.jpg"
-
 
 def save_jpeg_versions(img, path_uncompressed, path_compressed):
     img = ImageOps.exif_transpose(img)
@@ -659,14 +706,11 @@ def save_jpeg_versions(img, path_uncompressed, path_compressed):
 
 
 def download_and_process_image(image_url, image_name):
-    if not image_url or not is_good_image_url(image_url):
-        return False
-
     path_uncompressed = os.path.join(DIR_UNCOMPRESSED, image_name)
     path_compressed = os.path.join(DIR_COMPRESSED, image_name)
 
     if not FORCE_IMAGE_REFRESH and os.path.exists(path_uncompressed) and os.path.exists(path_compressed):
-        log(f"Image already exists, skipping download: {image_name}")
+        log(f"Image already exists, skipping: {image_name}")
         return True
 
     if not FORCE_IMAGE_REFRESH and os.path.exists(path_uncompressed) and not os.path.exists(path_compressed):
@@ -678,27 +722,25 @@ def download_and_process_image(image_url, image_name):
         except Exception as e:
             log(f"Could not rebuild compressed image, downloading again: {image_name} -> {e}")
 
-    content = fetch_bytes(image_url, timeout=30)
+    content = fetch_binary(image_url)
     if not content:
         return False
 
     try:
         img = Image.open(BytesIO(content))
-        # Reject tiny decorative files that slipped through.
-        if img.width < 120 or img.height < 80:
-            log(f"Image rejected as too small for {image_name}: {img.width}x{img.height} from {image_url}")
-            return False
-
         save_jpeg_versions(img, path_uncompressed, path_compressed)
         log(f"Saved image: {image_name}")
         return True
+    except UnidentifiedImageError as e:
+        log(f"Image error for {image_name}: cannot identify image file -> {e}")
+        return False
     except Exception as e:
         log(f"Image error for {image_name}: {e}")
         return False
 
 
 # -----------------------------
-# Main flow
+# Main scraping flow
 # -----------------------------
 
 def collect_news():
@@ -710,16 +752,18 @@ def collect_news():
         log(f"Scraping portal page {current_page}: {url}")
 
         html = fetch_html(url)
+
         if not html:
             log(f"Empty or failed portal page: {url}")
             continue
 
         soup = BeautifulSoup(html, "html.parser")
         links = extract_portal_links(soup)
-        log(f"Portal page {current_page}: found {len(links)} image-backed portal articles")
+
+        log(f"Portal page {current_page}: found {len(links)} possible articles")
 
         if not links and current_page > 1:
-            log("No more portal articles found, stopping pagination")
+            log("No more articles found, stopping pagination")
             break
 
         for item in links:
@@ -738,11 +782,13 @@ def collect_news():
         time.sleep(REQUEST_DELAY)
 
     log(f"Reading article details: {len(seeds)} items")
+
     news_list = []
 
     for i, item in enumerate(seeds, 1):
         log(f"Article detail {i}/{len(seeds)}: {item['title'][:90]}")
-        news_list.append(read_article_detail(item))
+        news = read_article_detail(item)
+        news_list.append(news)
         time.sleep(DETAIL_DELAY)
 
     return news_list
@@ -753,48 +799,30 @@ def process_images(news_list):
 
     kept = []
     skipped_no_image = 0
-    skipped_download = 0
-    used_images = {}
+    skipped_image_error = 0
 
     for n in news_list:
-        image_candidates = n.get("image_candidates", [])
-        if not image_candidates:
+        if not n["image_url"]:
             skipped_no_image += 1
-            log(f"Skipping article without image candidates: {n.get('title')}")
+            log(f"Skipping article without image URL: {n.get('title')}")
             continue
 
-        image_name = make_image_name(n["title"], n["link"])
-        selected_url = ""
-        selected_source = ""
+        image_name = safe_image_file_name(n["title"], n["link"])
 
-        for source, candidate_url in image_candidates:
-            if candidate_url in used_images and used_images[candidate_url] != n["link"]:
-                log(
-                    f"Skipping reused image candidate for different article: {n.get('title')} | "
-                    f"candidate={candidate_url} already_used_by={used_images[candidate_url]}"
-                )
-                continue
-
-            if download_and_process_image(candidate_url, image_name):
-                selected_url = candidate_url
-                selected_source = source
-                used_images[candidate_url] = n["link"]
-                break
-
-        if selected_url:
+        if download_and_process_image(n["image_url"], image_name):
             n["image_name"] = image_name
             kept.append(n)
-            log(f"Selected image for article: {n.get('title')} | source={selected_source} | url={selected_url}")
         else:
-            skipped_download += 1
-            log(f"Skipping article because no image candidate could be downloaded/decoded: {n.get('title')}")
+            skipped_image_error += 1
+            log(f"Skipping article because image could not be downloaded/decoded: {n.get('title')} | {n.get('image_url')}")
 
     log(
         f"Image processing finished: kept={len(kept)}, "
-        f"skipped_no_image={skipped_no_image}, skipped_download={skipped_download}"
+        f"skipped_no_image={skipped_no_image}, skipped_image_error={skipped_image_error}"
     )
 
     return kept
+
 
 
 def write_xml(news_list):
@@ -807,8 +835,6 @@ def write_xml(news_list):
     for i, n in enumerate(news_list):
         picks_anno = ' anno="picks=1"' if i < 3 else ""
         image_url = f"{GITHUB_RAW_PREFIX}{n['image_name']}"
-
-        # Keep the historical PS3 feed contract: the HTML reads the <img src=""> string directly.
         description_html = f'<img src="{xml_escape(image_url)}">{xml_escape(n["summary"])}'
 
         xml_out.append(f'\t\t<mtrl id="0" lastm="{xml_escape(n["date"])}" until="2100-12-31T23:59:00.000Z"{picks_anno}>')
@@ -829,7 +855,7 @@ def write_xml(news_list):
     log(f"XML written: {XML_PATH}")
 
 
-def validate_feed_contract(min_items=1):
+def validate_feed_contract():
     if not os.path.exists(XML_PATH):
         log("ERROR: XML file was not created")
         raise SystemExit(1)
@@ -837,32 +863,48 @@ def validate_feed_contract(min_items=1):
     with open(XML_PATH, "r", encoding="utf-8") as f:
         content = f.read()
 
-    material_count = content.count("<mtrl")
-    default_count = content.count("default.png")
+    material_open_count = content.count("<mtrl")
+    material_close_count = content.count("</mtrl>")
+    description_count = content.count("<description>")
+    creator_count = content.count("<creators>")
 
     log(f"XML size: {len(content)} chars")
-    log(f"XML material count: {material_count}")
+    log(f"XML material count: {material_open_count}")
+    log(f"XML material close count: {material_close_count}")
+    log(f"XML description count: {description_count}")
+    log(f"XML creators count: {creator_count}")
+
+    default_count = content.count("default.png")
     log(f"XML default image references: {default_count}")
-
-    if material_count < min_items:
-        log("ERROR: XML was created without enough <mtrl> items")
-        raise SystemExit(1)
-
     if default_count > 0:
         log("ERROR: default.png was found in the XML. This feed only accepts real images.")
         raise SystemExit(1)
 
-    required = ["</spc>", "</nsx>", "<description>", "<creators>"]
-    for token in required:
-        if token not in content:
-            log(f"ERROR: Feed contract token missing: {token}")
-            raise SystemExit(1)
+    if material_open_count <= 0:
+        log("ERROR: feed was created without any <mtrl> items")
+        raise SystemExit(1)
+
+    if material_open_count != material_close_count:
+        log("ERROR: feed has mismatched <mtrl> open/close counts")
+        raise SystemExit(1)
+
+    if description_count != material_open_count:
+        log("ERROR: feed has missing <description> entries")
+        raise SystemExit(1)
+
+    if creator_count != material_open_count:
+        log("ERROR: feed has missing <creators> entries")
+        raise SystemExit(1)
+
+    if "</spc>" not in content or "</nsx>" not in content:
+        log("ERROR: feed is missing closing </spc> or </nsx> tags")
+        raise SystemExit(1)
 
     log("Feed contract validation: OK")
 
 
 def update_psx_news():
-    log("Starting PSX-Place Scraper v15 same-thread image binding")
+    log("Starting PSX-Place Scraper v16 based on v9 image matching, no default images")
     log(f"Working directory: {os.getcwd()}")
     log(f"Max pages: {MAX_PAGES}")
     log(f"Max items: {MAX_ITEMS}")
@@ -876,29 +918,28 @@ def update_psx_news():
 
     log(f"Total news found before image filtering: {len(news_list)}")
 
-    for n in news_list[:8]:
-        candidate_preview = ", ".join([f"{s}={u}" for s, u in n.get("image_candidates", [])[:2]])
-        log(f"Sample article before filtering: {n.get('title')} | {n.get('link')} | candidates={candidate_preview}")
+    for n in news_list[:5]:
+        log(f"Sample article before filtering: {n.get('title')} | {n.get('link')} | image={bool(n.get('image_url'))}")
 
     if not news_list:
-        log("ERROR: No portal articles were found. Nothing will be saved.")
+        log("ERROR: No news articles were found. Nothing will be saved.")
         raise SystemExit(1)
 
     news_list = process_images(news_list)
 
     log(f"Total news kept after image filtering: {len(news_list)}")
 
-    for n in news_list[:8]:
-        log(f"Sample kept article: {n.get('title')} | image_name={n.get('image_name')}")
+    for n in news_list[:5]:
+        log(f"Sample kept article: {n.get('title')} | {n.get('link')} | image_name={n.get('image_name')}")
 
     if not news_list:
-        log("ERROR: All articles were skipped because none had valid same-thread images.")
+        log("ERROR: All articles were skipped because none had valid images.")
         raise SystemExit(1)
 
     write_xml(news_list)
-    validate_feed_contract(min_items=1)
+    validate_feed_contract()
 
-    log("Success: XML and same-thread images were generated")
+    log("Success: XML and images were generated")
     log(f"XML output: {XML_PATH}")
     log(f"Uncompressed images: {DIR_UNCOMPRESSED}")
     log(f"Compressed images: {DIR_COMPRESSED}")
