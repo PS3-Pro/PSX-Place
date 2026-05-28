@@ -17,39 +17,7 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/50115_PS5_Released_PS5-Linux_Supporting_PS5_Phat_Models_on_3.xx_and_4.xx_firmwares_also_now_5..jpg">Update: Modded Warefare Provided a Tutorial Update 2: TheFlow0 has stated &quot;FW &lt; 6.50 will get Linux too, stay tuned. &quot; Update 3 : TheFlow0 has expanded support to 5.50,6.00 abd 6.02 firmware ​ ps5-linux ​ ps5-linux leverages a patched HV vulnerability to transform your PS5 Phat console running 3.xx or 4.xx firmwares into a highly capable Linux PC, unlocking its full hardware potential for desktop use. Powered by 8 CPU cores (16 threads) at 3.5 GHz and a GPU at 2.23 GHz , it provides enough performance to run Steam games and various emulators with impressive fluidity. It supports HDMI 4K60 video and audio output. Furthermore, it allows you to utilize an M.2 SSD as a dedicated Linux partition, as well as all USB ports on the console.​ PS5 firmware ps5-linux is currently only supported on PS5 Phat on 3.xx and 4.xx firmwares. 3.00 , 3.10 , 3.20 , 3.21 , without M.2 support 4.00 , 4.02 , 4.03</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2026-05-13T02:58:40.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
-			<desc>PS VITA / PsTV Starship Vita v1.0</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/50153_PS_VITA_PsTV_Starship_Vita_v1.0.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/starship-vita.50153/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/50153_PS_VITA_PsTV_Starship_Vita_v1.0.jpg">Starship Vita v.1.0 - This is a port of Starship (v.1.0.0 for now but planned to be moved up to latest upstream) for Vita . Read more about this resource.. ​</description>
-			<creators>STLcardsWS</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2026-04-18T19:32:35.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS VITA / PsTV Ghostship Vita by Rinnegatamante v.1.1</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png</url>
-			<target type="u">https://www.psx-place.com/threads/ghostship-vita-by-rinnegatamante.49994/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png">Ghostship is a sourceport of Super Mario 64 based off the decompilation efforts of the game. It features several enhancements and mods support. The Vita port is based on version 1.0.2 (Dutchman Charlie) with bugfixes from the in-development branch. Setup Instructions Download Ghostship v.1.0.2 for PC. Follow its instructions to generate sm64.o2r. Extract ghostship.zip from the Release tab in ux0:data. Place sm64.o2r and ghostship.o2r in ux0:data/ghostship. Install the vpk from the Release tab. Credits TheIronUniverse for the Livearea assets. hatoving for testing the homebrew. vitaGL flags HAVE_PTHREAD=1 NO_DEBUG=1 HAVE_GLSL_TEXTURE_SIZE=1 INDICES_SPEEDHACK=1</description>
-			<creators>jolek</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2026-04-15T18:59:14.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS VITA / PsTV 2ship2harkinian Vita by Rinnegatamante v1.2</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/49973_PS_VITA_PsTV_2ship2harkinian_Vita_by_Rinnegatamante_v1.2.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/2ship2harkinian-vita-by-rinnegatamante.49973/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/49973_PS_VITA_PsTV_2ship2harkinian_Vita_by_Rinnegatamante_v1.2.jpg">​ 2ship2harkinian is a sourceport of The Legend of Zelda: Majora&apos;s Mask based off the decompilation efforts of the game. It features several enhancements and mods support. The Vita port is based on version 1.1.2 (Satoko Charlie). Setup Instructions Download 2ship2harkinian v.1.1.2 for PC. Follow its instructions to generate mm.o2r. Extract 2s2h.zip from the Release tab in ux0:data. Place mm.o2r and 2ship.o2r in ux0:data/2s2h. Install the vpk from the Release tab. Credits TheIronUniverse for the Livearea assets. withLogic for testing the homebrew. Source: https://github.com/Rinnegatamante/2ship2harkinian .</description>
-			<creators>jolek</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2022-07-23T07:04:28.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS1 Tonyhax International: Backup Loader For All Japanese, USA, and PAL PS1 Consoles/Early PS2 Consoles v1.6.3</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png</url>
-			<target type="u">https://www.psx-place.com/threads/tonyhax-international-backup-loader-for-all-japanese-usa-and-pal-ps1-consoles-early-ps2-consoles.37925/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png">Tonyhax International is the first universal softmod that works on all regions of Playstation 1 consoles, and all regions of PS2 consoles up to the SCPH-39000. Building off of the original Tonyhax, Tonyhax International includes even more features and capabilities then it&apos;s predecessor. The biggest new feature is the Tonyhax International ROM ( https://alex-free.github.io/tonyhax-international#rom ). A BIN+CUE format CD image is provided that can flash a GameShark or similar cheat device to boot into the Tonyhax International loader when the PS1 console is powered on. Once you flash the GameShark/Cheat cart with the flasher CD-R, the cheat cart can be plugged into any SCPH-1000 to SCPH-750X console of any region (all the models that have the parallel IO port on the back for plugging in the cheat cart) and you can instantly gain the ability to play backup and import discs. If you don&apos;t ha</description>
-			<creators>alexfree</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2026-03-18T11:35:40.000Z" until="2100-12-31T23:59:00.000Z">
+		<mtrl id="0" lastm="2026-03-18T11:35:40.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
 			<desc>PS3 PS3 Firmware 4.93 - Update is Live! (CFW and HFW Released)</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/49782_PS3_PS3_Firmware_4.93_-_Update_is_Live_CFW_and_HFW_Released.jpg</url>
 			<target type="u">https://www.psx-place.com/threads/ps3-firmware-4-93-update-is-live-cfw-and-hfw-released.49782/</target>
@@ -64,22 +32,6 @@
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png">4.93 Now Supported HFW 4.93.1 (thanks joonie) https://www.psx-place.com/threads/hfw-4-93-1-hybrid-firmware-official-release.49792/ UPDATE ( 03-21-2026 ): Version 3.5.0 has been released and supports 4.80 - 4.82 OFW, 4.82 DEX OFW, 4.84 DEX HFW, 4.83 - 4.93 HFW! See also: The Great PS3 HEN All in One (AIO) Guide To report bugs and other issues, please click here ​ Release Installing / Setup Updating HEN FAQ / Notes Homebrew Compatibility Developer Information / Plugins PS3HEN v3.5.0 Compatible with 4.80 - 4.82 OFW, 4.82 DEX OFW, 4.84 DEX HFW, 4.83 - 4.93 HFW ONLY ​ What Is HEN: HEN stands for H omebrew EN abler. it also consists of much more new functions relatively close to a CFW CHANGELOG v3.5.0 Release Notes (Latest Update (25)) Global Changes Added support for 4.93 CEX firmware (HFW) (thanks @Joonie ) Resource Changes Fixed Update HEN option in HFW Tools menu Added a Homebrew Apps sect</description>
 			<creators>esc0rtd3w</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2023-03-05T23:38:06.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS3 4.93 Evilnat w/ Cobra v8.5 - (CEX/PEX/D-PEX) 4.93</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png</url>
-			<target type="u">https://www.psx-place.com/threads/4-93-evilnat-w-cobra-v8-5-cex-pex-d-pex.39743/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png">CFW 4.93 Evilnat release details Tested Models Improvements to xai plugin RSX Overclock Tutorial PS2 FAN Speed Savegames / act.dat / PSN Block Tuts Warnings Credits &amp; Acknowledgments 4.93 EVILNAT (Cobra 8.5) ​ Features Made out of 4.93 OFW (CEX) Ported Kernel and some modules from OFW 4.84 DEX Made manually without automatic tools PSN/SEN enabled Fixed layouts 272/480 from OFW 4.93 Disabled deletion of unsigned act.dat and .rif files Allowed unsigned act.dat and .rif files Allowed running of unsigned applications Compatibility with FSELF C00 demo unlocker Disabled LIC.EDAT license check Can be installed over +3.56 OFW (bguerville Toolset) Can be installed over any CFW CEX/DEX (Depending targetID) Cobra 8.5 added and enabled as default Full PS2 Games Compatibility (Discs only in backward compatible) Possibility of Downgrade from any CFW with active QA Flags QA Flags active if previously e</description>
-			<creators>Evilnat</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2026-04-04T01:09:45.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS5 EmuC0re - Retro Emulators (NES - PoC) Running on PS5 13.00 with no Kernel Exploit.</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png</url>
-			<target type="u">https://www.psx-place.com/threads/emuc0re-retro-emulators-nes-poc-running-on-ps5-13-00-with-no-kernel-exploit.49883/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png">via: https://github.com/egycnq/EmuC0re . EmuC0re Emulators running as native x86_64 shellcode on PS5 through the LuaC0re JIT exploit. PoC that full homebrew apps can be built and run from PS5 userland — no kernel exploit needed. Works on all PS5 firmwares up to 13.00 (latest). NES Emulator .First emulator in the project Full 6502 CPU (all 256 opcodes including illegals) PPU with scrolling, sprites, sprite 0 hit APU with 48kHz output DualSense native pad support Web-based touch/WebHID controller Built-in FTP server for ROM upload ROM picker menu NTSC/PAL Requirements PS5 console (any firmware, tested up to 13.00) LuaC0re set up and working Star Wars Racer Revenge — US (CUSA03474) or EU (CUSA03492) If you&apos;re on latest FW you can grab the digital version from the PS Store Python 3 on your PC PC and PS5 on the same network Read Complete Read Me @: https://github.com/egycnq/EmuC0re ​</description>
-			<creators>STLcardsWS</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2026-05-05T04:15:25.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>Welcome to PSX-Place (v3) - Upgrade Now Complete !!!</desc>
@@ -241,14 +193,6 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/45604_PS3_Update_4.91.3_PS3_CFW_Evilnats_4.91.2_Custom_Firmwares_Collection_Released.jpg">UPDATE January 2025: CFW Evilnat 4.91. 3 [BETA 1] released &gt;&gt; Click Here &lt;&lt; .December &apos;24: Merry Christmas and Happy Holiday&apos;s to everyone , PS3 Custom firmware developer @Evilnat has dropped by the psx-place forum&apos;s on this Christmas day to present the final build (4.91.2) of the developer&apos;s ps3 Custom Firmware suite, after a series of Open Beta releases, v4.91.2 now officially drops the &quot;BETA&quot; tag and in its final form for 4.91.2. For discussion and full details about this PS3 firmware release and the various cfw types offered in this suite of releases, checkout the developer&apos;s release thread here in the forum&apos;s detailing all the various features and functions in Evilnat&apos;s latest releases notes and details for 4.91 Evilnat&apos;s CFW (w/ Cobra v8.5) .​ ​ 4.91.2 (Final) CFW Evilnat 4.91.2 released ​ Changelog Patched DEX kernel to bypass ambulance beep brick (DEX kernel loaded with CEX Targe</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2023-03-05T23:38:06.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS3 4.93 Evilnat w/ Cobra v8.5 - (CEX/PEX/D-PEX) 4.93</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png</url>
-			<target type="u">https://www.psx-place.com/threads/4-91-2-evilnat-w-cobra-v8-5-cex-dex-pex-d-pex.39743/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png">CFW 4.93 Evilnat release details Tested Models Improvements to xai plugin RSX Overclock Tutorial PS2 FAN Speed Savegames / act.dat / PSN Block Tuts Warnings Credits &amp; Acknowledgments 4.93 EVILNAT (Cobra 8.5) ​ Features Made out of 4.93 OFW (CEX) Ported Kernel and some modules from OFW 4.84 DEX Made manually without automatic tools PSN/SEN enabled Fixed layouts 272/480 from OFW 4.93 Disabled deletion of unsigned act.dat and .rif files Allowed unsigned act.dat and .rif files Allowed running of unsigned applications Compatibility with FSELF C00 demo unlocker Disabled LIC.EDAT license check Can be installed over +3.56 OFW (bguerville Toolset) Can be installed over any CFW CEX/DEX (Depending targetID) Cobra 8.5 added and enabled as default Full PS2 Games Compatibility (Discs only in backward compatible) Possibility of Downgrade from any CFW with active QA Flags QA Flags active if previously e</description>
-			<creators>Evilnat</creators>
-		</mtrl>
 		<mtrl id="0" lastm="2024-12-25T05:50:12.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>Happy Holidays</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/45600_Happy_Holidays.jpg</url>
@@ -256,6 +200,14 @@
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/45600_Happy_Holidays.jpg">Happy Holiday&apos;s from PSX-Place.com . ​</description>
 			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2023-03-05T23:38:06.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS3 4.93 Evilnat w/ Cobra v8.5 - (CEX/PEX/D-PEX) 4.93</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png</url>
+			<target type="u">https://www.psx-place.com/threads/4-91-2-evilnat-w-cobra-v8-5-cex-dex-pex-d-pex.39743/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png">CFW 4.93 Evilnat release details Tested Models Improvements to xai plugin RSX Overclock Tutorial PS2 FAN Speed Savegames / act.dat / PSN Block Tuts Warnings Credits &amp; Acknowledgments 4.93 EVILNAT (Cobra 8.5) ​ Features Made out of 4.93 OFW (CEX) Ported Kernel and some modules from OFW 4.84 DEX Made manually without automatic tools PSN/SEN enabled Fixed layouts 272/480 from OFW 4.93 Disabled deletion of unsigned act.dat and .rif files Allowed unsigned act.dat and .rif files Allowed running of unsigned applications Compatibility with FSELF C00 demo unlocker Disabled LIC.EDAT license check Can be installed over +3.56 OFW (bguerville Toolset) Can be installed over any CFW CEX/DEX (Depending targetID) Cobra 8.5 added and enabled as default Full PS2 Games Compatibility (Discs only in backward compatible) Possibility of Downgrade from any CFW with active QA Flags QA Flags active if previously e</description>
+			<creators>Evilnat</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2024-11-08T05:28:59.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>PS3 New PS1/PS2 Emulation Features for PS3 CFW user&apos;s + Evilnat&apos;s 4.91.2-BETA 12</desc>
@@ -384,14 +336,6 @@
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png">Following the ports from the PS Vita then the PS4 and now the PS3. We have GameMaker Studio working on both PS3HEN / PS3 CFW. Earlier in 2024 there was a release that went a bit under the radar when LiEnby ported GameMaker to the PS3 as posted here by .... . Following that post, we have seen several PoC games ported to the PS3 using the tool, .... has provided downloads to several Sonic games (remakes).​ ​ Readme Video Tutorial Games ported to PS3 v1.0 - Inital Release! Homebrew GM:S Export tool (Based off the original GayMaker Tool for PSVita ) Run the program. and browse to a GameMaker Studio project file (.gmx). you can also change the images, Title. and TitleID and then your game will be &quot;compiled&quot; for PS3 and saved as a PKG to whereever you choose to save it Please show me any games you make with it! Controller Mapping To Check DS4 Controls use the GamePad commands Here is what each</description>
 			<creators>STLcardsWS</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2024-01-13T20:38:47.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS3 GameMaker for PS3</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png</url>
-			<target type="u">https://www.psx-place.com/threads/gamemaker-for-ps3.42581/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png">I finally managed to start it on PS3 HEN!!!</description>
-			<creators>DropSonic</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2023-03-05T23:38:06.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>PS3 4.93 Evilnat w/ Cobra v8.5 - (CEX/PEX/D-PEX) 4.93</desc>
@@ -737,14 +681,6 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/29199_PS4_Ps4_Homebrew_Collection_Index.jpg">PlayStation 4 Homebrew Library .Anything missing? Let us know in the comments below​ Games/Ports Emulators Utility / Multimedia BD-J Homebrew Games / Ports Lapy Games Collection (v1.0) - Contains 9 games in single pkg These games also have standalone pkgs Save The Scene: The Game Duck Hunt Remake (35 Anniversary) Wild Gunman Remake Lapy&apos;s Chicken (El Pollo) El Pollo 2.0 Overcome Shoot Test Scene Quiz Game Overcome - Save the Girl Edition River Raid Remake River Raid Remake (VR Edition) Duck Hunt Remake VR Edition Brain Splitter Air-Strike VR Pinball Wizard Resident Evil Code: PS4 Stickman Zombie Attack B&amp;nder Bar 2 The Enchanted Forest Shephard CreeperDiver Chip and Dale: (Remastered PS4 port) Block Buster Deltarune Quickz Game Sync Simple (ps4) Plissken DooM (PS-VR) Brutal PS4 DooM (2.5) in VR Brutal PS4 Doom Snake Ball An Untitled Story for PS4 (GMS Port) Street Racing (GMS&apos;s Example G</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2022-05-18T00:48:00.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS3 CFW 4.89.3 Evilnat Cobra (8.4) (CEX/DEX/PEX) -</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png</url>
-			<target type="u">https://www.psx-place.com/threads/cfw-4-89-evilnat-cobra-8-3-cex.37294/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png">CFW 4.89.3 Evilnat release details Tested Models Improvements to xai plugin Savegames / act.dat / PSN Block Tuts Warnings Credits &amp; Acknowledgments 4.89.3 EVILNAT (Cobra 8.4) ​ Features Made out of 4.89 OFW (CEX) Ported Kernel and some modules from OFW 4.84 DEX Made manually without automatic tools PSN/SEN enabled Fixed layouts 272/480 from OFW 4.89 Disabled deletion of unsigned act.dat and .rif files Allowed unsigned act.dat and .rif files Allowed running of unsigned applications Compatibility with FSELF C00 demo unlocker Disabled LIC.EDAT license check Can be installed over 3.55 OFW Can be installed over +3.56 OFW (bguerville Toolset) Can be installed over any CFW CEX Cobra 8.4 added and enabled as default Full PS2 Games Compatibility Possibility of Downgrade from any CFW with active QA Flags QA Flags active if previously enabled Disabled Epilepsy Message on Boot Compatibility with PSX</description>
-			<creators>Evilnat</creators>
-		</mtrl>
 		<mtrl id="0" lastm="2020-10-24T23:27:30.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>PS3 [web archive] REBUG.ME (website) &amp; REBUG CFW (LITE/REX)</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png</url>
@@ -905,6 +841,14 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/38180_RELEASE_Flycast_Vita_-_Sega_Dreamcast_emulator_for_PSVITAPSTV_v.1.1.jpg">Flycast Vita v.1.1 ( https://github.com/Rinnegatamante/flycast-vita ) by @Rinnegatamante &amp; @Bythos ​ About Suggested Option Setup Installation Changelogs Credits Flycast Vita is a port of Flycast ( A popular opensource Dreamcast emulator ) for the PlayStation Vita. Due to the nature of the console emulated by this emulator, it&apos;s not to be expected a perfect emulation on every available title. You can consult a Compatibility List from this link: https://www.rinnegatamante.eu/newflycast . ​ ​ Tweaks &amp; Issues - The emulator seems to memleak (probably related to some issues clearing some cache during emulation) thus causing games to degrade in performances during long runs and eventually even crashing the emulator due to out of memory. We STRONGLY suggest to take savestates often in order to not lose progresses. - Due to the nature of CHD and CDI dumps (compressed), GDI dumps must be preferr</description>
 			<creators>Rinnegatamante</creators>
 		</mtrl>
+		<mtrl id="0" lastm="2022-05-18T00:48:00.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS3 CFW 4.89.3 Evilnat Cobra (8.4) (CEX/DEX/PEX) -</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png</url>
+			<target type="u">https://www.psx-place.com/threads/cfw-4-89-evilnat-cobra-8-3-cex.37294/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png">CFW 4.89.3 Evilnat release details Tested Models Improvements to xai plugin Savegames / act.dat / PSN Block Tuts Warnings Credits &amp; Acknowledgments 4.89.3 EVILNAT (Cobra 8.4) ​ Features Made out of 4.89 OFW (CEX) Ported Kernel and some modules from OFW 4.84 DEX Made manually without automatic tools PSN/SEN enabled Fixed layouts 272/480 from OFW 4.89 Disabled deletion of unsigned act.dat and .rif files Allowed unsigned act.dat and .rif files Allowed running of unsigned applications Compatibility with FSELF C00 demo unlocker Disabled LIC.EDAT license check Can be installed over 3.55 OFW Can be installed over +3.56 OFW (bguerville Toolset) Can be installed over any CFW CEX Cobra 8.4 added and enabled as default Full PS2 Games Compatibility Possibility of Downgrade from any CFW with active QA Flags QA Flags active if previously enabled Disabled Epilepsy Message on Boot Compatibility with PSX</description>
+			<creators>Evilnat</creators>
+		</mtrl>
 		<mtrl id="0" lastm="2022-10-06T00:24:55.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>PS2 &quot;The next big thing[?]&quot; for PS1&amp;PS2-Hacking? A small dive into a bright future via the MC-port!</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/38484_PS2_The_next_big_thing_for_PS1PS2-Hacking_A_small_dive_into_a_bright_future_via_the_MC-p.jpg</url>
@@ -960,6 +904,62 @@
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/37273_PS3_PS3HEN_v3.1.1_HFW_Officially_updated_with_4.89_Support_-_The_PS3_Exploit_for_nonCFW_.jpg">UPDATE: v3.1.1 released with HOTFIX see changelog below for v3.1.1 /Following the firmware update of 4.89 that Sony rolled out last week, the reunion of ps3 developer&apos;s was set for the PS3 homebrew / hacking community, First we seen well known Ps3 Homebrew / CFW developer @Evilnat delivered his 4.89 Evilnat (Cobra 8.3) a few days ago for those models that can install a PS3 Custom Firmware, but for those console that can not you can get many CFW features: like the ability to launch homebrew and plugins with the PS3HEN exploit. As @esc0rtd3w of the PS3Xploit Team has just released PS3HEN and fellow scene developer @littlebalup has delivered the special firmware (HFW) that restore the exploits from firmware 4.82 that allows for the execution of PS3HEN. In this official release of PS3HEN v3.1.0 (&amp; HFW) for 4.89 firmware, there has been various changes to PS3HEN from developer @esc0rtd3w and </description>
 			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2022-05-18T01:11:43.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS3 4.89 Evilnat CFW w/ Cobra v8.3 (CEX) (+ noBD /noBT builds)</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/37272_PS3_4.89_Evilnat_CFW_w_Cobra_v8.3_CEX_noBD_noBT_builds.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/4-89-evilnat-cfw-w-cobra-v8-3-cex-nobd-nobt-builds.37272/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/37272_PS3_4.89_Evilnat_CFW_w_Cobra_v8.3_CEX_noBD_noBT_builds.jpg">Following the success of 4.88 Evilnat CFW . well known PS3 developer @Evilnat is at it again with a new Custom Firmware Release for 4.89 with the release of Ps3 CFW 4.89 Evilnat Cobra (8.3 ) (CEX) , following the official firmware update from Sony last week. This CEX based firmware comes packed with the Cobra 8.3 injected into the firmware (making this a Cobra CFW) .There is tons of features packed into this firmware that coming from a top tier of developer&apos;s who has a strong reputation in the PS3 Homebrew / Hacking scene. The developer did not forget about the damage console with noBD / noBT builds of the Custom firmware also available Checkout all the details below. PS3HEN, BG Toolset and HFW Official releases are also coming soon from their respective creators , but be patient as important test are being conducted and BEWARE of unofficial releases (of PS3HEN/HFW) there has been some a</description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2022-05-11T00:29:27.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS4 PS4Load (by bucanero) - Load SELF files over Network</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/37209_PS4_PS4Load_by_bucanero_-_Load_SELF_files_over_Network.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps4load-by-bucanero-load-self-files-over-network.37209/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/37209_PS4_PS4Load_by_bucanero_-_Load_SELF_files_over_Network.jpg">Developer @bucanero has another release for the PS4 Community, following the recent PS4 Apollo Save Tool port there is another well known PS3 utility for homebrew development that is making it&apos;s way to the PS4. Many have known about PS3Load / PS3LoadX built from PSL1GHT. Now for the PS4 there is a new build using the Open Orbis SDK and now we have PS4Load. With this homebrew utility you can load SELF files over a network, which is a handy utility for developer&apos;s testing apps throughout the development process. Any tools making it easier for PS4 Homebrew Development is a step forward in the right direction. If you want to start coding your PS4 project be sure to checkout the PS4 Homebrew Development sub-forum here at psx-place for additional links and resources for developing your next Homebrew Project.​ About PS4Load PS4Load is based on the PSL1GHT PS3load sample, now built using the Ope</description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2022-05-10T22:50:28.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS3 4.89 PS3 Firmware is now live. - Does it affect a Jailbroken / Homebrew Enabled PS3?</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/37206_PS3_4.89_PS3_Firmware_is_now_live._-_Does_it_affect_a_Jailbroken_Homebrew_Enabled_PS3.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/4-89-ps3-firmware-is-now-live-does-it-affect-a-jailbroken-homebrew-enabled-ps3.37206/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/37206_PS3_4.89_PS3_Firmware_is_now_live._-_Does_it_affect_a_Jailbroken_Homebrew_Enabled_PS3.jpg">Latest Status Update (May 20) ​ PS3 CFW has been Released (4.89 Evilnat) PS3HEN &amp; HFW 4.89 Released https://www.psx-place.com/posts/333467/ BGToolset in Testing Phase, No ETA Other Updates sSony has pushed an official system firmware update for the PlayStation 3 (PS3) with the release of 4.89. This update removes the ability to create new accounts for the PlayStation Network from the PS3 and some other minor changes. Now for the Homebrew Community side of the update, It&apos;s recommended you do not update or you will lose your jailbreak. Likely temporary as developer&apos;s will likely be able to update projects and exploit 4.89 in the same way as previous firmware&apos;s in 4.8x. . Depending on your model of PS3 and the exploit you are using you will have a different route. CFW user&apos;s you will need to wait for a CFW to be released, we suggest using established names and developer&apos;s. Developer @Evilna</description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2022-02-09T03:23:41.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS3 RetroArch (Community Edition) Beta 4 - Unofficial PS3 Port by Crystal</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/36469_PS3_RetroArch_Community_Edition_Beta_4_-_Unofficial_PS3_Port_by_Crystal.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/retroarch-community-edition-beta-4-unofficial-ps3-port-by-crystal.36469/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/36469_PS3_RetroArch_Community_Edition_Beta_4_-_Unofficial_PS3_Port_by_Crystal.jpg">RetroArch ( C ommunity E dition ) has reached Beta 4 with a recent update provided by PlayStation 3 Homebrew developer @Crystal ,. RetroArch (CE) &quot; is a community effort to restore a functional build for the homebrew PS3 Community , &quot;. The official port for the PS3 from the libretro team been temporary shelved during a code transition. So, that is where RetroArch (CE) has been filling the gap in providing a port that has fixed some longstanding issues on the PS3 with a greater focus on the console itself. The result becomes one of the most stable RetroArch builds on the PS3 with more libretro core&apos;s (emulators) then ever to add to the RetroArch (frontend) for your Homebrew enabled PS3 powered by either your favorite CFW or PS3HEN ., There is alot more information on this unofficial port along with various links and details for instructions to setup many of the libretro cores being used. </description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2022-01-31T00:23:31.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS4 Icon Mask ( update v1.05) Change the appearance of your PS4 icons</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/36373_PS4_Icon_Mask_update_v1.05_Change_the_appearance_of_your_PS4_icons.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/icon-mask-update-v1-05-change-the-appearance-of-your-ps4-icons.36373/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/36373_PS4_Icon_Mask_update_v1.05_Change_the_appearance_of_your_PS4_icons.jpg">Update v1.05 Released dOriginal article: Developer Lapy has a new utility ps4 homebrew he has released recently along with two quick updates to provide additional functionality with the release of Icon Mask . Many of you know Lapy from his various homebrew creations on the Ps4 / PS Vita. We have seen from Lapy Games titles like Duck Hunt remake / Wild Gunman Remake Brain Splitter &amp; various others you can see in the Lapy Games Collection . the developer has released various utility applications like PS4-Xplorer / PS4 Tempature &amp; PS4 App Lock Now with Icon Mask the developer has gave user&apos;s an easy way to customizes Icons on the PS4&apos;s main menu, giving a custom look to the UI with a variety of &quot;mask&quot; that can be used with more planned to be added in the future.. Below are some of the details of Icon Mask (which currently sits at v1.02 and supports 9.00 FW) ​ About (Inside the Homebrew App </description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2020-12-10T12:20:09.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS3 4.88.2 Evilnat Cobra (8.3) Custom FirmWare (CFW-CEX) Released</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/32057_PS3_4.88.2_Evilnat_Cobra_8.3_Custom_FirmWare_CFW-CEX_Released.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/4-88-2-evilnat-cobra-8-3-custom-firmware-cfw-cex-released.32057/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/32057_PS3_4.88.2_Evilnat_Cobra_8.3_Custom_FirmWare_CFW-CEX_Released.jpg">UPDATE 4.88.2: PS3 Developer @Evilnat has updated and released 4.88 .2 Evilnat (Cobra 8.3) CFW , there is a number of new options like an added File manager, Option to toggle Cobra version, and various other new options detailed in the changlog provided below. Also the developer has provided a number of fixes and improvements, View all the details of 4.88.2 release of this latest CFW by @Evilnat . Original release (4.88.1) Developer @Evilnat (creator of releases like SEN Enabler and PAUD Unpacker) has created and released 4.88 EVILNAT&apos;s COBRA CFW , following the success of 4.87 Evilnat&apos;s CFW, the developer provides another trusted CFW release that provides the Cobra Payload and all the features it brings (note: MAMBA is an alternative to the Cobra Payload, Cobra is included in firmware&apos;s where as MAMBA is typically injected in a Standard CEX CFW via a homebrew app. See all the details of</description>
+			<creators>Evilnat</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2020-07-31T23:24:39.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS3 PS3LoadX v1.2</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/30665_PS3_PS3LoadX_v1.2.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/ps3loadx-v1-2.30665/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/30665_PS3_PS3LoadX_v1.2.jpg">This little app for developers allows to send .SELF binaries over the network to test code and speed up development of PS3 homebrew. Hermes also added other features like installing .zip files, but it wasn&apos;t updated since FW 3.55 and wasn&apos;t working with current ps3 firmwares (4.82+) So, I&apos;ve ported the original PS3LoadX app by Hermes to the latest PSL1GHT &amp; Tiny3d code, and made it compatible with the latest firmware. Source code: https://github.com/bucanero/ps3loadx Readme: https://github.com/bucanero/ps3loadx/blob/master/README.md Download link (ps3loadx.pkg): https://github.com/bucanero/ps3loadx/releases/tag/v1.2 Just install the .pkg and you&apos;ll find the PS3LoadX app in the XMB&apos;s Network tab.</description>
+			<creators>bucanero</creators>
 		</mtrl>
 	</spc>
 </nsx>
