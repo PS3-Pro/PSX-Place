@@ -5,6 +5,7 @@ import time
 from datetime import datetime, timezone
 from io import BytesIO
 from urllib.parse import urljoin, urlparse
+from xml.etree import ElementTree as ET
 from xml.sax.saxutils import escape
 
 from bs4 import BeautifulSoup
@@ -28,10 +29,6 @@ DIR_COMPRESSED = os.path.join("resources", "images", "compressed")
 XML_PATH = os.path.join(DIR_FILES, "whats_new.xml")
 
 
-# -----------------------------
-# Logging helpers
-# -----------------------------
-
 def now_stamp():
     return datetime.now().strftime("%H:%M:%S")
 
@@ -39,10 +36,6 @@ def now_stamp():
 def log(message):
     print(f"[{now_stamp()}] {message}", flush=True)
 
-
-# -----------------------------
-# Text / URL helpers
-# -----------------------------
 
 def clean_text(text):
     if not text:
@@ -75,10 +68,6 @@ def portal_url(page):
     return f"{PSX_BASE}ewr-porta/page-{page}"
 
 
-# -----------------------------
-# HTTP
-# -----------------------------
-
 def fetch_html(url, timeout=30):
     for attempt in range(1, 4):
         try:
@@ -109,10 +98,6 @@ def fetch_html(url, timeout=30):
     return ""
 
 
-# -----------------------------
-# Portal link extraction
-# -----------------------------
-
 def is_article_url(url):
     return "/threads/" in url
 
@@ -125,20 +110,8 @@ def is_bad_title(text):
     low = title.lower()
 
     bad_exact = {
-        "next",
-        "prev",
-        "previous",
-        "first",
-        "last",
-        "go",
-        "here",
-        "click here",
-        "read more",
-        "continue",
-        "like",
-        "quote",
-        "reply",
-        "share",
+        "next", "prev", "previous", "first", "last", "go", "here",
+        "click here", "read more", "continue", "like", "quote", "reply", "share",
     }
 
     if low in bad_exact:
@@ -192,7 +165,6 @@ def extract_portal_links(soup):
                 "link": href,
             })
 
-    # Fallback: if the page layout changes again, scan all thread links.
     if len(found) < 3:
         for a in soup.select("a[href*='/threads/']"):
             href = normalize_url(a.get("href"))
@@ -221,10 +193,6 @@ def extract_portal_links(soup):
 
     return unique
 
-
-# -----------------------------
-# Article detail extraction
-# -----------------------------
 
 def get_meta_content(soup, *keys):
     for key in keys:
@@ -277,17 +245,8 @@ def is_good_image_url(url):
     low = url.lower()
 
     bad_parts = [
-        "avatar",
-        "avatars",
-        "smilie",
-        "smilies",
-        "sprite",
-        "logo",
-        "like",
-        "reaction",
-        "styles/",
-        "blank.gif",
-        "data:image",
+        "avatar", "avatars", "smilie", "smilies", "sprite", "logo", "like",
+        "reaction", "styles/", "blank.gif", "data:image",
     ]
 
     return not any(part in low for part in bad_parts)
@@ -435,14 +394,11 @@ def read_article_detail(item):
     }
 
 
-# -----------------------------
-# Images
-# -----------------------------
-
 def make_image_name(title, link):
     thread_id = extract_thread_id(link)
-    safe_title = re.sub(r'[\\/*?:"<>|]', "", title)
-    safe_title = re.sub(r"\s+", "_", safe_title).strip("_")
+    safe_title = clean_text(title)
+    safe_title = re.sub(r"[^A-Za-z0-9._-]+", "_", safe_title)
+    safe_title = re.sub(r"_+", "_", safe_title).strip("._-")
     safe_title = safe_title[:80] or "psx_place"
 
     return f"{thread_id}_{safe_title}.jpg"
@@ -470,7 +426,6 @@ def download_and_process_image(image_url, image_name):
         log(f"Image already exists, skipping: {image_name}")
         return True
 
-    # If the original already exists but the compressed version does not, rebuild it locally.
     if not FORCE_IMAGE_REFRESH and os.path.exists(path_uncompressed) and not os.path.exists(path_compressed):
         try:
             log(f"Rebuilding compressed image from existing original: {image_name}")
@@ -505,10 +460,6 @@ def download_and_process_image(image_url, image_name):
         log(f"Image error for {image_name}: {e}")
         return False
 
-
-# -----------------------------
-# Main scraping flow
-# -----------------------------
 
 def collect_news():
     seeds = []
@@ -632,9 +583,16 @@ def validate_output():
         log("ERROR: XML was created without any <mtrl> items")
         raise SystemExit(1)
 
+    try:
+        ET.fromstring(xml_content)
+        log("XML validation: OK")
+    except ET.ParseError as e:
+        log(f"ERROR: XML validation failed: {e}")
+        raise SystemExit(1)
+
 
 def update_psx_news():
-    log("Starting PSX-Place Scraper v4 for XenPorta/XenForo")
+    log("Starting PSX-Place Scraper v5 for XenPorta/XenForo")
     log(f"Working directory: {os.getcwd()}")
     log(f"Max pages: {MAX_PAGES}")
     log(f"Max items: {MAX_ITEMS}")
