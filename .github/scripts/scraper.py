@@ -6,7 +6,6 @@ from datetime import datetime, timezone
 from io import BytesIO
 from urllib.parse import urljoin, urlparse
 from xml.sax.saxutils import escape
-from xml.etree import ElementTree as ET
 
 from bs4 import BeautifulSoup
 from curl_cffi import requests as curl_requests
@@ -92,6 +91,28 @@ def normalize_url(href, base=PSX_BASE):
     url = urljoin(base, href).split("#")[0]
     parsed = urlparse(url)
     return f"{parsed.scheme}://{parsed.netloc}{parsed.path}"
+
+
+def canonical_thread_url(url):
+    """Keep portal/thread links stable and avoid duplicated post/page URLs."""
+    url = normalize_url(url)
+    if not url:
+        return ""
+
+    parsed = urlparse(url)
+    path = parsed.path
+
+    # Convert /threads/title.12345/post-999999 to /threads/title.12345/
+    path = re.sub(r"/post-\d+/?$", "/", path)
+
+    # Convert /threads/title.12345/page-2 to /threads/title.12345/
+    path = re.sub(r"/page-\d+/?$", "/", path)
+
+    # Normalize final slash for XenForo thread URLs.
+    if re.search(r"\.\d+/?$", path) and not path.endswith("/"):
+        path += "/"
+
+    return f"{parsed.scheme}://{parsed.netloc}{path}"
 
 
 def portal_url(page):
@@ -189,20 +210,36 @@ def extract_portal_links(soup):
         ".porta-title a[href*='/threads/']",
         ".message-title a[href*='/threads/']",
         ".structItem-title a[href*='/threads/']",
-        "article a[href*='/threads/']",
     ]
     found = []
     for selector in selectors:
         for a in soup.select(selector):
-            href = normalize_url(a.get("href"))
+            href = canonical_thread_url(a.get("href"))
             title = clean_text(a.get("title") or a.get_text(" ", strip=True))
             if is_article_url(href) and not is_bad_title(title):
                 found.append({"title": title, "link": href})
 
     if len(found) < 3:
+        # Last-resort fallback. Avoid links embedded in article text such as
+        # related posts or inline references, because those create duplicated/non-news items.
         for a in soup.select("a[href*='/threads/']"):
-            href = normalize_url(a.get("href"))
+            href = canonical_thread_url(a.get("href"))
             title = clean_text(a.get("title") or a.get_text(" ", strip=True))
+
+            parent_classes = " ".join(" ".join(p.get("class", [])) for p in a.parents if getattr(p, "get", None))
+            likely_title_area = any(token in parent_classes for token in [
+                "contentRow-title",
+                "porta-title",
+                "structItem-title",
+                "message-title",
+                "block-header",
+                "p-title",
+                "articlePreview-title",
+            ])
+
+            if not likely_title_area:
+                continue
+
             if is_article_url(href) and not is_bad_title(title):
                 found.append({"title": title, "link": href})
 
@@ -505,16 +542,33 @@ def validate_output():
         log("ERROR: XML was created without any <mtrl> items")
         raise SystemExit(1)
 
-    try:
-        ET.fromstring(xml_content)
-        log("XML validation: OK")
-    except ET.ParseError as e:
-        log(f"ERROR: XML validation failed: {e}")
+    # Important: this feed intentionally embeds small HTML inside <description>,
+    # exactly like the old scraper did, because files/index.html reads it line-by-line
+    # and extracts the image with a regex. A strict XML parser would reject raw <img>.
+    # So we validate the feed contract used by the site/PS3 reader instead.
+    required_closing = ["</mtrl>", "</spc>", "</nsx>"]
+    for token in required_closing:
+        if token not in xml_content:
+            log(f"ERROR: XML output is missing required closing token: {token}")
+            raise SystemExit(1)
+
+    desc_count = xml_content.count("<desc>")
+    target_count = xml_content.count('<target type="u">')
+    description_count = xml_content.count("<description>")
+    creator_count = xml_content.count("<creators>")
+
+    log(f"Feed contract counts: desc={desc_count}, target={target_count}, description={description_count}, creators={creator_count}")
+
+    expected_counts = [desc_count, target_count, description_count, creator_count]
+    if any(count != material_count for count in expected_counts):
+        log("ERROR: Feed contract validation failed; tag counts do not match <mtrl> count")
         raise SystemExit(1)
+
+    log("Feed contract validation: OK")
 
 
 def update_psx_news():
-    log("Starting PSX-Place Scraper v6 with multi-method HTTP fallback")
+    log("Starting PSX-Place Scraper v7 with multi-method HTTP fallback")
     log(f"Working directory: {os.getcwd()}")
     log(f"Max pages: {MAX_PAGES}")
     log(f"Max items: {MAX_ITEMS}")
