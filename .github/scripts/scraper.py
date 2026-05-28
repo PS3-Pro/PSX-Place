@@ -429,9 +429,30 @@ def is_good_image_url(url):
         "twemoji",
         "emoji",
         "unicode/64/",
+        "giphy.gif",
+        "facebook.com/tr",
     ]
 
-    return not any(part in low for part in bad_parts)
+    bad_extensions = [
+        ".gif",
+        ".svg",
+        ".webp",
+    ]
+
+    if any(part in low for part in bad_parts):
+        return False
+
+    if any(low.endswith(ext) for ext in bad_extensions):
+        return False
+
+    return True
+
+
+def safe_int(value, default=0):
+    try:
+        return int(str(value).strip())
+    except Exception:
+        return default
 
 
 def get_img_src(img, base_url):
@@ -442,27 +463,124 @@ def get_img_src(img, base_url):
     return ""
 
 
+def is_probably_too_small(img):
+    width = safe_int(img.get("width"))
+    height = safe_int(img.get("height"))
+
+    if width and width < 120:
+        return True
+    if height and height < 120:
+        return True
+
+    return False
+
+
+def score_image_candidate(url, img_tag=None):
+    if not is_good_image_url(url):
+        return -1000
+
+    low = url.lower()
+    score = 0
+
+    if "/data/features/" in low:
+        score += 120
+    if "/ewr-porta/attachments/" in low:
+        score += 90
+    if "/attachments/" in low:
+        score += 80
+    if "/data/attachments/" in low:
+        score += 75
+    if low.endswith(".jpg") or low.endswith(".jpeg") or low.endswith(".png"):
+        score += 20
+    if ".jpg" in low or ".jpeg" in low or ".png" in low:
+        score += 10
+
+    if img_tag is not None:
+        if is_probably_too_small(img_tag):
+            score -= 90
+
+        classes = " ".join(img_tag.get("class", [])) if img_tag.get("class") else ""
+        alt = (img_tag.get("alt") or "").lower()
+        title = (img_tag.get("title") or "").lower()
+
+        bad_words = ["emoji", "smilie", "avatar", "reaction", "icon", "logo"]
+        if any(word in classes.lower() for word in bad_words):
+            score -= 120
+        if any(word in alt for word in bad_words):
+            score -= 120
+        if any(word in title for word in bad_words):
+            score -= 120
+
+        parent = img_tag.parent
+        if parent is not None:
+            parent_classes = " ".join(parent.get("class", [])) if parent.get("class") else ""
+            if any(word in parent_classes.lower() for word in bad_words):
+                score -= 120
+
+    return score
+
+
+def get_first_message_body(soup):
+    selectors = [
+        "article.message:first-of-type .bbWrapper",
+        "article.message--post:first-of-type .bbWrapper",
+        "article.message--article:first-of-type .bbWrapper",
+        ".message--article .bbWrapper",
+        ".message-body .bbWrapper",
+        "[itemprop='articleBody']",
+        ".bbWrapper",
+    ]
+
+    for selector in selectors:
+        body = soup.select_one(selector)
+        if body:
+            return body
+
+    return soup
+
+
 def extract_first_good_image(soup, base_url):
-    meta_img = get_meta_content(soup, "og:image", "twitter:image")
+    candidates = []
 
-    if is_good_image_url(meta_img):
-        return normalize_url(meta_img, base_url)
+    # 1) Prefer explicit feature/meta images when available.
+    for meta_key in ("og:image", "twitter:image"):
+        meta_img = get_meta_content(soup, meta_key)
+        if meta_img:
+            meta_img = normalize_url(meta_img, base_url)
+            candidates.append((score_image_candidate(meta_img), meta_img, "meta"))
 
-    body = (
-        soup.select_one(".message--article .bbWrapper")
-        or soup.select_one(".message-body .bbWrapper")
-        or soup.select_one("[itemprop='articleBody']")
-        or soup.select_one(".bbWrapper")
-        or soup
-    )
-
-    for img in body.select("img"):
+    # 2) If the feature image is missing/bad, scan the first thread message.
+    first_body = get_first_message_body(soup)
+    for img in first_body.select("img"):
         src = get_img_src(img, base_url)
-        if is_good_image_url(src):
-            return src
+        if not src:
+            continue
+        candidates.append((score_image_candidate(src, img), src, "first-message"))
 
-    return ""
+    # 3) Last fallback: scan every image on the page.
+    for img in soup.select("img"):
+        src = get_img_src(img, base_url)
+        if not src:
+            continue
+        candidates.append((score_image_candidate(src, img) - 20, src, "page"))
 
+    if not candidates:
+        return ""
+
+    # Keep first occurrence for duplicate URLs, but preserve the best score.
+    best_by_url = {}
+    for score, url, source in candidates:
+        if url not in best_by_url or score > best_by_url[url][0]:
+            best_by_url[url] = (score, url, source)
+
+    ranked = sorted(best_by_url.values(), key=lambda x: x[0], reverse=True)
+    best_score, best_url, best_source = ranked[0]
+
+    if best_score < 0:
+        return ""
+
+    log(f"Selected image from {best_source}: score={best_score} url={best_url}")
+    return best_url
 
 def extract_summary(soup):
     body = (
@@ -773,7 +891,7 @@ def validate_feed_contract():
 
 
 def update_psx_news():
-    log("Starting PSX-Place Scraper v8 with robust portal extraction")
+    log("Starting PSX-Place Scraper v9 with first-message image fallback")
     log(f"Working directory: {os.getcwd()}")
     log(f"Max pages: {MAX_PAGES}")
     log(f"Max items: {MAX_ITEMS}")
