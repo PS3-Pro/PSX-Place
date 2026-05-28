@@ -267,10 +267,10 @@
 		</mtrl>
 		<mtrl id="0" lastm="2024-10-20T16:22:51.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>PS3 [Release] PS1 and PS2 Emulator Mods 20\10\2024</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png</url>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/45083_PS3_Release_PS1_and_PS2_Emulator_Mods_20102024.jpg</url>
 			<target type="u">https://www.psx-place.com/threads/release-ps1-and-ps2-emulator-mods.45083/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png">Hi all, I am providing some emulator mods for ps1_emu, ps1_netemu, ps2_emu, ps2_gxemu, and ps2_netemu, all courtesy of kozarovv. A variety of features have been introduced, such as new config commands for ps2_netemu, external config support for ps2_gxemu, GTE widescreen support for ps1_emu and ps1_netemu, and much more! I have personally tested a bit of this: Anti-blur has been only confirmed working with Kingdom Hearts 2 and clears up the image quite nicely on ps2_netemu. Widescreen hack tested and confirmed working on ps1_netemu with Silent Hill. No immediate changes with any tested game on ps2_netemu&apos;s EE cycle manipulation command. Maybe emulation is not EE limited? This is CFW only! No HEN compatibility (never for ps2_netemu, maybe possible at some point for ps1 emus?). Readme: Many thanks to kozarovv for making this happen! You can download the release with all emu mods here (exter</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/45083_PS3_Release_PS1_and_PS2_Emulator_Mods_20102024.jpg">Hi all, I am providing some emulator mods for ps1_emu, ps1_netemu, ps2_emu, ps2_gxemu, and ps2_netemu, all courtesy of kozarovv. A variety of features have been introduced, such as new config commands for ps2_netemu, external config support for ps2_gxemu, GTE widescreen support for ps1_emu and ps1_netemu, and much more! I have personally tested a bit of this: Anti-blur has been only confirmed working with Kingdom Hearts 2 and clears up the image quite nicely on ps2_netemu. Widescreen hack tested and confirmed working on ps1_netemu with Silent Hill. No immediate changes with any tested game on ps2_netemu&apos;s EE cycle manipulation command. Maybe emulation is not EE limited? This is CFW only! No HEN compatibility (never for ps2_netemu, maybe possible at some point for ps1 emus?). Readme: Many thanks to kozarovv for making this happen! You can download the release with all emu mods here (exter</description>
 			<creators>mrjaredbeta</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2024-07-17T01:27:52.000Z" until="2100-12-31T23:59:00.000Z">
@@ -379,10 +379,10 @@
 		</mtrl>
 		<mtrl id="0" lastm="2024-03-10T13:51:14.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>PS3 GameMaker Studio ported to the PS3 (CFW &amp; HEN)</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/43114_PS3_GameMaker_Studio_ported_to_the_PS3_CFW_HEN.jpg</url>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png</url>
 			<target type="u">https://www.psx-place.com/threads/gamemaker-studio-ported-to-the-ps3-cfw-hen.43114/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/43114_PS3_GameMaker_Studio_ported_to_the_PS3_CFW_HEN.jpg">Following the ports from the PS Vita then the PS4 and now the PS3. We have GameMaker Studio working on both PS3HEN / PS3 CFW. Earlier in 2024 there was a release that went a bit under the radar when LiEnby ported GameMaker to the PS3 as posted here by .... . Following that post, we have seen several PoC games ported to the PS3 using the tool, .... has provided downloads to several Sonic games (remakes).​ ​ Readme Video Tutorial Games ported to PS3 v1.0 - Inital Release! Homebrew GM:S Export tool (Based off the original GayMaker Tool for PSVita ) Run the program. and browse to a GameMaker Studio project file (.gmx). you can also change the images, Title. and TitleID and then your game will be &quot;compiled&quot; for PS3 and saved as a PKG to whereever you choose to save it Please show me any games you make with it! Controller Mapping To Check DS4 Controls use the GamePad commands Here is what each</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png">Following the ports from the PS Vita then the PS4 and now the PS3. We have GameMaker Studio working on both PS3HEN / PS3 CFW. Earlier in 2024 there was a release that went a bit under the radar when LiEnby ported GameMaker to the PS3 as posted here by .... . Following that post, we have seen several PoC games ported to the PS3 using the tool, .... has provided downloads to several Sonic games (remakes).​ ​ Readme Video Tutorial Games ported to PS3 v1.0 - Inital Release! Homebrew GM:S Export tool (Based off the original GayMaker Tool for PSVita ) Run the program. and browse to a GameMaker Studio project file (.gmx). you can also change the images, Title. and TitleID and then your game will be &quot;compiled&quot; for PS3 and saved as a PKG to whereever you choose to save it Please show me any games you make with it! Controller Mapping To Check DS4 Controls use the GamePad commands Here is what each</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2024-01-13T20:38:47.000Z" until="2100-12-31T23:59:00.000Z">
@@ -403,10 +403,10 @@
 		</mtrl>
 		<mtrl id="0" lastm="2024-03-10T13:19:13.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>PS3 ps3toolset for cfw 4.91</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png</url>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/43112_PS3_ps3toolset_for_cfw_4.91.jpg</url>
 			<target type="u">https://www.psx-place.com/threads/ps3toolset-for-cfw-4-91.43112/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png">hy @bguerville do you have some update on the ps3 toolset for the cfw 4.91?</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/43112_PS3_ps3toolset_for_cfw_4.91.jpg">hy @bguerville do you have some update on the ps3 toolset for the cfw 4.91?</description>
 			<creators>Ermartux</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2023-12-30T15:31:22.000Z" until="2100-12-31T23:59:00.000Z">
@@ -579,10 +579,10 @@
 		</mtrl>
 		<mtrl id="0" lastm="2023-03-19T05:37:18.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>PS3 PS3 Toolset is back (4.90)</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png</url>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/40009_PS3_PS3_Toolset_is_back_4.90.jpg</url>
 			<target type="u">https://www.psx-place.com/threads/ps3-toolset-is-back.40009/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/default.png">Hi everyone, it&apos;s been a while. Just wanted to let you guys know that the official PS3 Toolset is finally back online and accessible at http://ps3toolset.com . Note that https access is still possible in theory however the SSL certificate isn&apos;t PS3 browser compatible, so you should just use plain http instead. In terms of security, it should make little difference as no sensitive PS3 information is ever being exchanged with the server anyway, data is processed locally. Restored version 1.2.004 currently live supports firmwares 4.80 to 4.89. Support for 4.90 firmwares is currently being added, an update will be pushed in coming days as soon as testing is complete. My apologies for the long wait since September, it couldn&apos;t be helped at my end unfortunately.</description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/40009_PS3_PS3_Toolset_is_back_4.90.jpg">Hi everyone, it&apos;s been a while. Just wanted to let you guys know that the official PS3 Toolset is finally back online and accessible at http://ps3toolset.com . Note that https access is still possible in theory however the SSL certificate isn&apos;t PS3 browser compatible, so you should just use plain http instead. In terms of security, it should make little difference as no sensitive PS3 information is ever being exchanged with the server anyway, data is processed locally. Restored version 1.2.004 currently live supports firmwares 4.80 to 4.89. Support for 4.90 firmwares is currently being added, an update will be pushed in coming days as soon as testing is complete. My apologies for the long wait since September, it couldn&apos;t be helped at my end unfortunately.</description>
 			<creators>bguerville</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2023-03-07T23:13:50.000Z" until="2100-12-31T23:59:00.000Z">
