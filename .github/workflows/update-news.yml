@@ -44,16 +44,12 @@ jobs:
         run: |
           echo "Checking generated XML..."
           test -f files/whats_new.xml
-
           echo "XML material count:"
           grep -c "<mtrl" files/whats_new.xml
-
           echo "Files folder:"
           ls -lah files || true
-
           echo "Generated image sample:"
           find resources/images -type f | head -50 || true
-
           echo "Git status after scraper:"
           git status --short
 
@@ -61,15 +57,12 @@ jobs:
         run: |
           git config user.name "PS3-Pro Bot"
           git config user.email "bot@ps3pro.com"
-
           git add files/
           git add resources/images/uncompressed/
           git add resources/images/compressed/
-
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
           fi
-
           git commit -m "Auto-update: PSX-Place News Feed"
           git push
