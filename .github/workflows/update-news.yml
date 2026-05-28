@@ -30,12 +30,7 @@ jobs:
           pip install curl_cffi beautifulsoup4 lxml Pillow requests
 
       - name: Probe PSX-Place access methods
-        run: |
-          echo "Working directory:"
-          pwd
-          echo "Repository files before probe:"
-          ls -la
-          python .github/scripts/probe_psx_access.py
+        run: python .github/scripts/probe_psx_access.py
 
       - name: Run PSX-Place scraper
         run: |
@@ -52,9 +47,6 @@ jobs:
 
           echo "XML material count:"
           grep -c "<mtrl" files/whats_new.xml
-
-          echo "XML tail:"
-          tail -20 files/whats_new.xml
 
           echo "Files folder:"
           ls -lah files || true
