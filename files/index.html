@@ -1,4 +1,4 @@
-<!-- Coded for PS3™ Pro by Luan Teles -->
+<!-- Coded for PS3â„¢ Pro by Luan Teles -->
 <html>
    <head>
         <title>PSX-Place News</title>   
@@ -92,7 +92,7 @@
             opacity: 1 !important;
         }
 
-        /* No PS3 a imagem é sempre visível (opacidade 1) */
+        /* No PS3 a imagem Ã© sempre visÃ­vel (opacidade 1) */
         .is-ps3 .news_card_image {
             opacity: 1 !important;
         }
@@ -158,10 +158,31 @@
         .is-pc #article_modal.active { display: flex; }
         .is-pc .modal_container { background: #050505; border: 2px solid #00aaff; width: 95%; max-width: 800px; border-radius: 12px; position: relative; max-height: 90vh; overflow: hidden; display: flex; flex-direction: column; }
         .is-pc .modal_header_section { flex-shrink: 0; text-align: center; padding: 15px 50px 0 50px; }
-        .is-pc #modal_body_content { padding: 5px 10px 20px 25px; margin-right: 15px; overflow-y: auto; line-height: 1.6; color: #eee; font-size: 14.5px; text-align: center; flex: 1; }
+        .is-pc #modal_body_content { padding: 8px 26px 20px 28px; margin-right: 12px; overflow-y: auto; line-height: 1.55; color: #eee; font-size: 14.5px; text-align: left; flex: 1; }
         .is-pc #modal_footer_section { padding: 15px; background: #000; text-align: center; position: relative; }
         .is-pc #modal_footer_section::before { content: ""; position: absolute; top: 0; left: 50px; right: 50px; height: 1px; background: #444; }
         .is-pc .button_close_modal { position: absolute; top: 10px; right: 10px; background: #f00; border: 1px solid #fff; color: white; padding: 4px 10px; border-radius: 5px; font-weight: bold; cursor: pointer; z-index: 210; }
+
+
+        .is-pc #modal_feature_image {
+            width: 420px;
+            max-width: 70%;
+            height: 236px;
+            object-fit: cover;
+            background: #111;
+            border-radius: 6px;
+        }
+
+        .article_body_paragraph {
+            margin: 0 auto 12px auto;
+            max-width: 760px;
+            text-align: left;
+        }
+
+        .is-pc .article_body_paragraph {
+            font-size: 15px;
+            line-height: 1.55;
+        }
 
         /* =========================================
            3. PS3 ADJUSTIMENTS
@@ -204,7 +225,8 @@
         .is-ps3 .modal_header_section { text-align: center; padding: 20px 60px 5px 60px; }
         .is-ps3 #modal_title { font-size: 18px; line-height: 1.3; margin-bottom: 15px; word-wrap: break-word; color: #F0E68C; }
         .is-ps3 #modal_feature_image {	width: 100%; max-width: 380px; height: 210px; background: #111; margin: 15px auto; display: block; object-fit: cover;}
-		.is-ps3 #modal_body_content { padding: 0px 25px 0px 25px; color: #eee; font-size: 14px; text-align: center; }
+		.is-ps3 #modal_body_content { padding: 0px 25px 0px 25px; color: #eee; font-size: 14px; text-align: left; }
+        .is-ps3 .article_body_paragraph { font-size: 14px; line-height: 1.45; text-align: left; }
         .is-ps3 #modal_footer_section { display: block !important; padding: 15px; background: #000; text-align: center; }
         .is-ps3 #modal_footer_section::before { content: ""; display: block; height: 1px; background: #444; margin: 0 auto 15px auto; width: 90%; }
         .is-ps3 .button_close_modal { position: absolute; top: 10px; right: 10px; background: #f00; border: 1px solid #fff; color: white; padding: 5px 10px; font-weight: bold; z-index: 210; }
@@ -365,7 +387,7 @@
 
                 htmlArray.push('<div class="news_card_wrapper" style="animation-delay: ' + (i * 0.08) + 's;">' +
                                 '<div class="news_card">' +
-                                    '<img src="' + G_EMPTY_GIF + '" data-src="' + finalImgUrl + '" class="news_card_image" onclick="openArticleModal(' + i + ')">' +
+                                    '<img src="' + G_EMPTY_GIF + '" data-src="' + finalImgUrl + '" class="news_card_image" style="width:100%;height:' + (isPS3 ? '170px' : '145px') + ';display:block;" onclick="openArticleModal(' + i + ')">' +
                                     '<div class="news_card_title">' + article.title + '</div>' +
                                     '<div class="news_card_excerpt"><span class="label_preview">Preview:</span><br>' + article.snippet + '</div>' +
                                     '<span class="news_card_meta">By <span class="highlight_author">' + article.author + '</span> | ' +
@@ -553,6 +575,159 @@
             }
         }
 
+
+        function escapeModalHTML(text) {
+            return String(text || "")
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;");
+        }
+
+        function stripModalMedia(htmlString) {
+            return String(htmlString || "")
+                .replace(/<img[^>]*>/gi, " ")
+                .replace(/<iframe[\s\S]*?<\/iframe>/gi, " ")
+                .replace(/<video[\s\S]*?<\/video>/gi, " ")
+                .replace(/<object[\s\S]*?<\/object>/gi, " ")
+                .replace(/<embed[^>]*>/gi, " ");
+        }
+
+        function repairModalTextSpacing(text) {
+            text = String(text || "");
+
+            // Fix version numbers and decimal-like strings that may arrive as "4. 91".
+            text = text.replace(/(\d)\.\s+(\d)/g, "$1.$2");
+
+            // Fix common domain fragments produced by text extraction, e.g. "aldostools. github. io".
+            text = text.replace(/\b([A-Za-z0-9_-]+)\.\s+(github)\.\s+(io)\b/gi, "$1.$2.$3");
+            text = text.replace(/\b([A-Za-z0-9_-]+)\.\s+(com|net|org|io|co|br|dev)\b/gi, "$1.$2");
+            text = text.replace(/\b(github)\.\s+(io)\b/gi, "$1.$2");
+
+            // Clean accidental spaces around URL slashes.
+            text = text.replace(/\s+\/\s+/g, "/");
+            text = text.replace(/(https?:)\s*\/\s*\//gi, "$1//");
+
+            return text;
+        }
+
+        function shouldSplitModalSentence(text, index) {
+            var ch = text.charAt(index);
+            if (ch !== "." && ch !== "!" && ch !== "?") return false;
+
+            var nextIndex = index + 1;
+            var nextChar = text.charAt(nextIndex);
+
+            // Do not split domains/abbreviations where there is no space after the punctuation.
+            if (nextChar && !/\s/.test(nextChar)) return false;
+
+            while (nextIndex < text.length && /\s/.test(text.charAt(nextIndex))) {
+                nextIndex++;
+            }
+
+            if (nextIndex >= text.length) return true;
+
+            var nextNonSpace = text.charAt(nextIndex);
+
+            // Keep versions/decimals together, for example 4.91, 4. 91, v1.0.0.
+            if (/\d/.test(nextNonSpace)) return false;
+
+            return true;
+        }
+
+        function splitModalTextBySentences(text, maxLen) {
+            text = String(text || "").replace(/^\s+|\s+$/g, "");
+            if (!text) return [];
+
+            var sentences = [];
+            var start = 0;
+            var i;
+
+            for (i = 0; i < text.length; i++) {
+                if (shouldSplitModalSentence(text, i)) {
+                    var sentence = text.substring(start, i + 1).replace(/^\s+|\s+$/g, "");
+                    if (sentence) sentences.push(sentence);
+
+                    start = i + 1;
+                    while (start < text.length && /\s/.test(text.charAt(start))) {
+                        start++;
+                    }
+                }
+            }
+
+            var rest = text.substring(start).replace(/^\s+|\s+$/g, "");
+            if (rest) sentences.push(rest);
+
+            var parts = [];
+            var current = "";
+
+            for (i = 0; i < sentences.length; i++) {
+                var sentenceText = sentences[i];
+
+                if (current && (current + " " + sentenceText).length > maxLen) {
+                    parts.push(current);
+                    current = sentenceText;
+                } else {
+                    current = current ? current + " " + sentenceText : sentenceText;
+                }
+            }
+
+            if (current) parts.push(current);
+            return parts;
+        }
+
+        function formatArticleBodyForModal(rawHtml) {
+            var cleanHtml = stripModalMedia(rawHtml || "");
+            var text = "";
+
+            if (!isPS3) {
+                var tempDiv = document.createElement("div");
+                tempDiv.innerHTML = cleanHtml;
+                text = tempDiv.textContent || tempDiv.innerText || "";
+            } else {
+                text = cleanHtml.replace(/<[^>]*>?/gm, " ")
+                                .replace(/&nbsp;/g, " ");
+            }
+
+            text = text.replace(/\u200b/g, " ")
+                       .replace(/\s+/g, " ")
+                       .replace(/^\s+|\s+$/g, "");
+
+            text = repairModalTextSpacing(text);
+
+            if (!text) return "";
+
+            // Add breaks only before strong section markers. Do not split on every dot,
+            // because versions like 4.91 and domains like github.io must stay together.
+            text = text.replace(/\s+(UPDATE\s*\()/g, "\n\n$1");
+            text = text.replace(/\s+(CHANGELOG\b)/g, "\n\n$1");
+            text = text.replace(/\s+(Release Installing|Installing \/ Setup|Updating HEN|FAQ \/ Notes|Homebrew Compatibility|Developer Information|What Is HEN:|Resource Changes|Global Changes|Tutorials|Auto-detect PS3 firmware|Offline Site:|Thanks to )/g, "\n\n$1");
+
+            var rawParts = text.split(/\n\s*\n/);
+            var parts = [];
+            var i;
+
+            for (i = 0; i < rawParts.length; i++) {
+                var part = rawParts[i].replace(/^\s+|\s+$/g, "");
+                if (!part) continue;
+
+                // Break long text by sentence punctuation only. Decimal/version numbers stay intact
+                // because we only split after punctuation when the next non-space character is not a number.
+                var chunks = splitModalTextBySentences(part, isPS3 ? 520 : 620);
+                var c;
+                for (c = 0; c < chunks.length; c++) {
+                    if (chunks[c]) parts.push(chunks[c]);
+                }
+            }
+
+            var html = [];
+            for (i = 0; i < parts.length; i++) {
+                html.push('<p class="article_body_paragraph">' + escapeModalHTML(parts[i]) + '</p>');
+            }
+
+            return html.join("");
+        }
+
         function openArticleModal(articleIndex) {
             var article = articlesList[articleIndex];
             var modal_el = document.getElementById("article_modal");
@@ -561,7 +736,7 @@
             document.getElementById("modal_meta_info").innerHTML = 'By <span class="highlight_author">' + article.author + '</span> | <span class="highlight_date">' + dateParts[0] + '</span> <span style="color: #fff;">-</span> <span class="highlight_time">' + (dateParts[1] || "") + '</span>';
 
             document.getElementById("modal_feature_image").src = article.img;
-            document.getElementById("modal_body_content").innerHTML = (article.desc || "").replace(/<img[^>]*>/, "");
+            document.getElementById("modal_body_content").innerHTML = formatArticleBodyForModal(article.desc || "");
             document.getElementById("modal_footer_button_area").innerHTML = isPS3 ? "" : '<a href="' + article.link + '" target="_blank" class="button_base button_open_forum" style="display:inline-block; width:220px; padding:12px; border-color: #fff;">OPEN FULL THREAD</a>';
 
             modal_el.style.display = isPS3 ? "table" : "flex";
