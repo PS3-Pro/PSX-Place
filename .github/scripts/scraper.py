@@ -1,44 +1,59 @@
+import hashlib
 import os
 import re
 import time
-import hashlib
-from io import BytesIO
 from datetime import datetime, timezone
+from io import BytesIO
 from urllib.parse import urljoin, urlparse
-
-from curl_cffi import requests
-from bs4 import BeautifulSoup
-from PIL import Image, ImageOps
 from xml.sax.saxutils import escape
+
+from bs4 import BeautifulSoup
+from curl_cffi import requests
+from PIL import Image, ImageOps
 
 
 PSX_BASE = "https://www.psx-place.com/"
 GITHUB_RAW_PREFIX = "https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/"
 
-MAX_PAGES = 20
-MAX_ITEMS = 120
-REQUEST_DELAY = 1.0
-IMPERSONATE = "safari15_5"
+MAX_PAGES = int(os.environ.get("PSX_MAX_PAGES", "20"))
+MAX_ITEMS = int(os.environ.get("PSX_MAX_ITEMS", "120"))
+REQUEST_DELAY = float(os.environ.get("PSX_REQUEST_DELAY", "1.0"))
+DETAIL_DELAY = float(os.environ.get("PSX_DETAIL_DELAY", "0.35"))
+IMPERSONATE = os.environ.get("PSX_IMPERSONATE", "safari15_5")
+FORCE_IMAGE_REFRESH = os.environ.get("PSX_FORCE_IMAGE_REFRESH", "0") == "1"
 
 DIR_FILES = "files"
 DIR_UNCOMPRESSED = os.path.join("resources", "images", "uncompressed")
 DIR_COMPRESSED = os.path.join("resources", "images", "compressed")
+XML_PATH = os.path.join(DIR_FILES, "whats_new.xml")
 
+
+# -----------------------------
+# Logging helpers
+# -----------------------------
 
 def now_stamp():
     return datetime.now().strftime("%H:%M:%S")
 
 
+def log(message):
+    print(f"[{now_stamp()}] {message}", flush=True)
+
+
+# -----------------------------
+# Text / URL helpers
+# -----------------------------
+
 def clean_text(text):
     if not text:
         return ""
-    return re.sub(r"\s+", " ", text).strip()
+    return re.sub(r"\s+", " ", str(text)).strip()
 
 
 def xml_escape(text):
     return escape(str(text or ""), {
         '"': "&quot;",
-        "'": "&apos;"
+        "'": "&apos;",
     })
 
 
@@ -48,11 +63,9 @@ def normalize_url(href, base=PSX_BASE):
 
     url = urljoin(base, href)
     url = url.split("#")[0]
-
     parsed = urlparse(url)
-    clean = f"{parsed.scheme}://{parsed.netloc}{parsed.path}"
 
-    return clean
+    return f"{parsed.scheme}://{parsed.netloc}{parsed.path}"
 
 
 def portal_url(page):
@@ -61,6 +74,10 @@ def portal_url(page):
 
     return f"{PSX_BASE}ewr-porta/page-{page}"
 
+
+# -----------------------------
+# HTTP
+# -----------------------------
 
 def fetch_html(url, timeout=30):
     for attempt in range(1, 4):
@@ -74,21 +91,27 @@ def fetch_html(url, timeout=30):
                     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
                     "Accept-Language": "en-US,en;q=0.9",
                     "Referer": PSX_BASE,
-                }
+                },
             )
 
-            if response.status_code == 200:
-                return response.text
+            html = response.text or ""
+            log(f"GET {url} -> HTTP {response.status_code}, {len(html)} chars")
 
-            print(f"[{now_stamp()}] HTTP {response.status_code}: {url}")
+            if response.status_code == 200 and html:
+                return html
 
         except Exception as e:
-            print(f"[{now_stamp()}] Fetch error attempt {attempt}: {url} -> {e}")
+            log(f"Fetch error on attempt {attempt}: {url} -> {e}")
 
         time.sleep(attempt)
 
+    log(f"Giving up after 3 attempts: {url}")
     return ""
 
+
+# -----------------------------
+# Portal link extraction
+# -----------------------------
 
 def is_article_url(url):
     return "/threads/" in url
@@ -98,19 +121,30 @@ def is_bad_title(text):
     if not text:
         return True
 
-    t = clean_text(text)
-    low = t.lower()
+    title = clean_text(text)
+    low = title.lower()
 
     bad_exact = {
-        "next", "prev", "previous", "first", "last", "go",
-        "here", "click here", "read more", "continue",
-        "like", "quote", "reply", "share"
+        "next",
+        "prev",
+        "previous",
+        "first",
+        "last",
+        "go",
+        "here",
+        "click here",
+        "read more",
+        "continue",
+        "like",
+        "quote",
+        "reply",
+        "share",
     }
 
     if low in bad_exact:
         return True
 
-    if len(t) < 15:
+    if len(title) < 15:
         return True
 
     if low.startswith("image:"):
@@ -158,6 +192,7 @@ def extract_portal_links(soup):
                 "link": href,
             })
 
+    # Fallback: if the page layout changes again, scan all thread links.
     if len(found) < 3:
         for a in soup.select("a[href*='/threads/']"):
             href = normalize_url(a.get("href"))
@@ -187,9 +222,14 @@ def extract_portal_links(soup):
     return unique
 
 
+# -----------------------------
+# Article detail extraction
+# -----------------------------
+
 def get_meta_content(soup, *keys):
     for key in keys:
         tag = soup.select_one(f'meta[property="{key}"]') or soup.select_one(f'meta[name="{key}"]')
+
         if tag and tag.get("content"):
             return clean_text(tag.get("content"))
 
@@ -200,10 +240,8 @@ def parse_date_to_ps3(value):
     if not value:
         return "1970-01-01T00:00:00.000Z"
 
-    value = value.strip()
-
     try:
-        value = value.replace("Z", "+00:00")
+        value = value.strip().replace("Z", "+00:00")
         dt = datetime.fromisoformat(value)
 
         if dt.tzinfo is None:
@@ -213,13 +251,12 @@ def parse_date_to_ps3(value):
         return dt.strftime("%Y-%m-%dT%H:%M:%S.000Z")
 
     except Exception:
-        pass
-
-    return "1970-01-01T00:00:00.000Z"
+        return "1970-01-01T00:00:00.000Z"
 
 
 def extract_thread_id(url):
     match = re.search(r"\.(\d+)/?$", url)
+
     if match:
         return match.group(1)
 
@@ -259,6 +296,7 @@ def is_good_image_url(url):
 def get_img_src(img, base_url):
     for attr in ("data-url", "data-src", "src"):
         src = img.get(attr)
+
         if src:
             return normalize_url(src, base_url)
 
@@ -340,7 +378,12 @@ def extract_author(soup):
 
 
 def extract_article_date(soup):
-    date_value = get_meta_content(soup, "article:published_time", "article:modified_time", "og:updated_time")
+    date_value = get_meta_content(
+        soup,
+        "article:published_time",
+        "article:modified_time",
+        "og:updated_time",
+    )
 
     if date_value:
         return parse_date_to_ps3(date_value)
@@ -357,6 +400,7 @@ def read_article_detail(item):
     html = fetch_html(item["link"], timeout=30)
 
     if not html:
+        log(f"Could not open article, using fallback data: {item['link']}")
         return {
             "title": clean_title(item["title"]),
             "link": item["link"],
@@ -391,9 +435,12 @@ def read_article_detail(item):
     }
 
 
+# -----------------------------
+# Images
+# -----------------------------
+
 def make_image_name(title, link):
     thread_id = extract_thread_id(link)
-
     safe_title = re.sub(r'[\\/*?:"<>|]', "", title)
     safe_title = re.sub(r"\s+", "_", safe_title).strip("_")
     safe_title = safe_title[:80] or "psx_place"
@@ -401,12 +448,37 @@ def make_image_name(title, link):
     return f"{thread_id}_{safe_title}.jpg"
 
 
+def save_jpeg_versions(img, path_uncompressed, path_compressed):
+    img = ImageOps.exif_transpose(img)
+
+    if img.mode not in ("RGB", "L"):
+        img = img.convert("RGB")
+    elif img.mode == "L":
+        img = img.convert("RGB")
+
+    img.save(path_uncompressed, "JPEG", quality=92, optimize=True)
+
+    img_optimized = ImageOps.fit(img, (290, 170), Image.Resampling.LANCZOS)
+    img_optimized.save(path_compressed, "JPEG", quality=80, optimize=True)
+
+
 def download_and_process_image(image_url, image_name):
     path_uncompressed = os.path.join(DIR_UNCOMPRESSED, image_name)
     path_compressed = os.path.join(DIR_COMPRESSED, image_name)
 
-    if os.path.exists(path_uncompressed) and os.path.exists(path_compressed):
+    if not FORCE_IMAGE_REFRESH and os.path.exists(path_uncompressed) and os.path.exists(path_compressed):
+        log(f"Image already exists, skipping: {image_name}")
         return True
+
+    # If the original already exists but the compressed version does not, rebuild it locally.
+    if not FORCE_IMAGE_REFRESH and os.path.exists(path_uncompressed) and not os.path.exists(path_compressed):
+        try:
+            log(f"Rebuilding compressed image from existing original: {image_name}")
+            img = Image.open(path_uncompressed)
+            save_jpeg_versions(img, path_uncompressed, path_compressed)
+            return True
+        except Exception as e:
+            log(f"Could not rebuild compressed image, downloading again: {image_name} -> {e}")
 
     try:
         response = requests.get(
@@ -416,32 +488,27 @@ def download_and_process_image(image_url, image_name):
             headers={
                 "User-Agent": "Mozilla/5.0",
                 "Referer": PSX_BASE,
-            }
+            },
         )
 
-        if response.status_code != 200:
-            print(f"[{now_stamp()}] Image HTTP {response.status_code}: {image_url}")
+        log(f"Image GET {image_url} -> HTTP {response.status_code}, {len(response.content or b'')} bytes")
+
+        if response.status_code != 200 or not response.content:
             return False
 
         img = Image.open(BytesIO(response.content))
-        img = ImageOps.exif_transpose(img)
-
-        if img.mode not in ("RGB", "L"):
-            img = img.convert("RGB")
-        elif img.mode == "L":
-            img = img.convert("RGB")
-
-        img.save(path_uncompressed, "JPEG", quality=92, optimize=True)
-
-        img_optimized = ImageOps.fit(img, (290, 170), Image.Resampling.LANCZOS)
-        img_optimized.save(path_compressed, "JPEG", quality=80, optimize=True)
-
+        save_jpeg_versions(img, path_uncompressed, path_compressed)
+        log(f"Saved image: {image_name}")
         return True
 
     except Exception as e:
-        print(f"[{now_stamp()}] Erro na imagem {image_name}: {e}")
+        log(f"Image error for {image_name}: {e}")
         return False
 
+
+# -----------------------------
+# Main scraping flow
+# -----------------------------
 
 def collect_news():
     seeds = []
@@ -449,21 +516,21 @@ def collect_news():
 
     for current_page in range(1, MAX_PAGES + 1):
         url = portal_url(current_page)
-        print(f"-> Scraping Page {current_page}: {url}")
+        log(f"Scraping portal page {current_page}: {url}")
 
         html = fetch_html(url)
 
         if not html:
-            print(f"[{now_stamp()}] Página vazia/falhou: {url}")
+            log(f"Empty or failed portal page: {url}")
             continue
 
         soup = BeautifulSoup(html, "html.parser")
         links = extract_portal_links(soup)
 
-        print(f"   Found {len(links)} possible articles")
+        log(f"Portal page {current_page}: found {len(links)} possible articles")
 
         if not links and current_page > 1:
-            print("   No more articles, stopping.")
+            log("No more articles found, stopping pagination")
             break
 
         for item in links:
@@ -481,46 +548,53 @@ def collect_news():
 
         time.sleep(REQUEST_DELAY)
 
-    print(f"-> Reading article details: {len(seeds)} items")
+    log(f"Reading article details: {len(seeds)} items")
 
     news_list = []
 
     for i, item in enumerate(seeds, 1):
-        print(f"   [{i}/{len(seeds)}] {item['title'][:70]}")
+        log(f"Article detail {i}/{len(seeds)}: {item['title'][:90]}")
         news = read_article_detail(item)
         news_list.append(news)
-        time.sleep(0.35)
+        time.sleep(DETAIL_DELAY)
 
     return news_list
 
 
 def process_images(news_list):
-    print(f"-> Processando {len(news_list)} imagens...")
+    log(f"Processing images for {len(news_list)} articles")
+
+    downloaded = 0
+    fallback = 0
 
     for n in news_list:
         if not n["image_url"]:
             n["image_name"] = "default.png"
+            fallback += 1
             continue
 
         image_name = make_image_name(n["title"], n["link"])
 
         if download_and_process_image(n["image_url"], image_name):
             n["image_name"] = image_name
+            downloaded += 1
         else:
             n["image_name"] = "default.png"
+            fallback += 1
+
+    log(f"Image processing finished: {downloaded} assigned, {fallback} fallback")
 
 
 def write_xml(news_list):
     xml_out = [
         '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>',
         '<nsx anno="" lt-id="131" min-sys-ver="1" rev="1093" ver="1.0">',
-        '\t<spc anno="csxad=1&amp;adspace=9,10,11,12,13" id="33537" multi="o" rep="t">'
+        '\t<spc anno="csxad=1&amp;adspace=9,10,11,12,13" id="33537" multi="o" rep="t">',
     ]
 
     for i, n in enumerate(news_list):
         picks_anno = ' anno="picks=1"' if i < 3 else ""
         image_url = f"{GITHUB_RAW_PREFIX}{n['image_name']}"
-
         description_html = f'<img src="{xml_escape(image_url)}"/>{xml_escape(n["summary"])}'
 
         xml_out.append(f'\t\t<mtrl id="0" lastm="{xml_escape(n["date"])}" until="2100-12-31T23:59:00.000Z"{picks_anno}>')
@@ -535,12 +609,36 @@ def write_xml(news_list):
     xml_out.append('\t</spc>')
     xml_out.append('</nsx>')
 
-    with open(os.path.join(DIR_FILES, "whats_new.xml"), "w", encoding="utf-8") as f:
+    with open(XML_PATH, "w", encoding="utf-8") as f:
         f.write("\n".join(xml_out))
+
+    log(f"XML written: {XML_PATH}")
+
+
+def validate_output():
+    if not os.path.exists(XML_PATH):
+        log("ERROR: XML file was not created")
+        raise SystemExit(1)
+
+    with open(XML_PATH, "r", encoding="utf-8") as f:
+        xml_content = f.read()
+
+    material_count = xml_content.count("<mtrl")
+
+    log(f"XML size: {len(xml_content)} chars")
+    log(f"XML material count: {material_count}")
+
+    if material_count <= 0:
+        log("ERROR: XML was created without any <mtrl> items")
+        raise SystemExit(1)
 
 
 def update_psx_news():
-    print(f"[{now_stamp()}] Starting PSX-Place Scraper v3/XenPorta fix...")
+    log("Starting PSX-Place Scraper v4 for XenPorta/XenForo")
+    log(f"Working directory: {os.getcwd()}")
+    log(f"Max pages: {MAX_PAGES}")
+    log(f"Max items: {MAX_ITEMS}")
+    log(f"Force image refresh: {FORCE_IMAGE_REFRESH}")
 
     os.makedirs(DIR_FILES, exist_ok=True)
     os.makedirs(DIR_UNCOMPRESSED, exist_ok=True)
@@ -548,17 +646,23 @@ def update_psx_news():
 
     news_list = collect_news()
 
+    log(f"Total news found: {len(news_list)}")
+
+    for n in news_list[:5]:
+        log(f"Sample article: {n.get('title')} | {n.get('link')} | image={bool(n.get('image_url'))}")
+
     if not news_list:
-        print("Nenhuma notícia encontrada. A estrutura da página pode ter mudado de novo.")
-        return
+        log("ERROR: No news articles were found. Nothing will be saved.")
+        raise SystemExit(1)
 
     process_images(news_list)
     write_xml(news_list)
+    validate_output()
 
-    print("Sucesso! XML e imagens geradas em:")
-    print(f"- {os.path.join(DIR_FILES, 'whats_new.xml')}")
-    print(f"- {DIR_UNCOMPRESSED}")
-    print(f"- {DIR_COMPRESSED}")
+    log("Success: XML and images were generated")
+    log(f"XML output: {XML_PATH}")
+    log(f"Uncompressed images: {DIR_UNCOMPRESSED}")
+    log(f"Compressed images: {DIR_COMPRESSED}")
 
 
 if __name__ == "__main__":
