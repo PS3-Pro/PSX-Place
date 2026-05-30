@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <nsx anno="" lt-id="131" min-sys-ver="1" rev="1093" ver="1.0">
 	<spc anno="csxad=1&amp;adspace=9,10,11,12,13" id="33537" multi="o" rep="t">
-		<mtrl id="0" lastm="2026-04-15T08:03:54.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
-			<desc>PS3Xploit Flash Writer (4.93 HFW Req) -</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/49967_PS3Xploit_Flash_Writer_4.93_HFW_Req.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ps3xploit-flash-writer-4-93-hfw-req.49967/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/49967_PS3Xploit_Flash_Writer_4.93_HFW_Req.jpg">Updated version for 4.93, using data from @lmn7 &apos;s original thread This thread will serve as a release &amp; brief overview for the updated PS3Xploit Flash Writer. This tool can be used to install custom firmware on any PS3 that has a minimum firmware version of 3.56 or lower. Features • Minimum firmware version check • Current firmware version check • Custom firmware check • Hybrid firmware check • Patch file hash check • Multiple patch chain checks to prevent memory corruption • Ability to dump the onboard flash to a USB drive before patching • Much more reliable memory searching • Much faster flash dumping for NAND based consoles Overview ​ This project is built off of the work of the PS3Xploit Team , who I very much thank for their exploit framework and documentation efforts which made learning about their tools much easier. None of this would exist without them, and they deserve all of </description>
-			<creators>Evilnat</creators>
-		</mtrl>
 		<mtrl id="0" lastm="2026-05-05T16:41:51.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
 			<desc>PS5 [Released] PS5-Linux: Supporting PS5 Phat Models on 3.xx and 4.xx firmwares (&amp; also now 5.50, 6.00 and 6.02 FW )</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/50115_PS5_Released_PS5-Linux_Supporting_PS5_Phat_Models_on_3.xx_and_4.xx_firmwares_also_now_5..jpg</url>
@@ -25,7 +17,7 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/50153_PS_VITA_PsTV_Starship_Vita_v1.0.jpg">Starship Vita v.1.0 - This is a port of Starship (v.1.0.0 for now but planned to be moved up to latest upstream) for Vita . Read more about this resource.. ​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2026-04-15T18:59:14.000Z" until="2100-12-31T23:59:00.000Z">
+		<mtrl id="0" lastm="2026-04-15T18:59:14.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
 			<desc>PS VITA / PsTV 2ship2harkinian Vita by Rinnegatamante v1.2</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/49973_PS_VITA_PsTV_2ship2harkinian_Vita_by_Rinnegatamante_v1.2.jpg</url>
 			<target type="u">https://www.psx-place.com/threads/2ship2harkinian-vita-by-rinnegatamante.49973/</target>
@@ -759,6 +751,14 @@
 			<target type="u">https://www.psx-place.com/threads/ps3hen-v3-1-1-hfw-officially-updated-with-4-89-support-the-ps3-exploit-for-noncfw-ps3-models.37273/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/37273_PS3_PS3HEN_v3.1.1_HFW_Officially_updated_with_4.89_Support_-_The_PS3_Exploit_for_nonCFW_.jpg">UPDATE: v3.1.1 released with HOTFIX see changelog below for v3.1.1 /Following the firmware update of 4.89 that Sony rolled out last week, the reunion of ps3 developer&apos;s was set for the PS3 homebrew / hacking community, First we seen well known Ps3 Homebrew / CFW developer @Evilnat delivered his 4.89 Evilnat (Cobra 8.3) a few days ago for those models that can install a PS3 Custom Firmware, but for those console that can not you can get many CFW features: like the ability to launch homebrew and plugins with the PS3HEN exploit. As @esc0rtd3w of the PS3Xploit Team has just released PS3HEN and fellow scene developer @littlebalup has delivered the special firmware (HFW) that restore the exploits from firmware 4.82 that allows for the execution of PS3HEN. In this official release of PS3HEN v3.1.0 (&amp; HFW) for 4.89 firmware, there has been various changes to PS3HEN from developer @esc0rtd3w and </description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
+		<mtrl id="0" lastm="2022-05-18T01:11:43.000Z" until="2100-12-31T23:59:00.000Z">
+			<desc>PS3 4.89 Evilnat CFW w/ Cobra v8.3 (CEX) (+ noBD /noBT builds)</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/37272_PS3_4.89_Evilnat_CFW_w_Cobra_v8.3_CEX_noBD_noBT_builds.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/4-89-evilnat-cfw-w-cobra-v8-3-cex-nobd-nobt-builds.37272/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/37272_PS3_4.89_Evilnat_CFW_w_Cobra_v8.3_CEX_noBD_noBT_builds.jpg">Following the success of 4.88 Evilnat CFW . well known PS3 developer @Evilnat is at it again with a new Custom Firmware Release for 4.89 with the release of Ps3 CFW 4.89 Evilnat Cobra (8.3 ) (CEX) , following the official firmware update from Sony last week. This CEX based firmware comes packed with the Cobra 8.3 injected into the firmware (making this a Cobra CFW) .There is tons of features packed into this firmware that coming from a top tier of developer&apos;s who has a strong reputation in the PS3 Homebrew / Hacking scene. The developer did not forget about the damage console with noBD / noBT builds of the Custom firmware also available Checkout all the details below. PS3HEN, BG Toolset and HFW Official releases are also coming soon from their respective creators , but be patient as important test are being conducted and BEWARE of unofficial releases (of PS3HEN/HFW) there has been some a</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
 	</spc>
