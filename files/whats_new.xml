@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <nsx anno="" lt-id="131" min-sys-ver="1" rev="1093" ver="1.0">
 	<spc anno="csxad=1&amp;adspace=9,10,11,12,13" id="33537" multi="o" rep="t">
+		<mtrl id="0" lastm="2026-06-17T13:30:55.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
+			<desc>PS3 PSGrade FSM Dongle fixed to work on lower firmwares and Raspberry Pico 2 Port</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/50431_PS3_PSGrade_FSM_Dongle_fixed_to_work_on_lower_firmwares_and_Raspberry_Pico_2_Port.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/psgrade-fsm-dongle-fixed-to-work-on-lower-firmwares-and-raspberry-pico-2-port.50431/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/50431_PS3_PSGrade_FSM_Dongle_fixed_to_work_on_lower_firmwares_and_Raspberry_Pico_2_Port.jpg">Hi! As some of you might know, the PSGrade FSM Dongle (official name Console Reset JIG) isn&apos;t working on firmwares below 2.00 due to a difference in the implementation of the USB Stack. I analyzed the issues and found that the configuration descriptor of PSGrade contained an invalid value which is &quot;ignored&quot; on later firmwares: bConfigurationValue was set to 0x00 but it has to be 0x01 since 0x00 is used for the default configuration for end point 0 (during the enumeration). I also removed the unnecessary USB HUB logic copied over from PSGroove. So now PSGrade for AVR8 targets also works on firmwares between 1.00 and 2.00. But as AVR8 targets (like the Teensy 2.0++) get rare or expensive these days, I also created a PSGrade Port for the Raspberry Pico 2. I&apos;ve attached the fixed source for the AVR8 PSGrade, the Pico2 PSGrade Port and included some builds.</description>
+			<creators>M4j0r</creators>
+		</mtrl>
 		<mtrl id="0" lastm="2026-05-05T16:41:51.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
 			<desc>PS5 [Released] PS5-Linux: Supporting PS5 Phat Models on 3.xx and 4.xx firmwares (&amp; also now 5.50, 6.00 and 6.02 FW )</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/50115_PS5_Released_PS5-Linux_Supporting_PS5_Phat_Models_on_3.xx_and_4.xx_firmwares_also_now_5..jpg</url>
@@ -17,7 +25,7 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/50153_PS_VITA_PsTV_Starship_Vita_v1.0.jpg">Starship Vita v.1.0 - This is a port of Starship (v.1.0.0 for now but planned to be moved up to latest upstream) for Vita . Read more about this resource.. ​</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2026-04-15T18:59:14.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
+		<mtrl id="0" lastm="2026-04-15T18:59:14.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>PS VITA / PsTV 2ship2harkinian Vita by Rinnegatamante v1.2</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/49973_PS_VITA_PsTV_2ship2harkinian_Vita_by_Rinnegatamante_v1.2.jpg</url>
 			<target type="u">https://www.psx-place.com/threads/2ship2harkinian-vita-by-rinnegatamante.49973/</target>
@@ -38,7 +46,7 @@
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/50417_PS3_PSL1GHT_-_The_Open_Source_SDK_for_the_PS3_being_revived_updated_by_a_group_of_Devs.jpg</url>
 			<target type="u">https://www.psx-place.com/threads/psl1ght-the-open-source-sdk-for-the-ps3-being-revived-updated-by-a-group-of-devs.50417/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/50417_PS3_PSL1GHT_-_The_Open_Source_SDK_for_the_PS3_being_revived_updated_by_a_group_of_Devs.jpg">There is an effort by a group of developer&apos;s that includes Apollo Save Tool creator @bucanero who recently stopped by the forum to let us know about an effort being made by a group to reboot and update the PSL1GHT Open Source SDK. The goal is to help make it easier for future development on the PS3 and to attract new developer&apos;s and projects with an improved toolchain. They have made a Discord to discuss and help bring this project back to life to update the SDK. If you are interested in joining this effort to improve the open source SDK for the PS3, bucanero has provided the discord link where the group is working on this project. via bucanero Hello guys On the PSL1GHT topic, with a few other devs, we are trying to update and reboot the PSL1GHT open source PS3 sdk. We made a discord server to discuss steps and work on bringing some life back to the psl1ght sdk. If anyone wants to join, </description>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/50417_PS3_PSL1GHT_-_The_Open_Source_SDK_for_the_PS3_being_revived_updated_by_a_group_of_Devs.jpg">Updates June 17: A complete Overhaul of PSL1GHT has been released. See post from bucanero ​ .There is an effort by a group of developer&apos;s that includes Apollo Save Tool creator @bucanero who recently stopped by the forum to let us know about an effort being made by a group to reboot and update the PSL1GHT Open Source SDK. The goal is to help make it easier for future development on the PS3 and to attract new developer&apos;s and projects with an improved toolchain. They have made a Discord to discuss and help bring this project back to life to update the SDK. If you are interested in joining this effort to improve the open source SDK for the PS3, bucanero has provided the discord link where the group is working on this project. via bucanero Hello guys On the PSL1GHT topic, with a few other devs, we are trying to update and reboot the PSL1GHT open source PS3 sdk. We made a discord server to di</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
 		<mtrl id="0" lastm="2026-05-05T04:15:25.000Z" until="2100-12-31T23:59:00.000Z">
@@ -743,14 +751,6 @@
 			<target type="u">https://www.psx-place.com/threads/update-4-ps3-toolset-by-bguerville-a-powerful-collection-of-tools-fueled-by-new-ps3-exploit.28658/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/28658_PS3_UPDATE_4_PS3_Toolset_by_bguerville_A_powerful_collection_of_tools_fueled_by_new_PS3_.jpg">UPDATE FEB 2023 (The domain&apos;s of ** ** www.ps3xploit.net &gt; Domain no Longer owned by team** (NEW URL = http://ps3toolset.com) &gt; Domain no Longer owned by team** (NEW URL = http://ps3toolset.com and .com are no longer in poccession of the team, A new address will be posted in future release coverage. Update (4) Now supporting 4.86 Fully &amp; Issue fixed with NAND console&apos;s in rare situations .You may recall a recent article revealing a few exclusive screenshots of bguerville&apos;s latest project, now the time has come to introduce the next evolution in PS3 Jailbreaking solutions. The PlayStation 3 Toolset by @bguerville is a new suite of tools, built upon a new PS3 exploitation framework &amp; fueled by a new exploit discovered on the PS3 by the developer. The new exploit ( and the toolset project as a whole ) is compatible with all PS3 models running 4.82 - 4.86 OFW/HFW/CFW While ps3xploit team mem</description>
-			<creators>STLcardsWS</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2022-05-20T22:49:14.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS3 PS3HEN v3.1.1 &amp; HFW Officially updated with 4.89 Support - (The PS3 Exploit for nonCFW PS3 Models)</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/37273_PS3_PS3HEN_v3.1.1_HFW_Officially_updated_with_4.89_Support_-_The_PS3_Exploit_for_nonCFW_.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/ps3hen-v3-1-1-hfw-officially-updated-with-4-89-support-the-ps3-exploit-for-noncfw-ps3-models.37273/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/37273_PS3_PS3HEN_v3.1.1_HFW_Officially_updated_with_4.89_Support_-_The_PS3_Exploit_for_nonCFW_.jpg">UPDATE: v3.1.1 released with HOTFIX see changelog below for v3.1.1 /Following the firmware update of 4.89 that Sony rolled out last week, the reunion of ps3 developer&apos;s was set for the PS3 homebrew / hacking community, First we seen well known Ps3 Homebrew / CFW developer @Evilnat delivered his 4.89 Evilnat (Cobra 8.3) a few days ago for those models that can install a PS3 Custom Firmware, but for those console that can not you can get many CFW features: like the ability to launch homebrew and plugins with the PS3HEN exploit. As @esc0rtd3w of the PS3Xploit Team has just released PS3HEN and fellow scene developer @littlebalup has delivered the special firmware (HFW) that restore the exploits from firmware 4.82 that allows for the execution of PS3HEN. In this official release of PS3HEN v3.1.0 (&amp; HFW) for 4.89 firmware, there has been various changes to PS3HEN from developer @esc0rtd3w and </description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
 	</spc>
