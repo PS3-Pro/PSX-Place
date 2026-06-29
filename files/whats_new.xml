@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <nsx anno="" lt-id="131" min-sys-ver="1" rev="1093" ver="1.0">
 	<spc anno="csxad=1&amp;adspace=9,10,11,12,13" id="33537" multi="o" rep="t">
+		<mtrl id="0" lastm="2026-06-27T20:34:09.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
+			<desc>PS5 [Write-Up PS5/PS4] From CSSFontFace to ARW: A PlayStation Webkit Exploit Writeup</desc>
+			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/50478_PS5_Write-Up_PS5PS4_From_CSSFontFace_to_ARW_A_PlayStation_Webkit_Exploit_Writeup.jpg</url>
+			<target type="u">https://www.psx-place.com/threads/write-up-ps5-ps4-from-cssfontface-to-arw-a-playstation-webkit-exploit-writeup.50478/</target>
+			<cntry agelmt="0">all</cntry>			<lang>all</lang>
+			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/50478_PS5_Write-Up_PS5PS4_From_CSSFontFace_to_ARW_A_PlayStation_Webkit_Exploit_Writeup.jpg">SEE ORIGINAL LINK @ https://linearfox.com/blog/cssfontface-uaf-playstation (Write-by: Nathan Fargo and ufm42 ) ​ This writeup documents a WebKit CSSFontFace use-after-free in the font loading path and its exploitation on PlayStation 4 and PlayStation 5 (Partially). The bug is triggered through re-entrant JavaScript during font promise resolution, where stylesheet mutation can invalidate native font-face objects that are still reachable from the loading pipeline. We analyze the object lifetime issue, allocator behavior, structure layout differences, and the practical obstacles caused by embedded members such as timers, wrappers, client sets, and inline vectors. The post follows the bug from crash reproduction to controlled heap reclaim, information disclosure, and memory corruption. It explains how the original UAF becomes only the initial trigger once a stable out-of-bounds JavaScript ob</description>
+			<creators>STLcardsWS</creators>
+		</mtrl>
 		<mtrl id="0" lastm="2026-06-17T13:30:55.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
 			<desc>PS3 PSGrade FSM Dongle fixed to work on lower firmwares and Raspberry Pico 2 Port</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/50431_PS3_PSGrade_FSM_Dongle_fixed_to_work_on_lower_firmwares_and_Raspberry_Pico_2_Port.jpg</url>
@@ -17,7 +25,7 @@
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/50115_PS5_Released_PS5-Linux_Supporting_PS5_Phat_Models_on_3.xx_and_4.xx_firmwares_also_now_5..jpg">Update: Modded Warefare Provided a Tutorial Update 2: TheFlow0 has stated &quot;FW &lt; 6.50 will get Linux too, stay tuned. &quot; Update 3 : TheFlow0 has expanded support to 5.50,6.00 abd 6.02 firmware ​ ps5-linux ​ ps5-linux leverages a patched HV vulnerability to transform your PS5 Phat console running 3.xx or 4.xx firmwares into a highly capable Linux PC, unlocking its full hardware potential for desktop use. Powered by 8 CPU cores (16 threads) at 3.5 GHz and a GPU at 2.23 GHz , it provides enough performance to run Steam games and various emulators with impressive fluidity. It supports HDMI 4K60 video and audio output. Furthermore, it allows you to utilize an M.2 SSD as a dedicated Linux partition, as well as all USB ports on the console.​ PS5 firmware ps5-linux is currently only supported on PS5 Phat on 3.xx and 4.xx firmwares. 3.00 , 3.10 , 3.20 , 3.21 , without M.2 support 4.00 , 4.02 , 4.03</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
-		<mtrl id="0" lastm="2026-05-13T02:58:40.000Z" until="2100-12-31T23:59:00.000Z" anno="picks=1">
+		<mtrl id="0" lastm="2026-05-13T02:58:40.000Z" until="2100-12-31T23:59:00.000Z">
 			<desc>PS VITA / PsTV Starship Vita v1.0</desc>
 			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/50153_PS_VITA_PsTV_Starship_Vita_v1.0.jpg</url>
 			<target type="u">https://www.psx-place.com/threads/starship-vita.50153/</target>
@@ -743,14 +751,6 @@
 			<target type="u">https://www.psx-place.com/threads/4-89-jailbreaking-ps3-cfw-custom-firmware-capable-models-status-warnings.38553/</target>
 			<cntry agelmt="0">all</cntry>			<lang>all</lang>
 			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/38553_PS3_4.89_Jailbreaking_-_PS3_CFW_Custom_Firmware_Capable_Models_Status_Warnings.jpg">​ PS3 CFW Models (Capable of CFW installation) Status About Official PS3 Toolset Status FAQ - Unofficial Clones / DNS CFW &lt;&gt; CFW Installation: Yes If you already have a Custom Firmware (CFW) installed (4.88 or lower) and wish to update to a 4.89 CFW, , just download the CFW and install via USB method. Spoiler 4.89 OFW &lt;&gt; CFW Installation: No (See FAQ tab) There is no short answer for this one you will need to read the next tabs to get a better idea and understanding on this answer to decide what is best for yourself.(See FAQ tab for more information) Note: CFW can install directly from 3.55 and below (no hack needed just CFW PUP) PS3HEN updated Officially to 4.89 = Yes bguerville PS3 Toolset Officially Online? = No (Don&apos;t be fooled by imposter&apos;s) Latest Public Updates ​ via bguerville The ** ** www.ps3xploit.net &gt; Domain no Longer owned by team** (NEW URL = http://ps3toolset.com) &gt; Domai</description>
-			<creators>STLcardsWS</creators>
-		</mtrl>
-		<mtrl id="0" lastm="2020-03-25T21:49:58.000Z" until="2100-12-31T23:59:00.000Z">
-			<desc>PS3 [UPDATE 4] PS3 Toolset by bguerville: A powerful collection of tools fueled by new PS3 exploit</desc>
-			<url type="2">https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/28658_PS3_UPDATE_4_PS3_Toolset_by_bguerville_A_powerful_collection_of_tools_fueled_by_new_PS3_.jpg</url>
-			<target type="u">https://www.psx-place.com/threads/update-4-ps3-toolset-by-bguerville-a-powerful-collection-of-tools-fueled-by-new-ps3-exploit.28658/</target>
-			<cntry agelmt="0">all</cntry>			<lang>all</lang>
-			<description><img src="https://raw.githubusercontent.com/PS3-Pro/PSX-Place/master/resources/images/uncompressed/28658_PS3_UPDATE_4_PS3_Toolset_by_bguerville_A_powerful_collection_of_tools_fueled_by_new_PS3_.jpg">UPDATE FEB 2023 (The domain&apos;s of ** ** www.ps3xploit.net &gt; Domain no Longer owned by team** (NEW URL = http://ps3toolset.com) &gt; Domain no Longer owned by team** (NEW URL = http://ps3toolset.com and .com are no longer in poccession of the team, A new address will be posted in future release coverage. Update (4) Now supporting 4.86 Fully &amp; Issue fixed with NAND console&apos;s in rare situations .You may recall a recent article revealing a few exclusive screenshots of bguerville&apos;s latest project, now the time has come to introduce the next evolution in PS3 Jailbreaking solutions. The PlayStation 3 Toolset by @bguerville is a new suite of tools, built upon a new PS3 exploitation framework &amp; fueled by a new exploit discovered on the PS3 by the developer. The new exploit ( and the toolset project as a whole ) is compatible with all PS3 models running 4.82 - 4.86 OFW/HFW/CFW While ps3xploit team mem</description>
 			<creators>STLcardsWS</creators>
 		</mtrl>
 	</spc>
