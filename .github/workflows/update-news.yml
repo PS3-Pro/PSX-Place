@@ -33,12 +33,32 @@ jobs:
         run: python .github/scripts/probe_psx_access.py
 
       - name: Run PSX-Place scraper
+        shell: bash
         run: |
           echo "Working directory:"
           pwd
+
           echo "Repository files before scraping:"
           ls -la
-          python .github/scripts/scraper.py
+
+          set +e
+          python .github/scripts/scraper.py 2>&1 | tee scraper.log
+          scraper_status=${PIPESTATUS[0]}
+          set -e
+
+          if [ "$scraper_status" -ne 0 ]; then
+            if grep -qF "ERROR: No news articles were found. Nothing will be saved." scraper.log; then
+              echo "No new articles found. Keeping the current feed unchanged."
+              rm -f scraper.log
+              exit 0
+            fi
+
+            echo "The scraper failed with exit code $scraper_status."
+            rm -f scraper.log
+            exit "$scraper_status"
+          fi
+
+          rm -f scraper.log
 
       - name: Check generated files
         run: |
@@ -46,7 +66,9 @@ jobs:
           test -f files/whats_new.xml
 
           echo "XML material count:"
-          grep -c "<mtrl" files/whats_new.xml
+          material_count=$(grep -c "<mtrl" files/whats_new.xml || true)
+          echo "$material_count"
+          test "$material_count" -gt 0
 
           echo "Files folder:"
           ls -lah files || true
